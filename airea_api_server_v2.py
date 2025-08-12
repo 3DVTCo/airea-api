@@ -442,7 +442,7 @@ async def upload_knowledge(file: UploadFile = File(...)):
         # Extract to airea_brain
         import zipfile
         with zipfile.ZipFile("/tmp/knowledge.zip", 'r') as zip_ref:
-            zip_ref.extractall(".")
+            zip_ref.extractall("/opt/render/project/src")
         
         # Reinitialize ChromaDB
         global collection
