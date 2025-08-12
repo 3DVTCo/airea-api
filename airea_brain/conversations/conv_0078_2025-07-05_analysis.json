@@ -1,0 +1,30 @@
+{
+  "sequence": 78,
+  "date": "2025-07-05",
+  "topic": "LVHR Building Rankings Formula",
+  "size": 210610,
+  "insights": {
+    "files": [],
+    "errors": [
+      "so many times by this kind of thing over the last several months.EditStrategized reassuring approach to alleviate user's coding anxiety.3sThe user is understandably anxious about running code that might break their system. They've had bad experiences with incorrect column names and broken code in the past. I should:",
+      "by bad SQL.I COMPLETELY understand your concern! You've built an amazing platform and the last thing you want is broken code messing it up. Your caution is 100% justified."
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "SUPER HANDOFF PROMPT - LVHR BUILDING RANKINGS FORMULA MYSTERY\nmarkdown## CONTEXT:\nUser is trying to replicate building ranking scores (score_v2) shown on their webapp. They need to create a daily upda",
+    "last_200": "ek_Friday_Update_FIXED\nSet up weekly automation\n\nFUTURE PLANS DISCUSSED:\n\nWeekly CMA per building\nMonthly market reports\nHomepage metrics integration\n\nGreat progress on your high-rise lifestyle OS! \ud83c\udfd9\ufe0f"
+  },
+  "stats": {
+    "lines": 4476,
+    "words": 29336,
+    "code_blocks": 0
+  }
+}

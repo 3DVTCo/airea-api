@@ -1,0 +1,43 @@
+{
+  "sequence": 34,
+  "date": "2025-06-22",
+  "topic": "Deal of the Week Formula.",
+  "size": 140120,
+  "insights": {
+    "files": [
+      [
+        "61925.csv",
+        "csv"
+      ],
+      [
+        "file.csv",
+        "csv"
+      ],
+      [
+        "Node.js",
+        "js"
+      ]
+    ],
+    "errors": [
+      "the exact formula in the available search results. The documents suggest it might be in the backend reference documents that were uploaded to AIREA but not fully detailed in these particular search results.I've searched through the project knowledge but I'm not finding the exact deal of the week formula you originally came with. What I can see from the search results is that:",
+      "down in detail",
+      "down in detail",
+      "down in detail in the documents I'm finding"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "what is my deal of the week formula, the exact one that i came here with?EditThe user is asking about their \"deal of the week formula\" that they previously shared. 3sThe user is asking about their \"de",
+    "last_200": "nberry Place')\nORDER BY \"Tower Name\", \"Beds Total\";\nRun these checks and let's see if the percentages make sense. If something looks off, we can adjust the formula before saving the automated version."
+  },
+  "stats": {
+    "lines": 2782,
+    "words": 20827,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "sequence": 46,
+  "date": "2025-06-22",
+  "topic": "deal of the week",
+  "size": 300970,
+  "insights": {
+    "files": [
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "supabase-queries.js",
+        "js"
+      ],
+      [
+        "paste.txt",
+        "txt"
+      ],
+      [
+        "DealOfWeekTab.jsx",
+        "jsx"
+      ],
+      [
+        "DealOfWeekSection.jsx",
+        "jsx"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ],
+      [
+        "marketDataService.ts",
+        "ts"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "one with",
+      "JSX with your working one, we can tackle this INSERT issue by either:",
+      "component code from earlier in chat]"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Here's the COMPLETE SQL to replace your entire \"Get Deal of the Week\" query:\nsql-- COMPLETE Deal of the Week Query with Auto-Save\nWITH\n  -- 1) Pull only truly available deals\n  active_listings AS (\n  ",
+    "last_200": "me\",\n  \"Unit Number\"\nFROM deal_of_week_overall \nLIMIT 1;\nOnce we see what columns and data are actually there, THEN we can update the component to match. No more guessing.\nWhat does this query return?"
+  },
+  "stats": {
+    "lines": 7335,
+    "words": 40776,
+    "code_blocks": 0
+  }
+}

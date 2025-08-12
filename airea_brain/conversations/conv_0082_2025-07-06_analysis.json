@@ -1,0 +1,59 @@
+{
+  "sequence": 82,
+  "date": "2025-07-06",
+  "topic": "Building Rankings V2 Final Fixes",
+  "size": 192747,
+  "insights": {
+    "files": [
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "6.csv",
+        "csv"
+      ],
+      [
+        "5.csv",
+        "csv"
+      ],
+      [
+        "withdrawn.csv",
+        "csv"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "7625.csv",
+        "csv"
+      ]
+    ],
+    "errors": [],
+    "entities": [
+      "29 Montelago Blvd",
+      "29 Montelago Blvd",
+      "29 Montelago Blvd"
+    ],
+    "concepts": [
+      "ranking_system",
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "I need a little help tweaking and making sure the building ranking narratives are presentable. can you help? this is where we left offCOMPREHENSIVE BUILDINGRANKINGSV2 HANDOFF - FINAL FIXES\n\ud83d\udea8 CRITICAL ",
+    "last_200": " \"4 out of 10 sales in this price range\"\n\"tier weight 1.10\" \u2192 \"premium pricing tier\"\n\nNEXT STEPS:\n\nRun stale listings SQL above\nVerify counts match MLS\nFinally fix narratives in BuildingRankingsV2.jsx"
+  },
+  "stats": {
+    "lines": 3376,
+    "words": 29061,
+    "code_blocks": 0
+  }
+}

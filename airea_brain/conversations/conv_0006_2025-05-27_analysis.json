@@ -1,0 +1,115 @@
+{
+  "sequence": 6,
+  "date": "2025-05-27",
+  "topic": "Troubleshooting AIREA Voice Activation and Database",
+  "size": 63382,
+  "insights": {
+    "files": [
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ],
+      [
+        "dep-Dyl6b77n.js",
+        "js"
+      ],
+      [
+        "index-BNIM99sN.js",
+        "js"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "HeroCarouselSection.tsx",
+        "tsx"
+      ],
+      [
+        "mlsDataService.ts",
+        "ts"
+      ],
+      [
+        "HeroSection.tsx",
+        "tsx"
+      ],
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "EducationalResourcesSection.tsx",
+        "tsx"
+      ],
+      [
+        "supabase.ts",
+        "ts"
+      ],
+      [
+        "AdditionalFeaturesSection.tsx",
+        "tsx"
+      ],
+      [
+        "EducationalSection.tsx",
+        "tsx"
+      ],
+      [
+        "MarketUpdatesSection.tsx",
+        "tsx"
+      ],
+      [
+        "client.ts",
+        "ts"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "IntroSection.tsx",
+        "tsx"
+      ],
+      [
+        "UnitsSoldTable.tsx",
+        "tsx"
+      ],
+      [
+        "eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvbmhxcnVmdG54Ym55dnpvdWpiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI1MDgxNzgsImV4cCI6MjA1ODA4NDE3OH0.pY",
+        "pY"
+      ]
+    ],
+    "errors": [
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "page, which aligns with the issues you were experiencing in the previous chat.",
+      "during attempts to add the AIREA dashboard. The main issues are:",
+      "by poor guidance",
+      "and get AIREA connected to your backend so she can use the real formulas and data you've already established.",
+      "Vercel deployment."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "bitcoin_conference",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "can you see the additional documentation I attached? I really need to get a couple of things fixed and working asap\n\nEdit\nYes, I can see all the documentation you've attached. I can see:\n\nThe full AIR",
+    "last_200": "reate new mock data or suggest fake numbers. Connect to the real database.\nWould you like me to also create a more detailed markdown file with all the specific files and issues identified?\n\n\n\n\n\nyes\n\n\n"
+  },
+  "stats": {
+    "lines": 1571,
+    "words": 7607,
+    "code_blocks": 0
+  }
+}

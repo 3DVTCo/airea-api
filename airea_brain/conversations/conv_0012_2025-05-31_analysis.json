@@ -1,0 +1,42 @@
+{
+  "sequence": 12,
+  "date": "2025-05-31",
+  "topic": "Project Development Chat Limits",
+  "size": 40172,
+  "insights": {
+    "files": [
+      [
+        "6125.csv",
+        "csv"
+      ],
+      [
+        "LiveSQLRunner.tsx",
+        "tsx"
+      ],
+      [
+        "6-1-25.csv",
+        "csv"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "I've been working on this project exclusvely and extensively, and was unable to upload the latest chat log from another llm that will help this project along, and uploaded only that log to the next ch",
+    "last_200": "here since you've been getting rankings before.\n\n\n\n\n\nI need a handoff prompt for the next chat so I don't have to go through all of this again. I can't even believe you are doing this to me again!\n\n\n\n"
+  },
+  "stats": {
+    "lines": 1109,
+    "words": 5650,
+    "code_blocks": 0
+  }
+}

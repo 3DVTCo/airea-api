@@ -1,0 +1,104 @@
+{
+  "sequence": 84,
+  "date": "2025-07-07",
+  "topic": "LVHR/AIREA Real Estate Platform Development",
+  "size": 205770,
+  "insights": {
+    "files": [
+      [
+        "DOWManagement.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "routes.tsx",
+        "tsx"
+      ],
+      [
+        "Deals.tsx",
+        "tsx"
+      ],
+      [
+        "paste-2.txt",
+        "txt"
+      ],
+      [
+        "DealOfWeekAdmin.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeek.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "Home.tsx",
+        "tsx"
+      ],
+      [
+        "Landing.tsx",
+        "tsx"
+      ],
+      [
+        "MainLayout.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekManagement.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "data - No more crashes",
+      "properties",
+      "(reading 'localeCompare')",
+      "state and upgrade to match Building Rankings tab style",
+      "attempt at rewriting it.Retry3so was what you wrote just a waste of time?EditAcknowledged mistake and prepared honest, direct response.3sThe user is rightfully frustrated. I violated their explicit working style rules:",
+      "deal_of_week_analysis)",
+      "in the component - the error is because buildingData might be null. Quick fix:",
+      "dow tab, with no dropdown, no narrative. and some bonus console log errors. WTF?!EditAcknowledged failure, committed to fixing broken code thoroughly.8sThe user is absolutely right to be furious. I said it was a \"COMPLETE, WORKING component\" and it clearly failed. Looking at the screenshot:"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "let's start the week off right!\ud83d\udea8 CRITICAL HANDOFF - LVHR/AIREA PROJECT CONTINUATION \ud83d\udea8\nUSER CONTEXT: Working on LVHR luxury highrise real estate platform with AIREA (AI Real Estate Assistant). Backend ",
+    "last_200": "lude=\"*.jsx\" src/\nOr check your router file to see what component loads at the root \"/\" path.\nThe split screen button logic would be in your main layout or App component where the UI split is handled."
+  },
+  "stats": {
+    "lines": 3519,
+    "words": 28530,
+    "code_blocks": 0
+  }
+}

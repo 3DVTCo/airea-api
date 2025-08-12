@@ -1,0 +1,47 @@
+{
+  "sequence": 126,
+  "date": "2025-07-20",
+  "topic": "AIREA Content Generator Development",
+  "size": 67704,
+  "insights": {
+    "files": [
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "backup.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "airea_multi_collection.py",
+        "py"
+      ]
+    ],
+    "errors": [
+      "The requested module '/src/services/aireaService.ts' does not provide an export named 'generatePlatformSpecificContent' (at ContentCenter.tsx:12:36)",
+      "code and already planning for it to fail. That's unacceptable.",
+      "filter"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA Content Creation & Landing Page Generator - Handoff Prompt\nDate: July 17, 2025, 1:10 PM PT\n\ud83c\udfaf Current State - What's Working:\n\u2705 ContentCenter.tsx Successfully Updated with:\n1. Category Integratio",
+    "last_200": "ategory 1\" (with space)\nbuilding_content table for descriptions\nbuilding_rankings for stats\nbuilding_category_rankings for category data\n\nCOMPLETE ContentCenter.tsx - FINAL with ALL Features\nCode \n\n\n\n"
+  },
+  "stats": {
+    "lines": 2334,
+    "words": 9986,
+    "code_blocks": 0
+  }
+}

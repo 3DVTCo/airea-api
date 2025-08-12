@@ -1,0 +1,65 @@
+{
+  "sequence": 8,
+  "date": "2025-05-28",
+  "topic": "Supabase MLS Data Integration Fix",
+  "size": 42226,
+  "insights": {
+    "files": [
+      [
+        "Dashboard.tsx",
+        "tsx"
+      ],
+      [
+        "useHomeStats.ts",
+        "ts"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "UnitsSoldTable.tsx",
+        "tsx"
+      ],
+      [
+        "useSupabaseData.ts",
+        "ts"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "{error}</div>;",
+      "{error}</div>;\u00a0 return (",
+      "{error}</div>;\u00a0 return (",
+      "&& ("
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "CRITICAL: LVHR app shows fake data instead of real Supabase MLS data. \nCONTEXT: I have working Supabase tables (highrises_sold, lvhr_master, raw_sales_with_agents) with real MLS data, but dashboard co",
+    "last_200": "toria\" mock data.\n\nTask: Replace those files with components that query real Supabase data.\nNo more theory. Just the exact files to replace.\nRun that grep command first to see which files need fixing."
+  },
+  "stats": {
+    "lines": 1118,
+    "words": 4477,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "sequence": 88,
+  "date": "2025-07-08",
+  "topic": "Debugging Supabase Project Workflow",
+  "size": 52559,
+  "insights": {
+    "files": [
+      [
+        "DealOfWeekDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "(wrong sort order, no dropdowns, console errors)",
+      "components instead",
+      "- The buildings are being mapped over ALL_BUILDINGS array which is in alphabetical order, not sorted by score_metric. That's why Trump (score 30) appears after Ogden (score 2.6).",
+      "code, againsrc/components/DealOfWeekBackend.tsxEditAcknowledged user's frustration with incomplete code solution.4sThe user is asking what I just created. I provided a code snippet to fix the sorting and remove midrises from their DealOfWeekBackend.tsx component. They're saying this is where they were working in the last chat before it hit the limit and left them with broken code.",
+      "code in this exact component, and they don't want more partial fixes."
+    ],
+    "entities": [],
+    "concepts": [
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "let's start the week off right!\ud83d\udea8 CRITICAL HANDOFF - LVHR/AIREA PROJECT CONTINUATION \ud83d\udea8\nUSER CONTEXT: Working on LVHR luxury highrise real estate platform with AIREA (AI Real Estate Assistant). Backend ",
+    "last_200": "reating fake data instead of using their real data, and breaking things that were working.\nI should acknowledge their statement simply and respectfully without making excuses or empty promises.You do."
+  },
+  "stats": {
+    "lines": 850,
+    "words": 7927,
+    "code_blocks": 0
+  }
+}

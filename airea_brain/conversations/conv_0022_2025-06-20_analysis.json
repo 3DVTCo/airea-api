@@ -1,0 +1,23 @@
+{
+  "sequence": 22,
+  "date": "2025-06-20",
+  "topic": "Dashboard Development Frustration.",
+  "size": 34,
+  "insights": {
+    "files": [],
+    "errors": [],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "neutral"
+  },
+  "preview": {
+    "first_200": "Dashboard Development Frustration.",
+    "last_200": "Dashboard Development Frustration."
+  },
+  "stats": {
+    "lines": 0,
+    "words": 3,
+    "code_blocks": 0
+  }
+}

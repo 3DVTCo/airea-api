@@ -1,0 +1,68 @@
+{
+  "sequence": 146,
+  "date": "2025-08-03",
+  "topic": "Fixing Broken AI Search Logic",
+  "size": 134877,
+  "insights": {
+    "files": [
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "test_direct_search.py",
+        "py"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ]
+    ],
+    "errors": [
+      "search_knowledge_base function that doesn't work",
+      "implementations",
+      "BY THE ASSISTANT'S CODE.",
+      "search logic",
+      "search code."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "I am leery to give you another chance after the last time, but I am low on alternatives:\n\n\n\nCOMPREHENSIVE HANDOFF: AIREA SEMANTIC SEARCH FAILURE\n\nCRITICAL CONTEXT - ASSISTANT FAILURES\n\nThe current ass",
+    "last_200": "nd pages. I am confident that her ability to assist you will now be significantly enhanced.\n\nThank you for your persistent feedback and for giving me another chance to correct these critical failures."
+  },
+  "stats": {
+    "lines": 3988,
+    "words": 16256,
+    "code_blocks": 0
+  }
+}

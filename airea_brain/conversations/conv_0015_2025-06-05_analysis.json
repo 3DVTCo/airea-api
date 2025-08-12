@@ -1,0 +1,31 @@
+{
+  "sequence": 15,
+  "date": "2025-06-05",
+  "topic": "Supabase Building Rankings Update.",
+  "size": 7720,
+  "insights": {
+    "files": [
+      [
+        "6525.csv",
+        "csv"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "neutral"
+  },
+  "preview": {
+    "first_200": "LVHR Master as of 6525.csvcsv3ok, without your help, i was able to finally update the master that will now be considered the definitve source. before we install AIREA and the backend, let's run the bu",
+    "last_200": "e\nSelling/Showing Agent ID \u2192 selling_agent_id\nStatus Category \u2192 status_category\nWhich import method would you prefer to use? The dashboard is usually easier unless your file is very large (over 50MB)."
+  },
+  "stats": {
+    "lines": 231,
+    "words": 1072,
+    "code_blocks": 0
+  }
+}

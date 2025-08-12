@@ -1,0 +1,108 @@
+{
+  "sequence": 33,
+  "date": "2025-06-22",
+  "topic": "Frustrated Technical Debugging Session.",
+  "size": 113376,
+  "insights": {
+    "files": [
+      [
+        "building_bug_context.txt",
+        "txt"
+      ],
+      [
+        "sentence_transformer_embedding_function.py",
+        "py"
+      ],
+      [
+        "BUILDINGrankingsv2.JSX",
+        "JSX"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "pip.py",
+        "py"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "ingest_all_docs.py",
+        "py"
+      ],
+      [
+        "airea_current_context.txt",
+        "txt"
+      ],
+      [
+        "airea_simple.py",
+        "py"
+      ],
+      [
+        "BUILDINGRANKINGSV2.JSX",
+        "JSX"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "airea_with_memory.py",
+        "py"
+      ],
+      [
+        "main.py",
+        "py"
+      ],
+      [
+        "supabase_helper.py",
+        "py"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "buildingrankings.jsx",
+        "jsx"
+      ],
+      [
+        "airea_text.py",
+        "py"
+      ]
+    ],
+    "errors": [
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received\"",
+      "No module named 'sentence_transformers'During handling of the above exception, another exception occurred:Traceback (most recent call last):",
+      "The sentence_transformers python package is not installed. Please install it with pip install sentence_transformers",
+      "No module named 'pyttsx3'",
+      "code. No wonder they don't trust me. Let me correct this immediately.You're right to be skeptical. I just realized I made an error - I didn't actually fix the bug in the code I gave you!"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "COMPREHENSIVE HANDOFF - LVHR BUILDING RANKINGS CRISIS\n\ud83d\udea8 CRITICAL CONTEXT FOR NEXT LLM\nPrevious assistant (me) wasted WEEKS on a simple state update bug. User is beyond frustrated. The calculation WORK",
+    "last_200": "ng\nGive her focused summaries instead of full conversations\n\nThe \"Brain Upload\" feature should process and understand, not just store. That's the difference between useful context and a dumb database."
+  },
+  "stats": {
+    "lines": 2114,
+    "words": 13970,
+    "code_blocks": 0
+  }
+}

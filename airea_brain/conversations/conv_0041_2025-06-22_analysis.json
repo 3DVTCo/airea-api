@@ -1,0 +1,59 @@
+{
+  "sequence": 41,
+  "date": "2025-06-22",
+  "topic": "AIREA Dashboard Development Progress",
+  "size": 172926,
+  "insights": {
+    "files": [
+      [
+        "supabase.js",
+        "js"
+      ],
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ],
+      [
+        "LiveSQLRunner.jsx",
+        "jsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "4.csv",
+        "csv"
+      ]
+    ],
+    "errors": [
+      "|| row['Beds Total'] === '') {",
+      "&& ",
+      "|| unit[\"Beds Total\"] === \"\") {"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "sure hope this is the last one... make sure you understand this so we can just keep going. there's one more fix we need to make on the building rankings tab we've been working on, then we can go to th",
+    "last_200": " </div>\n    </div>\n  );\n}\n\nThat's your complete handoff! Tomorrow you can update lvhr_master, verify the numbers match, and then jump straight into building the Deal of the Week component. Good night!"
+  },
+  "stats": {
+    "lines": 2874,
+    "words": 23987,
+    "code_blocks": 0
+  }
+}

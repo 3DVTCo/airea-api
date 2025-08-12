@@ -1,0 +1,116 @@
+{
+  "sequence": 138,
+  "date": "2025-07-27",
+  "topic": "Market Dashboard Repository Prep",
+  "size": 199796,
+  "insights": {
+    "files": [
+      [
+        "AdditionalFeaturesSection.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ],
+      [
+        "Deals.tsx",
+        "tsx"
+      ],
+      [
+        "HeroSection.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesRankings.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "CryptoCalculatorSection.tsx",
+        "tsx"
+      ],
+      [
+        "HomepageBuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "NotFound.tsx",
+        "tsx"
+      ],
+      [
+        "Home.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ],
+      [
+        "MarketSnapshot.tsx",
+        "tsx"
+      ],
+      [
+        "EducationalSectionsGrid.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketRankings.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "MarketErrorState.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "MarketUpdate.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "The requested module\" and multiple \"Unstoppable Domains\" related errors. The page is showing errors instead of rendering properly.",
+      "The requested module '/src/components/BuildingRankings.tsx?t=1722035625617' does not provide an export named 'default'\"",
+      "The requested module '/src/components/BuildingRankings.tsx' does not provide an export named 'default'",
+      "homepage components.5sThe user is being very clear and cautious here. They've experienced crashes and breakages during development, and they're now in a restoration/rebuilding phase. They need to restore specific homepage sections that were lost or broken, and they want to be methodical about it.",
+      "code. They're unsure how to proceed. I should take the safest possible approach - let's NOT replace anything yet. Instead, let's:",
+      "not working code?EditStrategized precise layout reconstruction using Supabase reference components.5sThe user is extremely frustrated and rightfully so. They've been very clear about what they need:",
+      "dashboard component.3sThe user is rightfully angry. I made a mistake - I replaced their DealOfTheWeek component which broke their backend dashboard. They have a backup file that can restore it. I need to be absolutely certain the commands I'm giving will fix this without causing more damage.",
+      "before I touched it."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "this prompt is a little weak, so hopefully you can help me keep going with minimum delay. also never ever assume to just write code without making sure we don't already have it. and never assume anyth",
+    "last_200": " this to:\n\nShow ONLY buildings with actual deals\nSort by DealScore (best first)\nExclude midrises\nShow correct counts\n\nShould I look for another backup or fix this component to work the way you had it?"
+  },
+  "stats": {
+    "lines": 3247,
+    "words": 25156,
+    "code_blocks": 1
+  }
+}

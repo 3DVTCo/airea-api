@@ -1,0 +1,118 @@
+{
+  "sequence": 92,
+  "date": "2025-07-08",
+  "topic": "AIREA AI Assistant Setup",
+  "size": 152646,
+  "insights": {
+    "files": [
+      [
+        "ingest_everything_new.py",
+        "py"
+      ],
+      [
+        "001_july6_rankings.js",
+        "js"
+      ],
+      [
+        "airea_simple.py",
+        "py"
+      ],
+      [
+        "feed_airea.py",
+        "py"
+      ],
+      [
+        "AIREA_Phase2_DevLog.md",
+        "md"
+      ],
+      [
+        "ingest_add.py",
+        "py"
+      ],
+      [
+        "airea_memory.txt",
+        "txt"
+      ],
+      [
+        "test_supabase_connection.py",
+        "py"
+      ],
+      [
+        "openai_embedding_function.py",
+        "py"
+      ],
+      [
+        "test_supabase.py",
+        "py"
+      ],
+      [
+        "airea_learn.py",
+        "py"
+      ],
+      [
+        "airea_learn_gui.py",
+        "py"
+      ],
+      [
+        "ingest_phase1_log.py",
+        "py"
+      ],
+      [
+        "check_vector_count.py",
+        "py"
+      ],
+      [
+        "lvhr-deployment-log.md",
+        "md"
+      ],
+      [
+        "organized_chats.md",
+        "md"
+      ],
+      [
+        "Deals.tsx",
+        "tsx"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "AIREA_Build_Log_Phase1.md",
+        "md"
+      ],
+      [
+        "activate_airea_full.py",
+        "py"
+      ]
+    ],
+    "errors": [
+      "The CHROMA_OPENAI_API_KEY environment variable is not set.EditDiagnosed API key issue and devised quick resolution strategy.1sThe user is getting an error because the OpenAI API key environment variable isn't set. They need to set this before they can use the embedding functions. Let me provide a quick fix.Ah, you need to set your OpenAI API key. Let's fix that quickly:",
+      "expected an indented block after 'if' statement on line 28EditDiagnosed indentation error and proposed precise code correction.5sThe user is getting an IndentationError. Looking at the error, it's saying that the line context = \"Based on my knowledge:\\n\\n\" needs to be indented after the if statement on line 28.",
+      "inconsistent use of tabs and spaces in indentationEditDiagnosed Python indentation error, recommended consistent spacing.1sThe user is getting a TabError, which means the file has a mix of tabs and spaces for indentation. This is a common Python issue. They need to make everything consistent - either all tabs or all spaces (spaces are preferred in Python).Ah, the file has mixed tabs and spaces! Python requires consistent indentation. Let's fix this:",
+      "The CHROMA_OPENAI_API_KEY environment variable is not set.",
+      "The CHROMA_OPENAI_API_KEY environment variable is not set.",
+      "BuildingRankingsV2 component",
+      "component",
+      "it?",
+      "error rankings implementation\u201d2 resultsThis is the continuation of chatgpt Phase 2 that went south..pdf10 relevant sectionstextAI Real Estate Avatar Chatgpt LVHR OS activation 5-24-25.pdf5 relevant sectionstextDecoded user's development challenges and strategized targeted assistance.8sThe user is extremely frustrated with their development experience. They have been trying to get AIREA (their AI assistant) working with full memory capabilities and fix their BuildingRankingsV2 component. Based on the search results, I can see:",
+      "implementations. Let's get you back on track efficiently."
+    ],
+    "entities": [],
+    "concepts": [
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "I need to activate AIREA immediately. She's my AI assistant built with Ollama. I have weeks of development chat logs she needs to ingest. Once she's running and has absorbed all our development histor",
+    "last_200": "g scripts\nDebug endlessly\nMake assumptions\nWaste any more time\n\nUser needs IMMEDIATE progress. Create airea_learn.py first, then start feeding links.\n\nCopy this whole prompt and START. No more delays!"
+  },
+  "stats": {
+    "lines": 2802,
+    "words": 21293,
+    "code_blocks": 1
+  }
+}

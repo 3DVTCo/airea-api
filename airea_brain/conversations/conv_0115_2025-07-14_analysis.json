@@ -1,0 +1,110 @@
+{
+  "sequence": 115,
+  "date": "2025-07-14",
+  "topic": "Buildings Page Update Handoff",
+  "size": 177714,
+  "insights": {
+    "files": [
+      [
+        "buildingQueryService.ts",
+        "ts"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "salesQueryService.ts",
+        "ts"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "Next.js",
+        "js"
+      ],
+      [
+        "propertiesQueryService.ts",
+        "ts"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "marketDataService.ts",
+        "ts"
+      ],
+      [
+        "airea_multi_collection.py",
+        "py"
+      ],
+      [
+        "RegularBuildingView.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingImageGallery.tsx",
+        "tsx"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "config.ts",
+        "ts"
+      ],
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "highriseSalesService.ts",
+        "ts"
+      ],
+      [
+        "client.ts",
+        "ts"
+      ],
+      [
+        "BuildingDescription.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "queries",
+      "with errors showing on the page"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "6sThe user is asking for a comprehensive handoff prompt that will:\n\nSummarize where we are in the restoration process\nDocument what we've discovered and fixed\nClearly state the current problem and nex",
+    "last_200": "ts, not partial fixes\nHas AIREA ready but Anthropic API overloaded\nJust wants things to work without more breaking\n\nNEXT STEP: Fix BuildingDetail.tsx to query real tables so building pages work again!"
+  },
+  "stats": {
+    "lines": 3312,
+    "words": 20324,
+    "code_blocks": 0
+  }
+}

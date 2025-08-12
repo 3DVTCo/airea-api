@@ -1,0 +1,23 @@
+{
+  "sequence": 11,
+  "date": "2025-05-310",
+  "topic": "untitled/pdf",
+  "size": 66,
+  "insights": {
+    "files": [],
+    "errors": [],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "neutral"
+  },
+  "preview": {
+    "first_200": "\nso i cat eve work in this project anymore?\n\n\nthis is whlvhros.pdf",
+    "last_200": "\nso i cat eve work in this project anymore?\n\n\nthis is whlvhros.pdf"
+  },
+  "stats": {
+    "lines": 4,
+    "words": 12,
+    "code_blocks": 0
+  }
+}

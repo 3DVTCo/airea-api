@@ -1,0 +1,117 @@
+{
+  "sequence": 32,
+  "date": "2025-06-22",
+  "topic": "AIREA Development Handoff Notes.",
+  "size": 367472,
+  "insights": {
+    "files": [
+      [
+        "airea_with_memory.py",
+        "py"
+      ],
+      [
+        "Retry3chunk-FJ2A54M7.js",
+        "js"
+      ],
+      [
+        "airea_with_memory_backup.py",
+        "py"
+      ],
+      [
+        "supabase_helper.py",
+        "py"
+      ],
+      [
+        "AvgPriceRankings.tsx",
+        "tsx"
+      ],
+      [
+        "content.js",
+        "js"
+      ],
+      [
+        "lvhr-deployment-log.md",
+        "md"
+      ],
+      [
+        "supabase_supabase-js.js",
+        "js"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "react-router-dom.js",
+        "js"
+      ],
+      [
+        "config.js",
+        "js"
+      ],
+      [
+        "UnitsSoldRankings.tsx",
+        "tsx"
+      ],
+      [
+        "updates_pt2.md",
+        "md"
+      ],
+      [
+        "chunk-FJ2A54M7.js",
+        "js"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "sentence_transformer_embedding_function.py",
+        "py"
+      ],
+      [
+        "5_Log.md",
+        "md"
+      ],
+      [
+        "DaysOnMarketRankings.tsx",
+        "tsx"
+      ],
+      [
+        "AIREA_Build_Log_Phase1_Final.md",
+        "md"
+      ],
+      [
+        "AIREA_Build_Log_Phase1.md",
+        "md"
+      ]
+    ],
+    "errors": [
+      "failed to parse Analysis tool resultDevised alternative strategy for file display and command execution.2sThe execution timed out. This is likely because the browser environment doesn't have access to Node.js filesystem APIs. Let me try a different approach by just displaying what would be in the file and explaining that the user needs to run the command themselves in their terminal.I apologize - the browser environment doesn't have access to your file system. You'll need to run those commands directly in your terminal.",
+      "No module named 'sentence_transformers'During handling of the above exception, another exception occurred:Traceback (most recent call last):",
+      "The sentence_transformers python package is not installed. Please install it with pip install sentence_transformers",
+      "invalid syntax",
+      "invalid syntaxEditDiagnosed syntax error and pinpointed precise code correction.5sThe user is extremely frustrated and rightfully so. They're still getting the same syntax error. Looking at what they showed me earlier, there's clearly a problem with the line - it seems like the \"except Exception as e:\" is somehow on the same line as the return statement, which is causing the syntax error.",
+      "behavior when used concurrently under the same storage key.",
+      "- you must type)",
+      "- it's not pulling active listings for Under Construction buildings and has missing data for others."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "lets start with this:cat > ~/airea/airea_handoff_20250615.md << 'EOF'\n# AIREA Development Handoff \u2014 June 15, 2025\n## Current State\n- \u2705 AIREA is ONLINE and running via python3 airea_voice_chat.py\n- \u2705 O",
+    "last_200": "a is installed\nwhich ollama\n\n# If not found, install it:\ncurl -fsSL https://ollama.com/install.sh | sh\nThen make sure you have a model:\nbashollama list\nIf no models, pull one:\nbashollama pull llama3.2"
+  },
+  "stats": {
+    "lines": 6665,
+    "words": 48136,
+    "code_blocks": 4
+  }
+}

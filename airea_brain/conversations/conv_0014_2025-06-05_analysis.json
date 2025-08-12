@@ -1,0 +1,70 @@
+{
+  "sequence": 14,
+  "date": "2025-06-05",
+  "topic": "Project Capacity Assessment.",
+  "size": 34818,
+  "insights": {
+    "files": [
+      [
+        "LVHR_Master_Clean_Combined.csv",
+        "csv"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "LVHR_Master_Clean.csv",
+        "csv"
+      ],
+      [
+        "merge_lvhr_data.py",
+        "py"
+      ],
+      [
+        "LVHR_Master_Unified_Clean.csv",
+        "csv"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "Deals.tsx",
+        "tsx"
+      ],
+      [
+        "1_1_20236_4_2025.csv",
+        "csv"
+      ],
+      [
+        "LVHR_Master_Summary.txt",
+        "txt"
+      ],
+      [
+        "112020.csv",
+        "csv"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "has this project reached its capacity?EditLooking at the extensive documentation you've shared, this project is far from reaching its capacity - in fact, you're at an exciting inflection point where t",
+    "last_200": "as)\nRun: python merge_lvhr_data.py\nIt will create LVHR_Master_Clean.csv in the same folder\n\nThis will give you the merged, cleaned master file you need for your building rankings and DOW calculations."
+  },
+  "stats": {
+    "lines": 750,
+    "words": 4118,
+    "code_blocks": 0
+  }
+}

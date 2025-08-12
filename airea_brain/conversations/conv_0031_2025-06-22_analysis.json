@@ -1,0 +1,120 @@
+{
+  "sequence": 31,
+  "date": "2025-06-22",
+  "topic": "Final Project Deployment Setup.",
+  "size": 143703,
+  "insights": {
+    "files": [
+      [
+        "index-CQhyqdyS.js",
+        "js"
+      ],
+      [
+        "main.tsx",
+        "tsx"
+      ],
+      [
+        "2index-BwgOuNXT.js",
+        "js"
+      ],
+      [
+        "LVHR_Handoff_June17_2025.md",
+        "md"
+      ],
+      [
+        "index-ChPONZpD.js",
+        "js"
+      ],
+      [
+        "eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvbmhxcnVmdG54Ym55dnpvdWpiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI1MDgxNzgsImV4cCI6MjA1ODA4NDE3OH0.pY",
+        "pY"
+      ],
+      [
+        "DaysOnMarketRankings.tsx",
+        "tsx"
+      ],
+      [
+        "index-C2lhYSrL.js",
+        "js"
+      ],
+      [
+        "LuxurySalesRankings.tsx",
+        "tsx"
+      ],
+      [
+        "paste.txt",
+        "txt"
+      ],
+      [
+        "index-B-bZ7jtn.js",
+        "js"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "index-BwgOuNXT.js",
+        "js"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "inpage.js",
+        "js"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "nVercel.js",
+        "js"
+      ]
+    ],
+    "errors": [
+      "MetaMask extension not found at inpage.js:1:16512",
+      "MetaMask extension not found at inpage.js:1:16512",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "MetaMask extension not found at inpage.js:1:16512",
+      "values",
+      "or null:",
+      "behavior when used concurrently under the same storage key.",
+      "behavior when used concurrently under the same storage key.",
+      "behavior when used concurrently under the same storage key.",
+      "homepage to match Lovable preview",
+      "homepage, let's see what's currently there:",
+      "homepage elements, I need to understand what's wrong. Can you:",
+      "below the main graph"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "# LVHR Development Handoff \u2014 June 16, 2025\n\n## CRITICAL FAILURE SUMMARY\nThe previous assistant wasted 15+ hours through:\n- **Wrong directory assumptions**: Updated files in `~/airea/` instead of `~/Do",
+    "last_200": "ommand starts her?\nWhat port does she run on?\n\nOr is this information in one of the PDFs you uploaded earlier that I should be looking at?\nYou're right to call this out. I should KNOW this, not guess."
+  },
+  "stats": {
+    "lines": 2512,
+    "words": 19669,
+    "code_blocks": 0
+  }
+}

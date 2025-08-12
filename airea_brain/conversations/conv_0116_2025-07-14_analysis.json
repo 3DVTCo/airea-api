@@ -1,0 +1,86 @@
+{
+  "sequence": 116,
+  "date": "2025-07-14",
+  "topic": "Buildings.tsx Category Query Fix",
+  "size": 47262,
+  "insights": {
+    "files": [
+      [
+        "MainNav.tsx",
+        "tsx"
+      ],
+      [
+        "BuyerCTA.tsx",
+        "tsx"
+      ],
+      [
+        "ttys011.txt",
+        "txt"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "ttys005.txt",
+        "txt"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "MobileNav.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "ComparableProperties.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "ReplacementBuildingDetail.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "User attempted to access non-existent route: /building/TheModglen",
+      "User attempted to access non-existent route: /building/WaldorfAstoria"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "COMPREHENSIVE SUPERDUPER HANDOFF PROMPT - LVHR PROJECT STATUS\nCURRENT VICTORY \ud83c\udf89\nAfter 25+ attempts, Buildings.tsx FINALLY shows all categories including F1 Route, Lake Las Vegas, and Downtown LV! The ",
+    "last_200": "rative generation needs improvement\n\ud83d\udd1c Penthouses category still needs fixing\n\nNEXT STEPS: Fix market share calculation first, then update generateNarrative function with the improved version provided."
+  },
+  "stats": {
+    "lines": 739,
+    "words": 5999,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "sequence": 94,
+  "date": "2025-07-08",
+  "topic": "AIREA BuildingRankingsV2 Debugging",
+  "size": 85374,
+  "insights": {
+    "files": [
+      [
+        "7c6b1e136f3f0a55c295.js",
+        "js"
+      ],
+      [
+        "c5d3b07f7da3af257593.js",
+        "js"
+      ],
+      [
+        "airea_learn.py",
+        "py"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "Next.js",
+        "js"
+      ],
+      [
+        "test_retrieval.py",
+        "py"
+      ],
+      [
+        "yourfile.txt",
+        "txt"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "index-dajpnrmx.js",
+        "js"
+      ],
+      [
+        "client.py",
+        "py"
+      ],
+      [
+        "airea_clipboard.py",
+        "py"
+      ],
+      [
+        "javascriptindex-DajPNrMX.js",
+        "js"
+      ],
+      [
+        "conv_0001_2025-07-06_analysis.js",
+        "js"
+      ],
+      [
+        "conv_0003_2025-05-24_analysis.js",
+        "js"
+      ],
+      [
+        "rust.py",
+        "py"
+      ],
+      [
+        "conv_0002_2025-07-08_analysis.js",
+        "js"
+      ],
+      [
+        "conv_0004_2025-05-25_analysis.js",
+        "js"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "bulk_ingest.py",
+        "py"
+      ]
+    ],
+    "errors": [
+      "Collection [conversations] does not existsEditInvestigated missing ChromaDB collection and potential naming discrepancy.2sThe error shows that the 'conversations' collection doesn't exist. We need to check what collections actually exist in the ChromaDB. The bulk_ingest.py status showed these collections existed, but maybe they're named differently or in a different database.The collection name doesn't exist. Let's check what collections actually exist in your ChromaDB:",
+      "cat is not defined at index-DajPNrMX.js:285:53663",
+      "cat is not defined at index-DajPNrMX.js:285:53663",
+      "cat is not defined at index-DajPNrMX.js:285:53663\"",
+      "\"cat is not defined at index-DajPNrMX.js:285:53663\" in MiniMarketVisualization.tsx",
+      "- you just accidentally added \"airea %\" in front of your command. The correct command should work fine!"
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "property_management",
+      "offer_negotiation",
+      "bitcoin_conference",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA CRITICAL HANDOFF - COMPLETE CONTEXT\nQuick Summary - Where We Are\n\n17 conversations uploaded (337K+ characters) to AIREA's brain\nFound the error: \"cat is not defined at index-DajPNrMX.js:285:5366",
+    "last_200": "mbering past solutions and understanding the codebase evolution.\n\nThis should allow anyone (including me in a fresh chat) to understand exactly where things stand and continue helping you effectively!"
+  },
+  "stats": {
+    "lines": 1265,
+    "words": 11356,
+    "code_blocks": 2
+  }
+}

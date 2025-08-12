@@ -1,0 +1,95 @@
+{
+  "sequence": 109,
+  "date": "2025-07-10",
+  "topic": "LVHR Deal of Week Feature Fixes",
+  "size": 176131,
+  "insights": {
+    "files": [
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "update.csv",
+        "csv"
+      ],
+      [
+        "useBuildingData.ts",
+        "ts"
+      ],
+      [
+        "DealOfWeekDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ],
+      [
+        "buildings.tsx",
+        "tsx"
+      ],
+      [
+        "comparableBuildingsService.ts",
+        "ts"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisChart.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ],
+      [
+        "buildingQueryService.ts",
+        "ts"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "the \"Get Deal of the Week\" SQL in our conversation history. While you've mentioned running it several times, the actual SQL query text wasn't included in what you've shared with me today.",
+      "graph)",
+      "by incorrect column names"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "i've got additional code we're going to need for some of our upcoming fixes, so before jumping the gun to write redundant code, make sure we don't already have it. got it? confirm you understand where",
+    "last_200": "p3 (before Deal of Week fixes)\nBuildings.tsx.basic-backup (current placeholder version)\n\n\nThis reflects what we actually accomplished today. Ready for the next session to tackle buildings restoration!"
+  },
+  "stats": {
+    "lines": 3185,
+    "words": 24322,
+    "code_blocks": 0
+  }
+}

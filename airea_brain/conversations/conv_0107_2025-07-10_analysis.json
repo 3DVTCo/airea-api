@@ -1,0 +1,23 @@
+{
+  "sequence": 107,
+  "date": "2025-07-10",
+  "topic": "LVHR Dashboard Component Installation",
+  "size": 37,
+  "insights": {
+    "files": [],
+    "errors": [],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "neutral"
+  },
+  "preview": {
+    "first_200": "LVHR Dashboard Component Installation",
+    "last_200": "LVHR Dashboard Component Installation"
+  },
+  "stats": {
+    "lines": 0,
+    "words": 4,
+    "code_blocks": 0
+  }
+}

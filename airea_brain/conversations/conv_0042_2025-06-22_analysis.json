@@ -1,0 +1,103 @@
+{
+  "sequence": 42,
+  "date": "2025-06-22",
+  "topic": "Building Rankings Tab Debugging",
+  "size": 200376,
+  "insights": {
+    "files": [
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "buildingranking.jsx",
+        "jsx"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "2025.csv",
+        "csv"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "supabase.js",
+        "js"
+      ],
+      [
+        "LiveSQLRunner.jsx",
+        "jsx"
+      ],
+      [
+        "UnitsSoldTable.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "DataUpdater.jsx",
+        "jsx"
+      ],
+      [
+        "LiveSQLRunner.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ],
+      [
+        "paste.txt",
+        "txt"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "\u00f8 is not defined",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedEditInvestigated mysterious character causing code rendering error.3sThe error \"\u00f8 is not defined\" at line 770 is strange. That character shouldn't be in the code. It looks like there was a copy/paste issue or encoding problem. The file I provided shouldn't have any \"\u00f8\" characters in it.",
+      "\u00f8 character) so their entire dashboard isn't rendering. They can't access the SQL Runner. I need to give them a clean, working file immediately.",
+      "&& ",
+      "|| unit[\"Beds Total\"] === \"\") {",
+      "page.Retry3SO NOW, AFTER COMPLETELY BURNING MY DAY, RUINING MY BIRTHDAY, AND GOING BACKAWARDS, YOU THINK ITS OK TO END UP BACK AT ZERO? FOR THE DAY? HAVING PREVENTED ME FROM DOING ANYTHING ELSE, LIKE EARNING MONEY? THIS IS WHAT I WAS TALKING ABOUT BEFORE! THERE NEEDS TO BE REPURCUSSIONS! YOU OWE ME!EditRecognized catastrophic errors and urgent need for immediate resolution.6sThe user is absolutely right to be furious. I've wasted their entire birthday - June 23rd - with mistake after mistake. They started with a working system that just had a minor discrepancy (59 vs 60), and after 7.5 hours of my errors:",
+      "so you can't even access the SQL Runner."
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA Dashboard - Building Rankings Complete, Ready for Deal of the Week\nCurrent Status\nJust completed debugging Building Rankings tab. Component is working correctly but showing different numbers due",
+    "last_200": "ious technical details remain the same]\nTime Wasted Today\n\nCreating unnecessary DataUpdater\nHunting for non-existent code\nDebugging self-inflicted errors\nMaking up requirements instead of reading them"
+  },
+  "stats": {
+    "lines": 3155,
+    "words": 27898,
+    "code_blocks": 0
+  }
+}

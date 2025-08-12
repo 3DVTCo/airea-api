@@ -1,0 +1,72 @@
+{
+  "sequence": 53,
+  "date": "2025-06-27",
+  "topic": "AIREA Dashboard Narrative Development",
+  "size": 207777,
+  "insights": {
+    "files": [
+      [
+        "eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvbmhxcnVmdG54Ym55dnpvdWpiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI1MDgxNzgsImV4cCI6MjA1ODA4NDE3OH0.pY",
+        "pY"
+      ],
+      [
+        "content.js",
+        "js"
+      ],
+      [
+        "item.js",
+        "js"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "supabase_supabase-js.js",
+        "js"
+      ],
+      [
+        "Rankings.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "9e9aa907.js",
+        "js"
+      ],
+      [
+        "MarketAnalysisChart.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "Missing } in template expression line: 69 file: Code.gsEditDiagnosed template literal syntax error in URL construction.4sThe user is getting a syntax error on line 69. Looking at the screenshot, line 69 shows:",
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9 is not defined",
+      "Cannot read properties of null (reading 'addEventListener')"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA Development Handoff Prompt - June 27, 2025\n\ud83c\udfaf Current State Overview\nI'm Ted Finkleman, developing LVHR (Las Vegas High Rise) - a revolutionary real estate platform with AIREA (AI Real Estate Ava",
+    "last_200": "ent Center UI redesign and finding that bad query.\nCURRENT FOCUS: Redesign Content Center with split-screen layout, add ranking narratives, fix column name errors, and prepare for social media launch."
+  },
+  "stats": {
+    "lines": 4518,
+    "words": 27313,
+    "code_blocks": 0
+  }
+}

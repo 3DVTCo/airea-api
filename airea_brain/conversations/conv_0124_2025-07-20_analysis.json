@@ -1,0 +1,121 @@
+{
+  "sequence": 124,
+  "date": "2025-07-20",
+  "topic": "Homepage Graph Debug Mission",
+  "size": 211456,
+  "insights": {
+    "files": [
+      [
+        "saleDataExtractor.ts",
+        "ts"
+      ],
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ],
+      [
+        "marketData.ts",
+        "ts"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "mockData.ts",
+        "ts"
+      ],
+      [
+        "dataProcessors.ts",
+        "ts"
+      ],
+      [
+        "salesQueryService.ts",
+        "ts"
+      ],
+      [
+        "FileUploader.tsx",
+        "tsx"
+      ],
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ],
+      [
+        "chartUtils.ts",
+        "ts"
+      ],
+      [
+        "MarketSnapshot.tsx",
+        "tsx"
+      ],
+      [
+        "dataDebugger.ts",
+        "ts"
+      ],
+      [
+        "PropertyTypeToggle.tsx",
+        "tsx"
+      ],
+      [
+        "ExcelUploader.tsx",
+        "tsx"
+      ],
+      [
+        "highriseSalesService.ts",
+        "ts"
+      ],
+      [
+        "UploadStatusDisplay.tsx",
+        "tsx"
+      ],
+      [
+        "timeIntervalUtils.ts",
+        "ts"
+      ],
+      [
+        "supabase.ts",
+        "ts"
+      ],
+      [
+        "client.ts",
+        "ts"
+      ],
+      [
+        "DataSourceManager.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "The requested module './src/services/market-data/marketDataService.ts?t=1752700758832' does not provide an export named 'getMarketStatistics'\"",
+      "\u00a0 Failed to scan for dependencies from entries:",
+      "salePrice is not defined\"",
+      "The requested module '/src/services/market-data/marketDataService.ts' does not provide an export named 'saveAsMarketData' (at dataProcessors.ts:4:10)EditDiagnosed missing export and proposed solution for service function.5sThe user is getting an error that saveAsMarketData is not exported from the marketDataService.ts file. Looking at the file they pasted from the previous chat, I don't see a saveAsMarketData function in there. But earlier in our conversation, we had added this function.",
+      "&& item[\"2024 Price\"] === undefined)) {",
+      "&& item[\"2024 Price\"] === undefined)) {EditUnraveled discrepancy between two market data fetch functions.4sThe user found that MarketAnalysisChart is importing fetchMarketData from \"./marketData\" not from the marketDataService.ts file we were looking at. So there are two different fetchMarketData functions:",
+      "&& item[\"2024 Price\"] === undefined)) {",
+      "behavior when used concurrently undepasted3here is the console log:EditDecoded price data discrepancy in sales visualization.12sPerfect! Now I can see what's happening. Looking at the console logs:",
+      "for months",
+      "by subsequent changes. I need to:",
+      "implementations.",
+      "version. I should be direct and confirm that yes, this appears to be the working code they need.YES, you've found the working version! You're absolutely right - this IS the fix.",
+      "state"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "ULTIMATE COMPREHENSIVE HANDOFF PROMPT - LVHR FINAL DEVELOPMENT PHASE\n\ud83c\udfaf CRITICAL CONTEXT - READ FIRST\nYou are helping complete the LVHR (Las Vegas High-Rise) real estate platform. After months of devel",
+    "last_200": "D: Should be hours, not months\nWhen user provides the chat logs, IMMEDIATELY extract working code and provide COMPLETE file replacements. NO DEBUGGING. NO INCREMENTAL FIXES. COMPLETE RESTORATION ONLY."
+  },
+  "stats": {
+    "lines": 3772,
+    "words": 28305,
+    "code_blocks": 0
+  }
+}

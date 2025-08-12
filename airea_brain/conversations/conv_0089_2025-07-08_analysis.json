@@ -1,0 +1,53 @@
+{
+  "sequence": 89,
+  "date": "2025-07-08",
+  "topic": "Debugging Webapp Ranking Queries",
+  "size": 41239,
+  "insights": {
+    "files": [
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "useBuildingRankings.ts",
+        "ts"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "web tabs.6sThe user is frustrated with their web app development. They had two tabs working (building rankings and deal of the week) but after making some tweaks, both are now broken:",
+      "things",
+      "SQL columns table deal_score\u201d2 resultsAI Real Estate Avatar Chatgpt LVHR OS activation 5-24-25.pdf5 relevant sectionstextThis is the continuation of chatgpt Phase 2 that went south..pdf5 relevant sectionstextDiagnosing data inconsistencies in user's webapp tables3sThe user is frustrated because their building rankings table and deal of the week tab are broken after recent modifications. They mentioned the core issue is that I've been \"not verifying what we talk about conversationally and the actual column names in my tables.\"",
+      "building rankings and deal of the week tabs. I need to:",
+      "queries"
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "claude, I'm pretty frustrated. I had my webapp working pretty good, and have been chasing bugs for a while now, mostly from your not verifying what we talk about conversationally and the actual column",
+    "last_200": "ing else - UI is working perfectly\n\nNote: Previous chat hit length limits trying to paste code. Need to see just the Supabase query section.\n\nStart a new chat with that and we'll get it fixed quickly!"
+  },
+  "stats": {
+    "lines": 492,
+    "words": 6143,
+    "code_blocks": 0
+  }
+}

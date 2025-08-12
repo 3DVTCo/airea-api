@@ -1,0 +1,115 @@
+{
+  "sequence": 96,
+  "date": "2025-07-09",
+  "topic": "Restoring BuildingRankingsV2.jsx Code",
+  "size": 156705,
+  "insights": {
+    "files": [
+      [
+        "LuxurySalesRankings.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "AvgPriceRankings.tsx",
+        "tsx"
+      ],
+      [
+        "Contact.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ],
+      [
+        "MarketUpdatesFeed.tsx",
+        "tsx"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "Buyers.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisChart.tsx",
+        "tsx"
+      ],
+      [
+        "NotFound.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "utils.ts",
+        "ts"
+      ],
+      [
+        "config.ts",
+        "ts"
+      ],
+      [
+        "supabase_supabase-js.js",
+        "js"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "paste-2.txt",
+        "txt"
+      ],
+      [
+        "EducationalResourcesSection.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "The authtoken you specified does not look like a proper ngrok tunnel authtoken.",
+      "&& item[\"2024 Price\"] === undefined)) {",
+      "DealOfTheWeek.jsx that needs the same fixes",
+      "BuildingRankings. Where is the dashboard importing from?Retry3this is part of what happened yesterday.  getting BuildingRankings.jsx confused with BuildingRankingsV2.jsx. we were using V2 and somehow the other llm got these confused too. the V2 is the one that was created after the BuildingRankings.jsx, right? you need to know which one we were using, which one is fixed and working with the latest fixes from the handoff. nowEditUntangled BuildingRankings confusion, identified correct component version.5sThe user is right - there was confusion between BuildingRankings.jsx and BuildingRankingsV2.jsx. Looking at the handoff document:",
+      "BuildingRankings component.",
+      "query is coming from!Retry3nothing here:",
+      "BuildingRankings"
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA Dashboard - Complete Technical Handoff for Deal of the Week\nProject Context\nLVHR real estate app with AIREA AI assistant. Just completed BuildingRankingsV2.jsx after 8+ hours fixing data quality",
+    "last_200": " actual_close_date_parsed\nProper \"Four Seasons Private Residence Las Vegas\" naming\nAll ~750 lines of working code\n\nThis is the exact version that was working perfectly before the future chat broke it!"
+  },
+  "stats": {
+    "lines": 2632,
+    "words": 20301,
+    "code_blocks": 0
+  }
+}

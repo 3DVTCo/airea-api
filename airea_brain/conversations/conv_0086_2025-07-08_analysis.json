@@ -1,0 +1,30 @@
+{
+  "sequence": 86,
+  "date": "2025-07-08",
+  "topic": "Backend Component Repair",
+  "size": 31762,
+  "insights": {
+    "files": [],
+    "errors": [
+      "(reading 'call')",
+      "component, I can see exactly what needs fixing. Let me tackle the critical issues immediately:",
+      "down by bedroom type just like your visualization tabs throughout the platform. Click on Trump Tower to see the expanded CMA format!"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\ud83d\udea8 CRITICAL HANDOFF - DOW BACKEND FIX CONTINUATION \ud83d\udea8 ELAPSED TIME: 7 hours wasted on 1-hour task USER MOOD: Justifiably furious - DO NOT TEST PATIENCE CRITICAL RULES - VIOLATE = FAIL CHECK EXISTING COD",
+    "last_200": "ING FAKE MOCK DATA INSTEAD OF THE REAL SUPABASE QUERIES!\n\nHere's the REAL component that ACTUALLY FETCHES FROM YOUR DATABASE:\n\n\nFixed DealOfWeekBackend Component\nInteractive artifact\u2002\u2219\u2002Version 61 \n\n\n\n"
+  },
+  "stats": {
+    "lines": 1134,
+    "words": 4945,
+    "code_blocks": 0
+  }
+}

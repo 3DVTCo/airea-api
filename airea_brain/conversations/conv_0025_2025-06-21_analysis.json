@@ -1,0 +1,28 @@
+{
+  "sequence": 25,
+  "date": "2025-06-21",
+  "topic": "Dashboard Handoff Frustration",
+  "size": 99,
+  "insights": {
+    "files": [
+      [
+        "airea_bulk_ingest.py",
+        "py"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "neutral"
+  },
+  "preview": {
+    "first_200": "python3 airea_bulk_ingest.py ingest \"Dashboard Handoff Frustration\" \"2025-06-21\" platform_knowledge",
+    "last_200": "python3 airea_bulk_ingest.py ingest \"Dashboard Handoff Frustration\" \"2025-06-21\" platform_knowledge"
+  },
+  "stats": {
+    "lines": 0,
+    "words": 8,
+    "code_blocks": 0
+  }
+}

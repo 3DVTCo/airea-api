@@ -1,0 +1,39 @@
+{
+  "sequence": 77,
+  "date": "2025-07-05",
+  "topic": "DOW Tab Development Next Steps",
+  "size": 20143,
+  "insights": {
+    "files": [
+      [
+        "paste-2.txt",
+        "txt"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "in backend dashboard",
+      "Content Tab"
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Building Rankings Status: \u2705 COMPLETE\n\nYour building_rankings table HAS the July 1 rankings already\nSignature: 32.91, Palms Place: 15.50, etc. - these ARE your current rankings\nThe SQL you found with d",
+    "last_200": "mponents/DealOfTheWeek.jsx\nOr if you're already in your project root:\nbashcd src/components/DealOfTheWeek.jsx\nThe handoff mentioned this file \"needs fixes\" and should be wired to the dow_weekly table."
+  },
+  "stats": {
+    "lines": 301,
+    "words": 3195,
+    "code_blocks": 0
+  }
+}

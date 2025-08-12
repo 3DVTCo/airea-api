@@ -1,0 +1,48 @@
+{
+  "sequence": 122,
+  "date": "2025-07-15",
+  "topic": "Debugging Handoff Request",
+  "size": 94028,
+  "insights": {
+    "files": [
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "DealOfWeekDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "dealsbyBuilding is not defined\" errors. It looks like there's a scope issue where dealsbyBuilding is not accessible where it's being used.",
+      "any of this in my DealOfTheWeek tscconst { data: deals, isLoading, error } = useQuery({ queryKey: ['dealOfWeek'],EditInvestigated previous conversation to locate correct code structure.2sThe user can't find the useQuery pattern in their DealOfTheWeek.tsx file. Looking back at the conversation, I see they had a different structure. Let me look for what their actual code structure was.",
+      "data",
+      "variable.7sThe user is showing me their code and they can't see what needs to be changed. Looking at the code, I can see:",
+      "down by type (Beds Total), which is where we'll get the data for that section. so for now, we'll just leave those as zero's, and move on to the content center and come back for those after checking a few more things off the list. do we have space here, or do I need a comprehensive handoff prompt to carry on with this in the next chat?EditStrategized project progress and prepared comprehensive handoff prompt.7sThe user is saying:"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Screenshot 20250715 at 12.02.34\u202fPM 2.png\n\nCOMPREHENSIVE HANDOFF PROMPT - BUILDING RANKINGS NARRATIVE FIX CURRENT VICTORY \ud83c\udf89 Just recovered the FULL 898-line BuildingRankingsV2.jsx from Time Machine bac",
+    "last_200": "eWeek.tsx\nBuilding Rankings: src/components/BuildingRankingsV2.jsx\nSupabase import: import { supabase } from '@/lib/supabase';\n\nUser is frustrated after hours of debugging - BE EFFICIENT in next chat!"
+  },
+  "stats": {
+    "lines": 1757,
+    "words": 14018,
+    "code_blocks": 0
+  }
+}

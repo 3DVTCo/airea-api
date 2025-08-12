@@ -1,0 +1,70 @@
+{
+  "sequence": 98,
+  "date": "2025-07-09",
+  "topic": "Pasted Copy Details",
+  "size": 192804,
+  "insights": {
+    "files": [
+      [
+        "7925.csv",
+        "csv"
+      ],
+      [
+        "paste-2.txt",
+        "txt"
+      ],
+      [
+        "BuildingRankingsV2-broken.jsx",
+        "jsx"
+      ],
+      [
+        "config.ts",
+        "ts"
+      ],
+      [
+        "Node.js",
+        "js"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2-working.jsx",
+        "jsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "&&",
+      "BuildingRankingsV2 component.8sThe user has pasted a document that contains a conversation about restoring a BuildingRankingsV2 component to a working state. The document shows that they had a working version that got broken in a later chat, and they want to restore it. The document includes:",
+      "after it was working properly. The comprehensive recovery prompt you've put together is excellent - it clearly documents:",
+      "state again.Retry3yes, and this should help too. although, this was from a couple of weeks ago, so there are likely some tweaks and refinements since then, which is probably what helped you break it. so, where do we start?EditDiagnosed potential issues and planned careful recovery strategy.3sThe user is saying they have a recovery prompt from a couple weeks ago, but there have been tweaks and refinements since then - which might be what led to things getting broken. They want to know where to start.",
+      "file context.4sIt seems like the files aren't in the current conversation context. The user mentioned they have a recovery prompt from a couple weeks ago and that things have been broken since then. I should ask them to either:",
+      "BuildingRankingsV2.jsx file:"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "well, this was one of the last chats where I had my building rankings working properly, with all the correct buildings and ranks and dropdowns, before you broke it again in a later chat. So, I need to",
+    "last_200": "ve listings. Everything works - the issue was always the data/SQL, never the component code.\nREMEMBER: The code fetches what's in the database. If wrong buildings show, fix the database, not the code."
+  },
+  "stats": {
+    "lines": 3702,
+    "words": 27357,
+    "code_blocks": 0
+  }
+}

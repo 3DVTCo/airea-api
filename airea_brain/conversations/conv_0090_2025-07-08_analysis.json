@@ -1,0 +1,34 @@
+{
+  "sequence": 90,
+  "date": "2025-07-08",
+  "topic": "Project Knowledge Review",
+  "size": 2029,
+  "insights": {
+    "files": [
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "Deals.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "can you see the project knowledge I attached?EditYes, I can see both documents you attached - they contain extensive information about AIREA's development journey and your LVHR platform vision. Let me",
+    "last_200": "ct, complete, and verify each step works before moving to the next.\nWhere would you like to start? The technical fixes to get your dashboard running, or jump straight into the bigger picture planning?"
+  },
+  "stats": {
+    "lines": 36,
+    "words": 297,
+    "code_blocks": 0
+  }
+}

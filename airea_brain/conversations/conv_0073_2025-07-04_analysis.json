@@ -1,0 +1,79 @@
+{
+  "sequence": 73,
+  "date": "2025-07-04",
+  "topic": "Building Rankings Formula Search",
+  "size": 128975,
+  "insights": {
+    "files": [
+      [
+        "Next.js",
+        "js"
+      ],
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "index-DS8tHYvZ.js",
+        "js"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "paste.txt",
+        "txt"
+      ],
+      [
+        "agent_activity_calc.py",
+        "py"
+      ],
+      [
+        "LiveSQLRunner.tsx",
+        "tsx"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "down in detail in this chat, but that these may be saved in logs, sheets, or PDFs.",
+      "down in detail in the documents I found, but were referenced as being in these specific PDF files:"
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "do you have the actual building rankings formula available? perhaps in the project knowledge documents?EditSearching project knowledge for building rankings formula2sThe user is asking about a \"buildi",
+    "last_200": "ing pattern we found:\nNew Construction: Base 10 + adjustments (Cello 0.41, Midtown 0.37, Four Seasons 0.20)\nBut even without that, this handoff would allow immediate continuation. Great documentation!"
+  },
+  "stats": {
+    "lines": 2422,
+    "words": 17822,
+    "code_blocks": 0
+  }
+}

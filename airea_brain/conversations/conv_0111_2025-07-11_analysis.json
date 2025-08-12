@@ -1,0 +1,47 @@
+{
+  "sequence": 111,
+  "date": "2025-07-11",
+  "topic": "Real Estate Application Access Strategy",
+  "size": 12322,
+  "insights": {
+    "files": [
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "javascriptindex-DajPNrMX.js",
+        "js"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "cat is not defined",
+      "and how you fix them."
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Comprehensive Handoff Prompt for Next Chat:\nCRITICAL: RESTORE BUILDINGS PAGE AND INDIVIDUAL BUILDING PAGES - DO NOT WRITE NEW CODE\n\n## Current State vs What Was Built:\n\n### Buildings Page (src/pages/B",
+    "last_200": "h successful restoration you do now is training data for AIREA to do it herself next time. She needs to learn not just what the code is, but the patterns of how things get broken and how you fix them."
+  },
+  "stats": {
+    "lines": 193,
+    "words": 1876,
+    "code_blocks": 0
+  }
+}

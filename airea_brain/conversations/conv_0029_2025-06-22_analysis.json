@@ -1,0 +1,118 @@
+{
+  "sequence": 29,
+  "date": "2025-06-22",
+  "topic": "BuildingRankings.jsx Code Handoff.",
+  "size": 197669,
+  "insights": {
+    "files": [
+      [
+        "LuxurySalesRankings.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "AvgPriceRankings.tsx",
+        "tsx"
+      ],
+      [
+        "node-entry.js",
+        "js"
+      ],
+      [
+        "index-C0dkmJMr.js",
+        "js"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "Next.js",
+        "js"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "browser-D9AKB6DY.js",
+        "js"
+      ],
+      [
+        "Deals.tsx",
+        "tsx"
+      ],
+      [
+        "index-CQ-E4XNa.js",
+        "js"
+      ],
+      [
+        "index-Bafh6_by.js",
+        "js"
+      ],
+      [
+        "UnitsSoldRankings.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "MarketUpdate.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV3.tsx",
+        "tsx"
+      ],
+      [
+        "Sellers.tsx",
+        "tsx"
+      ],
+      [
+        "Retrybuilding_rankings_rows.csv",
+        "csv"
+      ]
+    ],
+    "errors": [
+      "unknown or unexpected option: --no-cache",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedEditDiagnosed building data discrepancy and mapped troubleshooting strategy.7sThe user is seeing only 28 buildings instead of 29, and there are still some errors in the console:",
+      "failed to parse Analysis tool resultPivoted to simpler method after execution timeout.1sThe execution timed out. Let me try a simpler approach.Let me try a simpler approach:Analyzed dataView analysisjavascript// Read the CSV file",
+      "y.toFixed is not a function at index-Bafh6_by.js:428:26320 at Array.map (<anonymous>) at L0 (index-Bafh6_by.js:428:26007) at QS (index-Bafh6_by.js:38:17018) at Pb (index-Bafh6_by.js:40:3139) at cI (index-Bafh6_by.js:40:44833) at sI (index-Bafh6_by.js:40:39790) at A7 (index-Bafh6_by.js:40:39718) at Gm (index-Bafh6_by.js:40:39570) at Ub (index-Bafh6_by.js:40:35934) at nI (index-Bafh6_by.js:40:34883) at S (index-Bafh6_by.js:25:1563) at j (index-Bafh6_by.js:25:1923) at d (main.16445055.js:8:174776) at f (main.16445055.js:8:174954) at n (main.16445055.js:8:175313)",
+      "behavior when used concurrently under the same storage key.",
+      "one).",
+      "file with the working one.Retry3do we need to back anything up before overwriting it? and btw, this is the problem weve been havin gfrom the beginning -  not getting the vercel to deploy the github repo, which is what looks like is happening, to meEditAnalyzed backup needs and Vercel deployment discrepancies.6sThe user makes two good points:",
+      "cache/connection issues.",
+      "for this project.",
+      "project link"
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "lvhr-handoff-june-17.md132 linesmd3let me know if this is sufficient to pick up where the last chat left offEditDecoded deployment issue and prepared targeted troubleshooting strategy.7sThe user has p",
+    "last_200": "ommand starts her?\nWhat port does she run on?\n\nOr is this information in one of the PDFs you uploaded earlier that I should be looking at?\nYou're right to call this out. I should KNOW this, not guess."
+  },
+  "stats": {
+    "lines": 3500,
+    "words": 24395,
+    "code_blocks": 0
+  }
+}

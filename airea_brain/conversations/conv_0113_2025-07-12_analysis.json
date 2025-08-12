@@ -1,0 +1,110 @@
+{
+  "sequence": 113,
+  "date": "2025-07-12",
+  "topic": "Vite Webapp Access via ngrok",
+  "size": 161800,
+  "insights": {
+    "files": [
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ],
+      [
+        "Retrychunk-FJ2A54M7.js",
+        "js"
+      ],
+      [
+        "paste.txt",
+        "txt"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "buildingCategoriesService.ts",
+        "ts"
+      ],
+      [
+        "supabase.ts",
+        "ts"
+      ],
+      [
+        "useSupabaseData.ts",
+        "ts"
+      ],
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "config.ts",
+        "ts"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "buildingQueryService.ts",
+        "ts"
+      ],
+      [
+        "propertiesQueryService.ts",
+        "ts"
+      ],
+      [
+        "mlsDataProcessor.ts",
+        "ts"
+      ],
+      [
+        "supabase_supabase-js.js",
+        "js"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "marketData.ts",
+        "ts"
+      ],
+      [
+        "highriseSalesService.ts",
+        "ts"
+      ],
+      [
+        "buildingRankingsService.ts",
+        "ts"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "or sabotaged code to production. They have several backup files with names like \"backup-sabotaged\" which is concerning. They want to review the changes before committing to make sure nothing harmful gets deployed. This is a very sensible approach.",
+      "code",
+      "- it's running 5-day-old code"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "6sThe user is asking for a comprehensive handoff prompt that will:\n\nSummarize where we are in the restoration process\nDocument what we've discovered and fixed\nClearly state the current problem and nex",
+    "last_200": "tion while we fix the Buildings page?\n\nOnce she's up and running with all the context, she'll know exactly what buildings belong where, what's fake vs real, and can help prevent these circular issues."
+  },
+  "stats": {
+    "lines": 2829,
+    "words": 21936,
+    "code_blocks": 0
+  }
+}

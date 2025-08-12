@@ -1,0 +1,52 @@
+{
+  "sequence": 127,
+  "date": "2025-07-20",
+  "topic": "Debugging Database Code Handoff",
+  "size": 47747,
+  "insights": {
+    "files": [
+      [
+        "config.ts",
+        "ts"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "Next.js",
+        "js"
+      ],
+      [
+        "airea_multi_collection.py",
+        "py"
+      ]
+    ],
+    "errors": [
+      "code expecting failures",
+      "code AGAIN. I'm sorry. Let me find and fix the syntax error in line 336.",
+      "in a different way. Let me think about what line 336 could be...",
+      "code multiple times",
+      "syntax"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA Content Creation & Landing Page Generator - Handoff Prompt\nDate: July 17, 2025, 1:10 PM PT\n\ud83c\udfaf Current State - What's Working:\n\u2705 ContentCenter.tsx Successfully Updated with:\n1. Category Integratio",
+    "last_200": "eting materials.\n\nTO NEXT ASSISTANT: The user is rightfully furious. They've been sabotaged repeatedly. Check EVERYTHING before writing code. Their time is money. Make it work PROPERLY the FIRST time."
+  },
+  "stats": {
+    "lines": 763,
+    "words": 7337,
+    "code_blocks": 0
+  }
+}

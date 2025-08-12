@@ -1,0 +1,55 @@
+{
+  "sequence": 69,
+  "date": "2025-07-03",
+  "topic": "TypeScript Syntax Error in React Component",
+  "size": 35661,
+  "insights": {
+    "files": [
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "9e9aa907.js",
+        "js"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "Identifier 'regenerateRankingNarrative' has already been declared (at ContentCenter.tsx:881:11)Understand this error main.9e9aa907.js:10 [Unstoppable Domains] Adding event listener getPreferencesResponse main.9e9aa907.js:10 [Unstoppable Domains] Adding event listener getPreferencesResponse contents.77d90920.js:139 [LaunchDarkly] LaunchDarkly client initialized contents.77d90920.js:139 [LaunchDarkly] Opening stream connection to https://clientstream.launchdarkly.com/eval/625f1e15ad7e181562323d2a/eyJraW5kIjoidXNlciIsImtleSI6Imphc3Blci1hbm9ueW1vdXMifQ 2main.9e9aa907.js:10 [Unstoppable Domains] Removing event listener getPreferencesResponse main.9e9aa907.js:10 [Unstoppable Domains] App connections disabled contents.77d90920.js:139 [LaunchDarkly] Closing stream connection contents.77d90920.js:139 [LaunchDarkly] Opening stream connection to https://clientstream.launchdarkly.com/eval/625f1e15ad7e181562323d2a/eyJrZXkiOiJqYXNwZXItYW5vbnltb3VzIn0 main.9e9aa907.js:10 [Unstoppable Domains] Preferences not available after 30 seconds airea-dashboard:1 Unchecked runtime.lastError: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "Identifier 'regenerateRankingNarrative' has already been declared (at ContentCenter.tsx?t=1751604985421:881:11)Understand this error",
+      "file:",
+      "(the mixed up one)"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "tedfinkleman@MacBookPro lvhr-airea-full % cat src/components/dashboard/ContentCenter.tsx import React, { useState, useEffect } from 'react'; import { supabase } from '@/lib/supabase'; import { Button ",
+    "last_200": "r's prolonged frustration.\n4s\n\n\n\n\nYou're absolutely right to be frustrated. Here's the fixed version with the duplicate function removed:\n\n\nContentCenter.tsx - Fixed (No Duplicate Functions)\nCode \n\n\n\n"
+  },
+  "stats": {
+    "lines": 1198,
+    "words": 5130,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "sequence": 21,
+  "date": "2025-06-20",
+  "topic": "AIREA Dashboard Handoff Details.",
+  "size": 72807,
+  "insights": {
+    "files": [
+      [
+        "chunk-FJ2A54M7.js",
+        "js"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "react-router-dom.js",
+        "js"
+      ],
+      [
+        "supabase.ts",
+        "ts"
+      ],
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "supabase_supabase-js.js",
+        "js"
+      ],
+      [
+        "index.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons: 1. You might have mismatching versions of React and the renderer (such as React DOM) 2. You might be breaking the Rules of Hooks 3. You might have more than one copy of React in the same app See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem. at fetchAllData (AIREADashboard.tsx:53:35)",
+      "Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons: 1. You might have mismatching versions of React and the renderer (such as React DOM) 2. You might be breaking the Rules of Hooks 3. You might have more than one copy of React in the same app\"",
+      "Invalid hook call. Hooks can only be called inside of the body of a function component.",
+      "behavior when used concurrently under the same storage key.",
+      "code",
+      "code and wasting your time. Let me fix this properly."
+    ],
+    "entities": [],
+    "concepts": [
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "is this enough to pickup where I just got chat limited from?You're absolutely right! Let me create a comprehensive handoff RIGHT NOW:\n\ud83c\udfaf AIREA Handoff - June 12, 2025\nSession Summary\nSuccessfully fixed",
+    "last_200": " dashboard issues\n\nYou have everything working in the database. The dashboard just needs to display it properly.\n\nGood luck with the fresh start. Your vision deserves better execution than I provided."
+  },
+  "stats": {
+    "lines": 1522,
+    "words": 8319,
+    "code_blocks": 0
+  }
+}

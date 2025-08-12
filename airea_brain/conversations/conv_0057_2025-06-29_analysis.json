@@ -1,0 +1,77 @@
+{
+  "sequence": 57,
+  "date": "2025-06-29",
+  "topic": "Backend Dashboard Troubleshooting",
+  "size": 125135,
+  "insights": {
+    "files": [
+      [
+        "Penthouses.csv",
+        "csv"
+      ],
+      [
+        "server.ts",
+        "ts"
+      ],
+      [
+        "batchProcessor.ts",
+        "ts"
+      ],
+      [
+        "marketDataService.ts",
+        "ts"
+      ],
+      [
+        "validator.ts",
+        "ts"
+      ],
+      [
+        "dataTransformer.ts",
+        "ts"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "columnMapping.ts",
+        "ts"
+      ],
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "time.md",
+        "md"
+      ],
+      [
+        "csvParser.ts",
+        "ts"
+      ],
+      [
+        "descr.csv",
+        "csv"
+      ]
+    ],
+    "errors": [
+      "something, or completely disregarded my instructions and did whatever you felt like and then broke something. I also do not have much faith or confidence in most of what you say at this point, so you better make what you tell me brief, and correct, or I will completely blast you. so?",
+      "sections from months of circular development"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "alright, it's time to stop messing around. I've been at this for weeks and months longer than I should have been, in large part to numerous circular and time wasting excursions caused by your inabilit",
+    "last_200": "supply? make it a good one, like we started with!\n\nEdit\n\nCrafted comprehensive handoff document with meticulous project details.\n5s\n\n\n\n\nComprehensive Handoff - July 1, 2025 Update\nDocument \n\n\n\nRetry\n\n"
+  },
+  "stats": {
+    "lines": 3626,
+    "words": 19807,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "sequence": 3,
+  "date": "2025-05-24",
+  "topic": "Streamlining AIREA Integration",
+  "size": 25377,
+  "files_mentioned": [
+    "index.tsx",
+    "index-DajPNrMX.js",
+    "airea_query_rankings.py",
+    "ingest_log_by_filename.py",
+    "deals_of_week.js",
+    "MiniMarketVisualization.tsx",
+    "airea_quick_rankings.py",
+    "building_rankings.js",
+    "Next.js",
+    "airea_voice_chat.py"
+  ],
+  "errors_found": [
+    "cat is not defined at index-DajPNrMX.js:285:53663\u201d. Provide:",
+    "cat is not defined at index-DajPNrMX.js:285:53663"
+  ],
+  "first_100_chars": "This is the continuation of chatgpt Phase 2 that went south..pdf\n3,971 lines\n\npdf\n\n\nAI Real Estate A",
+  "last_100_chars": " and ranking.\"\nSave this and start fresh. You'll get immediate help without hitting limits.\n\n\n\n\n\n\n\n\n"
+}

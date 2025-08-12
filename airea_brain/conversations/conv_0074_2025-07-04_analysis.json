@@ -1,0 +1,40 @@
+{
+  "sequence": 74,
+  "date": "2025-07-04",
+  "topic": "Building Ranking Handoff Prompt ",
+  "size": 12940,
+  "insights": {
+    "files": [
+      [
+        "LiveSQLRunner.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "due to same issues BuildingRankings had:"
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA Dashboard Development - Complete Technical Handoff\nDate: June 23, 2025\nTime Spent: 7.5 hours\nProgress: Zero - Back to original state\nCurrent Exact State\nWhat's Working\n\nBuildingRankingsV2.jsx - ",
+    "last_200": "Weight (30%) - Size/tier of the building\n\nBut I don't see a more detailed explanation of the business logic behind these weightings. Would you like me to add this formula documentation to the handoff?"
+  },
+  "stats": {
+    "lines": 233,
+    "words": 1928,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "sequence": 43,
+  "date": "2025-06-22",
+  "topic": "AIREA Dashboard Deal of the Week Update",
+  "size": 18645,
+  "insights": {
+    "files": [
+      [
+        "index.tsx",
+        "tsx"
+      ],
+      [
+        "airea_query_memory.py",
+        "py"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "LiveSQLRunner.tsx",
+        "tsx"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "airea_standby_mode.py",
+        "py"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "Deals.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "due to same issues BuildingRankings had:"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "its deal of the week time!\n\nAIREA Dashboard - Deal of the Week Component Handoff\n\u2705 BuildingRankingsV2 - COMPLETE!\nFixed Issues:\n1. Date calculations - Using actual_close_date_parsed throughout\n2. Miss",
+    "last_200": "nt locations.\n1s\n\n\nGood thinking! Let me search the actual source code and additional project documents for the deal logic:\n\n\nSearched project for \u201csrc components deal week page logic score\u201d\n2 results"
+  },
+  "stats": {
+    "lines": 562,
+    "words": 2712,
+    "code_blocks": 0
+  }
+}

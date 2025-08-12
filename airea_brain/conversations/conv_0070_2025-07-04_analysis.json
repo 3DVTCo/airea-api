@@ -1,0 +1,48 @@
+{
+  "sequence": 70,
+  "date": "2025-07-04",
+  "topic": "Browser Console Network Errors",
+  "size": 51924,
+  "insights": {
+    "files": [
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "2025.csv",
+        "csv"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "supabase_supabase-js.js",
+        "js"
+      ]
+    ],
+    "errors": [
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedUnderstand this error",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedUnderstand this error",
+      "A listener indicated an asynchronous response...\" - This is a Chrome extension error, likely from a browser extension interfering with the page."
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "tedfinkleman@MacBookPro lvhr-airea-full % cat src/components/dashboard/ContentCenter.tsx import React, { useState, useEffect, useCallback } from 'react'; import { supabase } from '@/lib/supabase'; imp",
+    "last_200": " there?\n\nEdit\n\nStrategized database maintenance and SQL function exploration.\n3s\n\n\n\nGood thinking! Let's investigate everything before making changes.\n\n\nInvestigate Database Structure\nCode \n\n\n\nRetry\n\n"
+  },
+  "stats": {
+    "lines": 1602,
+    "words": 7371,
+    "code_blocks": 0
+  }
+}

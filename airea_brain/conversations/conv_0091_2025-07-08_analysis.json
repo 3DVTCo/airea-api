@@ -1,0 +1,44 @@
+{
+  "sequence": 91,
+  "date": "2025-07-08",
+  "topic": "Supabase Query Ordering for Building Rankings",
+  "size": 78662,
+  "insights": {
+    "files": [
+      [
+        "nBuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "supabase_supabase-js.js",
+        "js"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "Data is not defined at fetchBuildingRankings (BuildingRankingsV2.jsx:62:28)",
+      "Data is not defined\"",
+      "rankings.3sThe user is extremely frustrated, and rightfully so. They've been through a lot of unhelpful suggestions and changes that broke their working code. They need to see what changed to break their previously working rankings tab. They're asking for concrete information about what changed, not more guesses.",
+      "(though we fixed the sorting)."
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Handoff: Fix Building Rankings Display\nCurrent Issue: BuildingRankingsV2.jsx component displays wrong buildings in wrong order\nWhat's Working:\n* UI/layout is perfect\n* Backend SQL populates building_r",
+    "last_200": " with full memory\n4. Let her analyze what broke and fix it properly\nThis way AIREA becomes your safety net going forward - she'll never let working code break again because she'll remember everything."
+  },
+  "stats": {
+    "lines": 1163,
+    "words": 11771,
+    "code_blocks": 0
+  }
+}

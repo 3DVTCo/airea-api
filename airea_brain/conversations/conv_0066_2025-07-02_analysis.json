@@ -1,0 +1,57 @@
+{
+  "sequence": 66,
+  "date": "2025-07-02",
+  "topic": "Code Restoration Strategy",
+  "size": 62418,
+  "insights": {
+    "files": [
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "V2.jsx",
+        "jsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "BuildingRankingsV2.jsx by:",
+      "BuildingRankingsV2.jsx component functionality.4sThe user is extremely frustrated because the previous chat broke their BuildingRankingsV2.jsx component by:",
+      "code.8sThe user is extremely frustrated, and rightfully so. Looking at their BuildingRankingsV2.jsx file, I can see it's been significantly modified from what they originally had. The key issues are:",
+      "one.",
+      "BuildingRankingsV2.jsx that the previous chat messed up. I can see:"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "SUPER HANDOFF PROMPT - LVHR CONTENT CENTER PROGRESS UPDATE\n\ud83c\udfaf WHAT WE ACCOMPLISHED\n\nBuilding Categories System \u2705\n\nCreated building_categories table in Supabase with columns: \"Tower Name\", \"category 1\",",
+    "last_200": "p them from using fictional data. Once they're using real fields and including categories, you can refine the narrative style.\nSend it and get your work back on track. You've lost enough time already."
+  },
+  "stats": {
+    "lines": 1071,
+    "words": 9071,
+    "code_blocks": 0
+  }
+}

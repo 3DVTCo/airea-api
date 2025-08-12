@@ -1,0 +1,42 @@
+{
+  "sequence": 83,
+  "date": "2025-07-07",
+  "topic": "Supabase Project Task Management",
+  "size": 98344,
+  "insights": {
+    "files": [
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "V2.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "or using a weird baseline. Should we update all the styles to prioritize actual DOM over the velocity calculation?Retry3its not the numbers, just not flying off the market.EditPondered more precise language for market description.3sThe user is saying the issue isn't with the actual 62 days number, just that describing it as \"flying off the market\" is inappropriate for that timeframe. They want better language that's more accurate for a 62-day average DOM.",
+      "state. The line should probably be something like:"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "hopefully you can help me keep my momentum going! we still need to create a new supabase table for expireds and withdraw, work on the building rankings dropdown narrative, and then we'll take a look a",
+    "last_200": "undation.\nYour platform is going to be a game-changer for Vegas highrise real estate. Can't wait to see AIREA come alive and start generating those market insights!\nBest of luck with the next phase! \ud83d\ude80"
+  },
+  "stats": {
+    "lines": 1319,
+    "words": 15030,
+    "code_blocks": 0
+  }
+}

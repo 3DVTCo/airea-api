@@ -1,0 +1,120 @@
+{
+  "sequence": 19,
+  "date": "2025-06-20",
+  "topic": "Localhost Dashboard Access.",
+  "size": 136180,
+  "insights": {
+    "files": [
+      [
+        "chunk-FJ2A54M7.js",
+        "js"
+      ],
+      [
+        "BuyerCostCalculator.tsx",
+        "tsx"
+      ],
+      [
+        "supabase.ts",
+        "ts"
+      ],
+      [
+        "supabase_supabase-js.js",
+        "js"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "content.js",
+        "js"
+      ],
+      [
+        "index-B5m6j-SJ.js",
+        "js"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "Next.js",
+        "js"
+      ],
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "Package.js",
+        "js"
+      ],
+      [
+        "react-router-dom.js",
+        "js"
+      ],
+      [
+        "61225.csv",
+        "csv"
+      ],
+      [
+        "inpage.js",
+        "js"
+      ],
+      [
+        "eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvbmhxcnVmdG54Ym55dnpvdWpiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI1MDgxNzgsImV4cCI6MjA1ODA4NDE3OH0.pY",
+        "pY"
+      ],
+      [
+        "README.md",
+        "md"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "client.ts",
+        "ts"
+      ],
+      [
+        "supabase.js",
+        "js"
+      ]
+    ],
+    "errors": [
+      "Could not find the function public.run_custom_sql(query_text) in the schema cache",
+      "supabaseUrl is required. at new ZSe (index-B5m6j-SJ.js:467:50248) at w5 (index-B5m6j-SJ.js:467:53271) at index-B5m6j-SJ.js:619:43372",
+      "supabaseUrl is required. at new ZSe (index-B5m6j-SJ.js:467:50248) at w5 (index-B5m6j-SJ.js:467:53271) at index-B5m6j-SJ.js:619:43372",
+      "supabaseUrl is required. at new ZSe (index-B5m6j-SJ.js:467:50248) at w5 (index-B5m6j-SJ.js:467:53271) at index-B5m6j-SJ.js:619:43372",
+      "supabaseUrl is required. at new ZSe (index-B5m6j-SJ.js:467:50248) at w5 (index-B5m6j-SJ.js:467:53271) at index-B5m6j-SJ.js:619:43372",
+      "behavior when used concurrently under the same storage key.",
+      "view first",
+      "view first",
+      "with the current connection. Let's figure out what it is. What do you see in the Production Branch setting?",
+      "with the current setup",
+      "with the current Vercel project's connection"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "bitcoin_conference"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "can you see this? front and back?\nhttp://localhost:8080/airea-dashboard\n\nEdit\n\nAnalyzed localhost limitation, prepared explanation for inaccessible URL.\n4s\n\n\n\nI cannot access localhost URLs (like http",
+    "last_200": " not parsing the dates correctly\nLet me check the actual dates in your data:\n\n\nAnalyzed data\nView analysis\n\n\n\n\n\n\nRetry\n\n\nnot even a handoff like you were supposed to make happen before we got here?\n\n\n"
+  },
+  "stats": {
+    "lines": 4329,
+    "words": 19431,
+    "code_blocks": 0
+  }
+}

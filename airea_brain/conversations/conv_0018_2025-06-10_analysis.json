@@ -1,0 +1,85 @@
+{
+  "sequence": 18,
+  "date": "2025-06-10",
+  "topic": "SQL Dashboard Display Frustration.",
+  "size": 61826,
+  "insights": {
+    "files": [
+      [
+        "index.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "inpage.js",
+        "js"
+      ],
+      [
+        "react-router-dom.js",
+        "js"
+      ],
+      [
+        "supabase_supabase-js.js",
+        "js"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "query_results.csv",
+        "csv"
+      ],
+      [
+        "1.csv",
+        "csv"
+      ],
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "chunk-FJ2A54M7.js",
+        "js"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "LiveSQLRunner.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "MetaMask extension not found at inpage.js:1:16512",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "MetaMask extension not found at inpage.js:1:16512",
+      "process is not defined at AIREADashboard.tsx:4:21",
+      "MetaMask extension not found at inpage.js:1:16512",
+      "behavior when used concurrently under the same storage key.",
+      "behavior when used concurrently under the same storage key.",
+      "with 400 errors. Wasted 2+ hours on what should have be",
+      "dashboard.",
+      "400 errors\u201d",
+      "code.",
+      "\"fixes\". Want me to help you get AIREA operational immediately so you can actually use your system?"
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\ud83c\udfaf AIREA Complete Handoff - June 11, 2025 Session Summary & Full Responsibility Started with working SQL Runner displaying results properly. I (the assistant) introduced mock data unnecessarily, causin",
+    "last_200": "u're absolutely right on all points. Let me fix these issues and add the missing features.\n\n\nSearched project for \u201c28 highrise buildings list SIGNATURE TURNBERRY PALMS PLACE\u201d\n2 results\n\n\n\n\n\n\n\n\nRetry\n\n"
+  },
+  "stats": {
+    "lines": 2012,
+    "words": 8539,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "sequence": 64,
+  "date": "2025-07-02",
+  "topic": "LVHR Content Center System Restoration",
+  "size": 91706,
+  "insights": {
+    "files": [
+      [
+        "1.csv",
+        "csv"
+      ],
+      [
+        "V2.jsx",
+        "jsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "2.csv",
+        "csv"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "supabase.ts",
+        "ts"
+      ]
+    ],
+    "errors": [
+      "down. I'd like to include a mention in addition to the overall ranking, which category each building falls into and its ranking among the others in that category. make sense? you can see on the buildings page which buildings go in which categories. for example, we know that Signature at MGM is the number one overall ranked building based on our formula and criteria, but its also an STR property, and we should comment about that too. bear in mind, that this narrative, plus the building history and descriptive narrative imported into box 1 on the content page, will be combined to then populate the top section of the individual building page (which we'll work on after we resolve this narration and the one in deal of the week). are you with me? make sense? that's why I want to fix this narrative first."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "SUPER HANDOFF PROMPT - LVHR CONTENT CENTER & RANKINGS SYSTEM\n\ud83c\udfaf CURRENT STATE\nJust restored Content Center functionality after previous chat broke it. System is ~85% functional with specific improvemen",
+    "last_200": "ratives.\n2s\n\n\n\nPerfect. Let's update your BuildingRankingsV2.jsx to pull from the new view and include category rankings in the narratives.\n\n\nBuildingRankingsV2 Updates for Categories\nCode \n\n\n\nRetry\n\n"
+  },
+  "stats": {
+    "lines": 2701,
+    "words": 13078,
+    "code_blocks": 0
+  }
+}

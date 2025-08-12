@@ -1,0 +1,80 @@
+{
+  "sequence": 23,
+  "date": "2025-06-21",
+  "topic": "AIREA Dashboard Restoration",
+  "size": 122165,
+  "insights": {
+    "files": [
+      [
+        "AIREA_Dashboard_Final_Handoff_062025.md",
+        "md"
+      ],
+      [
+        "AIREA_Dashboard_Handoff_062025.md",
+        "md"
+      ],
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "react-router-dom.js",
+        "js"
+      ],
+      [
+        "supabase.ts",
+        "ts"
+      ],
+      [
+        "chunk-FJ2A54M7.js",
+        "js"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "response.js",
+        "js"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "expandedRows is not defined at AIREADashboard.tsx:457:24 at Array.map (<anonymous>) at AIREADashboard (AIREADashboard.tsx:433:35) at d (main.16445055.js:8:174776)",
+      "The requested module '/src/components/BuildingRankingsV2.jsx?t=1750471783704' does not provide an export named 'default' (at AIREADashboard.tsx:10:8)",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedEditStrategized export fix and deal optimization approach.4sThe user is having two issues:",
+      "TabsContent is not defined at BuildingRankingsV2.jsx:4:2",
+      "behavior when used concurrently under the same storage key.",
+      "in the next chat? I can help you restore it!Retry3everything. wasted an hour creating bugs along the way so every time something got fixed, 4 other things broke. so I'm in another chat, and we are having a hard time getting back to where this chat and last working version existed.EditStrategized comprehensive restoration guide to resolve chat issues.3sThe user is frustrated because the next chat session broke everything and created more bugs while trying to fix things. They've wasted an hour and can't get back to the working state we had. I should provide a clear, complete restoration guide to get them back to exactly where we left off.I understand - that's incredibly frustrating! Let me give you the EXACT state we had working and how to restore it:",
+      "dashboard.4sThe user wants a complete restoration file. They've been struggling with another chat that broke everything. I need to provide a comprehensive solution that gets them back to the working state we had."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "I'd like to restore the many of the tabs and functions that have been lost or deteriorated along the recent way. AIREA Dashboard Handoff - June 13, 2025\n\ud83c\udfaf Current State\nnpm is running at http://localh",
+    "last_200": "tive generator yet, just the basic working table with expandable rows.\nOnce this is working, we can add the narrative generators and other enhancements one piece at a time without breaking everything!"
+  },
+  "stats": {
+    "lines": 2090,
+    "words": 17267,
+    "code_blocks": 0
+  }
+}

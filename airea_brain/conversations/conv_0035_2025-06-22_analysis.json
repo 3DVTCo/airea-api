@@ -1,0 +1,112 @@
+{
+  "sequence": 35,
+  "date": "2025-06-22",
+  "topic": "AIREA Voice AI Development Handoff.",
+  "size": 128432,
+  "insights": {
+    "files": [
+      [
+        "airea_simple.py",
+        "py"
+      ],
+      [
+        "airea_with_memory_backup.py",
+        "py"
+      ],
+      [
+        "ingest_everything.py",
+        "py"
+      ],
+      [
+        "lvhr-deployment-log.md",
+        "md"
+      ],
+      [
+        "client.py",
+        "py"
+      ],
+      [
+        "airea_process_knowledge.py",
+        "py"
+      ],
+      [
+        "updates_pt2.md",
+        "md"
+      ],
+      [
+        "coreml_supported_neuralnetwork_ops.md",
+        "md"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "check_vector_count.py",
+        "py"
+      ],
+      [
+        "coreml_supported_mlprogram_ops.md",
+        "md"
+      ],
+      [
+        "AIREA_Build_Log_Phase1.md",
+        "md"
+      ],
+      [
+        "check_ingestion_status.py",
+        "py"
+      ],
+      [
+        "airea_handoff_20250615.md",
+        "md"
+      ],
+      [
+        "voice_chat.py",
+        "py"
+      ],
+      [
+        "ingest_phase1_log.py",
+        "py"
+      ],
+      [
+        "pip.py",
+        "py"
+      ],
+      [
+        "airea_test.py",
+        "py"
+      ],
+      [
+        "LICENSE.md",
+        "md"
+      ],
+      [
+        "AIREA_Phase2_Log.md",
+        "md"
+      ]
+    ],
+    "errors": [
+      "No module named 'sentence_transformers'During handling of the above exception, another exception occurred:Traceback (most recent call last):",
+      "The sentence_transformers python package is not installed. Please install it with pip install sentence_transformers",
+      "Collection [airea_logs_local] does not exists",
+      "invalid syntaxEditDiagnosed syntax error in Python import statement.3sThere's a syntax error - looks like there's a \"k\" before \"import\" and some asterisks. The user must have had a copy/paste error. Let me help them fix it.There's a typo! The first line has kimport **ollama** instead of import ollama.",
+      "No module named 'sentence_transformers'During handling of the above exception, another exception occurred:Traceback (most recent call last):"
+    ],
+    "entities": [],
+    "concepts": [
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "confirm that you understand what is going on here. # AIREA Development Handoff \u2014 June 15, 2025\n## Current State\n- \u2705 AIREA is ONLINE and running via python3 airea_voice_chat.py\n- \u2705 Ollama is running wi",
+    "last_200": " you get errors:\nTell me what error you see and I'll help fix it. Common issues might be:\n\nMissing Python packages\nOllama not running\nChromaDB connection issues\n\nWhich option do you want to try first?"
+  },
+  "stats": {
+    "lines": 2428,
+    "words": 15846,
+    "code_blocks": 2
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "sequence": 28,
+  "date": "2025-06-22",
+  "topic": "Deployment Troubleshooting Handoff.",
+  "size": 192659,
+  "insights": {
+    "files": [
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "browser-Cvr0hhSK.js",
+        "js"
+      ],
+      [
+        "useSupabaseData.ts",
+        "ts"
+      ],
+      [
+        "content.js",
+        "js"
+      ],
+      [
+        "AvgPriceRankings.tsx",
+        "tsx"
+      ],
+      [
+        "index-Dbf3X-FM.css",
+        "css"
+      ],
+      [
+        "2index-DBQiIdlf.js",
+        "js"
+      ],
+      [
+        "index-CgPYuVjc.js",
+        "js"
+      ],
+      [
+        "browser-B5bwP8up.js",
+        "js"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "2index-CgPYuVjc.js",
+        "js"
+      ],
+      [
+        "index-ChFW4aQx.js",
+        "js"
+      ],
+      [
+        "DaysOnMarketRankings.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesRankings.tsx",
+        "tsx"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "buildingrankings.jsx",
+        "jsx"
+      ],
+      [
+        "serviceworkers.js",
+        "js"
+      ],
+      [
+        "77d90920.js",
+        "js"
+      ]
+    ],
+    "errors": [
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedEditDiagnosed Supabase query error blocking active listings data7sI can see the issue! There's a 400 error when fetching from Supabase. The URL shows:",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedEditDiagnosed persistent deployment error, strategized troubleshooting Netlify caching issue.6sThe user is still getting the same 400 error after deploying. Let me check - the error URL still shows the same mixed field names issue. This suggests Netlify is still serving cached content even after the new deployment. This is frustrating for the user and they've already wasted so much time.",
+      "Cannot read properties of null (reading 'addEventListener') at I4n.addEventListener (content.js:2692:25324) at i9e.addEventListeners (content.js:2692:32809) at Object.bindEvents (content.js:2692:30361) at content.js:2692:26138 at Array.forEach (<anonymous>) at Gcr.check (content.js:2692:26072) at Gcr.init (content.js:2692:25653) at content.js:2692:30501 at Kln.onDOMReady (content.js:2519:18537) at i9e.init (content.js:2692:30426)",
+      "Unexpected token '~'EditDiagnosed browser console confusion causing syntax error.1sThe user typed the bash command into the browser console instead of the terminal. They're clearly frustrated and mixing up where to type commands.No, that's a terminal command! You typed it in the browser console.",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedUnderstand this errorEditDiagnosed potential caching and deployment issues with code.7sThe user is extremely frustrated and rightfully so. They've deployed new code (grep shows \"Under Contract\" appears 2 times in the built files), but the browser is still showing the old version with only 3 tiles instead of 6.",
+      "behavior when used concurrently under the same storage key.",
+      "behavior when used concurrently under the same storage key.",
+      "behavior when used concurrently under the same storage key.",
+      "behavior when used concurrently under the same storage key.",
+      "behavior when used concurrently under the same storage key.",
+      "deployment.Excellent! Your build is correct. Now let's deploy this to Netlify:",
+      "code - My \"complete working component\" had SQL syntax errors and crashes",
+      "code with SQL syntax errors (\"TowerName\" vs \"Tower Name\")"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "LVHR Development Handoff \u2014 June 17, 2025 (End of Day)\n\ud83d\udea8 CRITICAL CONTEXT FOR NEXT LLM\nPrevious assistant (Claude) wasted 9 hours on item #1 due to Vercel deployment cache issues. User is justifiably f",
+    "last_200": "ommand starts her?\nWhat port does she run on?\n\nOr is this information in one of the PDFs you uploaded earlier that I should be looking at?\nYou're right to call this out. I should KNOW this, not guess."
+  },
+  "stats": {
+    "lines": 3362,
+    "words": 25800,
+    "code_blocks": 0
+  }
+}

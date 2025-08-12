@@ -1,0 +1,25 @@
+{
+  "sequence": 16,
+  "date": "2025-06-05",
+  "topic": "LVHR AIREA Project Dashboard Development.",
+  "size": 4000,
+  "insights": {
+    "files": [],
+    "errors": [],
+    "entities": [],
+    "concepts": [
+      "airea_development"
+    ],
+    "has_code": false,
+    "sentiment": "neutral"
+  },
+  "preview": {
+    "first_200": "# LVHR AIREA Project Status\n## Current State:\n- AIREA Backend Dashboard deployed at: http://localhost:8080/airea-dashboard\n- Split-screen interface with role-based access (admin/buyer/seller/investor)",
+    "last_200": " for any missing tables?\nBuild the AIREA chat interface for the backend dashboard?\nSet up the development environment with proper testing?\nLet me know which aspect you'd like to tackle first!\n\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 118,
+    "words": 575,
+    "code_blocks": 0
+  }
+}

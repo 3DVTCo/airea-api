@@ -1,0 +1,112 @@
+{
+  "sequence": 114,
+  "date": "2025-07-12",
+  "topic": "Vite Webapp Access via ngrok",
+  "size": 303967,
+  "insights": {
+    "files": [
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "airea_multi_collection.py",
+        "py"
+      ],
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ],
+      [
+        "Footer.tsx",
+        "tsx"
+      ],
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "propertiesQueryService.ts",
+        "ts"
+      ],
+      [
+        "dataTransformer.ts",
+        "ts"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "marketDataCalculator.ts",
+        "ts"
+      ],
+      [
+        "config.ts",
+        "ts"
+      ],
+      [
+        "buildingRankingsService.ts",
+        "ts"
+      ],
+      [
+        "salesQueryService.ts",
+        "ts"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "_base_client.py",
+        "py"
+      ],
+      [
+        "buildingService.ts",
+        "ts"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "marketDataService.ts",
+        "ts"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "lakeError is not defined\"",
+      "or sabotaged code to production. They have several backup files with names like \"backup-sabotaged\" which is concerning. They want to review the changes before committing to make sure nothing harmful gets deployed. This is a very sensible approach.",
+      "code",
+      "- it's running 5-day-old code"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "6sThe user is asking for a comprehensive handoff prompt that will:\n\nSummarize where we are in the restoration process\nDocument what we've discovered and fixed\nClearly state the current problem and nex",
+    "last_200": "utton>\n            )}\n          </section>\n        ))}\n      </main>\n      <Footer />\n    </div>\n  );\n};\n\nexport default Buildings;\nDone. This should work. Let's move on to the next item on your list."
+  },
+  "stats": {
+    "lines": 5340,
+    "words": 39013,
+    "code_blocks": 0
+  }
+}

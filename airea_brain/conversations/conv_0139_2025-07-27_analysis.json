@@ -1,0 +1,46 @@
+{
+  "sequence": 139,
+  "date": "2025-07-27",
+  "topic": "Frustrated Developer's Urgent Handoff",
+  "size": 6004,
+  "insights": {
+    "files": [
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "DealOfTheWeekSingle.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "and needs immediate restoration"
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "this prompt is a little weak, so hopefully you can help me keep going with minimum delay. also never ever assume to just write code without making sure we don't already have it. and never assume anyth",
+    "last_200": "Y \"Allow public read deal_of_week\" ON deal_of_week_overall FOR SELECT USING (true);\nPRIORITY: Restore the backend Deal of Week tab to show all buildings' deals sorted by DealScore, not alphabetically!"
+  },
+  "stats": {
+    "lines": 141,
+    "words": 861,
+    "code_blocks": 0
+  }
+}

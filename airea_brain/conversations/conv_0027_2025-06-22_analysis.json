@@ -1,0 +1,110 @@
+{
+  "sequence": 27,
+  "date": "2025-06-22",
+  "topic": "AIREA Dashboard System Activation.",
+  "size": 69600,
+  "insights": {
+    "files": [
+      [
+        "ingest_phase1_log.py",
+        "py"
+      ],
+      [
+        "AIREA_Phase2_DevLog.md",
+        "md"
+      ],
+      [
+        "dashboard.jsx",
+        "jsx"
+      ],
+      [
+        "openai_embedding_function.py",
+        "py"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "lvhr-deployment-log.md",
+        "md"
+      ],
+      [
+        "airea_knowledge.py",
+        "py"
+      ],
+      [
+        "quick_chat.py",
+        "py"
+      ],
+      [
+        "AIREA_Handoff_June15.md",
+        "md"
+      ],
+      [
+        "check_vector_count.py",
+        "py"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "ingest_airea_log.py",
+        "py"
+      ],
+      [
+        "airea_text_chat.py",
+        "py"
+      ],
+      [
+        "airea_standby_mode.py",
+        "py"
+      ],
+      [
+        "AIREA_Build_Log_Phase1_Final.md",
+        "md"
+      ],
+      [
+        "airea_with_memory.py",
+        "py"
+      ],
+      [
+        "airea_reports.py",
+        "py"
+      ],
+      [
+        "ingest_all_docs.py",
+        "py"
+      ],
+      [
+        "supabase_helper.py",
+        "py"
+      ],
+      [
+        "test_supabase.py",
+        "py"
+      ]
+    ],
+    "errors": [
+      "No module named 'chromadb'",
+      "The CHROMA_OPENAI_API_KEY environment variable is not set.",
+      "cannot import name 'get_building_rankings' from 'supabase_helper' (/Users/tedfinkleman/airea/supabase_helper.py)"
+    ],
+    "entities": [],
+    "concepts": [
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Screenshot 20250615 at 5.26.05\u202fPM 2.png\nI'm going to grab a couple of other previous handoff logs if needed, so that we can finish connecting and turning AIREA's consciousness on and activating as the",
+    "last_200": "stant so the user NEVER has to repeat context again. Everything is in her ChromaDB - just need to connect retrieval to responses.\nSave this as AIREA_Handoff_June15.md for your next session!\n\n\n\n\nRetry\n"
+  },
+  "stats": {
+    "lines": 2166,
+    "words": 10109,
+    "code_blocks": 0
+  }
+}

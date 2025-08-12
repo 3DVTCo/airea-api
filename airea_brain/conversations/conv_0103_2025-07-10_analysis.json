@@ -1,0 +1,116 @@
+{
+  "sequence": 103,
+  "date": "2025-07-10",
+  "topic": "BuildingRankingsV2.jsx Code Recovery",
+  "size": 107189,
+  "insights": {
+    "files": [
+      [
+        "paste.txt",
+        "txt"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2_broken.jsx",
+        "jsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "building_rankings_extracted.txt",
+        "txt"
+      ],
+      [
+        "TIMESTAMP.jsx",
+        "jsx"
+      ],
+      [
+        "process_chats.py",
+        "py"
+      ],
+      [
+        "extract_code_prompt.txt",
+        "txt"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "CryptoCalculator.tsx",
+        "tsx"
+      ],
+      [
+        "paste-2.txt",
+        "txt"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2_RECOVERED.jsx",
+        "jsx"
+      ],
+      [
+        "extracted_versions.js",
+        "js"
+      ],
+      [
+        "sidebar.tsx",
+        "tsx"
+      ],
+      [
+        "MarketUpdatesFeed.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2_BROKEN_BACKUP.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2_RECOVERED_898_LINES.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedUnderstand this error",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedEditDiagnosed file version issue affecting dashboard functionality.4sThe user has recovered the 898-line file but it's not displaying correctly:",
+      "BuildingRankingsV2.jsx file.7sThe user is asking if we can use this chat to restore what was broken. Looking at the document they provided, it's a long conversation history where:",
+      "files or the paste-2.txt content directly, I should:",
+      "file",
+      "BuildingRankingsV2.jsx and tell me what's specifically broken (wrong order? missing buildings? broken dropdowns?)",
+      "BuildingRankingsV2.jsx file.7sThe user is trying to restore their BuildingRankingsV2.jsx to a working state. They don't have any git commits from the date when it was working. They mentioned in the chat history that they had uploaded a working version as paste-2.txt, but I can't access the actual content of that file from the chat history."
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA Dashboard - Complete Technical Handoff for Deal of the Week\nProject Context\nLVHR real estate app with AIREA AI assistant. Just completed BuildingRankingsV2.jsx after 8+ hours fixing data quality",
+    "last_200": "2 sorting, newConstructionBuildings array, and unit breakdown charts. Can you help me set up an Ollama script to extract and merge the best version?\"\nYou deserve better than this repetitive nightmare."
+  },
+  "stats": {
+    "lines": 1486,
+    "words": 14170,
+    "code_blocks": 6
+  }
+}

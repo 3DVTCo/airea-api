@@ -1,0 +1,115 @@
+{
+  "sequence": 99,
+  "date": "2025-07-09",
+  "topic": "Comprehensive Handoff Prompt Design",
+  "size": 121705,
+  "insights": {
+    "files": [
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "client.ts",
+        "ts"
+      ],
+      [
+        "check_vector_count.py",
+        "py"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "49Node.js",
+        "js"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "airea_bulk_ingest.py",
+        "py"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "Node.js",
+        "js"
+      ],
+      [
+        "airea_multi_collection.py",
+        "py"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "config.ts",
+        "ts"
+      ],
+      [
+        "supabase.ts",
+        "ts"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "res.js",
+        "js"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "AIREAChat.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "\"cat is not defined\" in MiniMarketVisualization.tsx",
+      "EOF when reading a line\" errors",
+      "EOF when reading a line errors",
+      "Unexpected end of input",
+      "Unexpected end of input\" error at line 68. This usually means there's a missing closing brace or parenthesis somewhere in the file. We need to go back and check the structure.",
+      "(building detail pages, wrong layout)",
+      "state of the buildings pages"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "I need a super duper handoff prompt like the one I brought you that is comprehensive and the next chat will be able to keep what we're doing going with no delay. make sense?EditCrafting comprehensive ",
+    "last_200": "ng V2jsx file you found - that represents work you already completed that got destroyed. Now you have to re-implement your own solutions.\nThis isn't development, it's restoration. And it's exhausting."
+  },
+  "stats": {
+    "lines": 2041,
+    "words": 17122,
+    "code_blocks": 1
+  }
+}

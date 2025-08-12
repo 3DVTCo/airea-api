@@ -1,0 +1,94 @@
+{
+  "sequence": 142,
+  "date": "2025-08-03",
+  "topic": "AIREA Emergency Restoration Protocol",
+  "size": 103880,
+  "insights": {
+    "files": [
+      [
+        "airea_api_server_v2_broken_embeddings.py",
+        "py"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "airea_api_server.py",
+        "py"
+      ],
+      [
+        "airea_api_server_v2_backup.py",
+        "py"
+      ],
+      [
+        "force_refresh.py",
+        "py"
+      ],
+      [
+        "test_supabase_connection.py",
+        "py"
+      ],
+      [
+        "aster_Combined.csv",
+        "csv"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ],
+      [
+        "airea_ingestion.py",
+        "py"
+      ],
+      [
+        "LVHR_Master_Clean.csv",
+        "csv"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "collection_configuration.py",
+        "py"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ]
+    ],
+    "errors": [
+      "An embedding function already exists in the collection configuration, and a new one is provided. If this",
+      "code?EditValidated solution's feasibility and set realistic expectations.4sThe user is rightfully skeptical. They've been burned by quick fixes that don't work. Let me be honest about what we've discovered and what this fix will and won't do.",
+      "(ONNX error)",
+      "embedding model",
+      "system to debug. The answers ARE in there, we just need to find when the embeddings broke.Retry3let's have that comprehensive detailed handoff prompt for the next chat before I paste anything else. make it good, and take responsibility for your bullshit and be sure to elaborate on your guidelines and rules so the next chat does not do the same bullshit that you did.EditStrategized comprehensive handoff to address previous failures responsibly.2sThe user is rightfully frustrated. They need a comprehensive handoff that:",
+      "on your Mac!"
+    ],
+    "entities": [],
+    "concepts": [
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Comprehensive Handoff for Next Chat - July 25, 2025\nCurrent State\n\nProject: LVHR (Las Vegas High Rise) - Real Estate Platform\nDev Environment: localhost:8080\nProduction: https://lasvegashighriseapp.co",
+    "last_200": "documents\nAccurate information (27 buildings, not 50+)\nDevelopment assistance, not generic responses\nMemory of past work and decisions\n\nTHE USER DESERVES A WORKING AI PARTNER, NOT MORE BROKEN PROMISES"
+  },
+  "stats": {
+    "lines": 1903,
+    "words": 13360,
+    "code_blocks": 0
+  }
+}

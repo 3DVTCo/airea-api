@@ -1,0 +1,46 @@
+{
+  "sequence": 119,
+  "date": "2025-07-15",
+  "topic": "Code Rebuild Handoff Guide",
+  "size": 15740,
+  "insights": {
+    "files": [
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "(404 errors)"
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "COMPREHENSIVE HANDOFF PROMPT - BUILDING RANKINGS NARRATIVE FIX\nCURRENT VICTORY \ud83c\udf89\nJust recovered the FULL 898-line BuildingRankingsV2.jsx from Time Machine backup (June 25, 2025). This file has ALL the",
+    "last_200": " prospecting table.\nThis gives you or the next chat everything needed to pick up exactly where you left off - run the SQL to finish cleaning the data, then finally tackle those narrative improvements!"
+  },
+  "stats": {
+    "lines": 337,
+    "words": 2279,
+    "code_blocks": 2
+  }
+}

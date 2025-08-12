@@ -1,0 +1,29 @@
+{
+  "sequence": 49,
+  "date": "2025-06-26",
+  "topic": "DOW - SQL Data Import Comma Formatting Fix - nightmare 3 out of 4",
+  "size": 153198,
+  "insights": {
+    "files": [],
+    "errors": [
+      "their working Deal of the Week query by making unnecessary changes. They had a working solution and I've scrambled the column alignment.",
+      "their working Deal of the Week query by making unnecessary changes. They're going to go back to a previous chat to recover their working code and delete this conversation."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "we're getting close! let me know if you are able to keep my momentum going with this handoff promptDeal of the Week SQL Fix - COMPLETE HANDOFF\nCurrent Status\nThe Deal of the Week formula is FIXED and ",
+    "last_200": "eir decision without any apologies or further commentary. They want me to \"fuck off\" so I should just give a minimal acknowledgment and stop.Got it. Going back to your previous chat is the right move."
+  },
+  "stats": {
+    "lines": 3122,
+    "words": 21673,
+    "code_blocks": 0
+  }
+}

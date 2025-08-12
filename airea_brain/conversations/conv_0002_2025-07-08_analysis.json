@@ -1,0 +1,24 @@
+{
+  "sequence": 2,
+  "date": "2025-07-08",
+  "topic": "Test Run",
+  "size": 25377,
+  "files_mentioned": [
+    "Deals.tsx",
+    "airea_query_rankings.py",
+    "airea_quick_rankings.py",
+    "page.js",
+    "index.tsx",
+    "Next.js",
+    "index-DajPNrMX.js",
+    "deals_of_week.js",
+    "ingest_log_by_filename.py",
+    "airea_process_rankings.py"
+  ],
+  "errors_found": [
+    "cat is not defined at index-DajPNrMX.js:285:53663\u201d. Provide:",
+    "cat is not defined at index-DajPNrMX.js:285:53663"
+  ],
+  "first_100_chars": "This is the continuation of chatgpt Phase 2 that went south..pdf\n3,971 lines\n\npdf\n\n\nAI Real Estate A",
+  "last_100_chars": " and ranking.\"\nSave this and start fresh. You'll get immediate help without hitting limits.\n\n\n\n\n\n\n\n\n"
+}

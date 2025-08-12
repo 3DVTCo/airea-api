@@ -1,0 +1,30 @@
+{
+  "sequence": 1,
+  "date": "2025-07-06",
+  "topic": "BuildingRankingsV2 Debug Test",
+  "size": 441,
+  "insights": {
+    "files": [
+      [
+        "airea_bulk_ingest.py",
+        "py"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [
+      "ranking_system"
+    ],
+    "has_code": false,
+    "sentiment": "neutral"
+  },
+  "preview": {
+    "first_200": "Quick test:\n\nCopy any conversation to clipboard (Cmd+A, Cmd+C from a share link)\nRun:\n\nbashpython3 airea_bulk_ingest.py ingest \"BuildingRankingsV2 Debug Test\" 2025-07-06 debugging_history\n\nCheck the s",
+    "last_200": "status\nYou should see:\n\nTotal Conversations: 1\nThe debugging_history collection will have items\nMore details about what was extracted\n\nIf this works, you can rapid-fire through all your conversations:"
+  },
+  "stats": {
+    "lines": 16,
+    "words": 56,
+    "code_blocks": 0
+  }
+}

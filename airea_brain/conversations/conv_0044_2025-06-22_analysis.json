@@ -1,0 +1,72 @@
+{
+  "sequence": 44,
+  "date": "2025-06-22",
+  "topic": "AIREA Dashboard Deal of the Week",
+  "size": 156598,
+  "insights": {
+    "files": [
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "LiveSQLRunner.tsx",
+        "tsx"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "airea_standby_mode.py",
+        "py"
+      ],
+      [
+        "Deals.tsx",
+        "tsx"
+      ],
+      [
+        "index.tsx",
+        "tsx"
+      ],
+      [
+        "14.txt",
+        "txt"
+      ],
+      [
+        "supabaseClient.js",
+        "js"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "due to same issues BuildingRankings had: * Case sensitivity in building names * Date parsing problems * Not using real-time data Requirements: * ONE best deal per building (NOT 3-5 total) * ONE backup deal per building * Sort by best value/opportunity metrics * Use same data patterns that work in BuildingRankingsV2 Working Code Patterns to Apply:javascript// Use these patterns from BuildingRankingsV2:",
+      "down in detail.",
+      "\u2705"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "its deal of the week time!\nAIREA Dashboard - Deal of the Week Component Handoff \u2705 BuildingRankingsV2 - COMPLETE! Fixed Issues: 1. Date calculations - Using actual_close_date_parsed throughout 2. Missi",
+    "last_200": "unt_pct || '%' AS \"Below Market\",\n  dom AS \"DOM\",\n  median_price AS \"Market Median\"\nFROM ranked\nWHERE rn = 1\nORDER BY discount_pct DESC;\nThat's it - the COMPLETE query. Copy and paste the whole thing."
+  },
+  "stats": {
+    "lines": 3379,
+    "words": 22526,
+    "code_blocks": 0
+  }
+}

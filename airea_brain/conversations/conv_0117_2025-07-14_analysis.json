@@ -1,0 +1,41 @@
+{
+  "sequence": 117,
+  "date": "2025-07-14",
+  "topic": "Building Rankings Code Recovery",
+  "size": 22314,
+  "insights": {
+    "files": [
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "the actual file content in the project knowledge."
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "COMPREHENSIVE HANDOFF PROMPT - BUILDING RANKINGS NARRATIVE FIX\nCURRENT VICTORY \ud83c\udf89\nJust recovered the FULL 898-line BuildingRankingsV2.jsx from Time Machine backup (June 25, 2025). This file has ALL the",
+    "last_200": "l override those values with correct calculations. The narrative generation is now completely dynamic and will create unique, informative descriptions based on each building's actual performance data."
+  },
+  "stats": {
+    "lines": 314,
+    "words": 2991,
+    "code_blocks": 0
+  }
+}

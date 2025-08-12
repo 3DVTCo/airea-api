@@ -1,0 +1,85 @@
+{
+  "sequence": 120,
+  "date": "2025-07-15",
+  "topic": "Building Rankings Price Per Sqft Fix",
+  "size": 75311,
+  "insights": {
+    "files": [
+      [
+        "supabase.ts",
+        "ts"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "RegularBuildingView.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek2.tsx",
+        "tsx"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "client.ts",
+        "ts"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekNew.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "ttys011.txt",
+        "txt"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "ttys005.txt",
+        "txt"
+      ]
+    ],
+    "errors": [
+      "values (e.g., deal.topDeal?.DealScore || 0)"
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Screenshot 20250715 at 12.02.34\u202fPM 2.png\n\nCOMPREHENSIVE HANDOFF PROMPT - BUILDING RANKINGS NARRATIVE FIX CURRENT VICTORY \ud83c\udf89 Just recovered the FULL 898-line BuildingRankingsV2.jsx from Time Machine bac",
+    "last_200": "dingDown, Download, Building, DollarSign, Clock, TrendingUp, Activity\nLet me fix the component with ALL the correct imports:\n\n\nDealOfWeekDashboard.tsx - Using YOUR Actual Columns\nCode\u2002\u2219\u2002Version 2 \n\n\n\n"
+  },
+  "stats": {
+    "lines": 2345,
+    "words": 9397,
+    "code_blocks": 0
+  }
+}

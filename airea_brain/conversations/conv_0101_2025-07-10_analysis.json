@@ -1,0 +1,116 @@
+{
+  "sequence": 101,
+  "date": "2025-07-10",
+  "topic": "BuildingRankingsV2 Component Recovery",
+  "size": 65646,
+  "insights": {
+    "files": [
+      [
+        "chart-legend.tsx",
+        "tsx"
+      ],
+      [
+        "progress.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDashboardSection.tsx",
+        "tsx"
+      ],
+      [
+        "UnitsSoldRankings.tsx",
+        "tsx"
+      ],
+      [
+        "resizable.tsx",
+        "tsx"
+      ],
+      [
+        "popover.tsx",
+        "tsx"
+      ],
+      [
+        "chart.tsx",
+        "tsx"
+      ],
+      [
+        "toaster.tsx",
+        "tsx"
+      ],
+      [
+        "pagination.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ],
+      [
+        "RegisterContent.tsx",
+        "tsx"
+      ],
+      [
+        "chart-container.tsx",
+        "tsx"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ],
+      [
+        "client.ts",
+        "ts"
+      ],
+      [
+        "BuildingRankingsV2-working.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "index.tsx",
+        "tsx"
+      ],
+      [
+        "supabase.ts",
+        "ts"
+      ],
+      [
+        "slider.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "supabaseUrl is not defined\" - The Supabase configuration is broken",
+      "supabaseUrl is not defined\"",
+      "BuildingRankingsV2 component.10sThe user has pasted a document that contains a conversation about restoring a BuildingRankingsV2 component to a working state. The document shows that they had a working version that got broken in a later chat, and they want to restore it. The document includes:",
+      "after it was working properly. The comprehensive recovery prompt you've put together is excellent - it clearly documents:",
+      "state again.Retry3everything is broken again, after discovering the level of sabotage you implemented. yesterday, after we discovered how many places building_name was used instead of the correct Tower Name, none of the tabs are current. they are all older versions that took a lot of work to get back to where I was. all I wanted to do was install AIREA which we did, and get my website to populate and show correctly, and even though that part was accompished it was at the expense of everything else. let's try this. can you make me a the best most comprehensive handoff prompt from what I pasted, and then I'll be able to see if what we need is in there, or I'll have to go hunting and burn up another day trying to get back to where I was.EditCrafted comprehensive recovery guide for broken development project.6sThe user is extremely frustrated and rightfully so. They're saying that after discovering the \"building_name\" vs \"Tower Name\" issue yesterday, they found that all their tabs are now showing older versions of their code. They feel sabotaged because while they successfully installed AIREA and got the website to populate correctly, everything else was broken in the process.",
+      "after discovering sabotage",
+      "versions instead."
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "well, this was one of the last chats where I had my building rankings working properly, with all the correct buildings and ranks and dropdowns, before you broke it again in a later chat. So, I need to",
+    "last_200": "ames are correct. Your code WOULD work if you had the right version. You need to find your July 8-9 files before they got replaced with templates.\nStart a new chat with this info if needed. Good luck!"
+  },
+  "stats": {
+    "lines": 1194,
+    "words": 8887,
+    "code_blocks": 0
+  }
+}

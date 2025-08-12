@@ -1,0 +1,77 @@
+{
+  "sequence": 76,
+  "date": "2025-07-05",
+  "topic": "dow",
+  "size": 125995,
+  "insights": {
+    "files": [
+      [
+        "DealOfWeekDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "themed.tsx",
+        "tsx"
+      ],
+      [
+        "Footer.tsx",
+        "tsx"
+      ],
+      [
+        "Main.tsx",
+        "tsx"
+      ],
+      [
+        "paste.txt",
+        "txt"
+      ],
+      [
+        "Slider.tsx",
+        "tsx"
+      ],
+      [
+        "server.tsx",
+        "tsx"
+      ],
+      [
+        "Node.js",
+        "js"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "McpServers.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "and fix it",
+      "- expects sold properties data (Close Price, Actual Close Date)",
+      "React component code to fix it, or I need to create the fixed version from scratch.No, that's the SQL query - which is already working fine according to your handoff! \u2705",
+      "component expecting sold properties or if it's something else entirely.You're 100% correct to be careful here. Let me search for what's actually in the current DealOfTheWeek.tsx file:site:github.com tedfinkleman DealOfTheWeek.tsx10 resultsGitHub - privatenumber/tsx: \u26a1\ufe0f TypeScript Execute | The easiest way to run TypeScript in Node.jsgithub.comcrypto-website/components/Footer.tsx at main \u00b7 naseemkhandev/crypto-websitegithub.comhome-panel/src/Components/Main.tsx at 91b378e03f2261aca0d060491abdaad6eeb56d79 \u00b7 timmo001/home-panelgithub.comTree-sitter Enhancements: TSX, TypeScript, JSON, and Markdown Support\u2026 \u00b7 RooCodeInc/Roo-Code@d7ad947github.commineral-ui/src/library/themes/themed.tsx at 7ca1c541df8e1d4ee51095a4ef9e7b5329c3bd7f \u00b7 mineral-ui/mineral-uigithub.comai/playground/ai/src/McpServers.tsx at af1ce8be87d6a4e6bc10bb83f7959e63b28c1c8e \u00b7 cloudflare/aigithub.comFix children types with tsx and class-based widgets by agubler \u00b7 Pull Request #554 \u00b7 dojo/frameworkgithub.comRetroUI/components/retroui/Slider.tsx at main \u00b7 Logging-Stuff/RetroUIgithub.comentry.server.tsx \u00b7 GitHubgithub.comSupport a mixture of arrays and single children for class based widgets using tsx by agubler \u00b7 Pull Request #671 \u00b7 dojo/frameworkgithub.comInvestigated alternative search methods for project component details.2sThe web search didn't find the specific file. Let me try a different approach and search the project knowledge for any reference to the current DealOfTheWeek component structure.The web search didn't find your specific file. Let me check if there's any reference to the current DealOfTheWeek component in the project knowledge:Searched project for \u201cDealOfTheWeek export default function component structure\u201d1 resultThis is the continuation of chatgpt Phase 2 that went south..pdf8 relevant sectionstextPondered cautiously reviewing existing component before replacement.3sBased on my searches, I can't find the actual current content of the DealOfTheWeek.tsx component. The user is being smart - they want to see what's currently there before we replace it, especially since they've been working methodically on getting the backend formula working first.",
+      "(expects sold properties), we'll update it"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "this last part, the last several days have been more brutal than not. finally got the building rankings tab in the backend dashboard working the other day, and thought i had the deal of the week worki",
+    "last_200": "your screenshot)\nOr search for the score display:\nbashgrep -n \"Score:\" src/pages/AIREADashboard.tsx\nThese commands will show you line numbers where the actual Deal of the Week display code is located."
+  },
+  "stats": {
+    "lines": 1907,
+    "words": 16611,
+    "code_blocks": 0
+  }
+}

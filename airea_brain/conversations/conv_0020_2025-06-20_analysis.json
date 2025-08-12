@@ -1,0 +1,66 @@
+{
+  "sequence": 20,
+  "date": "2025-06-20",
+  "topic": "Project Handoff and Status Update.",
+  "size": 262300,
+  "insights": {
+    "files": [
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "react-router-dom.js",
+        "js"
+      ],
+      [
+        "Next.js",
+        "js"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "supabase.ts",
+        "ts"
+      ],
+      [
+        "61225.csv",
+        "csv"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "dashboard.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "with 400 pasted3couple moreEditUnraveled dashboard data retrieval and SQL query challenges.6sThis is a very candid handoff prompt from a previous session where the assistant made significant mistakes. Key takeaways:",
+      "with 400 errors"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "can you see this? front and back?\nhttp://localhost:8080/airea-dashboardEditAnalyzed localhost limitation, prepared explanation for inaccessible URL.4sThe user is asking if I can see something at a loc",
+    "last_200": "0 rounded\">\n            <p className=\"text-sm\">{getNarrative(building)}</p>\n          </div>\n        </div>\n      )}\n    </div>\n  ))}\n</div>\nThis gives you the expandable table format you want. Ready?"
+  },
+  "stats": {
+    "lines": 4807,
+    "words": 36054,
+    "code_blocks": 0
+  }
+}

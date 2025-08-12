@@ -1,0 +1,114 @@
+{
+  "sequence": 93,
+  "date": "2025-07-08",
+  "topic": "Debugging a Blank React App",
+  "size": 74262,
+  "insights": {
+    "files": [
+      [
+        "browser-BxxqIy1d.js",
+        "js"
+      ],
+      [
+        "index.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDashboardSection.tsx",
+        "tsx"
+      ],
+      [
+        "vercel.js",
+        "js"
+      ],
+      [
+        "index-DDls7zHe.css",
+        "css"
+      ],
+      [
+        "NotFound.tsx",
+        "tsx"
+      ],
+      [
+        "install.js",
+        "js"
+      ],
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "index-BKlgskem.css",
+        "css"
+      ],
+      [
+        "LuxurySalesRankings.tsx",
+        "tsx"
+      ],
+      [
+        "Contact.tsx",
+        "tsx"
+      ],
+      [
+        "deals.tsx",
+        "tsx"
+      ],
+      [
+        "Registration.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ],
+      [
+        "npm.js",
+        "js"
+      ],
+      [
+        "gptengineer.js",
+        "js"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "EACCES: permission denied, rename '/usr/local/lib/node_modules/vercel' -> '/usr/local/lib/node_modules/.vercel-zV6dtPI9'",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received\"",
+      "cat is not defined\"",
+      "- The root element is completely empty!"
+    ],
+    "entities": [
+      "2777 Paradise Rd"
+    ],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "does it matter that MiniMarketVisualization is not in the components folder? it appears to be under the hooks folderEditYou're absolutely right! The file structure shows it's in /src/components/market",
+    "last_200": "real development looks like!\nThe app should work now once the latest push deploys to Vercel. You've learned a lot about React routing, Vercel deployment, Git workflows, and debugging in the process! \ud83c\udf89"
+  },
+  "stats": {
+    "lines": 1475,
+    "words": 9009,
+    "code_blocks": 0
+  }
+}

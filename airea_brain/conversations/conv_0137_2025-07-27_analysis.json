@@ -1,0 +1,118 @@
+{
+  "sequence": 137,
+  "date": "2025-07-27",
+  "topic": "AIREA Browser Troubleshooting Steps",
+  "size": 333637,
+  "insights": {
+    "files": [
+      [
+        "building_rankings_rows.csv",
+        "csv"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "test_claude.py",
+        "py"
+      ],
+      [
+        "MarketDashboardSection.tsx",
+        "tsx"
+      ],
+      [
+        "Ogden.csv",
+        "csv"
+      ],
+      [
+        "CMASection.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "Buyers.tsx",
+        "tsx"
+      ],
+      [
+        "rankingQueries.ts",
+        "ts"
+      ],
+      [
+        "EducationalSection.tsx",
+        "tsx"
+      ],
+      [
+        "Vegas.csv",
+        "csv"
+      ],
+      [
+        "typeschema.js",
+        "js"
+      ],
+      [
+        "AdditionalFeaturesSection.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "healthResponse.js",
+        "js"
+      ],
+      [
+        "Metropolis.csv",
+        "csv"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "import_building_data.py",
+        "py"
+      ],
+      [
+        "Blockchain.tsx",
+        "tsx"
+      ],
+      [
+        "Deals.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "{e}\")",
+      "{e}\")",
+      "'[' was never closedEditDiagnosed syntax error in SQL patterns list file.1sThe user created the file but it seems incomplete - the SQL patterns list wasn't closed properly. The heredoc must have been interrupted or not completed properly. I need to help them create the complete file again.The file was created incompletely. Let's create it properly this time. First, remove the broken file:",
+      "file:",
+      "DaysOnMarketRankings.tsx NotFound.tsx",
+      "imports",
+      "imports/connections",
+      "locally"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "bitcoin_conference",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Comprehensive Handoff for Next Chat - July 25, 2025\nCurrent State\n\nProject: LVHR (Las Vegas High Rise) - Real Estate Platform\nDev Environment: localhost:8080\nProduction: https://lasvegashighriseapp.co",
+    "last_200": "tional Features sections\nAIREA thinks 50+ buildings (needs correction to 27)\nMarketAnalysisSection needs CMA enhancements\n\nCRITICAL: Get MarketDashboard.tsx before making repo private!\n\nSave this NOW!"
+  },
+  "stats": {
+    "lines": 6578,
+    "words": 39830,
+    "code_blocks": 4
+  }
+}

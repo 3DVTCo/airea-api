@@ -1,0 +1,56 @@
+{
+  "sequence": 37,
+  "date": "2025-06-22",
+  "topic": "AIREA Backend Configuration Troubleshooting.",
+  "size": 25499,
+  "insights": {
+    "files": [
+      [
+        "supabase_helper.py",
+        "py"
+      ],
+      [
+        "ingest_all_docs.py",
+        "py"
+      ],
+      [
+        "LiveSQLRunner.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "index.tsx",
+        "tsx"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "airea_with_memory.py",
+        "py"
+      ]
+    ],
+    "errors": [
+      "import"
+    ],
+    "entities": [],
+    "concepts": [
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "I need some help. I'm lost as a result of everything that has happened, all of the circles and wasted time. we had just gotten the backend installed, communicating with AIREA and using the terminal to",
+    "last_200": "ppsf_discount, price_percentage, dom_score\n\nCommon names might be:\n\nbuildings\nlistings\nproperties\nbuilding_scores\nrankings\nOr maybe a view that calculates rankings\n\nWhat tables do you see in the list?"
+  },
+  "stats": {
+    "lines": 478,
+    "words": 3510,
+    "code_blocks": 0
+  }
+}

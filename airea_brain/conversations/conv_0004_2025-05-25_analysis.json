@@ -1,0 +1,120 @@
+{
+  "sequence": 4,
+  "date": "2025-05-25",
+  "topic": "Fixing Rendering Error and Processing Master Data for Bitcoin Conference",
+  "size": 174768,
+  "insights": {
+    "files": [
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "app.jsx",
+        "jsx"
+      ],
+      [
+        "index-DibfTgWx.js",
+        "js"
+      ],
+      [
+        "index-BNIM99sN.js",
+        "js"
+      ],
+      [
+        "app.tsx",
+        "tsx"
+      ],
+      [
+        "index-2A--SV3b.js",
+        "js"
+      ],
+      [
+        "App.jsx",
+        "jsx"
+      ],
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "index-DE4f1hOu.js",
+        "js"
+      ],
+      [
+        "index-tJiGFXI5.css",
+        "css"
+      ],
+      [
+        "marketDataService.ts",
+        "ts"
+      ],
+      [
+        "ComparableProperties.tsx",
+        "tsx"
+      ],
+      [
+        "index-CUaHIXYJ.js",
+        "js"
+      ],
+      [
+        "52525.csv",
+        "csv"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "index-DajPNrMX.js",
+        "js"
+      ],
+      [
+        "browser-BxO_09mC.js",
+        "js"
+      ]
+    ],
+    "errors": [
+      "cat is not defined at index-DajPNrMX.js:285:53663",
+      "Could not establish connection. Receiving end does not exist.",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "cat is not defined at index-DajPNrMX.js:285:53663",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "variable cat somewhere in your MiniMarketVisualization.tsx component. This could be:",
+      "in the cleanup",
+      "during the cleanup",
+      "so we can finally rank everything!",
+      "bottom section so we can finally get your rankings working.",
+      "between GitHub and Vercel."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "bitcoin_conference"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "# LVHR Critical Issues - Transition Log\n## Immediate Priorities:\n1. Rendering Fix: Remove 'cat' from MiniMarketVisualization.tsx\n2. Master Sheet Processing: 893 listings need deduplication and ranking",
+    "last_200": "shows how it should work\nDatabase: Supabase working, tables populated, environment variables set\nYou can copy this markdown and paste it into your new Opus chat to continue where we left off.\n\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 4411,
+    "words": 22711,
+    "code_blocks": 0
+  }
+}

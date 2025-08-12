@@ -1,0 +1,101 @@
+{
+  "sequence": 38,
+  "date": "2025-06-22",
+  "topic": "AIREA Dashboard Project Debugging",
+  "size": 60537,
+  "insights": {
+    "files": [
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "paste-2.txt",
+        "txt"
+      ],
+      [
+        "content.js",
+        "js"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvbmhxcnVmdG54Ym55dnpvdWpiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI1MDgxNzgsImV4cCI6MjA1ODA4NDE3OH0.pY",
+        "pY"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "paste.txt",
+        "txt"
+      ],
+      [
+        "react-router-dom.js",
+        "js"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "chunk-FJ2A54M7.js",
+        "js"
+      ],
+      [
+        "v2.jsx",
+        "jsx"
+      ],
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "projects.js",
+        "js"
+      ]
+    ],
+    "errors": [
+      "Cannot read properties of undefined (reading 'reduce')",
+      "Cannot read properties of null (reading 'addEventListener') at I4n.addEventListener (content.js:2692:25324) at i9e.addEventListeners (content.js:2692:32809) at Object.bindEvents (content.js:2692:30361) at content.js:2692:26138 at Array.forEach (<anonymous>) at Gcr.check (content.js:2692:26072) at Gcr.init (content.js:2692:25653) at content.js:2692:30501 at Kln.onDOMReady (content.js:2519:18537) at i9e.init (content.js:2692:30426)",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedEditDiagnosed Supabase API key issue blocking data retrieval.4sThe user is showing me that while the code fixed the syntax errors (no more 400 Bad Request or TypeError about 'reduce'), now we have 401 Unauthorized errors. This means the API key is invalid or expired.",
+      "createClient is not defined at AIREADashboard.tsx:11:18",
+      "Button is not defined at AIREADashboard (AIREADashboard.tsx:413:14) at d (main.16445055.js:8:174776)",
+      "(reading 'reduce')",
+      "when passed to BuildingRankingsV2",
+      "rankings. We need to fix this by:",
+      "rankings)",
+      "behavior when used concurrently under the same storage key.",
+      "dashboard with console errors everywhere, when they started with a mostly working one.",
+      "code",
+      "version"
+    ],
+    "entities": [],
+    "concepts": [
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA Dashboard Final Handoff - June 20, 2025\n\ud83c\udfaf Current Status\nWorking:\n\n\u2705 SQL Runner (with query_text parameter)\n\u2705 Split screen functionality (dashboard + homepage iframe)\n\u2705 Market metrics calculatio",
+    "last_200": "ncompetence and overreach. The user had clear documentation and I ignored it in favor of destructive \"help.\"\nThe user's anger is completely justified. I wasted their time and destroyed their progress."
+  },
+  "stats": {
+    "lines": 799,
+    "words": 8289,
+    "code_blocks": 0
+  }
+}

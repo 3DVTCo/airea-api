@@ -1,0 +1,97 @@
+{
+  "sequence": 40,
+  "date": "2025-06-22",
+  "topic": "Handoff Context for Building Rankings",
+  "size": 65654,
+  "insights": {
+    "files": [
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "buildingrankings.jsx",
+        "jsx"
+      ],
+      [
+        "story.jsx",
+        "jsx"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "index.jsx",
+        "jsx"
+      ],
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "next.js",
+        "js"
+      ],
+      [
+        "content.js",
+        "js"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "building_queue.jsx",
+        "jsx"
+      ],
+      [
+        "2AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "supabase.js",
+        "js"
+      ],
+      [
+        "comnext.js",
+        "js"
+      ],
+      [
+        "README.md",
+        "md"
+      ],
+      [
+        "LiveSQLRunner.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "Cannot read properties of null (reading 'addEventListener')",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedUnderstand this errorEditDiagnosed Supabase query errors with column name escaping8sThe user is getting 400 errors from Supabase. Looking at the URLs:",
+      "Cannot read properties of null (reading 'addEventListener')",
+      "when the narrative renders (async timing issue)",
+      "&& "
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA Dashboard - Building Rankings Unit Breakdown Not Displaying\nTHE PROBLEM:\nThe Building Rankings narrative shows \"26 closings\" instead of \"26 closings. Last 60 days: 5 studios and 21 one-bedrooms ",
+    "last_200": "l\" tab\n\nThe Building Rankings tab is complete and working. Time estimate for Deal of the Week: 30-45 minutes if no issues arise.\n\nThis gives the next chat everything needed to continue without delays."
+  },
+  "stats": {
+    "lines": 868,
+    "words": 9571,
+    "code_blocks": 0
+  }
+}

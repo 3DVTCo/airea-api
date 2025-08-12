@@ -1,0 +1,108 @@
+{
+  "sequence": 105,
+  "date": "2025-07-10",
+  "topic": "BuildingRankingsV2.jsx Recovery",
+  "size": 54333,
+  "insights": {
+    "files": [
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ],
+      [
+        "all_code_blocks.txt",
+        "txt"
+      ],
+      [
+        "GOLDEN_BuildingRankingsV2_FOUND.jsx",
+        "jsx"
+      ],
+      [
+        "terminal2_dump.txt",
+        "txt"
+      ],
+      [
+        "restoration_log.txt",
+        "txt"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "extract_code.py",
+        "py"
+      ],
+      [
+        "GOLDEN_BuildingRankingsV2_WORKING.jsx",
+        "jsx"
+      ],
+      [
+        "GOLDEN_BuildingRankingsV2_755.jsx",
+        "jsx"
+      ],
+      [
+        "GOLDEN_BuildingRankingsV2_755_WORKING.jsx",
+        "jsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2_FOUND_755_LINES.jsx",
+        "jsx"
+      ],
+      [
+        "ollama_prompt.txt",
+        "txt"
+      ],
+      [
+        "GOLDEN_BACKUP_BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2_RECONSTRUCTED.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2_BACKUP_755.jsx",
+        "jsx"
+      ],
+      [
+        "terminal1.txt",
+        "txt"
+      ],
+      [
+        "all_versions.js",
+        "js"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "205-line version in project"
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA Dashboard - Complete Technical Handoff for Deal of the Week Project Context LVHR real estate app with AIREA AI assistant. Just completed BuildingRankingsV2.jsx after 8+ hours fixing data quality",
+    "last_200": "d) - ?\nShould I create that artifact?\n\n\n\n\nRetry\nyes please\n\nEdit\n\nPondered creating artifact for advanced ContentCenter.tsx file.\n1s\n\n\n\nContentCenter.tsx - ADVANCED 4-BOX VERSION (523 lines)\nCode \n\n\n\n"
+  },
+  "stats": {
+    "lines": 1606,
+    "words": 6943,
+    "code_blocks": 14
+  }
+}

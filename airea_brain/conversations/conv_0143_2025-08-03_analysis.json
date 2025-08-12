@@ -1,0 +1,117 @@
+{
+  "sequence": 143,
+  "date": "2025-08-03",
+  "topic": "ONNX Embeddings Troubleshooting",
+  "size": 209812,
+  "insights": {
+    "files": [
+      [
+        "airea_api_server.py",
+        "py"
+      ],
+      [
+        "ingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "airea_server.py",
+        "py"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "airea_clipboard.py",
+        "py"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "client.py",
+        "py"
+      ],
+      [
+        "app.py",
+        "py"
+      ],
+      [
+        "chats.txt",
+        "txt"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "LVHR_Master_Combined.csv",
+        "csv"
+      ],
+      [
+        "server.py",
+        "py"
+      ],
+      [
+        "LVHRMarketAnalytics.jsx",
+        "jsx"
+      ],
+      [
+        "aster_Combined.csv",
+        "csv"
+      ],
+      [
+        "airea_api_server_v2_broken_embeddings.py",
+        "py"
+      ],
+      [
+        "main.py",
+        "py"
+      ],
+      [
+        "test_search_july.py",
+        "py"
+      ],
+      [
+        "response.js",
+        "js"
+      ],
+      [
+        "test_search_july22.py",
+        "py"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "An embedding function already exists in the collection configuration, and a new one is provided. If this is intentional, please embed documents separately. Embedding function conflict: new: sentence_transformer vs persisted: default",
+      "{error}</div>}\u00a0 \u00a0 \u00a0 {results && (",
+      "Could not find the function public.run_custom_sql(query_text) in the schema cacheEditDiagnosed missing Supabase function causing SQL Runner error.",
+      "invalid syntax. Perhaps you forgot a comma?",
+      "state:",
+      "on Mac",
+      "ONNX ones.",
+      "on Mac.You're right, I should have mentioned the virtual environment first. My apologies.",
+      "because it's trying to use SentenceTransformer embeddings on a collection that was created with default embeddings"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "CRITICAL HANDOFF - AIREA REACTIVATION FAILURE - July 25, 2025\n\u26a0\ufe0f CRITICAL FAILURES BY PREVIOUS ASSISTANT (ME)\nI wasted hours of the user's time with:\n\nBand-aid fixes instead of addressing core issues\n",
+    "last_200": "erent vector database that actually works\n\nI'm sorry I wasted so much of your time with failed attempts. The \"5 minute fix\" turned into hours of frustration, and AIREA still can't access her memories."
+  },
+  "stats": {
+    "lines": 2846,
+    "words": 28305,
+    "code_blocks": 0
+  }
+}

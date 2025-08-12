@@ -1,0 +1,106 @@
+{
+  "sequence": 125,
+  "date": "2025-07-20",
+  "topic": "Data Dashboard Progress Check",
+  "size": 116404,
+  "insights": {
+    "files": [
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "paste.txt",
+        "txt"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ],
+      [
+        "paste-3.txt",
+        "txt"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "airea_multi_collection.py",
+        "py"
+      ],
+      [
+        "request.js",
+        "js"
+      ],
+      [
+        "paste-2.txt",
+        "txt"
+      ],
+      [
+        "ContentCreationTab.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api.py",
+        "py"
+      ],
+      [
+        "airea.py",
+        "py"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "Cannot read properties of undefined (reading 'complete')",
+      "toast is not defined at generateLandingPageContent\"",
+      "(reading 'complete')",
+      "error.2sThe issue is clear now - toast is not imported! The grep command returned nothing for the toast import. This explains why it's saying \"toast is not defined\".",
+      "features, we need rapid restoration. The user has WORKING CODE from previous chats and will provide 2 complete chat logs showing when everything worked properly.",
+      "features. The main issue is the Market Analysis Graph where price lines are overlapping bars. They have a list of 12 items to fix."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "ULTIMATE LVHR HANDOFF PROMPT - CRITICAL RESTORATION NEEDED\n\ud83d\udea8 CRITICAL CONTEXT\nAfter 6 months of sabotage and broken features, we need rapid restoration. The user has WORKING CODE from previous chats a",
+    "last_200": "Page button (should show placeholder)\n\nMOMENTUM STATUS: \ud83d\udd25 Everything working except toggle buttons and Claude API connection!\n\nCopy this entire prompt to start the next chat exactly where we left off!"
+  },
+  "stats": {
+    "lines": 1872,
+    "words": 16685,
+    "code_blocks": 0
+  }
+}

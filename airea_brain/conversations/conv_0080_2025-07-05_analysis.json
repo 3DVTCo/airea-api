@@ -1,0 +1,57 @@
+{
+  "sequence": 80,
+  "date": "2025-07-05",
+  "topic": "LVHR Building Rankings Enhancement",
+  "size": 123211,
+  "insights": {
+    "files": [
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "V2.jsx",
+        "jsx"
+      ],
+      [
+        "supabase_supabase-js.js",
+        "js"
+      ],
+      [
+        "chunk-W6L2VRDA.js",
+        "js"
+      ]
+    ],
+    "errors": [
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedUnderstand this errorthe palms place narrative says what you are saying it should, but this is a regenerate from the signature narrative which is atrocious and missing info - \u2b50 Top 1 performer! Signature At MGM Grand scores 32.9 (#1 overall, #1 for null). Hot property alert: 0.43 velocity! 9.7% market share with 106 yearly sales (21 just last 60 days!). Available now: 45 studios, 41 one-bedrooms and 7 two-bedrooms - 4 going fast! Premium tier property.",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedUnderstand this error",
+      "or null rather than 0.",
+      "? calculated60DaySales[building[\"Tower Name\"]] : building.sales_60d}</div>",
+      "? calculated12MSales[building[\"Tower Name\"]] : building.sales_12m || 0}</div>"
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "SUPER HANDOFF PROMPT - LVHR BUILDINGRANKINGSV2 ENHANCEMENTS\n\ud83d\udea8 CRITICAL CONTEXT\nUser is Ted Finkleman. Previous 2 chats wasted 7+ hours by breaking working code. He's furious and needs to move forward,",
+    "last_200": "on pre-sales instead of historical sales\nMention anticipated delivery dates\n\n\n\nThe generateNarrative function (lines ~400-700) contains all this logic if you want to tweak it further in the next chat."
+  },
+  "stats": {
+    "lines": 1902,
+    "words": 17416,
+    "code_blocks": 0
+  }
+}

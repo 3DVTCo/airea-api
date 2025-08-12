@@ -1,0 +1,59 @@
+{
+  "sequence": 59,
+  "date": "2025-07-01",
+  "topic": "Recovering Derailed Project Progress",
+  "size": 71975,
+  "insights": {
+    "files": [
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "LiveSQLRunner.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "index.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "in backend dashboard",
+      "(mentioned in original request)\"",
+      "Content Tab, 3) Update Unit 2503 as penthouse.\"",
+      "in backend dashboard"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "COMPREHENSIVE HANDOFF - JULY 1, 2025 UPDATE\nMISSION STATUS: 95% COMPLETE \u2705\nWhat We Accomplished Today\n1. Penthouse Identification & Categorization \u2705\n\nAdded columns: Unit Description (TEXT) and is_pent",
+    "last_200": "e the DOW backend tab implementation and fix the Content Tab. I understand Fetch Building Rankings is the correct SQL and we're testing manually before automation.\"\n\nGood luck with the next session! \ud83d\ude80"
+  },
+  "stats": {
+    "lines": 1156,
+    "words": 10482,
+    "code_blocks": 0
+  }
+}

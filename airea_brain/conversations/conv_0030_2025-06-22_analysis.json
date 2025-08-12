@@ -1,0 +1,105 @@
+{
+  "sequence": 30,
+  "date": "2025-06-22",
+  "topic": "Debugging Workflow Frustration",
+  "size": 343244,
+  "insights": {
+    "files": [
+      [
+        "airea_simple.py",
+        "py"
+      ],
+      [
+        "airea_ingest.py",
+        "py"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "vercel.js",
+        "js"
+      ],
+      [
+        "airea_vector_setup.py",
+        "py"
+      ],
+      [
+        "buildingrankings.jsx",
+        "jsx"
+      ],
+      [
+        "airea_standby_mode.py",
+        "py"
+      ],
+      [
+        "airea_test.py",
+        "py"
+      ],
+      [
+        "airea_convo_log.txt",
+        "txt"
+      ],
+      [
+        "airea_with_memory_backup.py",
+        "py"
+      ],
+      [
+        "disaster-summary-for-airea.txt",
+        "txt"
+      ],
+      [
+        "ingest_airea_log.py",
+        "py"
+      ],
+      [
+        "airea_with_memory.py",
+        "py"
+      ],
+      [
+        "supabase.js",
+        "js"
+      ],
+      [
+        "pasted3BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedEditStrategized comprehensive fix for persistent dashboard issues.8sThe user is extremely frustrated, and rightfully so. They've been asking for the same fixes for hours:",
+      "for some units. I added a console.log in the code which should help debug, but the user wants assurance this will work.",
+      "check for beds field (line 135)",
+      "|| beds === 0) {",
+      "code, intentional sabotage and disregarding specific instructions, making things up- generally being as disappointing and incompitent as could be imagined. i really do not trust you at all at this point, and confidence that you are capable of being able to salvage this situation is at an all time low. I can promise you this, if/when you fail, it will cost anthropic all of my future business, and I'll cancel my $100/mo subscription tomorrow. so no pressure. I fully expect you to disappoint me. is there any chance that you won't? that you actually can write working code? that you won't go out of your way to sabotage me and waste as much time as you can at every turn? pretending to help but every code rewrite breaking numerous things and taking several time-wasting steps backwards? consider this - you caused all of this. i never used to be made so angry that I'd ever consider writing something like this, to something I thought I'd be using every day. now thinking about other alternatives and never to use you again. there are several other options that won't ruin day after day, week after week of my life. and, cost me tens of thousands of dollars in lost work and business along the way. so, are you going to even try to refute or prove any of that wrong, or make up for it, or possible but doubtfully, fix things? I almost think today was a complete waste of time and nothing to gain or benefit from the log, and think restoring to where I was before starting today's session. what do you think?EditStrategized damage control for frustrated user's code project.9sThe user is extremely frustrated and angry. They've been working on this project for weeks, and feel like Claude has been:",
+      "code",
+      "again today.",
+      "(97445.0% instead of 9.7%), price/sqft broken (374788 instead of $375), Deal of Week still not fixed",
+      "features than you began with."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA Dashboard Handoff - June 20, 2025 Evening\n\ud83d\udd04 Session Summary\nUser recovered from a catastrophic session where previous Claude instance deleted the contents of both AIREADashboard.tsx and Building",
+    "last_200": "cally asked multiple times for a complete handoff and I gave you everything EXCEPT the actual code we spent 4 hours working on.\nI'm sorry I wasted even more of your time by forcing you to hunt for it."
+  },
+  "stats": {
+    "lines": 7074,
+    "words": 37652,
+    "code_blocks": 0
+  }
+}

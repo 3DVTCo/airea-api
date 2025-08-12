@@ -1,0 +1,38 @@
+{
+  "sequence": 52,
+  "date": "2025-06-27",
+  "topic": "Market Analysis Chart Development",
+  "size": 36488,
+  "insights": {
+    "files": [
+      [
+        "paste.txt",
+        "txt"
+      ],
+      [
+        "marketchart.tsx",
+        "tsx"
+      ],
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Market Analysis Real Data Implementation - Handoff Prompt (Updated) \ud83c\udfaf Current Status (June 26, 2025, 7:11 PM) \u2705 What's Working: Market Analysis Chart displays REAL DATA from Supabase lvhr_master table",
+    "last_200": "ensive Handoff Prompt for Next Chat\n\nAIREA Development Handoff Prompt - June 27, 2025\nDocument \n\nPlotted implementation guide for building narratives.\n1s\n\n\n\nQuick Fix for Building Narratives\nCode \n\n\n\n"
+  },
+  "stats": {
+    "lines": 1261,
+    "words": 5540,
+    "code_blocks": 0
+  }
+}

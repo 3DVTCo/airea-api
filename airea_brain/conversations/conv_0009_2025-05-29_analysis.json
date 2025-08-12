@@ -1,0 +1,117 @@
+{
+  "sequence": 9,
+  "date": "2025-05-29",
+  "topic": "Supabase Data Integration in LVHR App",
+  "size": 51482,
+  "insights": {
+    "files": [
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingSpotlight.tsx",
+        "tsx"
+      ],
+      [
+        "UnitsSoldRankings.tsx",
+        "tsx"
+      ],
+      [
+        "Sellers.tsx",
+        "tsx"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "HomeHero.tsx",
+        "tsx"
+      ],
+      [
+        "Deals.tsx",
+        "tsx"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketRankings.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDashboardSection.tsx",
+        "tsx"
+      ],
+      [
+        "inpage.js",
+        "js"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "utils.ts",
+        "ts"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "index.ts",
+        "ts"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "The requested module '/src/components/dashboard/AvgPriceTable.tsx' does not provide an export named 'AvgPriceTable' (at MarketDashboard.tsx:4:10)",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "MetaMask extension not found at inpage.js:1:16512",
+      "The requested module '/src/components/dashboard/UnitsSoldTable.tsx' does not provide an export named 'UnitsSoldTable' (at MarketDashboard.tsx:3:10)",
+      "MetaMask extension not found at inpage.js:1:16512",
+      "when trying to add real Supabase data.",
+      "files:",
+      "MiniMarketVisualization file:",
+      "attempt at adding Supabase data. What would work best for you?",
+      "and what the component is trying to do."
+    ],
+    "entities": [],
+    "concepts": [
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "I need to replace mock data with real Supabase queries in my LVHR app.\nCurrent state:\n- App shows \"Waldorf Astoria: 28 units\" (FAKE DATA)\n- I have real data in Supabase tables: raw_sales_with_agents, ",
+    "last_200": "sh this tonight. shoudl I stay here, or just go back to the chat from a couple of days ago before the last couple of transfer to next chats like this one, that has really not gotten me anywhere?  \n\n\n\n"
+  },
+  "stats": {
+    "lines": 1341,
+    "words": 5201,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "sequence": 128,
+  "date": "2025-07-20",
+  "topic": "Debugging Real Estate Listings",
+  "size": 173725,
+  "insights": {
+    "files": [
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "airea_query.py",
+        "py"
+      ],
+      [
+        "chunk-W6L2VRDA.js",
+        "js"
+      ],
+      [
+        "highrise_markets_2027.csv",
+        "csv"
+      ],
+      [
+        "highrise_potential_2030.csv",
+        "csv"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "highrise_opportunity_matrix_full.csv",
+        "csv"
+      ],
+      [
+        "Next.js",
+        "js"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "9e9aa907.js",
+        "js"
+      ],
+      [
+        "saleDataExtractor.ts",
+        "ts"
+      ],
+      [
+        "highrise_vegas_2025.csv",
+        "csv"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "supabase_supabase-js.js",
+        "js"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ],
+      [
+        "airea_ingest.py",
+        "py"
+      ],
+      [
+        "airea_convo_log.txt",
+        "txt"
+      ]
+    ],
+    "errors": [
+      "MetaMask extension not found",
+      "Claude API error: Not Found",
+      "Claude API error: Not Found",
+      "Claude API error: Not Found",
+      "Claude API error: Not Found",
+      "code",
+      "code in the last chat, which caused all of this. just give me a clean working unbroken file that does what I require it to do! why must it take a full day and several chats to fix something that should take minutes?!! I just don't get it!EditDevised comprehensive solution for broken content center component.7sThe user is absolutely right. They've been dealing with broken code for hours, and I should just provide them with a clean, working file. Looking at their requirements from the handoff:",
+      "code and false starts, so this simple fix working immediately must feel really good. I should celebrate this win with them and keep the momentum going.\ud83c\udf89 YES! Finally something that just WORKS! After the day you've had, you deserve this win!",
+      "code, so I need to be extra careful and methodical. Let me guide them through this step by step.",
+      "promises"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Screenshot 20250715 at 12.02.34\u202fPM 2.png\n\nCOMPREHENSIVE HANDOFF PROMPT - BUILDING RANKINGS NARRATIVE FIX CURRENT VICTORY \ud83c\udf89 Just recovered the FULL 898-line BuildingRankingsV2.jsx from Time Machine bac",
+    "last_200": "mn names ALWAYS quoted in SQL\nUser is FRUSTRATED after 12 hours of broken promises\n\nCURRENT STATUS: Pushed to GitHub at 8:30 PM, waiting for Netlify deploy to complete, then test Claude on PRODUCTION!"
+  },
+  "stats": {
+    "lines": 3487,
+    "words": 21448,
+    "code_blocks": 0
+  }
+}

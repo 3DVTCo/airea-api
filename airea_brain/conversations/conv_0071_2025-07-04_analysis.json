@@ -1,0 +1,73 @@
+{
+  "sequence": 71,
+  "date": "2025-07-04",
+  "topic": "Supabase Project Handoff Prompt",
+  "size": 185171,
+  "insights": {
+    "files": [
+      [
+        "9e9aa907.js",
+        "js"
+      ],
+      [
+        "DealOfWeekV2.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "V2.jsx",
+        "jsx"
+      ],
+      [
+        "chunk-W6L2VRDA.js",
+        "js"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ],
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "Identifier 'regenerateRankingNarrative' has already been declared (at ContentCenter.tsx?t=1751679034541:952:11)Understand this error",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedUnderstand this error",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedUnderstand this errorEditDiagnosed duplicate function causing syntax error in code.5sThe user is getting a syntax error: \"Identifier 'regenerateRankingNarrative' has already been declared\". Looking at the code, I can see the issue:",
+      "Cannot access 'generateRankingNarrative' before initialization",
+      "&& activeCount !== undefined && ucCount !== undefined) {",
+      "&& activeCount !== undefined && ucCount !== undefined) {",
+      "&& activeCount !== undefined && ucCount !== undefined) {",
+      "&& activeCount !== undefined && ucCount !== undefined) {",
+      "&& activeCount !== undefined && ucCount !== undefined) {",
+      "line. Line 54 seems to be a fragment of line 53. The issue is that line 54 has a partial duplicate of the useState declaration.I see the issue! You have a duplicate/broken line."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "tedfinkleman@MacBookPro lvhr-airea-full % cat src/components/dashboard/ContentCenter.tsx import React, { useState, useEffect, useCallback } from 'react'; import { supabase } from '@/lib/supabase'; imp",
+    "last_200": "Once you locate the source, the next chat can complete the daily update SQL and create your one-click automation!\nGood luck with your search! The calculations are definitely somewhere in your project."
+  },
+  "stats": {
+    "lines": 3452,
+    "words": 25890,
+    "code_blocks": 0
+  }
+}

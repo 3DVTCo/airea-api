@@ -1,0 +1,112 @@
+{
+  "sequence": 141,
+  "date": "2025-07-27",
+  "topic": "Escalating Chat Handoff Tensions",
+  "size": 100553,
+  "insights": {
+    "files": [
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "all_zsh_history_backup.txt",
+        "txt"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "config.ts",
+        "ts"
+      ],
+      [
+        "marketDataService.ts",
+        "ts"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "useSupabaseData.ts",
+        "ts"
+      ],
+      [
+        "claude.js",
+        "js"
+      ],
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "dealofweekbackend.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "index-CUaHIXYJ.js",
+        "js"
+      ],
+      [
+        "all_bash_history_backup.txt",
+        "txt"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "- showing alphabetical order instead of by DealScore",
+      "tabs from existing files.",
+      "dashboard components.",
+      "backend is querying",
+      "because of changes that were made. Having to dig through chat logs to recover working code is a massive waste of your time."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "CREATE A COMPREHENSIVE DETAILED HANDOFF PROMPT FOR THE NEXT CHAT TO BE ABLE TO HELP ME KEEP MOVING FORWARD WITHOUT DELAY. Edit Strategized comprehensive project handoff for AIREA development progress.",
+    "last_200": "state Platform Dev Environment: localhost:8080 Production: https://lasvegashighriseapp.com GitHub: https://github.com/3DVTCo/lvhr-os AIREA Status: v2 API created with Claude integration but\n\npasted\n\n\n"
+  },
+  "stats": {
+    "lines": 2778,
+    "words": 13689,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "sequence": 110,
+  "date": "2025-07-11",
+  "topic": "Data Normalization and Dashboard Fixes",
+  "size": 44227,
+  "insights": {
+    "files": [
+      [
+        "airea_log.md",
+        "md"
+      ],
+      [
+        "lovable_building_preview.txt",
+        "txt"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingStats.tsx",
+        "tsx"
+      ],
+      [
+        "Penthouses.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "ttys011.txt",
+        "txt"
+      ],
+      [
+        "nBuildings.tsx",
+        "tsx"
+      ],
+      [
+        "src_pages_AIREADashboard.txt",
+        "txt"
+      ],
+      [
+        "building_story.md",
+        "md"
+      ],
+      [
+        "terminal_session_1.txt",
+        "txt"
+      ],
+      [
+        "ttys005.txt",
+        "txt"
+      ],
+      [
+        "terminal_session_2.txt",
+        "txt"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ],
+      [
+        "rank.js",
+        "js"
+      ],
+      [
+        "BuildingCard.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "COMPREHENSIVE HANDOFF PROMPT - DEAL OF WEEK COMPLETED, BUILDINGS NEXT\n\ud83c\udfaf TODAY'S ACCOMPLISHMENTS (July 12, 2025):\n\u2705 DEAL OF THE WEEK - FULLY FIXED:\n1. Data Normalization Fixed:\n   * Fixed Vdara case se",
+    "last_200": " it. You need AIREA to be a fast-access memory, not an archive you have to dig through.\nThat's why these multi-hour recovery sessions keep happening - the retrieval process is broken, not the storage."
+  },
+  "stats": {
+    "lines": 828,
+    "words": 6100,
+    "code_blocks": 0
+  }
+}

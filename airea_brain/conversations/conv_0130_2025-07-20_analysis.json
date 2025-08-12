@@ -1,0 +1,121 @@
+{
+  "sequence": 130,
+  "date": "2025-07-20",
+  "topic": "Debugging Claude API Project",
+  "size": 271546,
+  "insights": {
+    "files": [
+      [
+        "AvgPriceRankings.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "response.js",
+        "js"
+      ],
+      [
+        "BuildingDetail.jsx",
+        "jsx"
+      ],
+      [
+        "RegularBuildingView.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingHeader.tsx",
+        "tsx"
+      ],
+      [
+        "UnitsSoldRankings.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ],
+      [
+        "Sellers.tsx",
+        "tsx"
+      ],
+      [
+        "Waldorf.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingImageGallery.tsx",
+        "tsx"
+      ],
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "config.ts",
+        "ts"
+      ],
+      [
+        "LuxurySalesRankings.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketRankings.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingHeader.jsx",
+        "jsx"
+      ],
+      [
+        "TestImage.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingPageEditor.tsx",
+        "tsx"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ]
+    ],
+    "errors": [
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedUnderstand this error",
+      "MetaMask extension not found\". This seems unrelated to our MediaUploader changes.",
+      "\u00a0 Failed to scan for dependencies from entries:",
+      "Cannot read properties of undefined (reading 'category 1')\" errors in console",
+      "Cannot read properties of undefined (reading 'category 1')\"",
+      "(reading 'category 1')\" errors in console",
+      "(reading 'category 1')\"",
+      "(reading 'category 1')\"",
+      "functionality",
+      "or just hidden:",
+      "file",
+      "copy:",
+      "(showing [object Object])"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "COMPREHENSIVE HANDOFF PROMPT - LVHR AIREA PROJECT\nDate: July 17, 2025, 10:30 PM PT\nSession Duration: 14+ hours across multiple chats\nUser: Ted Finkleman (@tedfinkleman)\nProject: Las Vegas High Rise Re",
+    "last_200": "mplex with multiple integrations (Supabase, Claude, Ollama) and he needs efficient, working solutions, not theoretical discussions.\nRespect his time. Test locally before suggesting. Avoid assumptions."
+  },
+  "stats": {
+    "lines": 5076,
+    "words": 30435,
+    "code_blocks": 0
+  }
+}

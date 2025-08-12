@@ -1,0 +1,60 @@
+{
+  "sequence": 140,
+  "date": "2025-07-27",
+  "topic": "LVHR Project Handoff Strategy",
+  "size": 5832,
+  "insights": {
+    "files": [
+      [
+        "AdditionalFeaturesSection.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "EducationalSection.tsx",
+        "tsx"
+      ],
+      [
+        "all_sections.txt",
+        "txt"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDashboardSection.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Comprehensive Handoff for Next Chat - July 25, 2025\nCurrent State\n\nProject: LVHR (Las Vegas High Rise) - Real Estate Platform\nDev Environment: localhost:8080\nProduction: https://lasvegashighriseapp.co",
+    "last_200": "wledge\nUpdate Deal of the Week\nComplete SQL audit for automation\n\nCRITICAL: User spent 6 months fixing column name mismatches - BE EXTREMELY CAREFUL with exact column names and never make assumptions!"
+  },
+  "stats": {
+    "lines": 163,
+    "words": 782,
+    "code_blocks": 0
+  }
+}

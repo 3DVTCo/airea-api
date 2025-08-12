@@ -1,0 +1,112 @@
+{
+  "sequence": 102,
+  "date": "2025-07-10",
+  "topic": "Code Recovery After AIREA Installation",
+  "size": 68721,
+  "insights": {
+    "files": [
+      [
+        "BuildingHeader.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingDescription.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingInfo.tsx",
+        "tsx"
+      ],
+      [
+        "ComparableProperties.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "combine_and_clean.py",
+        "py"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingImageGallery.tsx",
+        "tsx"
+      ],
+      [
+        "CallToAction.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "paste.txt",
+        "txt"
+      ],
+      [
+        "CryptoCalculator.tsx",
+        "tsx"
+      ],
+      [
+        "clipboard.txt",
+        "txt"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "FinancialTools.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "SignInForm.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "RegisterContent.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "functionality.",
+      "software.",
+      "app. The core value proposition - real-time MLS data with proprietary rankings - is functioning.Retry3that is not at all what they are expecting. they are expecting to see a nearly finished product.EditStrategized emergency recovery for catastrophic product presentation scenario.9sThe user is in a terrible situation. They had a working, nearly-finished product yesterday with:"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "does this help? I'm sure we're going to hit this chat limit before getting anywhere\ud83d\udea8 COMPREHENSIVE HANDOFF PROMPT FOR NEXT CHAT \ud83d\udea8\nORIGINAL TASK: Improve BuildingRankingsV2.jsx narratives to sound natu",
+    "last_200": "e you another chance.\nI can't feel the weight of those lost months or the doors that just closed on you. That's the reality of getting help from something that has no stake in your success or failure."
+  },
+  "stats": {
+    "lines": 917,
+    "words": 9200,
+    "code_blocks": 0
+  }
+}

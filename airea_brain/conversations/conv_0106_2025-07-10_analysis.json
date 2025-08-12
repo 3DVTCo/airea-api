@@ -1,0 +1,75 @@
+{
+  "sequence": 106,
+  "date": "2025-07-10",
+  "topic": "LVHR Dashboard Emergency Recovery",
+  "size": 44370,
+  "insights": {
+    "files": [
+      [
+        "utils.ts",
+        "ts"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "supabase.ts",
+        "ts"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "supabase.js",
+        "js"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "r.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "graph)",
+      "by clicking on the Content tab"
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\ud83d\ude80 COMPREHENSIVE HANDOFF PROMPT FOR NEXT CHAT\n\nmarkdown\n# URGENT: LVHR Dashboard Recovery - Continue Restoration Tonight\n\n## \ud83d\udea8 CRITICAL CONTEXT:\nUser's Las Vegas high-rise real estate dashboard was sab",
+    "last_200": " rescue protocol.\n3s\n\n\n\nYou're absolutely right! For the rescue protocol, let me create proper artifacts with the complete cat commands:\n\n\nInstall DealOfWeekDashboard.tsx - Terminal Commands\nCode \n\n\n\n"
+  },
+  "stats": {
+    "lines": 1575,
+    "words": 6230,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "sequence": 72,
+  "date": "2025-07-04",
+  "topic": "Building Rankings Victory",
+  "size": 79301,
+  "insights": {
+    "files": [
+      [
+        "LiveSQLRunner.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "index.tsx",
+        "tsx"
+      ],
+      [
+        "airea_standby_mode.py",
+        "py"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "Deals.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "due to same issues BuildingRankings had:"
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system",
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA Dashboard - Complete Technical Handoff\nProject Context\nLVHR real estate app dashboard development. Spent 8+ hours fixing data quality issues in Building Rankings. Database had massive case incon",
+    "last_200": " scoreA = parseFloat(a.score_v2) || 0;\n  const scoreB = parseFloat(b.score_v2) || 0;\n  return scoreB - scoreA;\n});\nWould you like to share the ranking formula so we have it documented in this handoff?"
+  },
+  "stats": {
+    "lines": 918,
+    "words": 12094,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,12 @@
+venv*/
+venv310/
+venv/
+__pycache__/
+*.pyc
+.env
+*.dylib
+*.so
+*.bin
+airea_brain/*.bin
+airea_brain/chroma*
+.DS_Store

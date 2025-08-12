@@ -1,0 +1,109 @@
+{
+  "sequence": 51,
+  "date": "2025-06-26",
+  "topic": "AIREA Dashboard Handoff Preparation",
+  "size": 106467,
+  "insights": {
+    "files": [
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ],
+      [
+        "mockData.ts",
+        "ts"
+      ],
+      [
+        "dataProcessors.ts",
+        "ts"
+      ],
+      [
+        "index.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisChart.tsx",
+        "tsx"
+      ],
+      [
+        "index.js",
+        "js"
+      ],
+      [
+        "marketDataService.ts",
+        "ts"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "marketData.ts",
+        "ts"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "MarketUpdatesSection.tsx",
+        "tsx"
+      ],
+      [
+        "StockChart.tsx",
+        "tsx"
+      ],
+      [
+        "marketdataservice.ts",
+        "ts"
+      ],
+      [
+        "Chart.js",
+        "js"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "The requested module '/src/components/market-analysis/MarketAnalysisChart.tsx?t=1750987263420' does not provide an export named 'default' (at MarketAnalysisSection.tsx:5:8)EditDiagnosed import mismatch and proposed export correction.4sThe error is saying that MarketAnalysisChart.tsx doesn't have a default export. Looking at the MarketAnalysisSection.tsx file I created, I see it's importing:",
+      "The requested module '/src/services/market-data/marketDataService.ts?t=1750987263420' does not provide an export named 'saveAsMarketData' (at dataProcessors.ts:4:10)EditInvestigated missing export in market data service module.2sIt seems there's another file (dataProcessors.ts) that's trying to import something called 'saveAsMarketData' from our marketDataService.ts, but we didn't export that function. Let me check what exports we have and see what might be needed.There's another file trying to import saveAsMarketData from our service. Let's check what's trying to use it:",
+      "&& item[\"2024 Price\"] === undefined)) {",
+      "&& item[\"2024 Price\"] === undefined)) {",
+      "component"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "confirm you understand where we're at and what's next, and what if anything is missing from this prompt that i can get from the last chatAbsolutely! Here's the updated comprehensive handoff prompt:\nAI",
+    "last_200": "t the next chat, just share the \"Market Analysis Real Data Implementation - Handoff Prompt (Updated)\" and say you need to fix the bar/line overlap issue.\nGreat work getting the real data integrated! \ud83d\ude80"
+  },
+  "stats": {
+    "lines": 1593,
+    "words": 15343,
+    "code_blocks": 0
+  }
+}

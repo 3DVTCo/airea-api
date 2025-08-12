@@ -1,0 +1,60 @@
+{
+  "sequence": 60,
+  "date": "2025-07-01",
+  "topic": "Debugging Content Center Workflow",
+  "size": 160738,
+  "insights": {
+    "files": [
+      [
+        "chats.txt",
+        "txt"
+      ],
+      [
+        "supabase_supabase-js.js",
+        "js"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedUnderstand this error",
+      "sales_12m is not defined",
+      "sales_12m is not defined at line 137 - I'm referencing a variable that doesn't exist",
+      "for Marie Antoinette",
+      "reference to sales_12m",
+      "- so we STILL don't know what the actual Status codes are",
+      "and I'm not handling it",
+      "errors",
+      "around the time we started working on the quick stats box. and look at my complaints toward the time i took a break to work on the dow and building rankings, about what was broken and how to fix it. I got tired of going round and round like you like to do, and I had enough of your time wasting. so, here I go again. back for more after resolving the other couple of things that were also doing that to me. got it?EditDiagnosed ContentCenter failures, mapped critical restoration strategy.26sThe user is asking me to:",
+      "formulas",
+      "things. Use what already works. BuildingRankingsV2 has everything needed - just reference it!Retry3we've got plenty of space left in this chat, right? I was thinking instead of bringing this prompt to the other chat, what if I brought the prompt here, with all of the background of where we're at with the content tab, and we can knock this out? what do you think?COMPREHENSIVE HANDOFF - DOW TAB COMPLETE, CONTENT TAB NEEDS FIX",
+      "queries",
+      "queries."
+    ],
+    "entities": [],
+    "concepts": [
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Content Button chats.txt8,159 linestxt3condense this into a super handoff prompt and describe what was initially working, when the whole thin got broken around the time we started working on the quick",
+    "last_200": "eatures\n\n\nYou're right - I'm just making the same mistakes over and over. The Status values are showing as undefined, which means either the column doesn't exist or it's named something else entirely."
+  },
+  "stats": {
+    "lines": 3670,
+    "words": 16912,
+    "code_blocks": 0
+  }
+}

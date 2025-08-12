@@ -1,0 +1,111 @@
+{
+  "sequence": 108,
+  "date": "2025-07-10",
+  "topic": "Dashboard Recovery Strategy",
+  "size": 62302,
+  "insights": {
+    "files": [
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "deal-of-week-frontend.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisChart.tsx",
+        "tsx"
+      ],
+      [
+        "main.tsx",
+        "tsx"
+      ],
+      [
+        "UnitsSoldTable.tsx",
+        "tsx"
+      ],
+      [
+        "deal-of-week-backend.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "buildingQueryService.ts",
+        "ts"
+      ],
+      [
+        "_Dashboard.tsx",
+        "tsx"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2_BACKUP_755.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "index.css",
+        "css"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "_DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "by an AI that didn't understand your schema!",
+      "code because some AI didn't respect your schema.",
+      "code and sabotage talk and my profanity is removed. a development log, that we can install into AIREA's brain.",
+      "code, frustration"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "CRITICAL: Dashboard Recovery Handoff - Complete Component Set FOUND WORKING FILES IN TERMINAL CACHE: 1. BuildingRankingsV2.jsx (755 lines) Line 666: const newConstructionBuildings = ['Cello Tower', 'M",
+    "last_200": "nal TypeScript version \ud83d\udcdc\nIndex.tsx - Shows commented out MarketDashboardSection \ud83d\udcdc\nLet me create a comprehensive artifact with ALL the working code:\n\n\nComplete Dashboard Recovery Codebase\nDocument \n\n\n\n"
+  },
+  "stats": {
+    "lines": 1828,
+    "words": 7766,
+    "code_blocks": 1
+  }
+}

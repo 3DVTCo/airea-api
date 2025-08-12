@@ -1,0 +1,54 @@
+{
+  "sequence": 48,
+  "date": "2025-06-26",
+  "topic": "Building Rankings 1",
+  "size": 77415,
+  "insights": {
+    "files": [
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ],
+      [
+        "mls_daily_export.csv",
+        "csv"
+      ],
+      [
+        "62425365.csv",
+        "csv"
+      ],
+      [
+        "LiveSQLRunner.jsx",
+        "jsx"
+      ],
+      [
+        "update.csv",
+        "csv"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "realtime12m is n",
+      "explicitly.",
+      "in some way. the active and under contract count is off. definitely not pulling data that it should be. also, what is the point of the green line on the graph in the dropdown mirroring the x axis? I don't understand that. "
+    ],
+    "entities": [],
+    "concepts": [
+      "ranking_system"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA Dashboard Development - Complete Technical Handoff Date: June 23, 2025 Time Spent: 7.5 hours Progress: Zero - Back to original state Current Exact State What's Working BuildingRankingsV2.jsx - D",
+    "last_200": " complete file.\n2s\n\n\nYou're absolutely right. I apologize. Here's the ENTIRE BuildingRankingsV2.jsx file with all fixes applied:\n\n\nBuildingRankingsV2.jsx - Complete Fixed Version\nCode\u2002\u2219\u2002Version 3 \n\n\n\n"
+  },
+  "stats": {
+    "lines": 2617,
+    "words": 12076,
+    "code_blocks": 0
+  }
+}

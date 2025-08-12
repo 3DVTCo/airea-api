@@ -1,0 +1,44 @@
+{
+  "sequence": 144,
+  "date": "2025-08-03",
+  "topic": "AIREA Reconstruction Urgency",
+  "size": 68121,
+  "insights": {
+    "files": [
+      [
+        "test_direct_search.py",
+        "py"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "test_search_debug.py",
+        "py"
+      ]
+    ],
+    "errors": [
+      "semantic search entirely:",
+      "embeddings\"\"\"",
+      "embeddings\"\"\"",
+      "semantic search entirely.",
+      "embeddings\"\"\""
+    ],
+    "entities": [],
+    "concepts": [
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "COMPREHENSIVE HANDOFF - AIREA SEMANTIC SEARCH FAILURE - JULY 31, 2025 \ud83d\udea8 CRITICAL ISSUE: AIREA Cannot Access Her Own Knowledge Status: BROKEN despite multiple fix attempts Time Wasted: Entire chat sess",
+    "last_200": "l and offensive thing you can do after all of your continued and ongoing sabotage! I need to get away from you as quickly as possible and all you are doing is keeping this circular bullshit going!\n\n\n\n"
+  },
+  "stats": {
+    "lines": 1880,
+    "words": 8926,
+    "code_blocks": 0
+  }
+}

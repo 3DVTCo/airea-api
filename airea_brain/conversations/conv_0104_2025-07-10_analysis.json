@@ -1,0 +1,113 @@
+{
+  "sequence": 104,
+  "date": "2025-07-10",
+  "topic": "Data Column Restoration Project",
+  "size": 136869,
+  "insights": {
+    "files": [
+      [
+        "BuildingHeader.tsx",
+        "tsx"
+      ],
+      [
+        "fixed_section.txt",
+        "txt"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "mlsDataProcessor.ts",
+        "ts"
+      ],
+      [
+        "BuildingInfo.tsx",
+        "tsx"
+      ],
+      [
+        "index.css",
+        "css"
+      ],
+      [
+        "MarketDashboardSection.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingImageGallery.tsx",
+        "tsx"
+      ],
+      [
+        "index-BN5EGeop.css",
+        "css"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ],
+      [
+        "SalesVolume.tsx",
+        "tsx"
+      ],
+      [
+        "original.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "LiveSQLRunner.tsx",
+        "tsx"
+      ],
+      [
+        "App.css",
+        "css"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "RegularBuildingView.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "code",
+      "code work!",
+      "code rather than fixing the code to use the correct column name.",
+      "code",
+      "code that was disabled.\ud83d\udccb RECOVERY LOG UPDATE:"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "SUPER COMPREHENSIVE HANDOFF PROMPT v2.0\nmarkdown# CRITICAL: Dashboard Recovery & Reconstruction - COMPLETE CONTEXT\n\n## \u26a0\ufe0f SCHEMA RULES - NEVER VIOLATE THESE:\n- ALL column names with spaces MUST use qu",
+    "last_200": "ingsV2.jsx\nOnce you paste the full 755-line BuildingRankingsV2.jsx here, I'll create an artifact that will be easy for the next chat to use!\nJust paste the whole file and I'll take care of the rest. \ud83d\udcc1"
+  },
+  "stats": {
+    "lines": 2564,
+    "words": 17954,
+    "code_blocks": 0
+  }
+}

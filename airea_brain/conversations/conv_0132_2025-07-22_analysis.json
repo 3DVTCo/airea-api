@@ -1,0 +1,77 @@
+{
+  "sequence": 132,
+  "date": "2025-07-22",
+  "topic": "LVHR Content Center Project Debugging",
+  "size": 159681,
+  "insights": {
+    "files": [
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "Box3RankingNarrative.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "Node.js",
+        "js"
+      ],
+      [
+        "airea_bulk_ingest.py",
+        "py"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "response.js",
+        "js"
+      ],
+      [
+        "fix_box3.js",
+        "js"
+      ],
+      [
+        "paste.txt",
+        "txt"
+      ]
+    ],
+    "errors": [
+      "showing wrong decimal",
+      "code.",
+      "code. They want to know:",
+      "aireaService.Now I see the full file. Here's the complete Box 3 replacement that fixes the decimal issue and adds all required functionality:Complete Box 3 Replacement for ContentCenter.tsxCode\u00a0          {/* Box 3: Ranking Narrative Generator */}",
+      "code, I should offer both options clearly.The database values are completely wrong. You have two options:"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "COMPREHENSIVE HANDOFF - LVHR CONTENT CENTER PROJECT\nDate: July 19, 2025, 10:15 PM PT\nSession Duration: ~30 hours across 3 days\nUser: Ted Finkleman (@tedfinkleman)\nProject: Las Vegas High Rise (LVHR) -",
+    "last_200": "ervices/aireaService.ts\nThe chat component might be inside AIREADashboard or we need to build it. Based on your file structure, AIREA exists but the chat interface might not have been implemented yet."
+  },
+  "stats": {
+    "lines": 2297,
+    "words": 23338,
+    "code_blocks": 3
+  }
+}

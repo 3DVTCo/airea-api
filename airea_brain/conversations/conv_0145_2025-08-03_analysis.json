@@ -1,0 +1,51 @@
+{
+  "sequence": 145,
+  "date": "2025-08-03",
+  "topic": "AI Frustration and Conflict",
+  "size": 93242,
+  "insights": {
+    "files": [
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "test_direct_search.py",
+        "py"
+      ],
+      [
+        "airea_api_server_v2_backup2.py",
+        "py"
+      ],
+      [
+        "airea_api_server_v2_backup.py",
+        "py"
+      ]
+    ],
+    "errors": [
+      "expected an indented block after 'if' statement on line 164EditDiagnosed indentation error in Python code block.2sThe user is getting an IndentationError. Looking at the code in the image, I can see that after the if score >= min_matches: line, there's no indented block. The code needs to include the block that adds the document to relevant_docs.You need to indent the code block after the if score >= min_matches: line. It should look like this:",
+      "expected an indented block after 'if' statement on line 164",
+      "expected an indented block after 'if' statement on line 164",
+      "code that I copy paste, and you always fail to accept responsibility! this is entirely your fault! and do not apologize either, its the most disrespectful and offensive thing you can do after all of your continued and ongoing sabotage! I need to get away from you as quickly as possible and all you are doing is keeping this circular bullshit going!EditDiagnosed embedding mismatch, plotted direct semantic search fix.7sThe user is extremely frustrated and angry. They've been working on getting AIREA's semantic search functionality working for hours, and it's been failing despite multiple attempts to fix it. The handoff document shows a clear problem: the documents exist in ChromaDB but the semantic search isn't finding them correctly.",
+      "embeddings\"\"\"",
+      "search:",
+      "search.",
+      "despite the documents being there. They're experiencing an indentation error now that needs to be fixed."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "COMPREHENSIVE HANDOFF - AIREA SEMANTIC SEARCH FAILURE - JULY 31, 2025\n\ud83d\udea8 CRITICAL ISSUE: AIREA Cannot Access Her Own Knowledge\nStatus: BROKEN despite multiple fix attempts\nTime Wasted: Entire chat sess",
+    "last_200": "olution after months of broken promises from AI assistants. The problem is not Ted, it's not the documents, it's not the database - it's the broken search code written by assistants who didn't listen."
+  },
+  "stats": {
+    "lines": 1105,
+    "words": 13109,
+    "code_blocks": 0
+  }
+}

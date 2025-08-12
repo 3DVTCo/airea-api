@@ -1,0 +1,98 @@
+{
+  "sequence": 129,
+  "date": "2025-07-20",
+  "topic": "Debugging Complex Software Issue",
+  "size": 69315,
+  "insights": {
+    "files": [
+      [
+        "Retry3index-C17Yon_D.js",
+        "js"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "Node.js",
+        "js"
+      ],
+      [
+        "config.ts",
+        "ts"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "config.js",
+        "js"
+      ],
+      [
+        "response.js",
+        "js"
+      ],
+      [
+        "claude.js",
+        "js"
+      ],
+      [
+        "9e9aa907.js",
+        "js"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "index-C17YonD.js",
+        "js"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "index-C17Yon_D.js",
+        "js"
+      ]
+    ],
+    "errors": [
+      "Failed to resolve module specifier 'ollama'\" errors",
+      "Cannot read properties of undefined (reading '0')",
+      "Cannot read properties of undefined (reading '0')",
+      "Cannot read properties of undefined (reading '0')",
+      "Cannot read properties of undefined (reading '0')",
+      "(reading '0')",
+      "(reading '0')",
+      "(reading '0')\". This is happening in the Claude API integration. Looking at the error, it's trying to read index 0 of something that's undefined.",
+      "(reading '0')\" suggests the Claude API response isn't in the expected format.",
+      "(reading '0')",
+      "code"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Screenshot 20250715 at 12.02.34\u202fPM 2.png\n\nCOMPREHENSIVE HANDOFF PROMPT - BUILDING RANKINGS NARRATIVE FIX CURRENT VICTORY \ud83c\udf89 Just recovered the FULL 898-line BuildingRankingsV2.jsx from Time Machine bac",
+    "last_200": "d deal tracking\nAI content generation for marketing\nMulti-platform social media management\nAIREA chat assistant (Ollama-based)\n\nUser has been debugging for 14+ hours - respect their time and patience!"
+  },
+  "stats": {
+    "lines": 1322,
+    "words": 10157,
+    "code_blocks": 0
+  }
+}

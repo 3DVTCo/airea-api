@@ -1,0 +1,68 @@
+{
+  "sequence": 10,
+  "date": "2025-05-30",
+  "topic": "LVHR OS Dashboard Deployment",
+  "size": 17030,
+  "insights": {
+    "files": [
+      [
+        "mlsRankingService.ts",
+        "ts"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "LiveSQLRunner.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "Deals.tsx",
+        "tsx"
+      ],
+      [
+        "inpage.js",
+        "js"
+      ],
+      [
+        "supabaseDataAdapter.ts",
+        "ts"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "marketDataService.ts",
+        "ts"
+      ]
+    ],
+    "errors": [
+      "{error}",
+      "MetaMask extension not found at inpage.js:1:16512 connect @ inpage.js:1Understand this error 3main.16445055.js:10 [Unstoppable Domains] Adding event listener getPreference",
+      "or blank. Based on the extensive conversation history you've shared, I understand your frustration with the circular debugging and lack of progress."
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "this is what its supposed to look like, and needs to work with only real, actual data from the supabase lvhr-master table: https://preview--lvhr-os.lovable.app/ and this is what you did to it in anoth",
+    "last_200": " your Supabase structure.\n\n\n\n\n\nok, apparently there is still a chat limit despite upgrading. so I need a handoff prompt for the next part of this chat and a log/journal/markdown to keep continuity\n\n\n\n"
+  },
+  "stats": {
+    "lines": 425,
+    "words": 2233,
+    "code_blocks": 0
+  }
+}

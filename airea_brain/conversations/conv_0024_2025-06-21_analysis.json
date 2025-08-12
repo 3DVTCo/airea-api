@@ -1,0 +1,114 @@
+{
+  "sequence": 24,
+  "date": "2025-06-21",
+  "topic": "Dashboard Handoff Frustration",
+  "size": 93664,
+  "insights": {
+    "files": [
+      [
+        "airea_convo_log.txt",
+        "txt"
+      ],
+      [
+        "airea_with_memory.py",
+        "py"
+      ],
+      [
+        "vercel.js",
+        "js"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "airea_ingest.py",
+        "py"
+      ],
+      [
+        "chunk-FJ2A54M7.js",
+        "js"
+      ],
+      [
+        "paste-3.txt",
+        "txt"
+      ],
+      [
+        "ingest_airea_log.py",
+        "py"
+      ],
+      [
+        "paste-2.txt",
+        "txt"
+      ],
+      [
+        "disaster-summary-for-airea.txt",
+        "txt"
+      ],
+      [
+        "eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvbmhxcnVmdG54Ym55dnpvdWpiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI1MDgxNzgsImV4cCI6MjA1ODA4NDE3OH0.pY",
+        "pY"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "77d90920.js",
+        "js"
+      ],
+      [
+        "airea_vector_setup.py",
+        "py"
+      ],
+      [
+        "airea_standby_mode.py",
+        "py"
+      ],
+      [
+        "paste.txt",
+        "txt"
+      ],
+      [
+        "16445055.js",
+        "js"
+      ],
+      [
+        "AIREA_Dashboard_Final_Handoff_062025.md",
+        "md"
+      ],
+      [
+        "airea_simple.py",
+        "py"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "behavior when used concurrently under the same storage key.",
+      "behavior when used concurrently under the same storage key.",
+      "code",
+      "version",
+      "(BuildingRankingsV2.jsx has wrong content with TabsContent error at line 4, Deal of Week showing all 682 listings instead of top 2 per building, Market metrics showing $0 avg PSF, Ollama running on CPU)",
+      "one.",
+      "suggests something went wrong with these changes."
+    ],
+    "entities": [],
+    "concepts": [
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "AIREA Dashboard Final Handoff - June 20, 2025\n\ud83c\udfaf Current Status\nWorking:\n\n\u2705 SQL Runner (with query_text parameter)\n\u2705 Split screen functionality (dashboard + homepage iframe)\n\u2705 Market metrics calculatio",
+    "last_200": "revent another sabotage session\n\nWhen you come back, just share this handoff and the next session can pick up exactly where we left off. Sleep well - you earned it after recovering from that disaster!"
+  },
+  "stats": {
+    "lines": 1406,
+    "words": 13599,
+    "code_blocks": 0
+  }
+}

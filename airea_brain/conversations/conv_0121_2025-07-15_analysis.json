@@ -1,0 +1,68 @@
+{
+  "sequence": 121,
+  "date": "2025-07-15",
+  "topic": "AIREA Dashboard Tab Enhancement",
+  "size": 166951,
+  "insights": {
+    "files": [
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "tsconfig.js",
+        "js"
+      ],
+      [
+        "DealOfWeekDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "d.ts",
+        "ts"
+      ]
+    ],
+    "errors": [
+      "The requested module '/src/components/DealOfTheWeek.tsx' does not provide an export named 'DealOfTheWeek'\"",
+      "The requested module '/src/components/DealOfTheWeek.tsx' does not provide an export named 'DealOfTheWeek'",
+      "The requested module '/src/components/DealOfTheWeek.tsx' does not provide an export named 'DealOfTheWeek' (at DealOfTheWeekSection.tsx:4:10)we're working in this, right? src/components/dashboard/DealOfWeekDashboard.tsxEditDiagnosed import error and proposed file location fix.8sThe user is showing me an error that says:",
+      "The requested module '/src/components/DealOfTheWeek.tsx' does not provide an export named 'DealOfTheWeek'",
+      "values in sorting function.1sI need to update the sort function to handle the fact that dow_score might be undefined.Strategized column name refinement for detailed view section.1sNow I need to update the detailed view section to use the correct column names and handle optional fields.Strategized column name corrections for backup deal section.1sI need to update the backup deal section to use the correct column names.Strategized order clause optimization with alternative scoring method.1sNow I need to fix the order clause to use dow_score or fall back to DOM.Noted need to include List Agent Full Name in view.1sI also need to add List Agent Full Name to the expanded view.DealOfTheWeek.tsx - Using YOUR Actual Column NamesCode\u2002\u2219\u2002Version 10\u00a0                      <div className=\"bg-white p-4 rounded-lg shadow-sm\">",
+      "prices or scores",
+      "bedrooms)",
+      "component",
+      "data",
+      "data ($0, undefined bedrooms)",
+      "- \"$0 or 0% below the building's average of $0\""
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Screenshot 20250715 at 12.02.34\u202fPM 2.png\n\nCOMPREHENSIVE HANDOFF PROMPT - BUILDING RANKINGS NARRATIVE FIX CURRENT VICTORY \ud83c\udf89 Just recovered the FULL 898-line BuildingRankingsV2.jsx from Time Machine bac",
+    "last_200": "e, tower_name\nHAVING COUNT(*) > 1;\n79 records suggests either:\n\nMultiple weeks accumulated (3 weeks \u00d7 27 buildings \u2248 81)\nDuplicate entries for buildings\nOld data not being cleaned up\n\nWhat do you see?"
+  },
+  "stats": {
+    "lines": 2916,
+    "words": 24153,
+    "code_blocks": 0
+  }
+}

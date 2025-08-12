@@ -1,0 +1,113 @@
+{
+  "sequence": 112,
+  "date": "2025-07-12",
+  "topic": "LVHR System Restoration Handoff",
+  "size": 237077,
+  "insights": {
+    "files": [
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ],
+      [
+        "unitTypeUtils.ts",
+        "ts"
+      ],
+      [
+        "buildingQueryService.ts",
+        "ts"
+      ],
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ],
+      [
+        "marketDataService.ts",
+        "ts"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "airea_bulk_ingest.py",
+        "py"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "UnitTypeTable.tsx",
+        "tsx"
+      ],
+      [
+        "marketDataUtils.ts",
+        "ts"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "salesQueryService.ts",
+        "ts"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "UnitTypeSummaryCards.tsx",
+        "tsx"
+      ],
+      [
+        "dataDebugger.ts",
+        "ts"
+      ],
+      [
+        "CryptoCalculator.tsx",
+        "tsx"
+      ],
+      [
+        "highriseSalesService.ts",
+        "ts"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "recharts.js",
+        "js"
+      ]
+    ],
+    "errors": [
+      "&& item[\"2024 Price\"] === undefined)) {",
+      "(scales, margins, bars/lines alignment)",
+      "(scales, margins, bars/lines alignment issues).3. Restore MarketDashboardSection for HomepageMarketDashboardSection.tsxCode\u00a0import React from 'react';",
+      "file at src/components/market-visualization/MiniMarketVisualization.tsx with the fixed version above.",
+      "by hasty changes. I need to investigate properly before suggesting any changes.You're absolutely right! I was about to make the same mistake - rushing to replace things without understanding why they're there. Let's investigate properly.",
+      "visualizations. Let me think through this:"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\ud83d\ude80 COMPREHENSIVE HANDOFF PROMPT - LVHR RESTORATION STATUS\n\ud83d\udcc5 Session Date: July 13, 2025\n\u2705 COMPLETED RESTORATIONS\n1. Buildings System\n* RESTORED: Buildings.tsx from commit 91d1fb1 (161 lines with 8 cate",
+    "last_200": "isting code first\nGraphs were working before July 6 crash\nNeed sustainable solution, not quick patches\n\nREMEMBER: The code exists, don't recreate. Check first, change second. Column names are CORRECT."
+  },
+  "stats": {
+    "lines": 4010,
+    "words": 33477,
+    "code_blocks": 8
+  }
+}
