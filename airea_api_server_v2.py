@@ -429,26 +429,6 @@ async def get_airea_stats():
         raise HTTPException(status_code=500, detail=str(e))
 
 # Main execution
-if __name__ == "__main__":
-    print("\n🧠 Starting AIREA API v2 - Intelligent Edition")
-    print("🌐 API will be available at http://localhost:8000")
-    print("📚 Docs available at http://localhost:8000/docs")
-    
-    if anthropic_client:
-        print("✅ Claude AI connected - Full intelligence enabled!")
-    else:
-        print("⚠️  No Claude API key - Running in limited mode")
-        print("    Set ANTHROPIC_API_KEY environment variable for full features")
-    
-    if client:
-        try:
-            total_docs_on_startup = sum(col.count() for col in collections_map.values())
-            print(f"📊 Knowledge base: {total_docs_on_startup} documents ready across {len(collections_map)} collections.")
-        except Exception as e:
-            print(f"❌ Error getting total document count on startup: {e}")
-            print("   (This might indicate an issue with ChromaDB connection)")
-    
-    uvicorn.run(app, host="0.0.0.0", port=8000)
 
 @app.post("/upload_knowledge")
 async def upload_knowledge(file: UploadFile = File(...)):
@@ -472,3 +452,25 @@ async def upload_knowledge(file: UploadFile = File(...)):
         return {"status": "Knowledge base uploaded successfully"}
     except Exception as e:
         return {"error": str(e)}
+
+if __name__ == "__main__":
+    print("\n🧠 Starting AIREA API v2 - Intelligent Edition")
+    print("🌐 API will be available at http://localhost:8000")
+    print("📚 Docs available at http://localhost:8000/docs")
+    
+    if anthropic_client:
+        print("✅ Claude AI connected - Full intelligence enabled!")
+    else:
+        print("⚠️  No Claude API key - Running in limited mode")
+        print("    Set ANTHROPIC_API_KEY environment variable for full features")
+    
+    if client:
+        try:
+            total_docs_on_startup = sum(col.count() for col in collections_map.values())
+            print(f"📊 Knowledge base: {total_docs_on_startup} documents ready across {len(collections_map)} collections.")
+        except Exception as e:
+            print(f"❌ Error getting total document count on startup: {e}")
+            print("   (This might indicate an issue with ChromaDB connection)")
+    
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+
