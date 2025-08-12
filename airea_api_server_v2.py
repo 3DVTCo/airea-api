@@ -40,7 +40,7 @@ app.add_middleware(
 client = None
 collections_map = {} # Store all collections in a map for easy access
 try:
-    client = chromadb.PersistentClient(path="/Users/tedfinkleman/airea/airea_brain")
+    client = chromadb.PersistentClient(path="/opt/render/project/src/airea_brain")
     # Get all collections dynamically
     for col in client.list_collections():
         collections_map[col.name] = client.get_collection(col.name)
@@ -446,7 +446,7 @@ async def upload_knowledge(file: UploadFile = File(...)):
         
         # Reinitialize ChromaDB
         global collection
-        chroma_client = chromadb.PersistentClient(path="./airea_brain")
+        chroma_client = chromadb.PersistentClient(path="/opt/render/project/src/airea_brain")
         collection = chroma_client.get_or_create_collection("airea_conversations")
         
         return {"status": "Knowledge base uploaded successfully"}
