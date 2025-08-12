@@ -449,3 +449,26 @@ if __name__ == "__main__":
             print("   (This might indicate an issue with ChromaDB connection)")
     
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+@app.post("/upload_knowledge")
+async def upload_knowledge(file: UploadFile = File(...)):
+    """Upload knowledge base (zip file of airea_brain)"""
+    try:
+        # Save uploaded file
+        contents = await file.read()
+        with open("/tmp/knowledge.zip", "wb") as f:
+            f.write(contents)
+        
+        # Extract to airea_brain
+        import zipfile
+        with zipfile.ZipFile("/tmp/knowledge.zip", 'r') as zip_ref:
+            zip_ref.extractall(".")
+        
+        # Reinitialize ChromaDB
+        global collection
+        chroma_client = chromadb.PersistentClient(path="./airea_brain")
+        collection = chroma_client.get_or_create_collection("airea_conversations")
+        
+        return {"status": "Knowledge base uploaded successfully"}
+    except Exception as e:
+        return {"error": str(e)}
