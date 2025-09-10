@@ -20,6 +20,9 @@ import uuid
 import re
 from conversation_persistence import save_conversation, get_recent_conversations
 
+# Environment-aware path - automatically uses the right one
+CHROMA_PATH = "/opt/render/project/src/airea_brain" if os.path.exists("/opt/render") else "/Users/tedfinkleman/airea/airea_brain"
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -40,7 +43,7 @@ app.add_middleware(
 client = None
 collections_map = {} # Store all collections in a map for easy access
 try:
-    client = chromadb.PersistentClient(path="/opt/render/project/src/airea_brain")
+    client = chromadb.PersistentClient(path=CHROMA_PATH)
     # Get all collections dynamically
     for col in client.list_collections():
         collections_map[col.name] = client.get_collection(col.name)
@@ -156,7 +159,7 @@ class SearchQuery(BaseModel):
     limit: int = 5
 
 # Core Functions
-def search_knowledge_base(query: str, limit: int = 5) -> List[Dict]:
+def search_knowledge_base(query: str, limit: int = 500) -> List[Dict]:
     """
     Searches across all ChromaDB collections for documents relevant to the query.
     This version aims for broader retrieval by matching multiple query terms
@@ -252,7 +255,9 @@ def search_knowledge_base(query: str, limit: int = 5) -> List[Dict]:
                         if ("july 22" in query_lower or "jul 22" in query_lower) and \
                            (metadata.get('date') == "2025-07-22" or "july 22" in doc_lower):
                             score += 5 # High bonus for explicit date relevance
-
+                        # Prioritize September 2025
+                        if "09" in str(metadata.get("date", "")) or "september" in doc_lower:
+                            score += 100
                         # Ensure a minimum number of matches if query is complex, or any match if simple
                         min_matches_threshold = 1 # At least one word must match
                         if len(query_words) > 2: # For longer queries, require more matches
@@ -311,7 +316,7 @@ async def chat_with_airea(message: ChatMessage):
     """Main chat endpoint for AIREA with Claude intelligence"""
     try:
         # Get ALL matching documents - search more thoroughly
-        relevant_docs = search_knowledge_base(message.message, limit=20)
+        relevant_docs = search_knowledge_base(message.message, limit=500)
         
         # Build MASSIVE context - use FULL documents
         context_parts = []
@@ -471,7 +476,7 @@ async def upload_knowledge(file: UploadFile = File(...)):
         
         # Reinitialize ChromaDB
         global collection
-        chroma_client = chromadb.PersistentClient(path="/opt/render/project/src/airea_brain")
+        chroma_client = chromadb.PersistentClient(path=CHROMA_PATH)
         collection = chroma_client.get_or_create_collection("airea_conversations")
         
         return {"status": "Knowledge base uploaded successfully"}
