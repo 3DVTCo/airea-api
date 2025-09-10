@@ -156,7 +156,7 @@ class Document(BaseModel):
 class SearchQuery(BaseModel):
     query: str
     collection: Optional[str] = None
-    limit: int = 5
+    limit: int = 500
 
 # Core Functions
 def search_knowledge_base(query: str, limit: int = 500) -> List[Dict]:
