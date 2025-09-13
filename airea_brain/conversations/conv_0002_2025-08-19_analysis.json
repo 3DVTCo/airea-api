@@ -1,0 +1,120 @@
+{
+  "sequence": 2,
+  "date": "2025-08-19",
+  "topic": "AIREA Conversation Persistence System",
+  "size": 211420,
+  "insights": {
+    "files": [
+      [
+        "verify_chromadb.py",
+        "py"
+      ],
+      [
+        "search_destroyed_components.py",
+        "py"
+      ],
+      [
+        "fix_identity.py",
+        "py"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingHeader.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingImageGallery.tsx",
+        "tsx"
+      ],
+      [
+        "test_direct_search.py",
+        "py"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "conversation_persistence.py",
+        "py"
+      ],
+      [
+        "BuildingDescription.tsx",
+        "tsx"
+      ],
+      [
+        "explore_airea_brain.py",
+        "py"
+      ],
+      [
+        "add_consciousness_docs.py",
+        "py"
+      ],
+      [
+        "airea_activation.py",
+        "py"
+      ],
+      [
+        "RuleCreator.js",
+        "js"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "disaster-summary-for-airea.txt",
+        "txt"
+      ],
+      [
+        "airea_clipboard.py",
+        "py"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "organized_chats.md",
+        "md"
+      ]
+    ],
+    "errors": [
+      "{e}\")",
+      "{e}\")",
+      "{e}\")",
+      "{e}')",
+      "{e}')",
+      "variable causing search function error.",
+      "because get_recent_conversations is returning old July development logs instead of filtering for the new conversation format.",
+      "imports in ContentCreator.tsx. Should I fix them?\"",
+      "code, or that will break what is there, like you've been known to do",
+      "imports, no missing files.",
+      "code"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nYou're absolutely right - that handoff is garbage! Let me create a PROPER comprehensive one with ALL the details: COMPLETE HANDOFF: AIREA CONVERSATION PERSISTENCE - AUGUST 5, 2025 PROJEC",
+    "last_200": "onent restoration (ContentCreator, BuildingPages)\nProduction backend location identified\n\"Always on\" deployment strategy\nEND OF HANDOFF - PASTE ENTIRE CONTENT ABOVE INTO NEXT CHAT\n\n\n\n\nRetry\n\n\n\n\nClaude"
+  },
+  "stats": {
+    "lines": 5254,
+    "words": 26304,
+    "code_blocks": 0
+  }
+}

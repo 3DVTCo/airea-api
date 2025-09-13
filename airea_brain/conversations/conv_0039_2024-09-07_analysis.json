@@ -1,0 +1,78 @@
+{
+  "sequence": 39,
+  "date": "2024-09-07",
+  "topic": "React Router Prop Debugging Frustration",
+  "size": 25673,
+  "insights": {
+    "files": [
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "use-mobile.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "MetricRankingsDialog.tsx",
+        "tsx"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "LowPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2Public.jsx",
+        "jsx"
+      ],
+      [
+        "MarketInsights_query.tsx",
+        "tsx"
+      ],
+      [
+        "HighPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "UnitsSoldTable.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "routes from App.tsx",
+      "routes are gone",
+      "page)",
+      "routes:",
+      "code I added and restore your working version. The app will go back to showing 404s when clicking \"View Full Rankings\" but the Market Insights page will work correctly again."
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / COMPREHENSIVE HANDOFF - September 2, 2024 USER CONTEXT User: Ted Finkleman Project: LVHR Las Vegas High-Rise Real Estate Platform Critical History: Lost 7 months and $100K+ f",
+    "last_200": "side of the body of a function component. This could happen for one of the following reasons: 1. You might have mismatching versions of React and the renderer (such as React DOM) 2. You mi\n\npasted\n\n\n\n"
+  },
+  "stats": {
+    "lines": 649,
+    "words": 3285,
+    "code_blocks": 0
+  }
+}

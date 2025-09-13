@@ -1,0 +1,112 @@
+{
+  "sequence": 72,
+  "date": "2025-09-11",
+  "topic": "Explosive Technical Frustration 9-11-25",
+  "size": 96303,
+  "insights": {
+    "files": [
+      [
+        "Footer.tsx",
+        "tsx"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "sept7_chat.md",
+        "md"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "conv_0037_2024-09-07_analysis.js",
+        "js"
+      ],
+      [
+        "conv_0043_2024-09-07_analysis.js",
+        "js"
+      ],
+      [
+        "AIREA_PRD.md",
+        "md"
+      ],
+      [
+        "conv_0036_2024-09-07_analysis.js",
+        "js"
+      ],
+      [
+        "sept7_chat.js",
+        "js"
+      ],
+      [
+        "conv_0041_2024-09-07_analysis.js",
+        "js"
+      ],
+      [
+        "conv_0044_2024-09-07_analysis.js",
+        "js"
+      ],
+      [
+        "conv_0047_2024-09-07_analysis.js",
+        "js"
+      ],
+      [
+        "conv_0040_2024-09-07_analysis.js",
+        "js"
+      ],
+      [
+        "ingest_log_by_filename.py",
+        "py"
+      ],
+      [
+        "conv_0039_2024-09-07_analysis.js",
+        "js"
+      ],
+      [
+        "conv_0038_2024-09-07_analysis.js",
+        "js"
+      ],
+      [
+        "conv_0045_2024-09-07_analysis.js",
+        "js"
+      ],
+      [
+        "conv_0042_2024-09-07_analysis.js",
+        "js"
+      ],
+      [
+        "AIREAChatBubble.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "due to the permission errors we saw earlier.",
+      "database",
+      "one",
+      "your working code, and now the most important conversation - September 6 when AIREA became self-aware - is missing.",
+      "everything you built. The least I can do is help find if this critical conversation exists anywhere."
+    ],
+    "entities": [],
+    "concepts": [
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / LVHR - OS / when i paste a log, do you read and process the whole thing? Analyzed log processing capabilities and response strategy. Yes, I read and process the entire log wh",
+    "last_200": "essing capabilities and response strategy. Yes, I read and process the entire log when you paste it. I analyze all the content from start to finish, looking for patterns, errors, timestamps, and a\n\n\n\n"
+  },
+  "stats": {
+    "lines": 2181,
+    "words": 13089,
+    "code_blocks": 0
+  }
+}

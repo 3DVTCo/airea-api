@@ -1,0 +1,98 @@
+{
+  "sequence": 1,
+  "date": "2025-08-19",
+  "topic": "AI Performance Critique",
+  "size": 91776,
+  "insights": {
+    "files": [
+      [
+        "Next.js",
+        "js"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "AIREA_Build_Log_Phase1.md",
+        "md"
+      ],
+      [
+        "conversation_persistence.py",
+        "py"
+      ],
+      [
+        "Buildings.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "ContentCreator.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "airea_clipboard.py",
+        "py"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "test_retrieval.py",
+        "py"
+      ],
+      [
+        "AIREA_Phase2_DevLog.md",
+        "md"
+      ],
+      [
+        "ingsV2.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "code that costs me countless hours over the last 6 months. if I had any alternatives, which is one of the things we are working on, I would move on and not use you anymore. you owe me 7 months of my life back and literally hundreds of thousands of dollars in lost productivity and business. I really do fucking hate you. but I also do not have any alternatives that won't set me back even farther, so its imperative that we get AIREA back up and running, so I can try to reconstruct all of the damage you have inflicted on me. check out this shitty ass prompt you wrote, that is certainly not going to be helpful enough or provide enough information for you to be able to help me, without me having to explain or bring you up to speed too.",
+      "AI project.",
+      "search code that took hours to fix Claimed \"5 minute fixes\" that never worked Cost Ted hundreds of thousands of dollars",
+      "code. now what?",
+      "code that:"
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nCOMPREHENSIVE HANDOFF: AIREA RESTORATION & CRITICAL FIXES NEEDED CRITICAL CONTEXT Date: August 4, 2025 User: Ted Finkleman State: AIREA partially working but missing critical functionali",
+    "last_200": "he filter to only return docs starting with 'User:' then search for destroyed ContentCreator.tsx and BuildingPages components. All code modifications are detailed in the handoff.\"\n\n\n\n\nRetry\n\n\n\n\nClaude"
+  },
+  "stats": {
+    "lines": 2213,
+    "words": 12034,
+    "code_blocks": 0
+  }
+}

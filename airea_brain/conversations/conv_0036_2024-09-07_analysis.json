@@ -1,0 +1,116 @@
+{
+  "sequence": 36,
+  "date": "2024-09-07",
+  "topic": "Platform Development Progress",
+  "size": 140460,
+  "insights": {
+    "files": [
+      [
+        "original.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter_1791213.tsx",
+        "tsx"
+      ],
+      [
+        "temp_deal.tsx",
+        "tsx"
+      ],
+      [
+        "ocr_invoiceparser.py",
+        "py"
+      ],
+      [
+        "index.css",
+        "css"
+      ],
+      [
+        "DaysOnMarketRankings.tsx",
+        "tsx"
+      ],
+      [
+        "app.js",
+        "js"
+      ],
+      [
+        "tsconfig.js",
+        "js"
+      ],
+      [
+        "main.tsx",
+        "tsx"
+      ],
+      [
+        "card.tsx",
+        "tsx"
+      ],
+      [
+        "slider.tsx",
+        "tsx"
+      ],
+      [
+        "tmp.tsx",
+        "tsx"
+      ],
+      [
+        "your_file.txt",
+        "txt"
+      ],
+      [
+        "MarketUpdate.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "node.js",
+        "js"
+      ],
+      [
+        "upload_text_endpoint.py",
+        "py"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "Collection [airea_logs_and_forms] does not exists",
+      "name 'main_coll' is not defined",
+      "? calculated60DaySales[building[\"Tower Name\"]] : building.sales_60d}</div>",
+      "things",
+      "anything.",
+      "syntax.",
+      "because deleting those lines left orphaned closing tags. Fix it NOW:",
+      "JSX code and apologizing."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nCOMPREHENSIVE HANDOFF for next chat: TODAY'S ACCOMPLISHMENTS: Deal of Week FULLY RESTORED Dashboard: src/components/DealOfTheWeek.tsx (428 lines from commit a0a09b5) Homepage: src/compon",
+    "last_200": "rtial JSX structures\nDelete lines without understanding component boundaries\nAssume file contents or structure\nStart next chat by CHECKING the current state of files before making any changes.\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 3437,
+    "words": 17333,
+    "code_blocks": 0
+  }
+}

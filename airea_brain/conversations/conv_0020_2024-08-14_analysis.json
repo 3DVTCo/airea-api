@@ -1,0 +1,28 @@
+{
+  "sequence": 20,
+  "date": "2024-08-14",
+  "topic": "Deal of Week Fixed Aug 14",
+  "size": 96,
+  "insights": {
+    "files": [
+      [
+        "airea_bulk_ingest.py",
+        "py"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "python3 airea_bulk_ingest.py ingest \"Deal of Week Fixed Aug 14\" \"2024-08-14\" platform_knowledge\n",
+    "last_200": "python3 airea_bulk_ingest.py ingest \"Deal of Week Fixed Aug 14\" \"2024-08-14\" platform_knowledge\n"
+  },
+  "stats": {
+    "lines": 1,
+    "words": 11,
+    "code_blocks": 0
+  }
+}

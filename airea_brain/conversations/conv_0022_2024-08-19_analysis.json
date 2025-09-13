@@ -1,0 +1,113 @@
+{
+  "sequence": 22,
+  "date": "2024-08-19",
+  "topic": "Project Workflow Protocol Review",
+  "size": 144965,
+  "insights": {
+    "files": [
+      [
+        "airea_bulk_ingest.py",
+        "py"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "AIREAChatBubble.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api_server_v2_temp.py",
+        "py"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "dashboard_new.tsx",
+        "tsx"
+      ],
+      [
+        "AIREA_HANDOFF_20250821.md",
+        "md"
+      ],
+      [
+        "ingest_log_by_filename.py",
+        "py"
+      ],
+      [
+        "airea_voice.py",
+        "py"
+      ],
+      [
+        "temp_server.py",
+        "py"
+      ],
+      [
+        "brain_fix.txt",
+        "txt"
+      ],
+      [
+        "AIREABrainTab.tsx",
+        "tsx"
+      ],
+      [
+        "Home.tsx",
+        "tsx"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "upload_text_endpoint.py",
+        "py"
+      ],
+      [
+        "check_all_tables.js",
+        "js"
+      ],
+      [
+        "response.js",
+        "js"
+      ],
+      [
+        "check_supabase_tables.js",
+        "js"
+      ],
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "' + error.message);",
+      "collection variable causing server-side error.",
+      "collection:",
+      "vector search (was using keyword matching)",
+      "AI assistance"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\nok, here's what we are going to do. I'm going to upload the last 2 chat logs. the first one is the one previous to the 2nd one. the 2nd one will be examples of what not to do, unless it i",
+    "last_200": "how proper CMA metrics (price/sqft, DOM, absorption rate)\nReplace it with a better component\nShow me the file and we'll fix the CMA display properly using REAL data from your market_cma tables.\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 3307,
+    "words": 18196,
+    "code_blocks": 1
+  }
+}

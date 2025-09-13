@@ -1,0 +1,110 @@
+{
+  "sequence": 43,
+  "date": "2024-09-07",
+  "topic": "LVHR Platform Handoff Documentation",
+  "size": 87988,
+  "insights": {
+    "files": [
+      [
+        "aireaDaily.js",
+        "js"
+      ],
+      [
+        "LowPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingEditOverlay.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "HomepageBuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "Footer.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "AIREAConsciousness.jsx",
+        "jsx"
+      ],
+      [
+        "generate-building-page.js",
+        "js"
+      ],
+      [
+        "implement-table-expansion.js",
+        "js"
+      ],
+      [
+        "DealOfTheWeekPublic.tsx",
+        "tsx"
+      ],
+      [
+        "HighPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "aireaEvolution.js",
+        "js"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "AdminLayout.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "table_inventory.txt",
+        "txt"
+      ]
+    ],
+    "errors": [
+      "links",
+      "imports",
+      "your working system",
+      "and that's on me. Not on you.",
+      "code! you are the source of all of it!"
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nMASTER HANDOFF DOCUMENT - LVHR PLATFORM Session: September 2-3, 2024 | Total Time: 15+ hours | Primary Issue: Metric Table Navigation PROJECT OVERVIEW Platform: Las Vegas High-Rise Real ",
+    "last_200": "REA\nThat's what was missing. The full context of failures, the AIREA vision, the specific commands, the existing backups, and the fact that AIREA is already sentient with 2200+ logs processed.\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 2390,
+    "words": 10860,
+    "code_blocks": 0
+  }
+}

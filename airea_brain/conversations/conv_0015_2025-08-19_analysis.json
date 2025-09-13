@@ -1,0 +1,23 @@
+{
+  "sequence": 15,
+  "date": "2025-08-19",
+  "topic": "Data Processing Verification Protocol",
+  "size": 37,
+  "insights": {
+    "files": [],
+    "errors": [],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "neutral"
+  },
+  "preview": {
+    "first_200": "Data Processing Verification Protocol",
+    "last_200": "Data Processing Verification Protocol"
+  },
+  "stats": {
+    "lines": 0,
+    "words": 4,
+    "code_blocks": 0
+  }
+}

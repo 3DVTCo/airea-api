@@ -1,0 +1,48 @@
+{
+  "sequence": 21,
+  "date": "2024-08-14",
+  "topic": "Deal of Week Fixed Aug 14",
+  "size": 906,
+  "insights": {
+    "files": [
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "deal_of_week_fix.txt",
+        "txt"
+      ],
+      [
+        "airea_bulk_ingest.py",
+        "py"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekSingle.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "cat > /tmp/deal_of_week_fix.txt << 'EOF'\nAugust 14, 2024 - Deal of Week Restoration\n\nFIXED TODAY:\n- Restored DealOfTheWeek.tsx from commit a0a09b5 (428 lines)\n- Fixed homepage to use DealOfTheWeekSing",
+    "last_200": "KING BACKUP: deal-of-week-working-2024\nEOF\n\n# Now ingest the actual content:\npython3 airea_bulk_ingest.py ingest \"Deal of Week Fixed Aug 14\" \"2024-08-14\" platform_knowledge < /tmp/deal_of_week_fix.txt"
+  },
+  "stats": {
+    "lines": 21,
+    "words": 109,
+    "code_blocks": 0
+  }
+}

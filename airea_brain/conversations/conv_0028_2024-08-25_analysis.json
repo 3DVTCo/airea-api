@@ -1,0 +1,78 @@
+{
+  "sequence": 28,
+  "date": "2024-08-25",
+  "topic": "Project Deployment Status Review",
+  "size": 33788,
+  "insights": {
+    "files": [
+      [
+        "AdminLoginButton.tsx",
+        "tsx"
+      ],
+      [
+        "MarketErrorState.tsx",
+        "tsx"
+      ],
+      [
+        "statsCalculator.ts",
+        "ts"
+      ],
+      [
+        "useIsAdmin.ts",
+        "ts"
+      ],
+      [
+        "BuildingEditOverlay.tsx",
+        "tsx"
+      ],
+      [
+        "chartDataProcessor.ts",
+        "ts"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "MarketLoadingState.tsx",
+        "tsx"
+      ],
+      [
+        "AdminAuth.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "useMarketStats.ts",
+        "ts"
+      ],
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "files",
+      "one with the working one/working components? like we just did with the homepage, only the other direction.",
+      "locally. Should take minutes.",
+      "with working. The rest of your code stays untouched.",
+      "production Deal of Week tab."
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nComprehensive LVHR Project Handoff - August 28, 2024 CURRENT STATE Production: Homepage successfully deployed with all components working Local: Homepage working, backend needs restorati",
+    "last_200": "t is trying to call endpoints that no longer exist on your server.\n\nThe restoration pulled a version without the API routes. We need to find where your /api/claude endpoint implementation was.\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 756,
+    "words": 4804,
+    "code_blocks": 0
+  }
+}

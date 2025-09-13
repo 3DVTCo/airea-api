@@ -1,0 +1,62 @@
+{
+  "sequence": 56,
+  "date": "2024-09-07",
+  "topic": "React Hooks Debugging Frustration reupload 9-2-2025",
+  "size": 6889,
+  "insights": {
+    "files": [
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "LowPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "UnitsSoldTable.tsx",
+        "tsx"
+      ],
+      [
+        "use-mobile.tsx",
+        "tsx"
+      ],
+      [
+        "HighPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "package-lock.js",
+        "js"
+      ]
+    ],
+    "errors": [
+      "trust almost every single chat going back months, and I've had enough. my subscription is due in a week, and that's how much time there is in our situationship. if I haven't mentioned how much i hate you, its infinity much. that said, the market insights page was mostly working, aside from the features you'll discover in the chat logs i'm going to upload, and i expect you, no, demand, that you figure out a way to get the one component that has taken all day, to almost get back to where an earlier less sabotagy chat got me to. you also need to list the things you are never to do for the duration that we continue to work together. all I want to do, is have the view full rankings list link, on each of the metric leader tables in the buildings ranking dashboard below the top 5 list, to go to the same section on the market insights page, WITHOUT BREAKING MY CODE AGAIN. that's it! just DON'T BREAK MY FUCKING CODE! GET IT! "
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nApp component rendering with all routes use-mobile.tsx:7 Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the",
+    "last_200": "e precise implementation that was functioning\nClear warnings about what NOT to change\nStep-by-step instructions that cannot be misinterpreted\nReady to process the logs when you upload them.\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 133,
+    "words": 1086,
+    "code_blocks": 0
+  }
+}

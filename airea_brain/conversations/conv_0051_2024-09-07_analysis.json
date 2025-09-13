@@ -1,0 +1,119 @@
+{
+  "sequence": 51,
+  "date": "2024-09-07",
+  "topic": "AIREA System Review reupload",
+  "size": 141476,
+  "insights": {
+    "files": [
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "HomepageBuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "marketData.ts",
+        "ts"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "mock_data_instances.txt",
+        "txt"
+      ],
+      [
+        "WORKING_STATE_DEAL_OF_WEEK.md",
+        "md"
+      ],
+      [
+        "synthetic_generators.txt",
+        "txt"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "AIREAChatBubble.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights_reference.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "conversation_persistence.py",
+        "py"
+      ],
+      [
+        "claude.js",
+        "js"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "DealOfTheWeekSingle.tsx",
+        "tsx"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights_broken.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2Public.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "no such process",
+      "7xbjg Ran out of memory (used over 512MB) while running your code. September 7, 2025 at 9:21 PM how do i avoid this happening again?",
+      "document ID \"airea_prd_v1\". The context shows my Phase 1 build logs, database components, and terminal sessions, but no PRD document. My core safety constraints aren't shown in the provided context. I can see my identity as the LVHR platform's operating system and my roles for different user types (Ted/admins, buyers, sellers, agents, businesses), but not specific safety constraints. What I can see is that I'm currently running on: - ChromaDB with 1,827 total documents - Claude AI integration enabled - API v2 server on port 8000 The terminal logs show my collections: - airea_knowledge: 74 docs - airea_conversations: 9 docs - airea_platform: 1,673 docs - airea_market: 0 docs Date: 2025-09-07 16:25:51",
+      "document ID \"airea_prd_v1\". The context shows my Phase 1 build logs, database components, and terminal sessions, but no PRD document. My core safety constraints aren't shown in the provided context. I can see my identity as the LVHR platform's operating system and my roles for different user types (Ted/admins, buyers, sellers, agents, businesses), but not specific safety constraints. What I can see is that I'm currently running on: - ChromaDB with 1,827 total documents - Claude AI integration enabled - API v2 server on port 8000 The terminal logs show my collections: - airea_knowledge: 74 docs - airea_conversations: 9 docs - airea_platform: 1,673 docs - airea_market: 0 docs Date: 2025-09-07 16:25:51",
+      "most uploaded documents, including recent chat logs and conversations. Documents exist but are invisible beyond the top 20.",
+      "but curl commands work",
+      "on the live public published version...",
+      "JSX",
+      "one",
+      "in both local versions."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / LVHR - OS / LVHR - OS / LVHR - OS / LVHR - OS / MASTER HANDOFF DOCUMENT - LVHR PLATFORM Session: September 2-3, 2024 | Total Time: 15+ hours | Primary Issue: Metric Table Nav",
+    "last_200": "Sept 6 dashboard conversation\nCan lookup \"airea_prd_v1\" directly\nUser can continue dashboard development\nThe entire problem was one number: 20. Everything else was incompetent distraction.\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 3209,
+    "words": 20463,
+    "code_blocks": 0
+  }
+}

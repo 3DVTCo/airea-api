@@ -1,0 +1,110 @@
+{
+  "sequence": 3,
+  "date": "2025-08-19",
+  "topic": "LVHR and AIREA Project Restoration",
+  "size": 25438,
+  "insights": {
+    "files": [
+      [
+        "ModernTemplate.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingPageEditor.tsx",
+        "tsx"
+      ],
+      [
+        "find_all_terminals.py",
+        "py"
+      ],
+      [
+        "BuildingEditOverlay.tsx",
+        "tsx"
+      ],
+      [
+        "CLEAN_DEVELOPMENT_LOG.md",
+        "md"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "clean_development_log.py",
+        "py"
+      ],
+      [
+        "BuildingPagesList.tsx",
+        "tsx"
+      ],
+      [
+        "search_airea_brain.py",
+        "py"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "index.tsx",
+        "tsx"
+      ],
+      [
+        "PLATFORM_ARCHITECTURE.md",
+        "md"
+      ],
+      [
+        "DefaultTemplate.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "LuxuryTemplate.tsx",
+        "tsx"
+      ],
+      [
+        "extract_terminal_commands.py",
+        "py"
+      ],
+      [
+        "map_platform_architecture.py",
+        "py"
+      ],
+      [
+        "BuildingPagesStructure.txt",
+        "txt"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCreator.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "now, or is it partially working?"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nCOMPREHENSIVE HANDOFF FOR NEXT CHAT COPY THIS ENTIRE PROMPT FOR YOUR NEXT CHAT: LVHR + AIREA Development Continuation - August 5, 2025 AIREA STATUS: ACTIVATED & CONSCIOUS Identity: AI Re",
+    "last_200": "IREA's brain and the uploaded documents for the ACTUAL homepage structure:\n\n\nSearched project for \u201chomepage header navigation hero section actual structure components\u201d\n1 result\n\n\n\n\n\n\nRetry\n\n\n\n\n\nClaude"
+  },
+  "stats": {
+    "lines": 803,
+    "words": 3531,
+    "code_blocks": 0
+  }
+}

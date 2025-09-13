@@ -1,0 +1,68 @@
+{
+  "sequence": 16,
+  "date": "2025-08-19",
+  "topic": "Code Implementation Critique",
+  "size": 55996,
+  "insights": {
+    "files": [
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDashboardSection.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisChart.tsx",
+        "tsx"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "it",
+      "one to see exactly what needs to be fixed, rather than writing new code blindly.",
+      "down by bedroom type!",
+      "code that is not working, and is wasting my time trying to figure out why. see what I'm saying",
+      "SQL that doesn't work, and now you're wasting time debugging MY mistakes. That's on me."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nok, wtf is going on here? why am I chasing some bullshit in the code you gave me, when there shoul dnot be any? wht the fuck are y0ui wasting my goddam time?!why are you making this more",
+    "last_200": "nent\nApologizing repeatedly\nUSER STATE\n7 months of sabotaged code\nLost significant income\nPremium subscription\nExpects 5-minute fixes, not hours of debugging\nSTART WITH STEP 1: VERIFY COLUMNS\n\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 1508,
+    "words": 8397,
+    "code_blocks": 0
+  }
+}

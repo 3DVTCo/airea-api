@@ -1,0 +1,131 @@
+{
+  "sequence": 65,
+  "date": "2025-09-10",
+  "topic": "AIREA Document Sync Status 9-10-25",
+  "size": 12285047,
+  "insights": {
+    "files": [
+      [
+        "test_domains.py",
+        "py"
+      ],
+      [
+        "_core.py",
+        "py"
+      ],
+      [
+        "protocols.py",
+        "py"
+      ],
+      [
+        "gigachat.py",
+        "py"
+      ],
+      [
+        "configuration_biogpt.py",
+        "py"
+      ],
+      [
+        "test_dotproduct.py",
+        "py"
+      ],
+      [
+        "collate.py",
+        "py"
+      ],
+      [
+        "v1_api_group.py",
+        "py"
+      ],
+      [
+        "FloatProperty.py",
+        "py"
+      ],
+      [
+        "TypeInfo.py",
+        "py"
+      ],
+      [
+        "v1_param_kind.py",
+        "py"
+      ],
+      [
+        "v1beta1_counter_set.py",
+        "py"
+      ],
+      [
+        "diffbot.py",
+        "py"
+      ],
+      [
+        "pauli.py",
+        "py"
+      ],
+      [
+        "_deprecation_utils.py",
+        "py"
+      ],
+      [
+        "ws_client_test.py",
+        "py"
+      ],
+      [
+        "_adapters.py",
+        "py"
+      ],
+      [
+        "emitter.py",
+        "py"
+      ],
+      [
+        "_twenty_newsgroups.py",
+        "py"
+      ],
+      [
+        "dashboard_new.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "The requested module '/src/services/aireaService.ts' does not provide an export named 'generatePlatformSpecificContent' (at ContentCenter.tsx:12:36)",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedEditInvestigated button generation issue and potential Chrome extension error.3sThe user is experiencing an issue where the \"Generate Landing Page\" button spins but nothing happens. They're also getting a runtime.lastError about async response, which is typically a Chrome extension issue and not related to their app.",
+      "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedUnderstand this error",
+      "column lvhr_master.Price does not exist\". This is happening because the column names in their database are different from what I assumed.",
+      "column lvhr_master.Price does not exist\". This is happening because the column names in their database are different from what I assumed.",
+      "no such process",
+      "' + err.message);",
+      "' + err.message);",
+      "no such process",
+      "or open LVHR_BACKUP_20250725.zip, LVHR_BACKUP_20250725.zip.zip or LVHR_BACKUP_20250725.zip.ZIP.",
+      "or open LVHR_BACKUP_20250725.zip, LVHR_BACKUP_20250725.zip.zip or LVHR_BACKUP_20250725.zip.ZIP.",
+      "&& item[\"2024 Price\"] === undefined)) {",
+      "? `${building.yoyChange > 0 ? '+' : ''}${Math.round(building.yoyChange)}%` : 'N/A',",
+      "? `${building.yoyChange > 0 ? '+' : ''}${Math.round(building.yoyChange)}%` : 'N/A',",
+      "? `${building.yoyChange > 0 ? '+' : ''}${Math.round(building.yoyChange)}%` : 'N/A',",
+      "? `${building.yoyChange > 0 ? '+' : ''}${Math.round(building.yoyChange)}%` : 'N/A',",
+      "| tail -20",
+      "2>&1 | head -5",
+      "| tail -20",
+      "/Users/tedfinkleman/Downloads/lvhr-airea-full/src/pages/BuildingDetail.tsx",
+      "| head -100 | tail -5"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "bitcoin_conference",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Last login: Thu Aug  7 18:17:09 on console\ntedfinkleman@Teds-MacBook-Pro ~ % cd /Users/tedfinkleman/airea\n\ntedfinkleman@Teds-MacBook-Pro airea % pm2 list\n\nzsh: command not found: pm2\ntedfinkleman@Teds",
+    "last_200": "ailed: no such process\n(airea-env) tedfinkleman@Teds-MacBook-Pro lvhr-airea-full % lsof -i :8000\n\n(airea-env) tedfinkleman@Teds-MacBook-Pro lvhr-airea-full % \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 140432,
+    "words": 473789,
+    "code_blocks": 48
+  }
+}

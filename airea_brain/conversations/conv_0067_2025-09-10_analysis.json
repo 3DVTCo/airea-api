@@ -1,0 +1,119 @@
+{
+  "sequence": 67,
+  "date": "2025-09-10",
+  "topic": "AIREA Document Sync Status 9-10-25 t3",
+  "size": 68911,
+  "insights": {
+    "files": [
+      [
+        "conv_0145_2025-08-03_analysis.js",
+        "js"
+      ],
+      [
+        "conv_0146_2025-08-03_analysis.js",
+        "js"
+      ],
+      [
+        "sentence_transformer_embedding_function.py",
+        "py"
+      ],
+      [
+        "AIREA_PRD.md",
+        "md"
+      ],
+      [
+        "ingestion_state.js",
+        "js"
+      ],
+      [
+        "airea_bulk_ingest.py",
+        "py"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "ingest_document.py",
+        "py"
+      ],
+      [
+        "_analysis.js",
+        "js"
+      ],
+      [
+        "rust.py",
+        "py"
+      ],
+      [
+        "conv_0002_2025-07-08_analysis.js",
+        "js"
+      ],
+      [
+        "pip.py",
+        "py"
+      ],
+      [
+        "onnxruntime_inference_collection.py",
+        "py"
+      ],
+      [
+        "client.py",
+        "py"
+      ],
+      [
+        "CollectionCommon.py",
+        "py"
+      ],
+      [
+        "openai_embedding_function.py",
+        "py"
+      ],
+      [
+        "conv_0143_2025-08-03_analysis.js",
+        "js"
+      ],
+      [
+        "conv_0144_2025-08-03_analysis.js",
+        "js"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "AIREA_Self_Development_PRD.md",
+        "md"
+      ]
+    ],
+    "errors": [
+      "{e}\")",
+      "Collection [airea_logs_and_forms] does not exists",
+      "name 'main_coll' is not defined",
+      "The CHROMA_OPENAI_API_KEY environment variable is not set.",
+      "No module named 'sentence_transformers'",
+      "(.+?)(?:\\n|$)',",
+      "(.+?)(?:\\n|$)',",
+      "(.+?)(?:\\n|$)',",
+      "(.+?)(?:\\n|$)'"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "bitcoin_conference",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Last login: Mon Sep  1 13:57:28 on ttys004\ntedfinkleman@Teds-MacBook-Pro AIREA % python3 airea_bulk_ingest.py ingest \"Project Workflow Protocol Review\" \"2024-08-19\"\n\ud83d\udccb Processing 144,965 characters for",
+    "last_200": "s: property_management, offer_negotiation, airea_development\n(airea-env) tedfinkleman@Teds-MacBook-Pro AIREA % python3 airea_bulk_ingest.py ingest \"AIREA Document Sync Status 9-10-25 t3\" \"2025-09-10\"\n"
+  },
+  "stats": {
+    "lines": 1261,
+    "words": 6161,
+    "code_blocks": 2
+  }
+}

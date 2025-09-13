@@ -1,0 +1,110 @@
+{
+  "sequence": 42,
+  "date": "2024-09-07",
+  "topic": "React Hooks Debugging in LVHR Platform",
+  "size": 72415,
+  "insights": {
+    "files": [
+      [
+        "HomepageBuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekPublic.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2Public.jsx",
+        "jsx"
+      ],
+      [
+        "package-lock.js",
+        "js"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ],
+      [
+        "LowPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "modal.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "dialog.tsx",
+        "tsx"
+      ],
+      [
+        "UnitsSoldTable.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekSingle.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "Footer.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "during JSX comment attempts (lines 795-800)",
+      "BuildingRankingsV2Public import",
+      "links",
+      "dialogs",
+      "state. Show me what those grep commands return."
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\nI need help fixing React hooks errors in my LVHR platform. I will provide chat logs ONE AT A TIME for you to analyze and extract relevant information.\nCRITICAL RULES - VIOLATING THESE MEA",
+    "last_200": ": port 8080\nThis handoff represents 15 hours of debugging and attempts. The navigation works but table expansion remains unimplemented. Start with footer links as they're the safest quick win.\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 1677,
+    "words": 9160,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "sequence": 23,
+  "date": "2024-08-19",
+  "topic": "AIREA Development Update",
+  "size": 102890,
+  "insights": {
+    "files": [
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "AIREA_HANDOFF_20250821.md",
+        "md"
+      ],
+      [
+        "CMAMetricsDisplay.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "MarketAnalysisChart.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ],
+      [
+        "client.ts",
+        "ts"
+      ]
+    ],
+    "errors": [
+      "Lines were partially deleted causing syntax error",
+      "data robustly",
+      "checks everywhere",
+      "or shitty code to my app! yes, fix them first!",
+      "MarketAnalysisChart.tsx file, then remove duplicate table"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLet's create a comprehensive handoff now while we have space: bashcat > ~/AIREA_HANDOFF_20250821.md << 'EOF' # COMPREHENSIVE AIREA HANDOFF - AUGUST 21, 2025 ## CURRENT STATUS - AIREA OPE",
+    "last_200": " # Check if app is running\n# Check browser console for errors\n# Fix MarketAnalysisChart.tsx syntax error first\nPRIORITY: Fix the broken MarketAnalysisChart.tsx file, then remove duplicate table\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 2711,
+    "words": 11596,
+    "code_blocks": 0
+  }
+}

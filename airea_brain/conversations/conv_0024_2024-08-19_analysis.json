@@ -1,0 +1,57 @@
+{
+  "sequence": 24,
+  "date": "2024-08-19",
+  "topic": "Debugging Dynamic Table Syntax Error",
+  "size": 29002,
+  "insights": {
+    "files": [
+      [
+        "CMAMetricsDisplay.tsx",
+        "tsx"
+      ],
+      [
+        "AIREAChatBubble.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "MarketAnalysisChart.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "Lines were partially deleted causing syntax error",
+      "MarketAnalysisChart.tsx file, then remove duplicate table",
+      "file RIGHT NOW and get your CMA table working properly.",
+      "in MarketAnalysisChart.tsx:",
+      "from a failed sed command, causing a syntax error. Let me fix this immediately by creating a working version that ONLY has the chart (no table).",
+      "syntax, no more duplicate tables."
+    ],
+    "entities": [],
+    "concepts": [
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\nWHY IS IT TAKING HOURS AND HOURS AND THE FOURTH CHAT TO FIX ONE GODDAM DYNAMIC TABLE?!\n\nCOMPREHENSIVE HANDOFF - AUGUST 21, 2025\nCRITICAL CURRENT ISSUE - APP IS BROKEN\nSYNTAX ERROR in Mark",
+    "last_200": "y it actually changed\ncat src/components/sections/MarketAnalysisSection.tsx | grep -E \"MarketDataTable|CMAMetricsDisplay\"\nYou should see ONLY MarketDataTable references, not CMAMetricsDisplay.\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 876,
+    "words": 3936,
+    "code_blocks": 0
+  }
+}

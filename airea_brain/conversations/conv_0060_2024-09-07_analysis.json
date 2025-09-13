@@ -1,0 +1,106 @@
+{
+  "sequence": 60,
+  "date": "2024-09-07",
+  "topic": "Frustrated Developer Handoff Protocol 9-3-25 reupload",
+  "size": 106768,
+  "insights": {
+    "files": [
+      [
+        "Footer.tsx",
+        "tsx"
+      ],
+      [
+        "LowPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "airea_text_chat.py",
+        "py"
+      ],
+      [
+        "HighPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "response.js",
+        "js"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "start_airea.py",
+        "py"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "AIREAChatBubble.tsx",
+        "tsx"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheek.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2Public.jsx",
+        "jsx"
+      ],
+      [
+        "DealOfTheWeekPublic.tsx",
+        "tsx"
+      ],
+      [
+        "UnitsSoldTable.tsx",
+        "tsx"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / MASTER HANDOFF DOCUMENT - LVHR PLATFORM Session: September 2-3, 2024 | Total Time: 15+ hours | Primary Issue: Metric Table Navigation PROJECT OVERVIEW Platform: Las Vegas Hig",
+    "last_200": ") -- 2. Standardized building names on insert (INITCAP) -- 3. Proper ranking to get exactly 2 deals per building TRUNCATE TABLE deal_of_week_building; TRUNCATE TABLE d\n\n\n| function_name | full_sql\n\n\n\n"
+  },
+  "stats": {
+    "lines": 2591,
+    "words": 14317,
+    "code_blocks": 0
+  }
+}

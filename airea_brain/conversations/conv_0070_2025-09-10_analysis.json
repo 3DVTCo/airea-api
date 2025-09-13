@@ -1,0 +1,25 @@
+{
+  "sequence": 70,
+  "date": "2025-09-10",
+  "topic": "AIREA Document Sync Status 9-10-25 t6",
+  "size": 421,
+  "insights": {
+    "files": [],
+    "errors": [],
+    "entities": [],
+    "concepts": [
+      "airea_development"
+    ],
+    "has_code": false,
+    "sentiment": "neutral"
+  },
+  "preview": {
+    "first_200": "Last login: Thu Aug  7 18:37:09 on ttys002\ntedfinkleman@Teds-MacBook-Pro lvhr-airea-full % ngrok http 8080\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntedfinkleman@Teds-MacBook-Pro lvhr-airea-full % ngrok h",
+    "last_200": "dfinkleman@Teds-MacBook-Pro lvhr-airea-full % ifconfig | grep \"inet \" | grep -v 127.0.0.1\n\n\tinet 10.0.0.43 netmask 0xffffff00 broadcast 10.0.0.255\ntedfinkleman@Teds-MacBook-Pro lvhr-airea-full % \n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 59,
+    "words": 41,
+    "code_blocks": 0
+  }
+}

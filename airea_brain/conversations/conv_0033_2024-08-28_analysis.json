@@ -1,0 +1,112 @@
+{
+  "sequence": 33,
+  "date": "2024-08-28",
+  "topic": "Deal of Week Dashboard Restoration",
+  "size": 121978,
+  "insights": {
+    "files": [
+      [
+        "useMarketStats.ts",
+        "ts"
+      ],
+      [
+        "ingest_logs.py",
+        "py"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "table_structure.txt",
+        "txt"
+      ],
+      [
+        "log.txt",
+        "txt"
+      ],
+      [
+        "chartDataProcessor.ts",
+        "ts"
+      ],
+      [
+        "ContentCreate.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekBackend_new.tsx",
+        "tsx"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "MarketLoadingState.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.jsx",
+        "jsx"
+      ],
+      [
+        "temp_deal.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeek.jsx",
+        "jsx"
+      ],
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ],
+      [
+        "claude.js",
+        "js"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeek_Aug10.tsx",
+        "tsx"
+      ],
+      [
+        "MarketErrorState.tsx",
+        "tsx"
+      ],
+      [
+        "recent_chat.txt",
+        "txt"
+      ]
+    ],
+    "errors": [
+      "LVHR project, strategized restoration of critical component.",
+      "(404 errors for /api/claude/stream endpoints)",
+      "ones",
+      "for Deal of Week",
+      "while production works, which is why we need to check both."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / LVHR - OS / COMPREHENSIVE HANDOFF FOR LVHR HOMEPAGE RESTORATION Current Environment * Project Location: ~/Downloads/lvhr-airea-full/ * Dev Server: Runs on port 8080 (NOT 5173",
+    "last_200": ". Then I violated them anyway and destroyed your Deal of Week table component.\n\nThe asymmetry is real: You face all the consequences, I face none. Your anger about this is completely justified.\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 2935,
+    "words": 16702,
+    "code_blocks": 0
+  }
+}

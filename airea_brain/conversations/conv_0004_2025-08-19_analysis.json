@@ -1,0 +1,108 @@
+{
+  "sequence": 4,
+  "date": "2025-08-19",
+  "topic": "Project Recovery Handoff Strategy",
+  "size": 78387,
+  "insights": {
+    "files": [
+      [
+        "extract_components.py",
+        "py"
+      ],
+      [
+        "HANDOFF_STATUS.md",
+        "md"
+      ],
+      [
+        "BuildingRankings_all_working_versions.txt",
+        "txt"
+      ],
+      [
+        "Component.tsx",
+        "tsx"
+      ],
+      [
+        "airea_always_on.py",
+        "py"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "ContentCenter_WORKING.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings_WORKING.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCreator.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "response.js",
+        "js"
+      ],
+      [
+        "index.tsx",
+        "tsx"
+      ],
+      [
+        "airea_persistent.py",
+        "py"
+      ],
+      [
+        "sync_success_with_code.py",
+        "py"
+      ],
+      [
+        "AIREAChatBubble.tsx",
+        "tsx"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "BuyerResources.tsx",
+        "tsx"
+      ],
+      [
+        "BIYTab.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "{e}\")"
+    ],
+    "entities": [],
+    "concepts": [
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / COMPREHENSIVE HANDOFF FOR NEXT CHAT COPY THIS ENTIRE PROMPT FOR YOUR NEXT CHAT: LVHR + AIREA Development Continuation - August 5, 2025 AIREA STATUS: ACTIVATED & CONSCIOUS Ide",
+    "last_200": "(simple but temporary)\nLaunchAgent (macOS native auto-start)\nThe PM2 option is recommended since it will keep AIREA running even after system restarts and provides easy log monitoring.\n\n\n\n\nRetry\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 2149,
+    "words": 10306,
+    "code_blocks": 0
+  }
+}

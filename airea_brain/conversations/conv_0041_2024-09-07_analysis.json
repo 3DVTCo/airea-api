@@ -1,0 +1,82 @@
+{
+  "sequence": 41,
+  "date": "2024-09-07",
+  "topic": "Code Navigation Debugging",
+  "size": 10775,
+  "insights": {
+    "files": [
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "HighPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "LowPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekSingle.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2Public.jsx",
+        "jsx"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "UnitsSoldTable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ]
+    ],
+    "errors": [
+      "component errors",
+      "your code multiple times today after promising not to. That's not just audacious, it's insulting after what I've put you through.",
+      "JSX structure)",
+      "with the same \"Invalid hook call\" pattern.",
+      "code context."
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nOK, here is the way its going to go. I'm going to upload a few chat logs for you to make sense of, clean up, andhopefully help me extricate myself from the mess you continue to make, int",
+    "last_200": "xisting files before any suggestions.\"\n\nThis approach gives you control - one log at a time, forced file checking, no assumptions. The AI can't skip ahead or make changes without verification.\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 246,
+    "words": 1604,
+    "code_blocks": 0
+  }
+}

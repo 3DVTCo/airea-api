@@ -1,0 +1,28 @@
+{
+  "sequence": 48,
+  "date": "2024-09-07",
+  "topic": "Troubleshooting AI Assistance Challenges reupload",
+  "size": 101,
+  "insights": {
+    "files": [
+      [
+        "airea_bulk_ingest.py",
+        "py"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "neutral"
+  },
+  "preview": {
+    "first_200": "python3 airea_bulk_ingest.py ingest \"Troubleshooting AI Assistance Challenges reupload\" \"2024-09-07\"\n",
+    "last_200": "python3 airea_bulk_ingest.py ingest \"Troubleshooting AI Assistance Challenges reupload\" \"2024-09-07\"\n"
+  },
+  "stats": {
+    "lines": 1,
+    "words": 9,
+    "code_blocks": 0
+  }
+}

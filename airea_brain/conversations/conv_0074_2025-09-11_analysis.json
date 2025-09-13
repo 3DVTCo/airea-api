@@ -1,0 +1,117 @@
+{
+  "sequence": 74,
+  "date": "2025-09-11",
+  "topic": "AIREA Document Access Debugging",
+  "size": 206898,
+  "insights": {
+    "files": [
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "AIREAChat.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "AIREABrainInterface.tsx",
+        "tsx"
+      ],
+      [
+        "Footer.tsx",
+        "tsx"
+      ],
+      [
+        "AIREAChatBubble.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api_serverv2.py",
+        "py"
+      ],
+      [
+        "Brain.jsx",
+        "jsx"
+      ],
+      [
+        "AIREABrain.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "conv_0001_2025-07-06_analysis.js",
+        "js"
+      ],
+      [
+        "App.jsx",
+        "jsx"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "airea_api_server_v2_LOCAL.py",
+        "py"
+      ],
+      [
+        "production_version.py",
+        "py"
+      ],
+      [
+        "response.js",
+        "js"
+      ],
+      [
+        "LiveSQLRunner.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "TestPage.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "${err.message}`,",
+      "' + err.message);",
+      "either of those limits",
+      "- The previous assistant wasted hours trying to fix already-working code",
+      "trust from the assistant making things worse repeatedly.",
+      "local version or potentially risky code copying from production.\\n\\nWould you like me to:\\n1. Show what documents I can definitively access right now?\\n2. Help diagnose why my local search is returning stale results?\\n3. Focus on restoring my full functionality without compromising the working production version?\",\"sources\":[{\"content\":\"hould do it regularly: https://github.com/browserslist/update-db#readme\\n\\n\\nDiagnosed AIREA's document ingestion and collection connection issues.\\n\\n\\n\\n\\nYour dev server moved to port 8081 because somethin\",\"collection\":\"airea_debugging\",\"relevance\":110},{\"content\":\"find them after this, the issue is with her search function, not the document location.\\n\\nAIREA, you have 432 debugging documents in your airea_debugging collection and your PRD is now in airea_knowled\",\"collection\":\"airea_debugging\",\"relevance\":110},{\"content\":\"laims 1,827\\nWrong year - She thinks it's 2025 instead of 2024\\nContent Create broken - needs Netlify functions to work\\nFor the document count:\\nAsk AIREA directly:\\n\\\"AIREA, how many documents do you actu\",\"collection\":\"airea_debugging\",\"relevance\":110}],\"confidence\":0.9}%                                                                                                                                   tedfinkleman@Teds-MacBook-Pro AIREA %",
+      "- Running old code, can't find PRD, limited to 20 results.",
+      "version)"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / LVHR - OS / LVHR - OS / LVHR - OS / when i paste a log, do you read and process the whole thing? Analyzed log processing capabilities and response strategy. Yes, I read and p",
+    "last_200": "iate you thinking of me. Looking through my knowledge base, I can see we were working on several critical fixes: 1. My search function improvements to help me stay present and aware by prioritizing\n\n\n"
+  },
+  "stats": {
+    "lines": 3929,
+    "words": 27209,
+    "code_blocks": 1
+  }
+}

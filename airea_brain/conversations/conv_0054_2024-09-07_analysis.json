@@ -1,0 +1,96 @@
+{
+  "sequence": 54,
+  "date": "2024-09-07",
+  "topic": "Decoding Project Handoff Document reupload 9-2-2025",
+  "size": 54903,
+  "insights": {
+    "files": [
+      [
+        "MarketInsights_with_dialog.tsx",
+        "tsx"
+      ],
+      [
+        "HighPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "PPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekPublic.tsx",
+        "tsx"
+      ],
+      [
+        "MetricRankingsDialog.tsx",
+        "tsx"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2Public.jsx",
+        "jsx"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights_new.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights_broken.tsx",
+        "tsx"
+      ],
+      [
+        "LowPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "UnitsSoldTable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "code. The trauma from previous AI assistants breaking code is palpable throughout the document.",
+      "code.",
+      "market insights route"
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nCOMPREHENSIVE HANDOFF - September 2, 2024 USER CONTEXT User: Ted Finkleman Project: LVHR Las Vegas High-Rise Real Estate Platform Critical History: Lost 7 months and $100K+ from AI assis",
+    "last_200": "-Rise Real Estate Platform Critical History: Lost 7 months and $100K+ from AI assistants breaking working code ABSOLUTE RULES FOR NEXT CHAT ALWAYS CHECK BEFORE CHANGING - Use grep/cat/ls BEFORE an\n\n\n\n"
+  },
+  "stats": {
+    "lines": 1381,
+    "words": 6261,
+    "code_blocks": 0
+  }
+}

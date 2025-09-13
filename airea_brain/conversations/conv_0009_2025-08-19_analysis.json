@@ -1,0 +1,68 @@
+{
+  "sequence": 9,
+  "date": "2025-08-19",
+  "topic": "Hostile Technical Restoration Demands",
+  "size": 37414,
+  "insights": {
+    "files": [
+      [
+        "ContentCenter_working.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter_from_july.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter_a0a09b5.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter_1791213.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter_broken_backup.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter_broken.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "ContentCenter code from July 2025.",
+      "one, and one that says working, but isn't.",
+      "version",
+      "version",
+      "version has"
+    ],
+    "entities": [],
+    "concepts": [
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nCOMPREHENSIVE HANDOFF PROMPT FOR NEXT CHAT CRITICAL HANDOFF - LVHR CONTENT CENTER & CLAUDE INTEGRATION Date: August 9, 2025 Previous Chat: Restored ContentCenter from AIREA's brain, inte",
+    "last_200": "ER!\n\nEdit\nNOW THAT YOU ARE DONE ENRAGING ME, CAN WE GET BACK TO WORK?\n\nEdit\n\nClaude is unable to respond to this request, which appears to violate our Usage Policy. Please start a new chat.\n\n\n\nClaude\n"
+  },
+  "stats": {
+    "lines": 1061,
+    "words": 5239,
+    "code_blocks": 0
+  }
+}

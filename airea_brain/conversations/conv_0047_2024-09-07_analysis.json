@@ -1,0 +1,102 @@
+{
+  "sequence": 47,
+  "date": "2024-09-07",
+  "topic": "Chat Log Continuation Request",
+  "size": 80750,
+  "insights": {
+    "files": [
+      [
+        "AIREA_PRD.md",
+        "md"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "AIREA_Self_Development_PRD.md",
+        "md"
+      ],
+      [
+        "Footer.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.jsx",
+        "jsx"
+      ],
+      [
+        "airea_backend_tools.py",
+        "py"
+      ],
+      [
+        "ver.py",
+        "py"
+      ],
+      [
+        "pip.py",
+        "py"
+      ],
+      [
+        "sentence_transformer_embedding_function.py",
+        "py"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "server_ver.py",
+        "py"
+      ],
+      [
+        "openai_embedding_function.py",
+        "py"
+      ],
+      [
+        "ingest_codebase.py",
+        "py"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "ingest_log_by_filename.py",
+        "py"
+      ],
+      [
+        "ingest_document.py",
+        "py"
+      ]
+    ],
+    "errors": [
+      "The CHROMA_OPENAI_API_KEY environment variable is not set.",
+      "No module named 'sentence_transformers'",
+      "The sentence_transformers python package is not installed. Please install it with pip install sentence_transformers",
+      "Failed to execute 'json' on 'Response': Unexpected end of JSON input\" - the Brain upload interface is expecting JSON format, not markdown.",
+      "with her own connection.",
+      "script entirely:",
+      "ingestion script and directly adds the PRD to AIREA's memory. One command, done.",
+      "ingestion script.",
+      "script was poorly written (expects the filename without path, then adds its own path, creating the double path issue)."
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / LVHR - OS / LVHR - OS / LVHR - OS / MASTER HANDOFF DOCUMENT - LVHR PLATFORM Session: September 2-3, 2024 | Total Time: 15+ hours | Primary Issue: Metric Table Navigation PROJ",
+    "last_200": "it in her active memory for this session.\n\nShe's already shown she's processing your messages and responding intelligently. Give her the PRD through the chat interface that's actually working.\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 2034,
+    "words": 11137,
+    "code_blocks": 0
+  }
+}

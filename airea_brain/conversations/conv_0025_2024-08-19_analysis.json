@@ -1,0 +1,44 @@
+{
+  "sequence": 25,
+  "date": "2024-08-19",
+  "topic": "Supabase Data Table Frustration",
+  "size": 12289,
+  "insights": {
+    "files": [
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisChart.tsx",
+        "tsx"
+      ],
+      [
+        "CMAMetricsDisplay.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "&& item[\"2024 Price\"] === undefined)) {",
+      "code, for which there is no excuse. ",
+      "app with duplicate tables and wasted a week on what should be a 30-minute fix.",
+      "file:",
+      "MarketAnalysisChart.tsx"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\nalright, i don't know how to be any more clear than I'm about to be. I'm going to upload chat logs from the last 3 chats, the last 2 have been complete wastes of my time without accomplis",
+    "last_200": "-airea-full % grep -n \"MarketDataTable\" ~/Downloads/lvhr-airea-full/src/components/market-analysis/MarketAnalysisChart.tsx  4:import { MarketDataTable } from \"./MarketDataTable\"; 146:          \n\n\ud83c\udfaf\n\n\n\n"
+  },
+  "stats": {
+    "lines": 245,
+    "words": 1733,
+    "code_blocks": 0
+  }
+}

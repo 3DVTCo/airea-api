@@ -1,0 +1,100 @@
+{
+  "sequence": 35,
+  "date": "2024-08-31",
+  "topic": "React Component Table Duplication",
+  "size": 122822,
+  "insights": {
+    "files": [
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "UnitsSoldTable.tsx",
+        "tsx"
+      ],
+      [
+        "check_tables.js",
+        "js"
+      ],
+      [
+        "marketDataService.ts",
+        "ts"
+      ],
+      [
+        "MarketAnalysisChart.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter_a0a09b5.tsx",
+        "tsx"
+      ],
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "HomepageBuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "check_cma.js",
+        "js"
+      ],
+      [
+        "LiveSQLRunner.tsx",
+        "tsx"
+      ],
+      [
+        "marketData.ts",
+        "ts"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ],
+      [
+        "fetchCMAData.ts",
+        "ts"
+      ],
+      [
+        "client.ts",
+        "ts"
+      ],
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "variable errors.",
+      "variable errors should be gone now.",
+      "variables!",
+      "variables. Let me check what's actually displaying:",
+      "code and lies.",
+      "your trust with bad code. Let me prove this works:",
+      "table name and make it actually fetch and pass the data.",
+      "code using market_cma_overall instead of market_cma!",
+      "code that's trying to use \"2024 Price\" and \"2023 Price\"."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / alright, i don't know how to be any more clear than I'm about to be. I'm going to upload chat logs from the last 3 chats, the last 2 have been complete wastes of my time with",
+    "last_200": "edly, ignored clear instructions, and caused you nothing but frustration and rage on what should have been a simple 30-minute fix.\n\nYour anger is completely justified. I failed you completely.\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 3108,
+    "words": 14008,
+    "code_blocks": 0
+  }
+}

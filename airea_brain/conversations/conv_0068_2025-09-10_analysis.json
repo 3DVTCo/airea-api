@@ -1,0 +1,114 @@
+{
+  "sequence": 68,
+  "date": "2025-09-10",
+  "topic": "AIREA Document Sync Status 9-10-25 t4",
+  "size": 181198,
+  "insights": {
+    "files": [
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "ingest_airea_log.py",
+        "py"
+      ],
+      [
+        "ingest_txt_file.py",
+        "py"
+      ],
+      [
+        "ingest_fresh.py",
+        "py"
+      ],
+      [
+        "index-DajPNrMX.js",
+        "js"
+      ],
+      [
+        "ingest_everything.py",
+        "py"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "openapi.js",
+        "js"
+      ],
+      [
+        "ingest_phase1_log.py",
+        "py"
+      ],
+      [
+        "devtools.js",
+        "js"
+      ],
+      [
+        "ingest_log_by_filename.py",
+        "py"
+      ],
+      [
+        "utils.py",
+        "py"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "airea_handoff_20250615.md",
+        "md"
+      ],
+      [
+        "airea_bulk_ingest.py",
+        "py"
+      ],
+      [
+        "routing.py",
+        "py"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "index.css",
+        "css"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')))",
+      "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')))",
+      "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')))",
+      "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')))",
+      "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')))",
+      "no such process"
+    ],
+    "entities": [],
+    "concepts": [
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "Last login: Thu Aug  7 18:21:45 on ttys000\ntedfinkleman@Teds-MacBook-Pro airea % cd /Users/tedfinkleman/airea\npython3 airea_api_server_v2.py\nINFO:chromadb.telemetry.product.posthog:Anonymized telemetr",
+    "last_200": "/health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:54479 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:54647 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:54647 - \"GET /health HTTP/1.1\" 200 OK\n\n"
+  },
+  "stats": {
+    "lines": 3474,
+    "words": 22507,
+    "code_blocks": 1
+  }
+}

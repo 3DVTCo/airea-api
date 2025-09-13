@@ -1,0 +1,46 @@
+{
+  "sequence": 8,
+  "date": "2025-08-19",
+  "topic": "AIREA ContentCenter Restoration Dispute",
+  "size": 56013,
+  "insights": {
+    "files": [
+      [
+        "claude.js",
+        "js"
+      ],
+      [
+        "LiveSQLRunner.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "Dashboard.tsx",
+        "tsx"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nCRITICAL HANDOFF - LVHR + AIREA PROJECT Date: August 7, 2025 User: Ted Finkleman \u26a0\ufe0f USER HAS LOST 7 MONTHS REVENUE DUE TO BAD AI ASSISTANCE - DO NOT FUCK THIS UP \ud83d\udd34 CURRENT CRISIS Previou",
+    "last_200": " make new shit up\n\nClaude API: Working\nProblem: Components not restored to working versions\nBox 3 should be EXACTLY like Building Rankings tab, not some half-assed approximation.\n\n\n\n\nRetry\n\n\n\n\nClaude\n"
+  },
+  "stats": {
+    "lines": 1537,
+    "words": 7150,
+    "code_blocks": 1
+  }
+}

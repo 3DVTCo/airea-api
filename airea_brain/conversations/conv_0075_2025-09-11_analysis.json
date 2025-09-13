@@ -1,0 +1,77 @@
+{
+  "sequence": 75,
+  "date": "2025-09-11",
+  "topic": "AIREA Box 4 Interface Design 9-11-25",
+  "size": 105732,
+  "insights": {
+    "files": [
+      [
+        "response.js",
+        "js"
+      ],
+      [
+        "fixed_sql.txt",
+        "txt"
+      ],
+      [
+        "AIREAChatBubble.tsx",
+        "tsx"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "AIREABrainInterface.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "sql_function.txt",
+        "txt"
+      ],
+      [
+        "index.css",
+        "css"
+      ]
+    ],
+    "errors": [
+      "createClient. Once we fix the import, it should render again and the SQL functionality will work.",
+      "because the runSQLQuery function is missing entirely. Let's restore your working dashboard first, then add SQL properly.",
+      "because the runSQLQuery function is missing entirely. Let's restore your working dashboard first, then add SQL properly. - WHAT THE ACTUAL FUCK?! YOU KNOW WHAT WE ARE SUPPOSED TO BE DOING, AND EITHER YOU ARE DOING IT ON PURPOSE OR ARE INCOMPETENT? WHICH IS IS? NEITHER ARE ACCEPTABLE!",
+      "file",
+      "instructions. This complete replacement will get your Brain dashboard working right now.",
+      "runSQLQuery function with this fixed version:"
+    ],
+    "entities": [],
+    "concepts": [
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / LVHR - OS / LVHR - OS / LVHR - OS / LVHR - OS / when i paste a log, do you read and process the whole thing? Analyzed log processing capabilities and response strategy. Yes, ",
+    "last_200": "s AIREA Brain AIREA Flight Control OPERATIONAL 124ms 68% System Monitoring Documents 3,269 Collections 11 Search Limit 500 Connections 3 BuildingRankings DealOfWeek Supabase Upload to Brain Paste c\n\n\n"
+  },
+  "stats": {
+    "lines": 2574,
+    "words": 14284,
+    "code_blocks": 2
+  }
+}

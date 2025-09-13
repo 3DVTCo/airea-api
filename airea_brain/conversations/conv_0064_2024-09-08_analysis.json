@@ -1,0 +1,87 @@
+{
+  "sequence": 64,
+  "date": "2024-09-08",
+  "topic": "AIREA Document Sync Status 9-9-25",
+  "size": 125190,
+  "insights": {
+    "files": [
+      [
+        "state_check.txt",
+        "txt"
+      ],
+      [
+        "search_knowledge_base_updated.py",
+        "py"
+      ],
+      [
+        "AIREAChatBubble.tsx",
+        "tsx"
+      ],
+      [
+        "openapi.js",
+        "js"
+      ],
+      [
+        "date_scoring.txt",
+        "txt"
+      ],
+      [
+        "Next.js",
+        "js"
+      ],
+      [
+        "cdn.js",
+        "js"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "test_direct_search.py",
+        "py"
+      ],
+      [
+        "swagger-ui.css",
+        "css"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "AIREAChat.tsx",
+        "tsx"
+      ],
+      [
+        "swagger-ui-bundle.js",
+        "js"
+      ]
+    ],
+    "errors": [
+      "Permission denied (os error 13) - The sync from earlier might have changed file permissions",
+      "invalid syntax",
+      "invalid syntax",
+      "implementations",
+      "components - the content create tab is broken, in addition to AIREA that was pulling from the other chromadb, right? would it make sense to copy the working components from the live production to the local version fixing the broken components and not breaking the live production in any way? then AIREA and the whole platform will be running the same? I'm actually very afraid to even suggest anything like this based on your history of breaking everything you touch, but as long as you can assure me that won't happen, i'm open to that.",
+      "Content Create tab (needs npx netlify dev)",
+      "scoring:",
+      "state"
+    ],
+    "entities": [],
+    "concepts": [
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / when i paste a log, do you read and process the whole thing? Analyzed log processing capabilities and response strategy. Yes, I read and process the entire log when you paste",
+    "last_200": "_api_server_v2.py | head -120 def search_knowledge_base(query: str, limit: int = 5) -> List[Dict]: \"\"\" Searches across all ChromaDB collections for documents relevant to the query. This version ai\n\n\n\n"
+  },
+  "stats": {
+    "lines": 2857,
+    "words": 16779,
+    "code_blocks": 0
+  }
+}

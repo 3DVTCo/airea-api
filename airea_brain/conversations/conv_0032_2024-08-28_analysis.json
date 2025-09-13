@@ -1,0 +1,58 @@
+{
+  "sequence": 32,
+  "date": "2024-08-28",
+  "topic": "Projection Restoration: Critical Backend Breakdown",
+  "size": 18047,
+  "insights": {
+    "files": [
+      [
+        "AdminLoginButton.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingEditOverlay.tsx",
+        "tsx"
+      ],
+      [
+        "temp_rankings.txt",
+        "txt"
+      ],
+      [
+        "AdminAuth.tsx",
+        "tsx"
+      ],
+      [
+        "temp_deal.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsBackend.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "in both local and production",
+      "locally",
+      "commits pushed and deployed",
+      "or fucked up or even touched if its working - like the entire live public production version, esp the entire recently restored homepage and all components and the backend dashboard - where the content create tab is fully functional, unlike the locally hosted version - both of which the deal of the week tabs were reverted to previous version. also, since deal of the week was working on the live version most recently, and if I recall correctly, was fixed either before or after the content create tab was reconstructed (from the chat logs, which have all been uploaded into AIREA's brain), maybe we could look there. also if I recall correctly, you used the building rankings tab layout as a template on what the fixed/latest version of deal of the week tab on the backend, so that may help in figuring out where the last/latest production version of this component is. got it? I need to restore both the locally hosted and production version of deal of the week tabs, WITHOUT BREAKING ANYTHING ELSE, YOU FUCK! GOT IT?",
+      "version over working one"
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / COMPREHENSIVE HANDOFF FOR LVHR HOMEPAGE RESTORATION Current Environment * Project Location: ~/Downloads/lvhr-airea-full/ * Dev Server: Runs on port 8080 (NOT 5173) * Backup L",
+    "last_200": "IX\nsrc/components/admin/DealOfWeekBackend.tsx - nothing else\n\nThe next chat has clear instructions. Get the working file from Netlify history, replace the broken one, test, deploy. That's it.\n\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 363,
+    "words": 2758,
+    "code_blocks": 0
+  }
+}

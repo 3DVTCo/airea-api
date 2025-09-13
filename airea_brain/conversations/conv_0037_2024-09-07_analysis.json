@@ -1,0 +1,109 @@
+{
+  "sequence": 37,
+  "date": "2024-09-07",
+  "topic": "Code Review and Admin Function Fixes",
+  "size": 111173,
+  "insights": {
+    "files": [
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "dialog.tsx",
+        "tsx"
+      ],
+      [
+        "PPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights_temp.tsx",
+        "tsx"
+      ],
+      [
+        "MarketOverview.tsx",
+        "tsx"
+      ],
+      [
+        "HighPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "React.CSS",
+        "CSS"
+      ],
+      [
+        "BuildingRankingsV2Public.jsx",
+        "jsx"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "sheet.tsx",
+        "tsx"
+      ],
+      [
+        "LowPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "MobileNav.tsx",
+        "tsx"
+      ],
+      [
+        "MarketUpdatesFeed.tsx",
+        "tsx"
+      ],
+      [
+        "MetricTablesGrid.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "? calculated60DaySales[building[\"Tower Name\"]] : building.sales_60d}</div>",
+      "code."
+    ],
+    "entities": [],
+    "concepts": [
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / COMPREHENSIVE HANDOFF for next chat: TODAY'S ACCOMPLISHMENTS: Deal of Week FULLY RESTORED Dashboard: src/components/DealOfTheWeek.tsx (428 lines from commit a0a09b5) Homepage",
+    "last_200": "et-insights\nTHEN implement metric table dialogs as NEW feature.\n\nFOR AIREA INGESTION\nInclude this entire conversation showing successful restoration without breaking code when following rules.\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 2497,
+    "words": 13676,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "sequence": 17,
+  "date": "2025-08-20",
+  "topic": "Setting the Record Straight",
+  "size": 27,
+  "insights": {
+    "files": [],
+    "errors": [],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "neutral"
+  },
+  "preview": {
+    "first_200": "Setting the Record Straight",
+    "last_200": "Setting the Record Straight"
+  },
+  "stats": {
+    "lines": 0,
+    "words": 4,
+    "code_blocks": 0
+  }
+}

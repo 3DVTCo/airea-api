@@ -1,0 +1,113 @@
+{
+  "sequence": 49,
+  "date": "2024-09-07",
+  "topic": "Troubleshooting AI Assistance Challenges reupload",
+  "size": 148363,
+  "insights": {
+    "files": [
+      [
+        "marketDataUtils.ts",
+        "ts"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "HighPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2Public.jsx",
+        "jsx"
+      ],
+      [
+        "MarketAnalysisChart.tsx",
+        "tsx"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekSingle.tsx",
+        "tsx"
+      ],
+      [
+        "marketData.ts",
+        "ts"
+      ],
+      [
+        "synthetic_generators.txt",
+        "txt"
+      ],
+      [
+        "index.ts",
+        "ts"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "WORKING_STATE_DEAL_OF_WEEK.md",
+        "md"
+      ],
+      [
+        "input-otp.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekPublic.tsx",
+        "tsx"
+      ],
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "MarketInsights_broken.tsx",
+        "tsx"
+      ],
+      [
+        "CryptoCalculator.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "a specific page file for this tab in the documentation. The chat mentions it's part of the 9 tabs but doesn't specify which file controls it.",
+      "vs working based on your documentation?",
+      "components without catastrophe.",
+      "on both.",
+      "on both - what error is showing in the browser console when you click that tab? The error message will tell us what specifically is broken.",
+      "on both local and production, we need to identify what's actually wrong with it first. What's the error in the browser console when you click the Content Create tab?"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / LVHR - OS / LVHR - OS / MASTER HANDOFF DOCUMENT - LVHR PLATFORM Session: September 2-3, 2024 | Total Time: 15+ hours | Primary Issue: Metric Table Navigation PROJECT OVERVIEW",
+    "last_200": "tive building matching (UPPER) -- 2. Standardized building names on insert (INITCAP) -- 3. Proper ranking to get exactly 2 deals per building TRUNCATE TABLE deal_of_week_building; TRUNCATE TABLE d\n\n\n\n"
+  },
+  "stats": {
+    "lines": 3379,
+    "words": 19457,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "sequence": 26,
+  "date": "2024-08-19",
+  "topic": "Restoparts GitHub Repo Recovery",
+  "size": 157392,
+  "insights": {
+    "files": [
+      [
+        "MarketUpdatesSection.tsx",
+        "tsx"
+      ],
+      [
+        "index.ts",
+        "ts"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "CryptoCalculatorSection.tsx",
+        "tsx"
+      ],
+      [
+        "propertyTypeUtils.ts",
+        "ts"
+      ],
+      [
+        "FileUploader.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "package.js",
+        "js"
+      ],
+      [
+        "UnitsSoldTable.tsx",
+        "tsx"
+      ],
+      [
+        "marketData.ts",
+        "ts"
+      ],
+      [
+        "utils.ts",
+        "ts"
+      ],
+      [
+        "skeleton.tsx",
+        "tsx"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "MarketErrorState.tsx",
+        "tsx"
+      ],
+      [
+        "dataTransformUtils.ts",
+        "ts"
+      ],
+      [
+        "CMATable.tsx",
+        "tsx"
+      ],
+      [
+        "client.ts",
+        "ts"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "HighPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "LowPPSFTable.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "property. Let's check what's wrong with MarketChart:",
+      "(reading 'RBR')\" at MarketChart.tsx:165. This component is broken.",
+      "for weeks",
+      "import:",
+      "import statement.",
+      "component that references a file that doesn't exist.",
+      "parts:"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\ni am forced to ask for your help again despite my current feelings toward you. I have just updated the restoparts github repo with the homepage components that were lost or degraded over ",
+    "last_200": "en ones\nAdded components without removing their broken counterparts\nGave multiple conflicting commands\nThe homepage bottom sections need to be restored from restoparts before any Supabase work.\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 4079,
+    "words": 19102,
+    "code_blocks": 0
+  }
+}

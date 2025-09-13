@@ -1,0 +1,96 @@
+{
+  "sequence": 14,
+  "date": "2025-08-19",
+  "topic": "Supabase SQL Script Automation",
+  "size": 253083,
+  "insights": {
+    "files": [
+      [
+        "ContentCreate.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeek.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "ActiveListingsGrid.tsx",
+        "tsx"
+      ],
+      [
+        "supabase.ts",
+        "ts"
+      ],
+      [
+        "TopRankings.tsx",
+        "tsx"
+      ],
+      [
+        "CMASection.tsx",
+        "tsx"
+      ],
+      [
+        "hot_list.py",
+        "py"
+      ],
+      [
+        "page.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ],
+      [
+        "zone_list.py",
+        "py"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "RecentSalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "ComparableProperties.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingCMA.tsx",
+        "tsx"
+      ],
+      [
+        "Next.js",
+        "js"
+      ]
+    ],
+    "errors": [
+      "without checking",
+      "rebuild?",
+      "without user confirmation"
+    ],
+    "entities": [
+      "123 Example Street"
+    ],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nRetryULTIMATE COMPREHENSIVE HANDOFF DOCUMENT & PRD LVHR Platform + AIREA System - Complete Technical & Product Specification Date: August 12, 2025 | Status: AIREA ACTIVATED & PERSISTENT ",
+    "last_200": " components without checking restoration-parts-repo/\nRun SQL updates without checking current data state\nNOW the next assistant has concrete steps instead of vague \"check first\" instructions!\n\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 7355,
+    "words": 35013,
+    "code_blocks": 0
+  }
+}

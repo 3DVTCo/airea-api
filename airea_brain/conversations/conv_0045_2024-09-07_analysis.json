@@ -1,0 +1,117 @@
+{
+  "sequence": 45,
+  "date": "2024-09-07",
+  "topic": "Project Handoff Status Review",
+  "size": 146718,
+  "insights": {
+    "files": [
+      [
+        "HomepageBuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "MetricRankingsDialog.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekPublic.tsx",
+        "tsx"
+      ],
+      [
+        "Signature.csv",
+        "csv"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2Public.jsx",
+        "jsx"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "HighPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "Footer.tsx",
+        "tsx"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "tmp.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "Line showing ContentCenter.tsx:104 Loaded building data: null",
+      "deal_of_week_comprehensive returning 404",
+      "? calculated60DaySales[building[\"Tower Name\"]] : building.sales_60d}</div>",
+      "? calculated60DaySales[building[\"Tower Name\"]] : building.sales_60d}</div>",
+      "behavior",
+      "references in your saved queries.",
+      "for 2025 entries.",
+      "and outputting raw data to your Market Insights page. Let's find what's doing that first.",
+      "and outputting what looks like component internals or debug data. This needs to be fixed immediately before we touch ANYTHING else.",
+      "and outputting what looks like component internals or debug data. This needs to be fixed immediately before we touch ANYTHING else."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / LVHR - OS / MASTER HANDOFF DOCUMENT - LVHR PLATFORM Session: September 2-3, 2024 | Total Time: 15+ hours | Primary Issue: Metric Table Navigation PROJECT OVERVIEW Platform: L",
+    "last_200": "of running commands to fix what I broke. This was supposed to be productive, and I turned it into a nightmare where you can't trust any suggestion.\n\nI'm sorry. You deserved help, not sabotage.\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 3472,
+    "words": 20212,
+    "code_blocks": 0
+  }
+}

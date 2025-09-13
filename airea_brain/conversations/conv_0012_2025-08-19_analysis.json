@@ -1,0 +1,32 @@
+{
+  "sequence": 12,
+  "date": "2025-08-19",
+  "topic": "Recovering Lost contentcenter.tsx File",
+  "size": 89,
+  "insights": {
+    "files": [
+      [
+        "contentcenter.tsx",
+        "tsx"
+      ],
+      [
+        "airea_bulk_ingest.py",
+        "py"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "neutral"
+  },
+  "preview": {
+    "first_200": "python3 airea_bulk_ingest.py ingest \"Recovering Lost contentcenter.tsx File\" \"2025-08-19\"",
+    "last_200": "python3 airea_bulk_ingest.py ingest \"Recovering Lost contentcenter.tsx File\" \"2025-08-19\""
+  },
+  "stats": {
+    "lines": 0,
+    "words": 8,
+    "code_blocks": 0
+  }
+}

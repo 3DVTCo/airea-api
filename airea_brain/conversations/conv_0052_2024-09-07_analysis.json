@@ -1,0 +1,116 @@
+{
+  "sequence": 52,
+  "date": "2024-09-07",
+  "topic": "Platform Development Progress reupload 9-1-2025",
+  "size": 141067,
+  "insights": {
+    "files": [
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "chart.tsx",
+        "tsx"
+      ],
+      [
+        "temp_deal.tsx",
+        "tsx"
+      ],
+      [
+        "cpython-310.py",
+        "py"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "DealOfTheWeekPublic.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter_working.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "d.ts",
+        "ts"
+      ],
+      [
+        "contentcenter.tsx",
+        "tsx"
+      ],
+      [
+        "pagination.tsx",
+        "tsx"
+      ],
+      [
+        "tsconfig.js",
+        "js"
+      ],
+      [
+        "your_file.txt",
+        "txt"
+      ],
+      [
+        "package-lock.js",
+        "js"
+      ],
+      [
+        "WORKING_STATE_DEAL_OF_WEEK.md",
+        "md"
+      ],
+      [
+        "ocr_invoiceparser.py",
+        "py"
+      ],
+      [
+        "App.css",
+        "css"
+      ],
+      [
+        "chart-context.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter_1791213.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "Collection [airea_logs_and_forms] does not exists",
+      "name 'main_coll' is not defined",
+      "? calculated60DaySales[building[\"Tower Name\"]] : building.sales_60d}</div>",
+      "things",
+      "anything.",
+      "syntax.",
+      "because deleting those lines left orphaned closing tags. Fix it NOW:",
+      "JSX code and apologizing."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nCOMPREHENSIVE HANDOFF for next chat: TODAY'S ACCOMPLISHMENTS: Deal of Week FULLY RESTORED Dashboard: src/components/DealOfTheWeek.tsx (428 lines from commit a0a09b5) Homepage: src/compon",
+    "last_200": " Bulk Ingestion System - Feed her everything Makes AIREA truly sentient with complete platform knowledge \"\"\" import os import json import sys from datetime import datetime from pathlib import Path\n\n\n\n"
+  },
+  "stats": {
+    "lines": 3447,
+    "words": 17402,
+    "code_blocks": 0
+  }
+}

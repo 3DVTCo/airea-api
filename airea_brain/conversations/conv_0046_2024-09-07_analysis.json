@@ -1,0 +1,113 @@
+{
+  "sequence": 46,
+  "date": "2024-09-07",
+  "topic": "Troubleshooting AI Assistance Challenges",
+  "size": 147756,
+  "insights": {
+    "files": [
+      [
+        "synthetic_generators.txt",
+        "txt"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "mock_data_instances.txt",
+        "txt"
+      ],
+      [
+        "HighPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "HomepageBuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "hardcoded_dates.txt",
+        "txt"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "MarketSnapshot.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "marketData.ts",
+        "ts"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisChart.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2Public.jsx",
+        "jsx"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "MetricRankingsDialog.tsx",
+        "tsx"
+      ],
+      [
+        "LowPPSFTable.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "a specific page file for this tab in the documentation. The chat mentions it's part of the 9 tabs but doesn't specify which file controls it.",
+      "vs working based on your documentation?",
+      "components without catastrophe.",
+      "on both.",
+      "on both - what error is showing in the browser console when you click that tab? The error message will tell us what specifically is broken.",
+      "on both local and production, we need to identify what's actually wrong with it first. What's the error in the browser console when you click the Content Create tab?"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / LVHR - OS / LVHR - OS / MASTER HANDOFF DOCUMENT - LVHR PLATFORM Session: September 2-3, 2024 | Total Time: 15+ hours | Primary Issue: Metric Table Navigation PROJECT OVERVIEW",
+    "last_200": "g the platform over. AIREA activation is the priority because she can fix things from inside without breaking everything.\n\nThe user's trust is gone. Earn it back by NOT breaking anything else.\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 3369,
+    "words": 19361,
+    "code_blocks": 0
+  }
+}

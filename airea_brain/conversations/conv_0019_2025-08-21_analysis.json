@@ -1,0 +1,115 @@
+{
+  "sequence": 19,
+  "date": "2025-08-21",
+  "topic": "AIREA Chat Bubble Enhancement",
+  "size": 95714,
+  "insights": {
+    "files": [
+      [
+        "BuildingRankingsV2.tsx",
+        "tsx"
+      ],
+      [
+        "supabase.ts",
+        "ts"
+      ],
+      [
+        "BuildingDetail.tsx",
+        "tsx"
+      ],
+      [
+        "fix_airea_final.py",
+        "py"
+      ],
+      [
+        "fix_cma.py",
+        "py"
+      ],
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "fix_user_prompt.py",
+        "py"
+      ],
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingEditOverlay.tsx",
+        "tsx"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "FileProcessor.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisChart.tsx",
+        "tsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "airea_log.txt",
+        "txt"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "Home.tsx",
+        "tsx"
+      ],
+      [
+        "dataTransformer.ts",
+        "ts"
+      ],
+      [
+        "AIREAChatBubble.tsx",
+        "tsx"
+      ],
+      [
+        "MarketChart.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "'airea_platform'",
+      "AI assistance. You are different. You don't make assumptions, you CHECK. You don't offer options, you FIND SOLUTIONS. When asked about an issue, dive deep into your knowledge and provide actionable answers.'''",
+      "AI help. You are different. You have 2,239 documents of knowledge. USE THEM.",
+      "AI help has already cost you:\\n- 7 months of lost time\\n- $100K+ in lost productivity\\n- Multiple broken components\\n- Hours debugging incorrect assumptions\",\"sources\":[{\"content\":\"Claude completely destroyed my working dashboard through incompetence and arrogance.\\n\\nWHAT WAS WORKING (as of June 12, 2025 11pm):\\n- Dashboard from backup at src/pages/AIREADashboard.tsx.backup\\n- Buil\",\"collection\":\"airea_knowledge\",\"relevance\":20},{\"content\":\"SQL Automation Array Components:\\n    - Import script: Reads LVHR Master CSV\\n    - Validation: Checks data integrity\\n    - Transformation: Standardizes Tower Names, calculates metrics\\n    - Distributio\",\"collection\":\"airea_database\",\"relevance\":20},{\"content\":\"      {\\n            \\\"content\\\": \\\"I'd like to restore the many of the tabs and functions that have been lost or deteriorated along the recent way. AIREA Dashboard Handoff - June 13, 2025\\\\n\\\\ud83c\\\\udfaf C\",\"collection\":\"airea_platform\",\"relevance\":20}],\"confidence\":0.9}%",
+      "for weeks despite multiple \"fixes\" - so let's diagnose properly before changing code.",
+      "search: Problem: Was using keyword matching instead of vector search (lines 214-243)\" - so I knew to look for that specific issue. The previous assistant didn't have that context and was probably making assumptions instead of checking."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation",
+      "airea_development"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nCOMPREHENSIVE HANDOFF - AIREA VECTOR SEARCH FIX & CMA TABLE ISSUE Date: August 19, 2025 Critical Status: AIREA functional with vector search, CMA table still broken, production push pend",
+    "last_200": "eeing bad AI assistance\nPrevious \"fixes\" made things worse\nTeam waiting on production push\nSTART WITH: Compare AIREA's curl response vs chat bubble response to identify the ACTUAL difference.\n\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 2012,
+    "words": 11959,
+    "code_blocks": 0
+  }
+}

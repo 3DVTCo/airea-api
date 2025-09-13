@@ -1,0 +1,28 @@
+{
+  "sequence": 18,
+  "date": "2025-08-19",
+  "topic": "Current MarketAnalysisSection Code",
+  "size": 112,
+  "insights": {
+    "files": [
+      [
+        "airea_bulk_ingest.py",
+        "py"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [],
+    "has_code": false,
+    "sentiment": "neutral"
+  },
+  "preview": {
+    "first_200": "python3 ~/airea/airea_bulk_ingest.py ingest \"Current MarketAnalysisSection Code\" \"2025-08-19\" platform_knowledge",
+    "last_200": "python3 ~/airea/airea_bulk_ingest.py ingest \"Current MarketAnalysisSection Code\" \"2025-08-19\" platform_knowledge"
+  },
+  "stats": {
+    "lines": 0,
+    "words": 8,
+    "code_blocks": 0
+  }
+}

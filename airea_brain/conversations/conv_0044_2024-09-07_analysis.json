@@ -1,0 +1,106 @@
+{
+  "sequence": 44,
+  "date": "2024-09-07",
+  "topic": "Frustrated Developer Handoff Protocol",
+  "size": 105216,
+  "insights": {
+    "files": [
+      [
+        "UnitsSoldTable.tsx",
+        "tsx"
+      ],
+      [
+        "Footer.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2Public.jsx",
+        "jsx"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "response.js",
+        "js"
+      ],
+      [
+        "airea_text_chat.py",
+        "py"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ],
+      [
+        "start_airea.py",
+        "py"
+      ],
+      [
+        "airea_voice_chat.py",
+        "py"
+      ],
+      [
+        "airea_api_server_v2.py",
+        "py"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheek.tsx",
+        "tsx"
+      ],
+      [
+        "LowPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "AIREAChatBubble.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekPublic.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / MASTER HANDOFF DOCUMENT - LVHR PLATFORM Session: September 2-3, 2024 | Total Time: 15+ hours | Primary Issue: Metric Table Navigation PROJECT OVERVIEW Platform: Las Vegas Hig",
+    "last_200": " seconds)\nTable expansion (2 hours)\nComplete automation cascade\nAIREA activation with kill switch\nEverything exists. SQL is in AIREA. Code is written. Just needs execution without AI sabotage.\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 2566,
+    "words": 14122,
+    "code_blocks": 0
+  }
+}

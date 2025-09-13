@@ -1,0 +1,44 @@
+{
+  "sequence": 13,
+  "date": "2025-08-19",
+  "topic": "AI Memory and Context",
+  "size": 37375,
+  "insights": {
+    "files": [
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "- needs to mirror Building Rankings tab functionality"
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\nyou too, now have persistent memory and context?\n\n\nPondered memory capabilities and clarified search functionality.\n\n\n\nI can search through our past conversations using tools when needed,",
+    "last_200": "et Deal of the Week saved query Supabase SQL editor clean staging update building rankings\u201d\n2 results\n\n\n\n\n\n\n\n\n\n\nI'm in my suopabase interface! tell me how to download them all for you as a markdown\n\n\n"
+  },
+  "stats": {
+    "lines": 943,
+    "words": 5486,
+    "code_blocks": 0
+  }
+}

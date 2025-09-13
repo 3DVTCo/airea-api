@@ -1,0 +1,113 @@
+{
+  "sequence": 34,
+  "date": "2024-08-28",
+  "topic": "Restoring Broken Backend Code",
+  "size": 111149,
+  "insights": {
+    "files": [
+      [
+        "DealOfTheWeekSingle.tsx",
+        "tsx"
+      ],
+      [
+        "WORKING_STATE_DEAL_OF_WEEK.md",
+        "md"
+      ],
+      [
+        "upload_text_endpoint.py",
+        "py"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "new_prompt.txt",
+        "txt"
+      ],
+      [
+        "Node.js",
+        "js"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "temp_deal.tsx",
+        "tsx"
+      ],
+      [
+        "airea_bulk_ingest.py",
+        "py"
+      ],
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "ingest_logs.py",
+        "py"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "LVHR_MASTER_REFERENCE.md",
+        "md"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "ingest_log_by_filename.py",
+        "py"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "MiniMarketVisualization.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfWeekBackend.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "on the Dashboard Deal of Week tab:",
+      "WITHOUT touching anything that works.",
+      "AGAIN after you restored it from commit a0a09b5.",
+      "AGAIN after you restored it from commit a0a09b5. - YES! YOU BREAK THINGS EVERY CHANCE YOU GET, OR I WOULD HAVE BEEN DONE MONTHS AGO! ",
+      "component by restoring previous git commit."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management",
+      "offer_negotiation"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nULTIMATE COMPREHENSIVE HANDOFF DOCUMENT Date: August 31, 2025 | Chat 90% Complete \ud83c\udfd7\ufe0f CURRENT STATE OF LVHR PLATFORM \u2705 WORKING COMPONENTS ContentCenter.tsx (48,066 bytes) \u251c\u2500\u2500 Location: sr",
+    "last_200": "aded. The platform core is working but needs the automation script and remaining features. Start next chat by asking Ted which priority to tackle first or if AIREA needs more context uploads.\n\n\n\n\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 2722,
+    "words": 14743,
+    "code_blocks": 0
+  }
+}

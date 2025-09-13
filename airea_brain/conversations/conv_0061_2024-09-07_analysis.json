@@ -1,0 +1,118 @@
+{
+  "sequence": 61,
+  "date": "2024-09-07",
+  "topic": "Project Handoff Status Review 9-4-25 reupload",
+  "size": 148408,
+  "insights": {
+    "files": [
+      [
+        "HomepageBuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDashboard.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekSingle.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekPublic.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeek.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankings.tsx",
+        "tsx"
+      ],
+      [
+        "Signature.csv",
+        "csv"
+      ],
+      [
+        "tmp.tsx",
+        "tsx"
+      ],
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "HighPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2.jsx",
+        "jsx"
+      ],
+      [
+        "ContentCenter.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2Public.jsx",
+        "jsx"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "DealOfTheWeekSection.tsx",
+        "tsx"
+      ],
+      [
+        "aireaService.ts",
+        "ts"
+      ],
+      [
+        "MarketInsights_broken.tsx",
+        "tsx"
+      ],
+      [
+        "AIREADashboard.tsx",
+        "tsx"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "Line showing ContentCenter.tsx:104 Loaded building data: null",
+      "deal_of_week_comprehensive returning 404",
+      "? calculated60DaySales[building[\"Tower Name\"]] : building.sales_60d}</div>",
+      "? calculated60DaySales[building[\"Tower Name\"]] : building.sales_60d}</div>",
+      "behavior",
+      "behavior",
+      "references in your saved queries.",
+      "for 2025 entries.",
+      "and outputting raw data to your Market Insights page. Let's find what's doing that first.",
+      "and outputting what looks like component internals or debug data. This needs to be fixed immediately before we touch ANYTHING else.",
+      "and outputting what looks like component internals or debug data. This needs to be fixed immediately before we touch ANYTHING else."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / LVHR - OS / MASTER HANDOFF DOCUMENT - LVHR PLATFORM Session: September 2-3, 2024 | Total Time: 15+ hours | Primary Issue: Metric Table Navigation PROJECT OVERVIEW Platform: L",
+    "last_200": " 3@supabase_supabase-js.js?v=ce3adeed:5040 Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior\n\n\n\n"
+  },
+  "stats": {
+    "lines": 3494,
+    "words": 20449,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "sequence": 27,
+  "date": "2024-08-25",
+  "topic": "Resolving Redundant CMA Table",
+  "size": 171695,
+  "insights": {
+    "files": [
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisSection.tsx",
+        "tsx"
+      ],
+      [
+        "main.js",
+        "js"
+      ],
+      [
+        "PPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "CMATable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketAnalysisChart.tsx",
+        "tsx"
+      ],
+      [
+        "types.ts",
+        "ts"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "MetricTablesGrid.tsx",
+        "tsx"
+      ],
+      [
+        "CMASection.tsx",
+        "tsx"
+      ],
+      [
+        "Table.tsx",
+        "tsx"
+      ],
+      [
+        "MarketDataTable.tsx",
+        "tsx"
+      ],
+      [
+        "Index.tsx",
+        "tsx"
+      ],
+      [
+        "SimpleCMATable.tsx",
+        "tsx"
+      ],
+      [
+        "marketMetricsService.ts",
+        "ts"
+      ],
+      [
+        "HighPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "marketMetricsService_fixed.ts",
+        "ts"
+      ],
+      [
+        "useMarketMetrics.ts",
+        "ts"
+      ],
+      [
+        "DashboardCard.tsx",
+        "tsx"
+      ],
+      [
+        "LowPPSFTable.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "  Failed to scan for dependencies from entries:",
+      "\"Cannot read properties of null\"",
+      "? `${building.yoyChange > 0 ? '+' : ''}${Math.round(building.yoyChange)}%` : 'N/A',",
+      "? `${building.yoyChange > 0 ? '+' : ''}${Math.round(building.yoyChange)}%` : 'N/A',",
+      "? ${building.yoyChange > 0 ? '+' : ''}${Math.round(building.yoyChange)}% : 'N/A',",
+      "? ${building.yoyChange > 0 ? '+' : ''}${Math.round(building.yoyChange)}% : 'N/A',",
+      "MarketDataTable and a CMASection trying to render in the same place.",
+      "MarketDataTable import",
+      "table code (lines 130-140)",
+      "MarketDataTable.tsx file entirely",
+      "commented section including the unmatched closing tag."
+    ],
+    "entities": [],
+    "concepts": [
+      "property_management"
+    ],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nHandoff for Next Chat - LVHR Homepage Restoration Status Current Working State Main year-over-year graph: WORKING Top 5 building rankings card: WORKING 2025 Market Snapshot (above graph)",
+    "last_200": "AND INSUBORDIATION, AND THE THINGS YOU ARE FORBIDDEN FROM DOING, SO I DON'T HAVE TO KEEP GOING THROUGH THIS BULLSHIT WITH YOU! FUCK I WANT TO GET THIS DONE AND ALL YOU ARE DOING IS PREVENTING IT!\n\n\n\n\n"
+  },
+  "stats": {
+    "lines": 4132,
+    "words": 21823,
+    "code_blocks": 0
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "sequence": 55,
+  "date": "2024-09-07",
+  "topic": "React Router Prop Debugging Frustration reupload 9-2-2025",
+  "size": 25978,
+  "insights": {
+    "files": [
+      [
+        "App.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights.tsx",
+        "tsx"
+      ],
+      [
+        "UnitsSoldTable.tsx",
+        "tsx"
+      ],
+      [
+        "HighPPSFTable.tsx",
+        "tsx"
+      ],
+      [
+        "LuxurySalesTable.tsx",
+        "tsx"
+      ],
+      [
+        "DaysOnMarketTable.tsx",
+        "tsx"
+      ],
+      [
+        "MetricRankingsDialog.tsx",
+        "tsx"
+      ],
+      [
+        "AvgPriceTable.tsx",
+        "tsx"
+      ],
+      [
+        "MarketInsights_query.tsx",
+        "tsx"
+      ],
+      [
+        "BuildingRankingsV2Public.jsx",
+        "jsx"
+      ],
+      [
+        "use-mobile.tsx",
+        "tsx"
+      ],
+      [
+        "LowPPSFTable.tsx",
+        "tsx"
+      ]
+    ],
+    "errors": [
+      "routes from App.tsx",
+      "routes are gone",
+      "page)",
+      "routes:",
+      "code I added and restore your working version. The app will go back to showing 404s when clicking \"View Full Rankings\" but the Market Insights page will work correctly again."
+    ],
+    "entities": [],
+    "concepts": [],
+    "has_code": true,
+    "sentiment": "positive"
+  },
+  "preview": {
+    "first_200": "\nLVHR - OS /\n\nLVHR - OS / COMPREHENSIVE HANDOFF - September 2, 2024 USER CONTEXT User: Ted Finkleman Project: LVHR Las Vegas High-Rise Real Estate Platform Critical History: Lost 7 months and $100K+ f",
+    "last_200": "as Vegas High-Rise Real Estate Platform Critical History: Lost 7 months and $100K+ from AI assistants breaking working code ABSOLUTE RULES FOR NEXT CHAT ALWAYS CHECK BEFORE CHANGING - Use grep/cat\n\n\n\n"
+  },
+  "stats": {
+    "lines": 656,
+    "words": 3333,
+    "code_blocks": 0
+  }
+}
