@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+482#!/usr/bin/env python3
 """
 AIREA API Server v2 - Intelligent Edition
 Now with Claude 3 Opus integration for true AI responses
@@ -332,13 +332,14 @@ def search_knowledge_base_OLD(query: str, limit: int = 500) -> List[Dict]:
 async def health_check():
     """Check if AIREA is alive and return stats"""
     try:
-        total_docs = 0
-        collections = {}
-        if client:
-            for col_name, col_obj in collections_map.items():
-                count = col_obj.count() # Use the pre-fetched collection objects
-                collections[col_name] = count
-                total_docs += count
+        # Get count from Supabase
+        supabase = get_supabase_client()
+        result = supabase.table('airea_knowledge').select('id', count='exact').execute()
+        total_docs = result.count
+        
+        collections = {
+            "airea_knowledge": total_docs
+        }
             
         return {
             "status": "healthy",
@@ -349,6 +350,8 @@ async def health_check():
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat_with_airea(message: ChatMessage):
@@ -463,31 +466,18 @@ Please provide a helpful, specific answer. If the context contains relevant info
 async def get_airea_stats():
     """Get detailed statistics about AIREA's knowledge"""
     try:
-        stats = {}
-        total = 0
+        # Get count from Supabase
+        supabase = get_supabase_client()
+        result = supabase.table('airea_knowledge').select('id', count='exact').execute()
+        total = result.count
         
-        if client:
-            for col_name, col_obj in collections_map.items():
-                count = col_obj.count()
-                stats[col_name] = count
-                total += count
-            
-        # Sample some building-related content
+        stats = {
+            "airea_knowledge": total,
+            "total": total
+        }
+        
+        # Building examples would need Supabase query - skip for now
         building_examples = []
-        try:
-            # Try to get from airea_platform if it exists in the map
-            if "airea_platform" in collections_map:
-                platform_col = collections_map["airea_platform"]
-                results = platform_col.get(limit=5)
-                for i, doc in enumerate(results['documents']):
-                    if 'building' in doc.lower() or 'signature' in doc.lower():
-                        building_examples.append({
-                            'preview': doc[:200] + '...',
-                            'metadata': results['metadatas'][i] if results['metadatas'] else {}
-                        })
-        except Exception as e:
-            logger.warning(f"Failed to sample building examples from 'airea_platform': {e}")
-            pass
             
         return {
             "total_documents": total,
@@ -562,8 +552,10 @@ if __name__ == "__main__":
     
     if client:
         try:
-            total_docs_on_startup = sum(col.count() for col in collections_map.values())
-            print(f"📊 Knowledge base: {total_docs_on_startup} documents ready across {len(collections_map)} collections.")
+            startup_supabase = get_supabase_client()
+            result = startup_supabase.table('airea_knowledge').select('id', count='exact').execute()
+            total_docs_on_startup = result.count
+            print(f"📊 Knowledge base: {total_docs_on_startup} documents ready in Supabase.")
         except Exception as e:
             print(f"❌ Error getting total document count on startup: {e}")
             print("   (This might indicate an issue with ChromaDB connection)")
