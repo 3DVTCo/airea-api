@@ -26,8 +26,8 @@ def get_supabase_client():
     import os
     
     # Try environment variables first (for production)
-    url = os.getenv('VITE_SUPABASE_URL')
-    key = os.getenv('VITE_SUPABASE_ANON_KEY')
+    url = os.getenv('SUPABASE_URL')
+    key = os.getenv('SUPABASE_ANON_KEY')
     
     # If not in env vars, read from .env file (for local)
     if not url or not key:
