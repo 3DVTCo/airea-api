@@ -11,7 +11,7 @@ from datetime import datetime
 from typing import List, Dict, Optional
 import chromadb
 from chromadb.config import Settings
-from fastapi import FastAPI, HTTPException, File, UploadFile
+from fastapi import FastAPI, HTTPException, File, UploadFile, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import uvicorn
@@ -19,6 +19,45 @@ from anthropic import Anthropic
 import uuid
 import re
 from conversation_persistence import save_conversation, get_recent_conversations
+
+def get_supabase_client():
+    """Get Supabase client for both local and production"""
+    from supabase import create_client
+    import os
+    
+    # Try environment variables first (for production)
+    url = os.getenv('VITE_SUPABASE_URL')
+    key = os.getenv('VITE_SUPABASE_ANON_KEY')
+    
+    # If not in env vars, read from .env file (for local)
+    if not url or not key:
+        try:
+            with open('/Users/tedfinkleman/Downloads/lvhr-airea-full/.env', 'r') as f:
+                env = f.read()
+            url = env.split('VITE_SUPABASE_URL=')[1].split('\n')[0].strip().strip('"')
+            key = env.split('VITE_SUPABASE_ANON_KEY=')[1].split('\n')[0].strip().strip('"')
+        except:
+            raise Exception("Supabase credentials not found")
+    
+    return create_client(url, key)
+
+def search_knowledge_base(query: str, limit: int = 500) -> List[Dict]:
+    """Simple Supabase search"""
+    supabase = get_supabase_client()
+    
+    if "how many documents" in query.lower():
+        result = supabase.table('airea_knowledge').select('id', count='exact').execute()
+        return [{
+            'content': f"I have {result.count} documents in Supabase.",
+            'metadata': {'source': 'supabase'},
+            'collection': 'system_state',
+            'relevance': 100
+        }]
+    
+    results = supabase.table('airea_knowledge').select('*').ilike('content', f'%{query}%').limit(limit).execute()
+    return [{'content': doc['content'], 'metadata': doc.get('metadata', {}), 
+             'collection': doc.get('collection_name', 'unknown'), 'relevance': 1} 
+            for doc in results.data]
 
 # Environment-aware path - automatically uses the right one
 CHROMA_PATH = "/opt/render/project/src/airea_brain" if os.path.exists("/opt/render") else "/Users/tedfinkleman/airea/airea_brain"
@@ -159,7 +198,7 @@ class SearchQuery(BaseModel):
     limit: int = 500
 
 # Core Functions
-def search_knowledge_base(query: str, limit: int = 500) -> List[Dict]:
+def search_knowledge_base_OLD(query: str, limit: int = 500) -> List[Dict]:
     """
     Searches across all ChromaDB collections for documents relevant to the query.
     This version aims for broader retrieval by matching multiple query terms
@@ -338,6 +377,7 @@ async def chat_with_airea(message: ChatMessage):
             total_chars += len(full_content)
             
         knowledge_context = "\n\n".join(context_parts) if context_parts else "No specific context found."
+        if len(knowledge_context) > 100000: knowledge_context = knowledge_context[:100000]
         
         # Log what we're sending to Claude for debugging
         print(f"=== CONTEXT FOR CLAUDE ===")
@@ -482,6 +522,32 @@ async def upload_knowledge(file: UploadFile = File(...)):
         return {"status": "Knowledge base uploaded successfully"}
     except Exception as e:
         return {"error": str(e)}
+@app.post("/upload_to_brain")
+async def upload_to_brain(request: Request):
+    """Upload to Supabase from Brain tab"""
+    from fastapi import Request
+    
+    data = await request.json()
+    content = data.get("content", "")
+    
+    if not content:
+        return {"status": "error", "message": "No content provided"}
+    
+    try:
+        supabase = get_supabase_client()
+        result = supabase.table('airea_knowledge').insert({
+            'content': content,
+            'collection_name': 'airea_conversations',
+            'metadata': {
+                'source': 'brain_dashboard', 
+                'timestamp': str(datetime.now()),
+                'user': 'ted'
+            }
+        }).execute()
+        return {"status": "success", "message": "Content uploaded to Supabase"}
+    except Exception as e:
+        logger.error(f"Upload error: {e}")
+        return {"status": "error", "message": str(e)}
 
 if __name__ == "__main__":
     print("\n🧠 Starting AIREA API v2 - Intelligent Edition")
