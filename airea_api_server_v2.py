@@ -141,7 +141,7 @@ def get_supabase_client():
     
     # Use verified variable names from environment
     url = os.environ.get('SUPABASE_URL')
-    key = os.environ.get('SUPABASE_ANON_KEY')
+    key = os.environ.get('SUPABASE_KEY')
     
     if not url or not key:
         # Fallback to reading the file locally (necessary for local dev environment)
@@ -150,7 +150,7 @@ def get_supabase_client():
                 env = f.read()
             # Parse environment file
             url = env.split('SUPABASE_URL=')[1].split('\n')[0].strip().strip('"')
-            key = env.split('SUPABASE_ANON_KEY=')[1].split('\n')[0].strip().strip('"')
+            key = env.split('SUPABASE_KEY=')[1].split('\n')[0].strip().strip('"')
         except:
             raise Exception("Supabase credentials not found in environment or local .env file.")
     
