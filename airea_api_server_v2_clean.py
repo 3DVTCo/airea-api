@@ -164,53 +164,54 @@ def search_knowledge_base(query: str, limit: int = 30) -> List[Dict]:
     
     try:
         supabase = get_supabase_client()
-        
-        # Check if query mentions dates
-        import re
         query_lower = query.lower()
         
-        # If searching for specific date/document, search source, metadata, and title
-        if any(term in query_lower for term in ['september', 'sept', '9-24', '9/24', 'urgent', 'protocol', 'october', 'oct', '10-']):
-            # Search multiple fields including metadata title
+        # Extract date-related search terms
+        date_terms = []
+        if 'october' in query_lower or 'oct' in query_lower:
+            date_terms.extend(['october', '10-', '2025-10'])
+        if 'september' in query_lower or 'sept' in query_lower:
+            date_terms.extend(['september', '9-', '2025-09'])
+        
+        # If we found date terms, use them for search
+        if date_terms:
+            or_conditions = []
+            for term in date_terms:
+                or_conditions.append(f'source.ilike.%{term}%')
+                or_conditions.append(f'content.ilike.%{term}%')
+                or_conditions.append(f'metadata->>title.ilike.%{term}%')
+                or_conditions.append(f'created_at::text.ilike.%{term}%')
+            
             response = supabase.table('airea_knowledge')\
                 .select('id, content, metadata, source, created_at')\
-                .or_(f"source.ilike.%{query}%,content.ilike.%{query}%,metadata->>title.ilike.%{query}%")\
+                .or_(','.join(or_conditions))\
                 .order('created_at', desc=True)\
                 .limit(limit)\
                 .execute()
             
+            logger.info(f"Date search found {len(response.data) if response and response.data else 0} documents")
             if response and response.data:
                 return response.data
         
-        # For general queries, search content AND metadata title
+        # General search with important words
         words = query.split()
-        important_words = [w for w in words if len(w) > 3 and w.lower() not in ['what', 'where', 'when', 'have', 'that', 'this', 'from']]
+        important_words = [w for w in words if len(w) > 3 and w.lower() not in ['what', 'where', 'when', 'have', 'that', 'this', 'from', 'does', 'your']]
         
-        if not important_words:
-            # Fallback - search both content and title
-            search_term = max(words, key=len) if words else 'communication'
-            response = supabase.table('airea_knowledge')\
-                .select('id, content, metadata, source, created_at')\
-                .or_(f'content.ilike.%{search_term}%,metadata->>title.ilike.%{search_term}%')\
-                .order('created_at', desc=True)\
-                .limit(limit)\
-                .execute()
-        else:
-            # Search for important terms in both content and title
-            response = supabase.table('airea_knowledge')\
-                .select('id, content, metadata, source, created_at')
-            
-            # Build OR conditions for each term (search in content OR title)
+        if important_words:
             or_conditions = []
-            for term in important_words[:3]:  # Max 3 terms
+            for term in important_words[:3]:
                 or_conditions.append(f'content.ilike.%{term}%')
                 or_conditions.append(f'metadata->>title.ilike.%{term}%')
             
-            response = response.or_(','.join(or_conditions))\
+            response = supabase.table('airea_knowledge')\
+                .select('id, content, metadata, source, created_at')\
+                .or_(','.join(or_conditions))\
                 .order('created_at', desc=True)\
                 .limit(limit)\
                 .execute()
             
+            logger.info(f"General search found {len(response.data) if response and response.data else 0} documents")
+        
         return response.data if response and response.data else []
         
     except Exception as e:
