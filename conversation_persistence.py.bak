@@ -1,0 +1,28 @@
+from datetime import datetime
+import uuid
+
+def save_conversation(user_message: str, airea_response: str, client):
+    """Save conversation to ChromaDB"""
+    try:
+        conv_collection = client.get_or_create_collection("airea_conversations")
+        
+        conversation_doc = f"""User: {user_message}
+AIREA: {airea_response}
+Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+"""
+        
+        metadata = {
+            "date": datetime.now().strftime("%Y-%m-%d"),
+            "time": datetime.now().strftime("%H:%M:%S"),
+            "topic": "ongoing_conversation",
+            "user": "ted"
+        }
+        
+        conv_collection.add(
+            documents=[conversation_doc],
+            metadatas=[metadata],
+            ids=[f"conv_{datetime.now().timestamp()}_{uuid.uuid4()}"]
+        )
+        print(f"Saved conversation to collection")
+    except Exception as e:
+        print(f"Failed to save conversation: {e}")
