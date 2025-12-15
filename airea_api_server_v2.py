@@ -431,6 +431,186 @@ CRITICAL REMINDERS:
         )
 
 
+class UploadRequest(BaseModel):
+    content: str
+    title: str
+    date: Optional[str] = None
+    collection: Optional[str] = None  # Auto-categorized if not provided
+
+
+def categorize_content(content: str, title: str = "") -> str:
+    """Categorize content based on keywords - matches terminal ingest behavior"""
+    content_lower = content.lower()
+    title_lower = title.lower()
+    combined = content_lower + " " + title_lower
+    
+    if any(word in combined for word in ['debug', 'error', 'fix', 'bug', 'issue', 'broken']):
+        return 'debugging_history'
+    elif any(word in combined for word in ['listing', 'property', 'building', 'tower', 'condo']):
+        return 'property_knowledge'
+    elif any(word in combined for word in ['offer', 'contract', 'escrow', 'closing']):
+        return 'offer_knowledge'
+    elif any(word in combined for word in ['market', 'price', 'trend', 'analysis', 'cma']):
+        return 'market_knowledge'
+    elif any(word in combined for word in ['platform', 'component', 'react', 'supabase', 'api']):
+        return 'platform_knowledge'
+    else:
+        return 'conversations'
+
+
+def extract_insights(content: str) -> list:
+    """Extract key topics from content"""
+    insights = []
+    content_lower = content.lower()
+    
+    topic_keywords = {
+        'property_management': ['listing', 'property', 'building', 'unit', 'condo'],
+        'offer_negotiation': ['offer', 'counter', 'negotiate', 'contract', 'escrow'],
+        'market_analysis': ['market', 'price', 'trend', 'cma', 'analysis'],
+        'bitcoin_conference': ['bitcoin', 'crypto', 'btc', 'eth', 'blockchain'],
+        'platform_development': ['component', 'react', 'typescript', 'supabase', 'api'],
+        'deal_of_week': ['deal', 'week', 'featured', 'best'],
+        'building_rankings': ['ranking', 'score', 'rank', 'performance']
+    }
+    
+    for topic, keywords in topic_keywords.items():
+        if any(kw in content_lower for kw in keywords):
+            insights.append(topic)
+    
+    return insights[:3]  # Max 3 insights
+
+
+def chunk_content(content: str, chunk_size: int = 8000) -> list:
+    """Split large content into chunks"""
+    if len(content) <= chunk_size:
+        return [content]
+    
+    chunks = []
+    paragraphs = content.split('\n\n')
+    current_chunk = ""
+    
+    for para in paragraphs:
+        if len(current_chunk) + len(para) < chunk_size:
+            current_chunk += para + "\n\n"
+        else:
+            if current_chunk:
+                chunks.append(current_chunk.strip())
+            current_chunk = para + "\n\n"
+    
+    if current_chunk:
+        chunks.append(current_chunk.strip())
+    
+    return chunks if chunks else [content[:chunk_size]]
+
+
+@app.post("/preview_upload")
+async def preview_upload(request: UploadRequest):
+    """Preview what will happen before actually uploading - for UI display"""
+    try:
+        content = request.content.strip()
+        if not content:
+            raise HTTPException(status_code=400, detail="Content cannot be empty")
+        
+        category = categorize_content(content, request.title)
+        insights = extract_insights(content)
+        chunks = chunk_content(content)
+        
+        return {
+            "title": request.title,
+            "date": request.date or datetime.now().strftime('%Y-%m-%d'),
+            "character_count": len(content),
+            "category": category,
+            "chunk_count": len(chunks),
+            "insights": insights
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/upload_to_brain")
+async def upload_to_brain(request: UploadRequest):
+    """Upload content to AIREA's knowledge base (Supabase) - matches terminal ingest behavior"""
+    try:
+        content = request.content.strip()
+        if not content:
+            raise HTTPException(status_code=400, detail="Content cannot be empty")
+        
+        if len(content) < 50:
+            raise HTTPException(status_code=400, detail="Content too short (minimum 50 characters)")
+        
+        supabase = get_supabase_client()
+        
+        # Categorize content (same logic as terminal ingest)
+        category = request.collection or categorize_content(content, request.title)
+        insights = extract_insights(content)
+        date_str = request.date or datetime.now().strftime('%Y-%m-%d')
+        
+        # Chunk large content
+        chunks = chunk_content(content)
+        
+        logger.info(f"Processing {len(content):,} chars for: {request.title}")
+        logger.info(f"Category: {category}, Chunks: {len(chunks)}")
+        
+        # Get current count for document numbering
+        count_response = supabase.table('airea_knowledge').select('id', count='exact').execute()
+        current_count = count_response.count if hasattr(count_response, 'count') else 0
+        
+        # Insert each chunk
+        inserted_count = 0
+        for i, chunk in enumerate(chunks):
+            metadata = {
+                "title": request.title,
+                "category": category,
+                "insights": insights,
+                "chunk_index": i,
+                "total_chunks": len(chunks),
+                "original_length": len(content),
+                "ingestion_date": date_str,
+                "source": "brain_dashboard",
+                "upload_date": datetime.now().isoformat()
+            }
+            
+            result = supabase.table('airea_knowledge').insert({
+                "content": chunk,
+                "metadata": metadata,
+                "collection_name": category,
+                "source": f"brain_upload_{request.title}",
+                "created_at": datetime.now().isoformat(),
+                "updated_at": datetime.now().isoformat()
+            }).execute()
+            
+            if result.data:
+                inserted_count += 1
+        
+        # Get final count
+        final_count_response = supabase.table('airea_knowledge').select('id', count='exact').execute()
+        new_count = final_count_response.count if hasattr(final_count_response, 'count') else 0
+        
+        logger.info(f"Uploaded {inserted_count} chunks as document #{current_count + 1}")
+        
+        return {
+            "status": "success",
+            "message": "Content uploaded to AIREA's knowledge base",
+            "title": request.title,
+            "date": date_str,
+            "category": category,
+            "character_count": len(content),
+            "chunk_count": len(chunks),
+            "chunks_inserted": inserted_count,
+            "document_number": current_count + 1,
+            "total_documents": new_count,
+            "insights": insights
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Upload to brain failed: {e}")
+        raise HTTPException(status_code=500, detail=f"Upload failed: {str(e)}")
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
