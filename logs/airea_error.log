@@ -250,3 +250,13 @@ INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 INFO:__main__:Processing 73 chars for: braintab upload test
 INFO:__main__:Category: conversations, Chunks: 1
 INFO:__main__:Uploaded 1 chunks as document #24006
+ERROR:__main__:SEARCH ERROR: {'message': 'canceling statement due to statement timeout', 'code': '57014', 'hint': None, 'details': None}
+INFO:__main__:Found 0 docs for query: Morning AIREA! do you have a knock knock joke for me today?
+INFO:__main__:Calling Anthropic API
+INFO:__main__:Response received: Good morning! I do indeed have a knock knock joke for you:
+
+Knock knock!
+*Who's there?*
+AIREA.
+*AIRE
+INFO:__main__:Saved conversation to Supabase (session: 28d7cbc2-8ad8-4a2e-b099-2a162985db87)

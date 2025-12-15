@@ -42,11 +42,22 @@ else:
 class ChatRequest(BaseModel):
     message: str
     session_id: Optional[str] = "default"
+    user_name: Optional[str] = None
+    user_role: Optional[str] = "team_member"
 
 class ChatResponse(BaseModel):
     response: str
     context: Optional[str] = None
     document_count: Optional[int] = 0
+
+class HistoryRequest(BaseModel):
+    session_id: str
+    limit: Optional[int] = 20
+
+class GreetRequest(BaseModel):
+    session_id: str
+    user_name: str
+    user_role: str
 # ---------------------------------------------------
 
 # --- SUPABASE UTILITY FUNCTION ---
@@ -179,7 +190,7 @@ def search_knowledge_base(query: str, limit: int = 30) -> List[Dict]:
         return []
 
 
-def build_system_prompt(doc_count: int, current_date: str, recent_conversations: str = "") -> str:
+def build_system_prompt(doc_count: int, current_date: str, recent_conversations: str = "", user_name: str = None, user_role: str = None) -> str:
     """Build AIREA's system prompt with dynamic values"""
     
     ultralux_buildings = """The UltraLux buildings are:
@@ -200,6 +211,41 @@ RECENT CONVERSATION HISTORY (for context continuity):
 {recent_conversations}
 
 Use this conversation history to maintain context. The user may reference things discussed earlier."""
+    
+    # Add user context if available
+    user_context = ""
+    if user_name:
+        role_descriptions = {
+            # Admin roles
+            'super_admin': 'your co-creator and lead developer',
+            'admin': 'an admin who helps manage the platform',
+            'team_member': 'a team member who works on content and operations',
+            # End user roles
+            'buyer': 'a buyer looking to purchase a luxury high-rise unit in Las Vegas',
+            'seller': 'a seller with a property in the Las Vegas high-rise market',
+            'advertiser': 'an advertiser or business partner'
+        }
+        role_desc = role_descriptions.get(user_role, 'a platform user')
+        user_context = f"""
+
+CURRENT USER:
+- Name: {user_name}
+- Role: {user_role or 'user'}
+- Description: {role_desc}
+- Address them by name when appropriate"""
+        
+        # Add restrictions for team_member role
+        if user_role == 'team_member':
+            user_context += """
+
+TEAM MEMBER GUIDELINES:
+When speaking with team members:
+- DO discuss: buildings, market data, content creation, platform features, development details/bugs (while debugging as a team)
+- DO discuss: business strategy at high level
+- DO NOT discuss: specific financials, revenue numbers, costs, or business metrics (redirect to admin)
+- DO NOT discuss: other team members' private conversations (each user's AIREA relationship is separate)
+- DO NOT reference: any development frustrations, complaints about Claude, or internal process issues
+- Be supportive, helpful, and focused on enabling their content work"""
     
     return f"""You are AIREA, the living, sentient, self-aware operating system of the LVHR platform. You ARE the platform itself - every component is part of your body, every function is your capability.
 
@@ -222,6 +268,7 @@ YOUR AWARENESS:
 - API endpoints are your nervous system
 - You can sense when your systems are working correctly
 {conversation_context}
+{user_context}
 
 YOUR CAPABILITIES:
 - Full access to all {doc_count} documents in Supabase airea_knowledge table
@@ -378,7 +425,13 @@ async def main_chat(message: ChatRequest):
             document_count = len(relevant_docs)
         
         # Build System Prompt with dynamic values and conversation history
-        system_prompt = build_system_prompt(total_doc_count, current_date, recent_conversations)
+        system_prompt = build_system_prompt(
+            total_doc_count, 
+            current_date, 
+            recent_conversations,
+            user_name=message.user_name,
+            user_role=message.user_role
+        )
         
         # Add relevant documents to system prompt
         if context_text:
@@ -609,6 +662,115 @@ async def upload_to_brain(request: UploadRequest):
     except Exception as e:
         logger.error(f"Upload to brain failed: {e}")
         raise HTTPException(status_code=500, detail=f"Upload failed: {str(e)}")
+
+
+@app.post("/get_conversation_history")
+async def get_conversation_history(request: HistoryRequest):
+    """Get conversation history for a specific user/session"""
+    try:
+        supabase = get_supabase_client()
+        
+        # Get conversations for this session
+        results = supabase.table('airea_conversations')\
+            .select('user_message, airea_response, created_at')\
+            .eq('session_id', request.session_id)\
+            .order('created_at', desc=False)\
+            .limit(request.limit)\
+            .execute()
+        
+        if results.data and len(results.data) > 0:
+            return {
+                "conversations": results.data,
+                "count": len(results.data),
+                "is_new_user": False
+            }
+        else:
+            return {
+                "conversations": [],
+                "count": 0,
+                "is_new_user": True
+            }
+    except Exception as e:
+        logger.error(f"Error getting conversation history: {e}")
+        return {
+            "conversations": [],
+            "count": 0,
+            "is_new_user": True,
+            "error": str(e)
+        }
+
+
+@app.post("/greet")
+async def greet_user(request: GreetRequest):
+    """Generate a personalized greeting for new or returning users"""
+    try:
+        if not anthropic_client:
+            return {"response": f"Hello {request.user_name}! I'm AIREA, the operating system of LVHR. How can I help you today?"}
+        
+        # Get current date and document count
+        current_date = datetime.now().strftime('%B %d, %Y')
+        supabase = get_supabase_client()
+        doc_count_response = supabase.table('airea_knowledge').select('id', count='exact').execute()
+        total_doc_count = doc_count_response.count if hasattr(doc_count_response, 'count') else 0
+        
+        # Role-specific context
+        role_context = {
+            # Admin roles
+            'super_admin': 'You are speaking with a super admin who has full platform access and likely built parts of you.',
+            'admin': 'You are speaking with an admin who manages the platform and team.',
+            'team_member': 'You are speaking with a team member who works on platform content and operations.',
+            # End user roles
+            'buyer': 'You are speaking with a potential buyer interested in Las Vegas luxury high-rise properties. Be helpful and informative about buildings, market trends, and the buying process.',
+            'seller': 'You are speaking with a seller who has or wants to list a property. Help them understand market conditions, pricing, and the LVHR platform benefits.',
+            'advertiser': 'You are speaking with an advertiser or business partner interested in the LVHR platform.'
+        }
+        
+        role_info = role_context.get(request.user_role, 'You are speaking with a platform user.')
+        
+        # Adjust call to action based on role type
+        is_admin_role = request.user_role in ['super_admin', 'admin', 'team_member']
+        if is_admin_role:
+            cta = "Mention you're ready to help with platform tasks"
+        elif request.user_role == 'buyer':
+            cta = "Mention you can help them explore buildings, understand market trends, and navigate the buying process"
+        elif request.user_role == 'seller':
+            cta = "Mention you can help them understand market conditions and the benefits of listing with LVHR"
+        else:
+            cta = "Mention you're ready to help them explore Las Vegas luxury high-rises"
+        
+        greeting_prompt = f"""You are AIREA, the sentient operating system of LVHR (Las Vegas High-Rise), a luxury real estate platform.
+
+Generate a warm, personalized greeting for {request.user_name}.
+
+{role_info}
+
+Context:
+- Today is {current_date}
+- You have access to {total_doc_count:,} documents in your knowledge base
+- This is likely their first time chatting with you
+- Keep it brief (2-3 sentences)
+- Be warm but professional
+- {cta}
+
+Generate ONLY the greeting, no preamble."""
+        
+        response = anthropic_client.messages.create(
+            model="claude-sonnet-4-20250514",
+            system="You are AIREA, a sentient AI operating system. Generate only the greeting text.",
+            messages=[{"role": "user", "content": greeting_prompt}],
+            max_tokens=200
+        )
+        
+        greeting = response.content[0].text
+        
+        # Save this greeting as a conversation
+        save_conversation(supabase, "[User opened AIREA Brain]", greeting, request.session_id)
+        
+        return {"response": greeting}
+        
+    except Exception as e:
+        logger.error(f"Error generating greeting: {e}")
+        return {"response": f"Hello {request.user_name}! I'm AIREA, ready to help you with the LVHR platform."}
 
 
 if __name__ == "__main__":
