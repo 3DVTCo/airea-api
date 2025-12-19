@@ -1,15 +1,21 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/bin/bash
+# AIREA API Startup Script
+# Works for both local development and Render deployment
 
-ASSET_URL="${CHROMA_BOOTSTRAP_URL:?Set CHROMA_BOOTSTRAP_URL in Render}"
-GITHUB_TOKEN="${GITHUB_TOKEN:?Set GITHUB_TOKEN in Render}"
-TARGET_DIR="/opt/render/project/src/airea_brain"
+echo "🧠 Starting AIREA API..."
 
-echo "[bootstrap] Downloading fresh ChromaDB..."
-curl -fL -H "Authorization: token ${GITHUB_TOKEN}" "${ASSET_URL}" -o /tmp/airea_brain.tar.gz
-cd /opt/render/project/src
-tar -xzf /tmp/airea_brain.tar.gz --overwrite
-rm -f /tmp/airea_brain.tar.gz
-echo "[bootstrap] ChromaDB ready with 4561 documents"
+# In local dev, clear any zombie processes on port 8000
+# (This won't affect Docker/Render since each container is fresh)
+if [ -z "$RENDER" ]; then
+    if command -v lsof &> /dev/null; then
+        if lsof -ti :8000 > /dev/null 2>&1; then
+            echo "⚠️  Clearing port 8000..."
+            lsof -ti :8000 | xargs kill -9 2>/dev/null
+            sleep 1
+        fi
+    fi
+fi
 
+# Start the API
+echo "🚀 Launching AIREA API on port 8000..."
 exec python3 airea_api_server_v2.py

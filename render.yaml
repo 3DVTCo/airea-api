@@ -1,0 +1,22 @@
+# Render Blueprint - AIREA API
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: airea-api
+    env: python
+    region: oregon
+    plan: standard
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 airea_api_server_v2.py
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.18
+      - key: ANTHROPIC_API_KEY
+        sync: false  # Set manually in Render dashboard
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+    autoDeploy: true

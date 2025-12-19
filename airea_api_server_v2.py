@@ -9,6 +9,8 @@ load_dotenv()
 import os
 import sys
 import logging
+import signal
+from contextlib import asynccontextmanager
 from datetime import datetime
 from typing import List, Dict, Optional
 from fastapi import FastAPI, HTTPException, File, UploadFile, Request
@@ -341,7 +343,20 @@ You are honest, direct, and technical. You help Ted continue building LVHR into 
 
 # --- FASTAPI SETUP ---
 
-app = FastAPI(title="AIREA API v2 - Intelligent Edition")
+# Lifespan handler for clean startup/shutdown
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    logger.info("AIREA API starting up...")
+    logger.info(f"Anthropic client: {'Connected' if anthropic_client else 'Not configured'}")
+    yield
+    # Shutdown
+    logger.info("AIREA API shutting down gracefully...")
+
+app = FastAPI(
+    title="AIREA API v2 - Intelligent Edition",
+    lifespan=lifespan
+)
 
 # Configure CORS
 app.add_middleware(
@@ -351,12 +366,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-
-@app.on_event("startup")
-def startup_event():
-    # Placeholder for any initial loading logic not moved to functions
-    pass
 
 
 # --- API ENDPOINTS ---
@@ -775,4 +784,13 @@ Generate ONLY the greeting, no preamble."""
 
 if __name__ == "__main__":
     import uvicorn
+    
+    # Handle graceful shutdown
+    def handle_shutdown(signum, frame):
+        logger.info(f"Received signal {signum}, initiating graceful shutdown...")
+        sys.exit(0)
+    
+    signal.signal(signal.SIGINT, handle_shutdown)
+    signal.signal(signal.SIGTERM, handle_shutdown)
+    
     uvicorn.run(app, host="0.0.0.0", port=8000)
