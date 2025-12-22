@@ -2592,3 +2592,982 @@ INFO:__main__:AIREA API starting up...
 INFO:__main__:Anthropic client: Connected
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99123]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99135]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99144]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99154]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99162]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99171]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99183]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99192]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99223]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99233]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99243]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99252]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99263]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99276]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99289]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99303]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99314]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99322]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99333]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99342]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99349]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99364]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99373]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99382]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99392]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99402]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99411]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99420]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99429]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99441]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99453]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99463]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99473]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99484]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99498]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99509]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99519]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99526]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99536]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99546]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99556]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99569]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99579]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99588]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99597]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99606]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99616]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99625]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99635]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99644]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99656]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99666]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99676]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99692]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99700]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99711]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99723]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99732]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99746]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99756]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99766]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99773]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99783]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99794]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99801]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99811]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99821]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99829]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99839]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99850]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99863]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99870]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99886]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99896]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99904]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99915]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99925]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99935]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99942]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99952]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99962]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99969]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99979]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99990]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [99998]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [119]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [155]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [187]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
+INFO:__main__:Connected to Anthropic Claude
+INFO:     Started server process [218]
+INFO:     Waiting for application startup.
+INFO:__main__:AIREA API starting up with LIVE DATA TOOLS...
+INFO:__main__:Anthropic client: Connected
+INFO:__main__:12 data query tools available
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:__main__:AIREA API shutting down gracefully...
+INFO:     Application shutdown complete.
