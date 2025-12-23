@@ -3,7 +3,9 @@
 AIREA API Server v2 - Intelligent Edition with Live Data Tools
 Now with Claude integration AND direct Supabase data queries
 
-15 DATA TOOLS INTEGRATED:
+20 TOOLS INTEGRATED:
+
+DATA TOOLS (15):
 - query_active_listings: Active listings by building/price/beds
 - query_building_rankings: Building performance rankings
 - query_market_cma: Comparative market analysis
@@ -19,6 +21,13 @@ Now with Claude integration AND direct Supabase data queries
 - get_market_stats: Overall market statistics
 - get_building_stats: Building-specific statistics  
 - generate_cma: Comparative Market Analysis generator
+
+CONTENT CREATION TOOLS (5):
+- generate_market_summary: AI-written market summaries (whole market or per-building)
+- generate_social_post: Platform-specific social media content
+- generate_building_narrative: Building descriptions, SEO headlines, ranking narratives
+- save_to_content_history: Store generated content as drafts
+- get_content_history: Retrieve content from draft queue
 """
 from dotenv import load_dotenv
 load_dotenv()
@@ -909,6 +918,357 @@ def generate_cma(
 
 
 # =============================================================================
+# CONTENT CREATION FUNCTIONS (5 Tools)
+# =============================================================================
+
+def generate_market_summary(
+    building_name: Optional[str] = None,
+    year: int = 2025
+) -> dict:
+    """Generate a market summary for the whole market or specific building."""
+    try:
+        # Get market data
+        if building_name:
+            stats = get_building_stats(building_name)
+            report = generate_market_report('yearly', building_name, year, year - 1)
+        else:
+            stats = get_market_stats()
+            report = generate_market_report('yearly', None, year, year - 1)
+        
+        if not stats.get("success") or not report.get("success"):
+            return {"success": False, "error": "Failed to gather market data"}
+        
+        # Use Claude to generate narrative
+        if not anthropic_client:
+            return {"success": False, "error": "Claude API not available"}
+        
+        data_context = f"""
+Market Data for {building_name or 'Las Vegas Luxury High-Rise Market'} - {year}:
+
+Active Market:
+- Total Listings: {stats.get('active_market', stats.get('active_listings', {})).get('total_listings', stats.get('active_listings', {}).get('count', 'N/A'))}
+- Average Price: ${stats.get('active_market', stats.get('active_listings', {})).get('avg_price', 0):,.0f}
+- Average $/SqFt: ${stats.get('active_market', stats.get('active_listings', {})).get('avg_ppsf', 0):,.0f}
+- Average Days on Market: {stats.get('active_market', stats.get('active_listings', {})).get('avg_dom', 0):.0f}
+
+Year-Over-Year Changes ({year} vs {year-1}):
+- Sales Volume: {report.get('year_over_year', {}).get('sales_count_change', 0):+.1f}%
+- Average Price: {report.get('year_over_year', {}).get('avg_price_change', 0):+.1f}%
+- Average $/SqFt: {report.get('year_over_year', {}).get('avg_ppsf_change', 0):+.1f}%
+
+Total Sales History: {stats.get('sold_all_time', stats.get('sold_history', {})).get('total_sales', stats.get('sold_history', {}).get('count', 'N/A'))} transactions
+"""
+        
+        prompt = f"""Write a professional market summary for {building_name or 'the Las Vegas luxury high-rise market'} for {year}.
+
+{data_context}
+
+Guidelines:
+- Write 2-3 paragraphs of flowing prose (no bullet points)
+- Be specific with numbers but conversational in tone
+- Highlight notable trends (positive or negative)
+- Suitable for website display and social media
+- Do NOT use phrases like "discount" or "savings" - use "value positioning" or "opportunity"
+- End with a forward-looking statement
+
+Generate ONLY the summary text, no headers or preamble."""
+
+        response = anthropic_client.messages.create(
+            model="claude-sonnet-4-20250514",
+            system="You are AIREA, the AI operating system of LVHR. Write professional real estate market summaries.",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=800
+        )
+        
+        summary_text = response.content[0].text
+        
+        return {
+            "success": True,
+            "building_name": building_name or "Overall Market",
+            "year": year,
+            "summary": summary_text,
+            "data_used": {
+                "stats": stats,
+                "report": report
+            },
+            "generated_at": datetime.now().isoformat()
+        }
+        
+    except Exception as e:
+        logger.error(f"generate_market_summary error: {e}")
+        return {"success": False, "error": str(e)}
+
+
+def generate_social_post(
+    content_type: str,
+    building_name: Optional[str] = None,
+    platform: str = "facebook"
+) -> dict:
+    """Generate social media content from market data.
+    
+    content_type: 'deal_of_week', 'market_update', 'building_spotlight', 'new_listing'
+    platform: 'facebook', 'instagram', 'twitter', 'linkedin', 'tiktok'
+    """
+    try:
+        # Gather relevant data based on content type
+        data_context = ""
+        
+        if content_type == "deal_of_week":
+            deal_data = query_deal_of_week(building_name)
+            if deal_data.get("success") and deal_data.get("deals"):
+                deal = deal_data["deals"][0]
+                data_context = f"""
+Deal of the Week: {deal.get('building_name', building_name)}
+- Address: {deal.get('address', 'N/A')}
+- Price: ${deal.get('list_price', 0):,.0f}
+- Size: {deal.get('sqft', 'N/A')} sqft
+- Beds/Baths: {deal.get('beds', 'N/A')}/{deal.get('baths', 'N/A')}
+- DealScore: {deal.get('score_metric', 'N/A')}
+"""
+        elif content_type == "market_update":
+            stats = get_market_stats()
+            if stats.get("success"):
+                data_context = f"""
+Market Update:
+- Active Listings: {stats['active_market']['total_listings']}
+- Average Price: ${stats['active_market']['avg_price']:,.0f}
+- Average $/SqFt: ${stats['active_market']['avg_ppsf']:,.0f}
+- Buildings Tracked: {stats['buildings_tracked']}
+"""
+        elif content_type == "building_spotlight" and building_name:
+            bldg_stats = get_building_stats(building_name)
+            if bldg_stats.get("success"):
+                data_context = f"""
+Building Spotlight: {building_name}
+- Active Listings: {bldg_stats['active_listings']['count']}
+- Average Price: ${bldg_stats['active_listings']['avg_price']:,.0f}
+- Average $/SqFt: ${bldg_stats['active_listings']['avg_ppsf']:,.0f}
+- Total Sales History: {bldg_stats['sold_history']['count']}
+"""
+        
+        if not data_context:
+            return {"success": False, "error": f"No data available for {content_type}"}
+        
+        if not anthropic_client:
+            return {"success": False, "error": "Claude API not available"}
+        
+        # Platform-specific guidelines
+        platform_guidelines = {
+            "facebook": "Write 2-3 sentences. Can be slightly longer. Include a call to action.",
+            "instagram": "Write a catchy caption. Use line breaks for readability. Suggest 3-5 relevant hashtags at the end.",
+            "twitter": "Keep under 280 characters. Be punchy and engaging.",
+            "linkedin": "Professional tone. 2-3 sentences highlighting market insight.",
+            "tiktok": "Write a hook line (attention-grabbing first sentence) followed by 2-3 key points."
+        }
+        
+        prompt = f"""Create a {platform} post about this {content_type.replace('_', ' ')}:
+
+{data_context}
+
+Platform Guidelines: {platform_guidelines.get(platform, 'Write engaging social media copy.')}
+
+Additional Rules:
+- Never use "discount" or "savings" - say "value opportunity" or "well-positioned"
+- Be professional but engaging
+- Include relevant emojis sparingly
+- End with encouragement to learn more at LVHR
+
+Generate ONLY the post content."""
+
+        response = anthropic_client.messages.create(
+            model="claude-sonnet-4-20250514",
+            system="You are AIREA, creating social media content for LVHR luxury real estate.",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=400
+        )
+        
+        post_text = response.content[0].text
+        
+        return {
+            "success": True,
+            "content_type": content_type,
+            "platform": platform,
+            "building_name": building_name,
+            "post": post_text,
+            "generated_at": datetime.now().isoformat()
+        }
+        
+    except Exception as e:
+        logger.error(f"generate_social_post error: {e}")
+        return {"success": False, "error": str(e)}
+
+
+def generate_building_narrative(
+    building_name: str,
+    narrative_type: str = "description"
+) -> dict:
+    """Generate building narrative content.
+    
+    narrative_type: 'description', 'seo_headline', 'ranking_narrative'
+    """
+    try:
+        # Get building data
+        stats = get_building_stats(building_name)
+        rankings = query_building_rankings(building_name)
+        
+        if not stats.get("success"):
+            return {"success": False, "error": f"No data for {building_name}"}
+        
+        if not anthropic_client:
+            return {"success": False, "error": "Claude API not available"}
+        
+        data_context = f"""
+Building: {building_name}
+
+Current Stats:
+- Active Listings: {stats['active_listings']['count']}
+- Average Price: ${stats['active_listings']['avg_price']:,.0f}
+- Average $/SqFt: ${stats['active_listings']['avg_ppsf']:,.0f}
+- Total Historical Sales: {stats['sold_history']['count']}
+
+Ranking Data:
+- Score: {stats['ranking'].get('score_v2', 'N/A')}
+- Sales (12 months): {stats['ranking'].get('sales_12m', 'N/A')}
+"""
+
+        if narrative_type == "description":
+            prompt = f"""Write a compelling building description for {building_name}.
+
+{data_context}
+
+Guidelines:
+- 2-3 paragraphs of engaging prose
+- Highlight what makes this building special
+- Include market positioning context
+- Professional real estate tone
+- Do NOT make up amenities - focus on market data
+
+Generate ONLY the description."""
+
+        elif narrative_type == "seo_headline":
+            prompt = f"""Write an SEO-optimized headline for {building_name}'s landing page.
+
+{data_context}
+
+Guidelines:
+- 60-70 characters ideal
+- Include building name
+- Include "Las Vegas" for SEO
+- Make it compelling and clickable
+
+Generate ONLY the headline."""
+
+        elif narrative_type == "ranking_narrative":
+            prompt = f"""Explain why {building_name} is ranked where it is among Las Vegas luxury high-rises.
+
+{data_context}
+
+Guidelines:
+- 1-2 paragraphs
+- Reference specific metrics
+- Be objective and data-driven
+- Explain what the ranking means for buyers
+
+Generate ONLY the narrative."""
+
+        else:
+            return {"success": False, "error": f"Unknown narrative_type: {narrative_type}"}
+
+        response = anthropic_client.messages.create(
+            model="claude-sonnet-4-20250514",
+            system="You are AIREA, writing professional real estate content for LVHR.",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=600
+        )
+        
+        narrative_text = response.content[0].text
+        
+        return {
+            "success": True,
+            "building_name": building_name,
+            "narrative_type": narrative_type,
+            "content": narrative_text,
+            "generated_at": datetime.now().isoformat()
+        }
+        
+    except Exception as e:
+        logger.error(f"generate_building_narrative error: {e}")
+        return {"success": False, "error": str(e)}
+
+
+def save_to_content_history(
+    content_text: str,
+    content_type: str,
+    building_name: Optional[str] = None,
+    platform: Optional[str] = None,
+    created_by: str = "AIREA"
+) -> dict:
+    """Save generated content to content_history table."""
+    try:
+        supabase = get_supabase_client()
+        
+        result = supabase.table("content_history").insert({
+            "Tower Name": building_name or "Overall",
+            "content_type": content_type,
+            "content_text": content_text,
+            "created_by": created_by,
+            "status": "draft",
+            "platform": platform,
+            "metadata": {
+                "generated_at": datetime.now().isoformat(),
+                "generator": "AIREA Content Creation MCP"
+            }
+        }).execute()
+        
+        if result.data:
+            return {
+                "success": True,
+                "message": "Content saved to content_history",
+                "id": result.data[0].get("id"),
+                "status": "draft"
+            }
+        else:
+            return {"success": False, "error": "Insert returned no data"}
+        
+    except Exception as e:
+        logger.error(f"save_to_content_history error: {e}")
+        return {"success": False, "error": str(e)}
+
+
+def get_content_history(
+    building_name: Optional[str] = None,
+    content_type: Optional[str] = None,
+    status: Optional[str] = None,
+    limit: int = 20
+) -> dict:
+    """Retrieve content from content_history table."""
+    try:
+        supabase = get_supabase_client()
+        
+        query = supabase.table("content_history").select("*")
+        
+        if building_name:
+            query = query.eq("Tower Name", building_name)
+        if content_type:
+            query = query.eq("content_type", content_type)
+        if status:
+            query = query.eq("status", status)
+        
+        query = query.order("created_at", desc=True).limit(limit)
+        response = query.execute()
+        
+        return {
+            "success": True,
+            "count": len(response.data),
+            "content": response.data
+        }
+        
+    except Exception as e:
+        logger.error(f"get_content_history error: {e}")
+        return {"success": False, "error": str(e)}
+
+
+# =============================================================================
 # INTENT DETECTION - Routes user questions to appropriate data queries
 # =============================================================================
 
@@ -1057,6 +1417,58 @@ def detect_data_intent(message: str) -> Tuple[Optional[str], Dict[str, Any]]:
     if building_name and any(phrase in msg_lower for phrase in ['why is this the deal', 'explain the deal', 'deal explanation', 'why this deal']):
         return ('explain_deal_selection', {'building_name': building_name})
     
+    # =========================================================================
+    # CONTENT CREATION TRIGGERS (Admin/Team only)
+    # =========================================================================
+    
+    # GENERATE MARKET SUMMARY - "write market summary", "create 2025 summary", "generate summary"
+    if any(phrase in msg_lower for phrase in ['write market summary', 'create market summary', 'generate market summary', '2025 summary', 'write summary for']):
+        params = {'year': 2025}
+        if building_name:
+            params['building_name'] = building_name
+        return ('generate_market_summary', params)
+    
+    # GENERATE SOCIAL POST - "write social post", "create instagram", "make a tweet"
+    if any(phrase in msg_lower for phrase in ['social post', 'instagram post', 'facebook post', 'tweet', 'linkedin post', 'tiktok']):
+        # Determine platform
+        platform = 'facebook'  # default
+        if 'instagram' in msg_lower:
+            platform = 'instagram'
+        elif 'tweet' in msg_lower or 'twitter' in msg_lower:
+            platform = 'twitter'
+        elif 'linkedin' in msg_lower:
+            platform = 'linkedin'
+        elif 'tiktok' in msg_lower:
+            platform = 'tiktok'
+        
+        # Determine content type
+        content_type = 'market_update'  # default
+        if 'deal of' in msg_lower:
+            content_type = 'deal_of_week'
+        elif 'spotlight' in msg_lower or building_name:
+            content_type = 'building_spotlight'
+        
+        params = {'content_type': content_type, 'platform': platform}
+        if building_name:
+            params['building_name'] = building_name
+        return ('generate_social_post', params)
+    
+    # GENERATE BUILDING NARRATIVE - "write description for", "building description", "seo headline"
+    if building_name and any(phrase in msg_lower for phrase in ['write description', 'building description', 'describe building', 'seo headline', 'ranking narrative', 'write about']):
+        narrative_type = 'description'  # default
+        if 'seo' in msg_lower or 'headline' in msg_lower:
+            narrative_type = 'seo_headline'
+        elif 'ranking' in msg_lower:
+            narrative_type = 'ranking_narrative'
+        return ('generate_building_narrative', {'building_name': building_name, 'narrative_type': narrative_type})
+    
+    # GET CONTENT HISTORY - "show content history", "content drafts", "what content"
+    if any(phrase in msg_lower for phrase in ['content history', 'content drafts', 'show drafts', 'generated content', 'content queue']):
+        params = {'limit': 10}
+        if building_name:
+            params['building_name'] = building_name
+        return ('get_content_history', params)
+    
     # No data query detected
     return (None, {})
 
@@ -1064,6 +1476,7 @@ def detect_data_intent(message: str) -> Tuple[Optional[str], Dict[str, Any]]:
 def execute_data_query(tool_name: str, params: Dict[str, Any]) -> dict:
     """Execute the appropriate data query function."""
     tool_map = {
+        # Data Tools (15)
         'query_active_listings': query_active_listings,
         'query_building_rankings': query_building_rankings,
         'query_market_cma': query_market_cma,
@@ -1078,6 +1491,12 @@ def execute_data_query(tool_name: str, params: Dict[str, Any]) -> dict:
         'get_market_stats': get_market_stats,
         'get_building_stats': get_building_stats,
         'generate_cma': generate_cma,
+        # Content Creation Tools (5)
+        'generate_market_summary': generate_market_summary,
+        'generate_social_post': generate_social_post,
+        'generate_building_narrative': generate_building_narrative,
+        'save_to_content_history': save_to_content_history,
+        'get_content_history': get_content_history,
     }
     
     if tool_name not in tool_map:
@@ -1577,10 +1996,12 @@ async def health_check():
         
         return {
             "status": "operational", 
-            "message": "AIREA is ready with live data access.",
+            "message": "AIREA is ready with live data access and content creation.",
             "total_documents": total_docs,
             "collections": {"airea_knowledge": total_docs},
             "data_tools": 15,
+            "content_tools": 5,
+            "total_tools": 20,
             "current_date": datetime.now().strftime('%B %d, %Y')
         }
     except:
@@ -1590,6 +2011,8 @@ async def health_check():
             "total_documents": 0,
             "collections": {},
             "data_tools": 15,
+            "content_tools": 5,
+            "total_tools": 20,
             "current_date": datetime.now().strftime('%B %d, %Y')
         }
 
