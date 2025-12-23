@@ -439,8 +439,8 @@ def query_active_listings(
         
         # Build query - select key columns
         query = supabase.table("lvhr_master").select(
-            '"MLS#", "Address", "Tower Name", "List Price", "LP/SqFt", '
-            '"Beds Total", "Baths Total", "Approx SqFt", "DOM", "Stat"'
+            '"ML#", "Address", "Tower Name", "List Price", "LP/SqFt", '
+            '"Beds Total", "Baths Total", "Approx Liv Area", "DOM", "Stat"'
         )
         
         # Filter by active status codes
@@ -681,8 +681,8 @@ def query_penthouse_listings(limit: int = 20) -> dict:
         supabase = get_supabase_client()
         
         query = supabase.table("lvhr_master").select(
-            '"MLS#", "Address", "Tower Name", "List Price", "LP/SqFt", '
-            '"Beds Total", "Baths Total", "Approx SqFt", "DOM", "Stat"'
+            '"ML#", "Address", "Tower Name", "List Price", "LP/SqFt", '
+            '"Beds Total", "Baths Total", "Approx Liv Area", "DOM", "Stat"'
         )
         
         query = query.eq("is_penthouse", True)
@@ -739,11 +739,11 @@ def get_hot_leads(
         
         # Query lvhr_master for full details
         query = supabase.table("lvhr_master").select(
-            '"MLS#", "Address", "Tower Name", "List Price", "LP/SqFt", '
-            '"Beds Total", "Baths Total", "Approx SqFt", "DOM", "Stat"'
+            '"ML#", "Address", "Tower Name", "List Price", "LP/SqFt", '
+            '"Beds Total", "Baths Total", "Approx Liv Area", "DOM", "Stat"'
         )
         
-        query = query.in_('"MLS#"', mls_numbers)
+        query = query.in_('"ML#"', mls_numbers)
         
         if building_name:
             query = query.eq('"Tower Name"', building_name)

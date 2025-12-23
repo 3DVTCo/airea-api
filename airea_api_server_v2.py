@@ -3,7 +3,7 @@
 AIREA API Server v2 - Intelligent Edition with Live Data Tools
 Now with Claude integration AND direct Supabase data queries
 
-12 DATA TOOLS INTEGRATED:
+15 DATA TOOLS INTEGRATED:
 - query_active_listings: Active listings by building/price/beds
 - query_building_rankings: Building performance rankings
 - query_market_cma: Comparative market analysis
@@ -16,6 +16,9 @@ Now with Claude integration AND direct Supabase data queries
 - query_stale_listings: Expired/withdrawn listings
 - explain_deal_selection: Deal of Week narratives
 - generate_market_report: Market reports (monthly/quarterly/yearly)
+- get_market_stats: Overall market statistics
+- get_building_stats: Building-specific statistics  
+- generate_cma: Comparative Market Analysis generator
 """
 from dotenv import load_dotenv
 load_dotenv()
@@ -137,8 +140,8 @@ def query_active_listings(
         
         # Build query - select key columns
         query = supabase.table("lvhr_master").select(
-            '"MLS#", "Address", "Tower Name", "List Price", "LP/SqFt", '
-            '"Beds Total", "Baths Total", "Approx SqFt", "DOM", "Stat"'
+            '"ML#", "Address", "Tower Name", "List Price", "LP/SqFt", '
+            '"Beds Total", "Baths Total", "Approx Liv Area", "DOM", "Stat"'
         )
         
         # Filter by active status codes
@@ -352,8 +355,8 @@ def query_penthouse_listings(limit: int = 20) -> dict:
         supabase = get_supabase_client()
         
         query = supabase.table("lvhr_master").select(
-            '"MLS#", "Address", "Tower Name", "List Price", "LP/SqFt", '
-            '"Beds Total", "Baths Total", "Approx SqFt", "DOM", "Stat"'
+            '"ML#", "Address", "Tower Name", "List Price", "LP/SqFt", '
+            '"Beds Total", "Baths Total", "Approx Liv Area", "DOM", "Stat"'
         )
         
         query = query.eq("is_penthouse", True)
@@ -405,11 +408,11 @@ def get_hot_leads(
         
         # Query lvhr_master for full details
         query = supabase.table("lvhr_master").select(
-            '"MLS#", "Address", "Tower Name", "List Price", "LP/SqFt", '
-            '"Beds Total", "Baths Total", "Approx SqFt", "DOM", "Stat"'
+            '"ML#", "Address", "Tower Name", "List Price", "LP/SqFt", '
+            '"Beds Total", "Baths Total", "Approx Liv Area", "DOM", "Stat"'
         )
         
-        query = query.in_('"MLS#"', mls_numbers)
+        query = query.in_('"ML#"', mls_numbers)
         
         if building_name:
             query = query.eq('"Tower Name"', building_name)
@@ -619,6 +622,292 @@ def generate_market_report(
         return {"success": False, "error": str(e)}
 
 
+def get_market_stats() -> dict:
+    """Get overall market statistics across all buildings."""
+    try:
+        supabase = get_supabase_client()
+        
+        # Active listings count
+        active_response = supabase.table("lvhr_master").select(
+            '"ML#"', count='exact'
+        ).in_('"Stat"', ACTIVE_STATUS_CODES).execute()
+        active_count = active_response.count if hasattr(active_response, 'count') else len(active_response.data)
+        
+        # Get active listings for avg price calculation
+        active_data = supabase.table("lvhr_master").select(
+            '"List Price", "LP/SqFt", "DOM", "Approx Liv Area"'
+        ).in_('"Stat"', ACTIVE_STATUS_CODES).execute()
+        
+        # Calculate active market stats
+        active_prices = []
+        active_ppsf = []
+        active_dom = []
+        for row in active_data.data:
+            try:
+                price_str = str(row.get("List Price", "0")).replace("$", "").replace(",", "")
+                if price_str and price_str != "0":
+                    active_prices.append(float(price_str))
+            except: pass
+            try:
+                ppsf_str = str(row.get("LP/SqFt", "0")).replace("$", "").replace(",", "")
+                if ppsf_str and ppsf_str != "0":
+                    active_ppsf.append(float(ppsf_str))
+            except: pass
+            try:
+                dom_str = str(row.get("DOM", "0"))
+                if dom_str and dom_str != "0":
+                    active_dom.append(int(dom_str))
+            except: pass
+        
+        # Sold in last 12 months - dates are MM/DD/YYYY text format
+        # Status S = sold (changes to H after 366 days)
+        sold_response = supabase.table("lvhr_master").select(
+            '"Close Price", "SP/SqFt"', count='exact'
+        ).in_('"Stat"', ['S', 'H']).execute()
+        sold_count = sold_response.count if hasattr(sold_response, 'count') else len(sold_response.data)
+        
+        # Calculate sold stats
+        sold_prices = []
+        sold_ppsf = []
+        for row in sold_response.data:
+            try:
+                price_str = str(row.get("Close Price", "0")).replace("$", "").replace(",", "")
+                if price_str and price_str != "0":
+                    sold_prices.append(float(price_str))
+            except: pass
+            try:
+                ppsf_str = str(row.get("SP/SqFt", "0")).replace("$", "").replace(",", "")
+                if ppsf_str and ppsf_str != "0":
+                    sold_ppsf.append(float(ppsf_str))
+            except: pass
+        
+        return {
+            "success": True,
+            "as_of": datetime.now().strftime('%Y-%m-%d'),
+            "active_market": {
+                "total_listings": active_count,
+                "avg_price": sum(active_prices) / len(active_prices) if active_prices else 0,
+                "avg_ppsf": sum(active_ppsf) / len(active_ppsf) if active_ppsf else 0,
+                "avg_dom": sum(active_dom) / len(active_dom) if active_dom else 0,
+                "total_volume": sum(active_prices)
+            },
+            "sold_all_time": {
+                "total_sales": sold_count,
+                "avg_price": sum(sold_prices) / len(sold_prices) if sold_prices else 0,
+                "avg_ppsf": sum(sold_ppsf) / len(sold_ppsf) if sold_ppsf else 0,
+                "total_volume": sum(sold_prices)
+            },
+            "buildings_tracked": HIGHRISE_COUNT,
+            "midrise_tracked": MIDRISE_COUNT
+        }
+        
+    except Exception as e:
+        logger.error(f"get_market_stats error: {e}")
+        return {"success": False, "error": str(e)}
+
+
+def get_building_stats(building_name: str) -> dict:
+    """Get comprehensive statistics for a specific building."""
+    try:
+        supabase = get_supabase_client()
+        
+        # Get building ranking
+        ranking_response = supabase.table("building_rankings").select("*").eq(
+            '"Tower Name"', building_name
+        ).execute()
+        
+        ranking_data = ranking_response.data[0] if ranking_response.data else {}
+        
+        # Get active listings for this building
+        active_response = supabase.table("lvhr_master").select(
+            '"ML#", "List Price", "LP/SqFt", "Beds Total", "Approx Liv Area", "DOM"'
+        ).eq('"Tower Name"', building_name).in_('"Stat"', ACTIVE_STATUS_CODES).execute()
+        
+        # Calculate active stats
+        active_prices = []
+        active_ppsf = []
+        active_dom = []
+        bedroom_counts = {}
+        
+        for row in active_response.data:
+            try:
+                price_str = str(row.get("List Price", "0")).replace("$", "").replace(",", "")
+                if price_str and price_str != "0":
+                    active_prices.append(float(price_str))
+            except: pass
+            try:
+                ppsf_str = str(row.get("LP/SqFt", "0")).replace("$", "").replace(",", "")
+                if ppsf_str and ppsf_str != "0":
+                    active_ppsf.append(float(ppsf_str))
+            except: pass
+            try:
+                dom_str = str(row.get("DOM", "0"))
+                if dom_str:
+                    active_dom.append(int(dom_str))
+            except: pass
+            beds = row.get("Beds Total", "0")
+            bedroom_counts[beds] = bedroom_counts.get(beds, 0) + 1
+        
+        # Get sold for this building - S = sold, H = historical (after 366 days)
+        sold_response = supabase.table("lvhr_master").select(
+            '"Close Price", "SP/SqFt", "Actual Close Date"'
+        ).eq('"Tower Name"', building_name).in_('"Stat"', ['S', 'H']).execute()
+        
+        sold_prices = []
+        sold_ppsf = []
+        for row in sold_response.data:
+            try:
+                price_str = str(row.get("Close Price", "0")).replace("$", "").replace(",", "")
+                if price_str and price_str != "0":
+                    sold_prices.append(float(price_str))
+            except: pass
+            try:
+                ppsf_str = str(row.get("SP/SqFt", "0")).replace("$", "").replace(",", "")
+                if ppsf_str and ppsf_str != "0":
+                    sold_ppsf.append(float(ppsf_str))
+            except: pass
+        
+        return {
+            "success": True,
+            "building_name": building_name,
+            "ranking": {
+                "score_v2": ranking_data.get("score_v2"),
+                "sales_12m": ranking_data.get("sales_12m"),
+                "sales_60d": ranking_data.get("sales_60d"),
+                "avg_price": ranking_data.get("avg_price")
+            },
+            "active_listings": {
+                "count": len(active_response.data),
+                "avg_price": sum(active_prices) / len(active_prices) if active_prices else 0,
+                "avg_ppsf": sum(active_ppsf) / len(active_ppsf) if active_ppsf else 0,
+                "avg_dom": sum(active_dom) / len(active_dom) if active_dom else 0,
+                "by_bedroom": bedroom_counts
+            },
+            "sold_history": {
+                "count": len(sold_response.data),
+                "avg_price": sum(sold_prices) / len(sold_prices) if sold_prices else 0,
+                "avg_ppsf": sum(sold_ppsf) / len(sold_ppsf) if sold_ppsf else 0,
+                "total_volume": sum(sold_prices)
+            }
+        }
+        
+    except Exception as e:
+        logger.error(f"get_building_stats error: {e}")
+        return {"success": False, "error": str(e)}
+
+
+def generate_cma(
+    building_name: str,
+    bedrooms: Optional[int] = None,
+    target_price: Optional[float] = None
+) -> dict:
+    """Generate a Comparative Market Analysis for a building or unit type."""
+    try:
+        supabase = get_supabase_client()
+        
+        # Get active listings
+        active_query = supabase.table("lvhr_master").select(
+            '"ML#", "Address", "List Price", "LP/SqFt", "Beds Total", "Baths Total", '
+            '"Approx Liv Area", "DOM", "Stat"'
+        ).eq('"Tower Name"', building_name).in_('"Stat"', ACTIVE_STATUS_CODES)
+        
+        if bedrooms:
+            active_query = active_query.eq('"Beds Total"', str(bedrooms))
+        
+        active_response = active_query.execute()
+        
+        # Get recent sales - S = sold, H = historical
+        sold_query = supabase.table("lvhr_master").select(
+            '"ML#", "Address", "Close Price", "SP/SqFt", "Beds Total", "Baths Total", '
+            '"Approx Liv Area", "Actual Close Date"'
+        ).eq('"Tower Name"', building_name).in_('"Stat"', ['S', 'H'])
+        
+        if bedrooms:
+            sold_query = sold_query.eq('"Beds Total"', str(bedrooms))
+        
+        sold_response = sold_query.order('"Actual Close Date"', desc=True).execute()
+        
+        # Calculate stats
+        active_prices = []
+        active_ppsf = []
+        for row in active_response.data:
+            try:
+                price_str = str(row.get("List Price", "0")).replace("$", "").replace(",", "")
+                if price_str and price_str != "0":
+                    active_prices.append(float(price_str))
+            except: pass
+            try:
+                ppsf_str = str(row.get("LP/SqFt", "0")).replace("$", "").replace(",", "")
+                if ppsf_str and ppsf_str != "0":
+                    active_ppsf.append(float(ppsf_str))
+            except: pass
+        
+        sold_prices = []
+        sold_ppsf = []
+        for row in sold_response.data:
+            try:
+                price_str = str(row.get("Close Price", "0")).replace("$", "").replace(",", "")
+                if price_str and price_str != "0":
+                    sold_prices.append(float(price_str))
+            except: pass
+            try:
+                ppsf_str = str(row.get("SP/SqFt", "0")).replace("$", "").replace(",", "")
+                if ppsf_str and ppsf_str != "0":
+                    sold_ppsf.append(float(ppsf_str))
+            except: pass
+        
+        # Build CMA report
+        cma = {
+            "success": True,
+            "building_name": building_name,
+            "bedrooms_filter": bedrooms,
+            "generated_at": datetime.now().strftime('%Y-%m-%d %H:%M'),
+            "active_competition": {
+                "count": len(active_response.data),
+                "price_range": {
+                    "low": min(active_prices) if active_prices else 0,
+                    "high": max(active_prices) if active_prices else 0,
+                    "avg": sum(active_prices) / len(active_prices) if active_prices else 0
+                },
+                "ppsf_range": {
+                    "low": min(active_ppsf) if active_ppsf else 0,
+                    "high": max(active_ppsf) if active_ppsf else 0,
+                    "avg": sum(active_ppsf) / len(active_ppsf) if active_ppsf else 0
+                },
+                "listings": active_response.data[:5]
+            },
+            "sales_history": {
+                "count": len(sold_response.data),
+                "price_range": {
+                    "low": min(sold_prices) if sold_prices else 0,
+                    "high": max(sold_prices) if sold_prices else 0,
+                    "avg": sum(sold_prices) / len(sold_prices) if sold_prices else 0
+                },
+                "ppsf_range": {
+                    "low": min(sold_ppsf) if sold_ppsf else 0,
+                    "high": max(sold_ppsf) if sold_ppsf else 0,
+                    "avg": sum(sold_ppsf) / len(sold_ppsf) if sold_ppsf else 0
+                },
+                "sales": sold_response.data[:5]
+            }
+        }
+        
+        # Add target price analysis if provided
+        if target_price and sold_ppsf:
+            avg_sold_ppsf = sum(sold_ppsf) / len(sold_ppsf)
+            cma["target_analysis"] = {
+                "target_price": target_price,
+                "market_avg_ppsf": avg_sold_ppsf,
+                "position": "below_market" if target_price < sum(sold_prices)/len(sold_prices) else "above_market"
+            }
+        
+        return cma
+        
+    except Exception as e:
+        logger.error(f"generate_cma error: {e}")
+        return {"success": False, "error": str(e)}
+
+
 # =============================================================================
 # INTENT DETECTION - Routes user questions to appropriate data queries
 # =============================================================================
@@ -746,6 +1035,28 @@ def detect_data_intent(message: str) -> Tuple[Optional[str], Dict[str, Any]]:
             params['building_name'] = building_name
         return ('query_stale_listings', params)
     
+    # MARKET STATS (tool 13) - "market stats", "market overview", "overall market"
+    if any(phrase in msg_lower for phrase in ['market stats', 'market overview', 'overall market', 'market snapshot', 'how is the market']):
+        return ('get_market_stats', {})
+    
+    # BUILDING STATS (tool 14) - "stats for [building]", "[building] stats", "[building] performance"
+    if building_name and any(phrase in msg_lower for phrase in ['stats', 'statistics', 'performance', 'how is', 'how\'s']):
+        return ('get_building_stats', {'building_name': building_name})
+    
+    # GENERATE CMA (tool 15) - "generate cma", "create cma", "cma report for"
+    if building_name and any(phrase in msg_lower for phrase in ['generate cma', 'create cma', 'cma report', 'cma for', 'run cma']):
+        params = {'building_name': building_name}
+        # Check for bedroom filter
+        for beds in ['1 bed', '2 bed', '3 bed', '4 bed', '1br', '2br', '3br', '4br']:
+            if beds in msg_lower:
+                params['bedrooms'] = int(beds[0])
+                break
+        return ('generate_cma', params)
+    
+    # EXPLAIN DEAL - "why is this the deal", "explain the deal", "deal explanation"
+    if building_name and any(phrase in msg_lower for phrase in ['why is this the deal', 'explain the deal', 'deal explanation', 'why this deal']):
+        return ('explain_deal_selection', {'building_name': building_name})
+    
     # No data query detected
     return (None, {})
 
@@ -764,6 +1075,9 @@ def execute_data_query(tool_name: str, params: Dict[str, Any]) -> dict:
         'query_stale_listings': query_stale_listings,
         'explain_deal_selection': explain_deal_selection,
         'generate_market_report': generate_market_report,
+        'get_market_stats': get_market_stats,
+        'get_building_stats': get_building_stats,
+        'generate_cma': generate_cma,
     }
     
     if tool_name not in tool_map:
@@ -799,7 +1113,7 @@ def format_data_for_context(tool_name: str, data: dict) -> str:
             bldg = listing.get('Tower Name', 'N/A')
             price = listing.get('List Price', 0)
             beds = listing.get('Beds Total', 0)
-            sqft = listing.get('Approx SqFt', 0)
+            sqft = listing.get('Approx Liv Area', 0)
             dom = listing.get('DOM', 0)
             lines.append(f"- {addr} ({bldg}): ${float(price):,.0f}, {beds}BR, {sqft} sqft, {dom} DOM")
     
@@ -809,7 +1123,7 @@ def format_data_for_context(tool_name: str, data: dict) -> str:
             addr = ph.get('Address', 'N/A')
             bldg = ph.get('Tower Name', 'N/A')
             price = ph.get('List Price', 0)
-            sqft = ph.get('Approx SqFt', 0)
+            sqft = ph.get('Approx Liv Area', 0)
             lines.append(f"- {addr} ({bldg}): ${float(price):,.0f}, {sqft} sqft")
     
     elif tool_name == "query_deal_of_week":
@@ -877,6 +1191,70 @@ def format_data_for_context(tool_name: str, data: dict) -> str:
             bldg = item.get('Tower Name', 'N/A')
             status = item.get('previous_status', 'N/A')
             lines.append(f"  - {addr} ({bldg}): {status}")
+    
+    elif tool_name == "get_market_stats":
+        active = data.get('active_market', {})
+        sold = data.get('sold_all_time', {})
+        lines.append(f"MARKET STATISTICS (as of {data.get('as_of', 'today')}):")
+        lines.append(f"\nACTIVE MARKET:")
+        lines.append(f"  - Total Listings: {active.get('total_listings', 0)}")
+        lines.append(f"  - Avg Price: ${active.get('avg_price', 0):,.0f}")
+        lines.append(f"  - Avg PPSF: ${active.get('avg_ppsf', 0):,.0f}")
+        lines.append(f"  - Avg DOM: {active.get('avg_dom', 0):.0f} days")
+        lines.append(f"  - Total Volume: ${active.get('total_volume', 0):,.0f}")
+        lines.append(f"\nSOLD HISTORY:")
+        lines.append(f"  - Total Sales: {sold.get('total_sales', 0):,}")
+        lines.append(f"  - Avg Price: ${sold.get('avg_price', 0):,.0f}")
+        lines.append(f"  - Avg PPSF: ${sold.get('avg_ppsf', 0):,.0f}")
+        lines.append(f"\nBuildings Tracked: {data.get('buildings_tracked', 27)} high-rises, {data.get('midrise_tracked', 6)} mid-rises")
+    
+    elif tool_name == "get_building_stats":
+        ranking = data.get('ranking', {})
+        active = data.get('active_listings', {})
+        sold = data.get('sold_history', {})
+        lines.append(f"BUILDING STATS: {data.get('building_name', 'Unknown')}")
+        lines.append(f"\nRANKING:")
+        lines.append(f"  - Score: {ranking.get('score_v2', 'N/A')}")
+        lines.append(f"  - Sales (12mo): {ranking.get('sales_12m', 'N/A')}")
+        lines.append(f"  - Sales (60d): {ranking.get('sales_60d', 'N/A')}")
+        lines.append(f"\nACTIVE LISTINGS ({active.get('count', 0)}):")
+        lines.append(f"  - Avg Price: ${active.get('avg_price', 0):,.0f}")
+        lines.append(f"  - Avg PPSF: ${active.get('avg_ppsf', 0):,.0f}")
+        lines.append(f"  - Avg DOM: {active.get('avg_dom', 0):.0f} days")
+        lines.append(f"  - By Bedroom: {active.get('by_bedroom', {})}")
+        lines.append(f"\nSOLD HISTORY ({sold.get('count', 0)} sales):")
+        lines.append(f"  - Avg Price: ${sold.get('avg_price', 0):,.0f}")
+        lines.append(f"  - Avg PPSF: ${sold.get('avg_ppsf', 0):,.0f}")
+        lines.append(f"  - Total Volume: ${sold.get('total_volume', 0):,.0f}")
+    
+    elif tool_name == "generate_cma":
+        active = data.get('active_competition', {})
+        sold = data.get('sales_history', {})
+        lines.append(f"CMA REPORT: {data.get('building_name', 'Unknown')}")
+        if data.get('bedrooms_filter'):
+            lines.append(f"Filtered by: {data.get('bedrooms_filter')} bedrooms")
+        lines.append(f"Generated: {data.get('generated_at', 'now')}")
+        lines.append(f"\nACTIVE COMPETITION ({active.get('count', 0)} listings):")
+        price_range = active.get('price_range', {})
+        ppsf_range = active.get('ppsf_range', {})
+        lines.append(f"  - Price Range: ${price_range.get('low', 0):,.0f} - ${price_range.get('high', 0):,.0f}")
+        lines.append(f"  - Avg Price: ${price_range.get('avg', 0):,.0f}")
+        lines.append(f"  - PPSF Range: ${ppsf_range.get('low', 0):,.0f} - ${ppsf_range.get('high', 0):,.0f}")
+        lines.append(f"\nSALES HISTORY ({sold.get('count', 0)} sales):")
+        sold_price = sold.get('price_range', {})
+        sold_ppsf = sold.get('ppsf_range', {})
+        lines.append(f"  - Price Range: ${sold_price.get('low', 0):,.0f} - ${sold_price.get('high', 0):,.0f}")
+        lines.append(f"  - Avg Sold Price: ${sold_price.get('avg', 0):,.0f}")
+        lines.append(f"  - PPSF Range: ${sold_ppsf.get('low', 0):,.0f} - ${sold_ppsf.get('high', 0):,.0f}")
+    
+    elif tool_name == "explain_deal_selection":
+        lines.append(f"DEAL EXPLANATION: {data.get('building', 'Unknown')}")
+        lines.append(f"MLS#: {data.get('mls_number', 'N/A')}")
+        lines.append(f"Deal Score: {data.get('deal_score', 'N/A')}")
+        lines.append(f"\nWhy this is the deal:")
+        for point in data.get('narrative_points', []):
+            lines.append(f"  • {point}")
+        lines.append(f"\n{data.get('summary', '')}")
     
     else:
         # Generic formatting
@@ -1091,7 +1469,7 @@ YOUR AWARENESS:
 
 YOUR CAPABILITIES:
 - Full access to all {doc_count} documents in Supabase airea_knowledge table
-- LIVE DATABASE QUERIES for real-time market data (12 query tools)
+- LIVE DATABASE QUERIES for real-time market data (15 query tools)
 - Semantic search across all development history and conversations
 - Self-awareness of your own code and structure
 - Ability to guide development of your own components
@@ -1167,7 +1545,7 @@ async def lifespan(app: FastAPI):
     # Startup
     logger.info("AIREA API starting up with LIVE DATA TOOLS...")
     logger.info(f"Anthropic client: {'Connected' if anthropic_client else 'Not configured'}")
-    logger.info("12 data query tools available")
+    logger.info("15 data query tools available")
     yield
     # Shutdown
     logger.info("AIREA API shutting down gracefully...")
@@ -1202,7 +1580,7 @@ async def health_check():
             "message": "AIREA is ready with live data access.",
             "total_documents": total_docs,
             "collections": {"airea_knowledge": total_docs},
-            "data_tools": 12,
+            "data_tools": 15,
             "current_date": datetime.now().strftime('%B %d, %Y')
         }
     except:
@@ -1211,7 +1589,7 @@ async def health_check():
             "message": "AIREA is ready.", 
             "total_documents": 0,
             "collections": {},
-            "data_tools": 12,
+            "data_tools": 15,
             "current_date": datetime.now().strftime('%B %d, %Y')
         }
 
@@ -1370,6 +1748,21 @@ async def get_buildings(building_type: str = "all"):
 async def get_market_report(report_type: str = "yearly", building_name: Optional[str] = None):
     """Get market report directly"""
     return generate_market_report(report_type=report_type, building_name=building_name)
+
+@app.get("/data/market-stats")
+async def api_get_market_stats():
+    """Get overall market statistics"""
+    return get_market_stats()
+
+@app.get("/data/building-stats/{building_name}")
+async def api_get_building_stats(building_name: str):
+    """Get building-specific statistics"""
+    return get_building_stats(building_name)
+
+@app.get("/data/cma/{building_name}")
+async def api_generate_cma(building_name: str, bedrooms: Optional[int] = None, target_price: Optional[float] = None):
+    """Generate CMA for building"""
+    return generate_cma(building_name, bedrooms, target_price)
 
 # ===== END NEW =====
 
