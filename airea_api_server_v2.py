@@ -585,8 +585,19 @@ def generate_market_report(
             if not data:
                 return {"count": 0, "avg_price": 0, "avg_ppsf": 0, "total_volume": 0}
             
-            prices = [float(d.get("Close Price", 0) or 0) for d in data]
-            ppsfs = [float(d.get("LP/SqFt", 0) or 0) for d in data]
+            prices = []
+            ppsfs = []
+            for d in data:
+                try:
+                    price_str = str(d.get("Close Price", "0")).replace("$", "").replace(",", "")
+                    if price_str and price_str != "0":
+                        prices.append(float(price_str))
+                except: pass
+                try:
+                    ppsf_str = str(d.get("LP/SqFt", "0")).replace("$", "").replace(",", "")
+                    if ppsf_str and ppsf_str != "0":
+                        ppsfs.append(float(ppsf_str))
+                except: pass
             
             return {
                 "count": len(data),
@@ -1509,6 +1520,14 @@ def execute_data_query(tool_name: str, params: Dict[str, Any]) -> dict:
         return {"success": False, "error": str(e)}
 
 
+def safe_price(value) -> float:
+    """Safely convert price string like '$544,999' to float."""
+    try:
+        return float(str(value).replace("$", "").replace(",", ""))
+    except:
+        return 0.0
+
+
 def format_data_for_context(tool_name: str, data: dict) -> str:
     """Format query results into readable context for Claude."""
     if not data.get("success"):
@@ -1522,28 +1541,28 @@ def format_data_for_context(tool_name: str, data: dict) -> str:
             name = r.get('Tower Name', 'Unknown')
             score = r.get('score_v2', 0)
             sales = r.get('sales_12m', 0)
-            avg_price = r.get('avg_price', 0)
-            lines.append(f"{i}. {name} - Score: {score:.2f}, Sales (12mo): {sales}, Avg Price: ${float(avg_price):,.0f}")
+            avg_price = safe_price(r.get('avg_price', 0))
+            lines.append(f"{i}. {name} - Score: {score:.2f}, Sales (12mo): {sales}, Avg Price: ${avg_price:,.0f}")
     
     elif tool_name == "query_active_listings":
         lines.append(f"ACTIVE LISTINGS ({data['count']} found):")
         for listing in data.get('listings', [])[:10]:
             addr = listing.get('Address', 'N/A')
             bldg = listing.get('Tower Name', 'N/A')
-            price = listing.get('List Price', 0)
+            price = safe_price(listing.get('List Price', 0))
             beds = listing.get('Beds Total', 0)
             sqft = listing.get('Approx Liv Area', 0)
             dom = listing.get('DOM', 0)
-            lines.append(f"- {addr} ({bldg}): ${float(price):,.0f}, {beds}BR, {sqft} sqft, {dom} DOM")
+            lines.append(f"- {addr} ({bldg}): ${price:,.0f}, {beds}BR, {sqft} sqft, {dom} DOM")
     
     elif tool_name == "query_penthouse_listings":
         lines.append(f"PENTHOUSE LISTINGS ({data['count']} found):")
         for ph in data.get('penthouses', [])[:10]:
             addr = ph.get('Address', 'N/A')
             bldg = ph.get('Tower Name', 'N/A')
-            price = ph.get('List Price', 0)
+            price = safe_price(ph.get('List Price', 0))
             sqft = ph.get('Approx Liv Area', 0)
-            lines.append(f"- {addr} ({bldg}): ${float(price):,.0f}, {sqft} sqft")
+            lines.append(f"- {addr} ({bldg}): ${price:,.0f}, {sqft} sqft")
     
     elif tool_name == "query_deal_of_week":
         lines.append(f"DEAL OF THE WEEK ({data['count']} deals found):")
@@ -1557,9 +1576,9 @@ def format_data_for_context(tool_name: str, data: dict) -> str:
         lines.append(f"RECENT SALES ({data['count']} found):")
         for sale in data.get('sales', [])[:10]:
             bldg = sale.get('Tower Name', 'N/A')
-            price = sale.get('Close Price', 0)
+            price = safe_price(sale.get('Close Price', 0))
             date = sale.get('Actual Close Date', 'N/A')
-            lines.append(f"- {bldg}: ${float(price):,.0f} on {date}")
+            lines.append(f"- {bldg}: ${price:,.0f} on {date}")
     
     elif tool_name == "generate_market_report":
         curr = data.get('current_period', {})
@@ -1600,8 +1619,8 @@ def format_data_for_context(tool_name: str, data: dict) -> str:
         for lead in data.get('leads', [])[:10]:
             addr = lead.get('Address', 'N/A')
             bldg = lead.get('Tower Name', 'N/A')
-            price = lead.get('List Price', 0)
-            lines.append(f"  - {addr} ({bldg}): ${float(price):,.0f}")
+            price = safe_price(lead.get('List Price', 0))
+            lines.append(f"  - {addr} ({bldg}): ${price:,.0f}")
     
     elif tool_name == "query_stale_listings":
         lines.append(f"STALE LISTINGS ({data['count']} expired/withdrawn):")

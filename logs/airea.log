@@ -974,3 +974,7 @@ INFO:     127.0.0.1:49825 - "GET /data/buildings HTTP/1.1" 200 OK
 INFO:     127.0.0.1:49828 - "GET /data/rankings?top_n=3 HTTP/1.1" 200 OK
 INFO:     127.0.0.1:56582 - "GET /data/penthouses?limit=2 HTTP/1.1" 200 OK
 INFO:     127.0.0.1:56770 - "GET /data/active-listings?limit=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61817 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62112 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62407 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62702 - "GET /health HTTP/1.1" 200 OK

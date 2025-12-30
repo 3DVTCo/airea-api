@@ -4,7 +4,7 @@ AIREA Data Tools - MCP Server for LVHR Platform
 ================================================
 Provides Claude Desktop with live Supabase query capabilities.
 
-12 TOOLS AVAILABLE:
+15 TOOLS AVAILABLE:
 
 DATA QUERY (8):
 - query_active_listings: Get active listings by building or overall
@@ -24,6 +24,11 @@ CONTENT (2):
 - explain_deal_selection: Explain Deal of Week selection (NO "discount" language)
 - generate_market_report: Monthly/quarterly/yearly market reports
 
+TEAM TASKS (3):
+- create_team_task: Create task in Team Workspace Kanban
+- get_team_tasks: Get tasks from Kanban board
+- update_task_status: Update task status/priority
+
 VERIFIED TABLES USED:
 - lvhr_master (source of truth)
 - building_rankings / midrise_rankings
@@ -32,6 +37,7 @@ VERIFIED TABLES USED:
 - sales
 - airea_knowledge
 - hot_list / stale_listings_prospecting
+- team_tasks / user_profiles
 
 Usage:
   python airea_data_tools.py
@@ -55,7 +61,7 @@ import os
 import sys
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Any, Optional
 
 # MCP SDK imports
@@ -313,7 +319,7 @@ TOOLS = [
     ),
     
     # ==========================================================================
-    # PROSPECTING TOOLS (3)
+    # PROSPECTING TOOLS (2)
     # ==========================================================================
     Tool(
         name="get_hot_leads",
@@ -419,7 +425,108 @@ TOOLS = [
             },
             "required": ["report_type"]
         }
-    )
+    ),
+    
+    # ==========================================================================
+    # TEAM TASK TOOLS (3)
+    # ==========================================================================
+    Tool(
+        name="create_team_task",
+        description="""Create a task in the Team Workspace Kanban board.
+        
+        Use for adding new tasks, assignments, and deadlines.
+        Status: todo | in_progress | done
+        Priority: low | medium | high""",
+        inputSchema={
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "description": "Task title (required)"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Task details"
+                },
+                "status": {
+                    "type": "string",
+                    "enum": ["todo", "in_progress", "done"],
+                    "description": "Task status (default: todo)",
+                    "default": "todo"
+                },
+                "priority": {
+                    "type": "string",
+                    "enum": ["low", "medium", "high"],
+                    "description": "Task priority (default: medium)",
+                    "default": "medium"
+                },
+                "assigned_to_name": {
+                    "type": "string",
+                    "description": "Team member name (e.g., Kayren, Enrico, Ted)"
+                },
+                "due_date": {
+                    "type": "string",
+                    "description": "Due date in YYYY-MM-DD format"
+                }
+            },
+            "required": ["title"]
+        }
+    ),
+    Tool(
+        name="get_team_tasks",
+        description="""Get tasks from the Team Workspace Kanban board.
+        
+        Filter by status or priority. Returns task list with details.""",
+        inputSchema={
+            "type": "object",
+            "properties": {
+                "status": {
+                    "type": "string",
+                    "enum": ["todo", "in_progress", "done"],
+                    "description": "Filter by status"
+                },
+                "priority": {
+                    "type": "string",
+                    "enum": ["low", "medium", "high"],
+                    "description": "Filter by priority"
+                },
+                "limit": {
+                    "type": "integer",
+                    "description": "Max tasks to return (default: 20)",
+                    "default": 20
+                }
+            }
+        }
+    ),
+    Tool(
+        name="update_task_status",
+        description="""Update a task's status or priority in Team Workspace.
+        
+        Move tasks between columns or change priority.""",
+        inputSchema={
+            "type": "object",
+            "properties": {
+                "task_id": {
+                    "type": "string",
+                    "description": "Task UUID (or use task_title)"
+                },
+                "task_title": {
+                    "type": "string",
+                    "description": "Search by title (or use task_id)"
+                },
+                "new_status": {
+                    "type": "string",
+                    "enum": ["todo", "in_progress", "done"],
+                    "description": "New status"
+                },
+                "new_priority": {
+                    "type": "string",
+                    "enum": ["low", "medium", "high"],
+                    "description": "New priority"
+                }
+            }
+        }
+    ),
 ]
 
 # =============================================================================
@@ -707,7 +814,6 @@ def query_penthouse_listings(limit: int = 20) -> dict:
 
 def get_hot_leads(
     building_name: Optional[str] = None,
-    min_years_past_avg: float = 0,
     limit: int = 20
 ) -> dict:
     """Get properties from hot_list joined with lvhr_master for full details."""
@@ -782,7 +888,6 @@ def query_stale_listings(
             query = query.eq('"Tower Name"', building_name)
         
         # Filter by date_marked_stale
-        from datetime import datetime, timedelta
         cutoff_date = (datetime.now() - timedelta(days=months_back * 30)).strftime('%Y-%m-%d')
         query = query.gte("date_marked_stale", cutoff_date)
         
@@ -796,9 +901,6 @@ def query_stale_listings(
             "months_searched": months_back,
             "listings": response.data
         }
-        
-    except Exception as e:
-        return {"success": False, "error": str(e)}
         
     except Exception as e:
         return {"success": False, "error": str(e)}
@@ -959,6 +1061,140 @@ def generate_market_report(
 
 
 # =============================================================================
+# TEAM TASK TOOL IMPLEMENTATIONS
+# =============================================================================
+
+def create_team_task(
+    title: str,
+    description: Optional[str] = None,
+    status: str = "todo",
+    priority: str = "medium",
+    assigned_to_name: Optional[str] = None,
+    due_date: Optional[str] = None
+) -> dict:
+    """Create a task in Team Workspace Kanban board."""
+    try:
+        supabase = get_supabase_client()
+        
+        task_data = {
+            "title": title,
+            "status": status,
+            "priority": priority
+        }
+        
+        if description:
+            task_data["description"] = description
+        
+        if assigned_to_name:
+            user_result = supabase.table("user_profiles").select("id, full_name").ilike("full_name", f"%{assigned_to_name}%").execute()
+            if user_result.data:
+                task_data["assigned_to"] = user_result.data[0]["id"]
+        
+        if due_date:
+            task_data["due_date"] = due_date
+        
+        result = supabase.table("team_tasks").insert(task_data).execute()
+        
+        return {
+            "success": True,
+            "task_id": str(result.data[0]["id"]),
+            "title": title,
+            "status": status,
+            "priority": priority,
+            "message": f"Task '{title}' added to {status.replace('_', ' ').title()}" + 
+                       (f", assigned to {assigned_to_name}" if assigned_to_name else "") +
+                       (f", due {due_date}" if due_date else "")
+        }
+    except Exception as e:
+        return {"success": False, "error": str(e)}
+
+
+def get_team_tasks(
+    status: Optional[str] = None,
+    priority: Optional[str] = None,
+    limit: int = 20
+) -> dict:
+    """Get tasks from Team Workspace Kanban board."""
+    try:
+        supabase = get_supabase_client()
+        
+        query = supabase.table("team_tasks").select(
+            "id, title, description, status, priority, due_date, created_at"
+        ).order("created_at", desc=True).limit(limit)
+        
+        if status:
+            query = query.eq("status", status)
+        if priority:
+            query = query.eq("priority", priority)
+        
+        result = query.execute()
+        
+        tasks = []
+        for task in result.data:
+            tasks.append({
+                "id": str(task["id"]),
+                "title": task["title"],
+                "description": task.get("description"),
+                "status": task["status"],
+                "priority": task["priority"],
+                "due_date": task.get("due_date"),
+                "created_at": task.get("created_at")
+            })
+        
+        return {
+            "success": True,
+            "count": len(tasks),
+            "tasks": tasks
+        }
+    except Exception as e:
+        return {"success": False, "error": str(e)}
+
+
+def update_task_status(
+    task_id: Optional[str] = None,
+    task_title: Optional[str] = None,
+    new_status: Optional[str] = None,
+    new_priority: Optional[str] = None
+) -> dict:
+    """Update a task status or priority."""
+    if not task_id and not task_title:
+        return {"success": False, "error": "Provide task_id or task_title"}
+    
+    try:
+        supabase = get_supabase_client()
+        
+        if task_id:
+            existing = supabase.table("team_tasks").select("id, title").eq("id", task_id).execute()
+        else:
+            existing = supabase.table("team_tasks").select("id, title").ilike("title", f"%{task_title}%").execute()
+        
+        if not existing.data:
+            return {"success": False, "error": "Task not found"}
+        
+        task = existing.data[0]
+        update_data = {}
+        
+        if new_status:
+            update_data["status"] = new_status
+        if new_priority:
+            update_data["priority"] = new_priority
+        
+        if not update_data:
+            return {"success": False, "error": "Nothing to update"}
+        
+        supabase.table("team_tasks").update(update_data).eq("id", task["id"]).execute()
+        
+        return {
+            "success": True,
+            "task_id": str(task["id"]),
+            "title": task["title"],
+            "message": f"Task '{task['title']}' updated"
+        }
+    except Exception as e:
+        return {"success": False, "error": str(e)}
+
+
+# =============================================================================
 # TOOL DISPATCHER
 # =============================================================================
 
@@ -980,6 +1216,10 @@ def execute_tool(name: str, arguments: dict) -> Any:
         # Content Tools
         "explain_deal_selection": explain_deal_selection,
         "generate_market_report": generate_market_report,
+        # Team Task Tools
+        "create_team_task": create_team_task,
+        "get_team_tasks": get_team_tasks,
+        "update_task_status": update_task_status,
     }
     
     if name not in tool_map:
