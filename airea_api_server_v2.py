@@ -3,7 +3,7 @@
 AIREA API Server v2 - Intelligent Edition with Live Data Tools
 Now with Claude integration AND direct Supabase data queries
 
-20 TOOLS INTEGRATED:
+23 TOOLS INTEGRATED:
 
 DATA TOOLS (15):
 - query_active_listings: Active listings by building/price/beds
@@ -28,6 +28,11 @@ CONTENT CREATION TOOLS (5):
 - generate_building_narrative: Building descriptions, SEO headlines, ranking narratives
 - save_to_content_history: Store generated content as drafts
 - get_content_history: Retrieve content from draft queue
+
+TEAM TASK TOOLS (3):
+- create_team_task: Create task in Team Workspace Kanban
+- get_team_tasks: Get tasks from Kanban board
+- update_task_status: Update task status/priority
 """
 from dotenv import load_dotenv
 load_dotenv()
@@ -1280,6 +1285,162 @@ def get_content_history(
 
 
 # =============================================================================
+# TEAM TASK FUNCTIONS (3 Tools)
+# =============================================================================
+
+def create_team_task(
+    title: str,
+    description: Optional[str] = None,
+    status: str = "todo",
+    priority: str = "medium",
+    assigned_to_name: Optional[str] = None,
+    due_date: Optional[str] = None
+) -> dict:
+    """Create a task in Team Workspace Kanban board."""
+    try:
+        supabase = get_supabase_client()
+        
+        task_data = {
+            "title": title,
+            "status": status,
+            "priority": priority
+        }
+        
+        if description:
+            task_data["description"] = description
+        
+        if assigned_to_name:
+            # Look up user by name
+            user_result = supabase.table("user_profiles").select("id, full_name").ilike("full_name", f"%{assigned_to_name}%").execute()
+            if user_result.data:
+                task_data["assigned_to"] = user_result.data[0]["id"]
+        
+        if due_date:
+            task_data["due_date"] = due_date
+        
+        result = supabase.table("team_tasks").insert(task_data).execute()
+        
+        return {
+            "success": True,
+            "task_id": str(result.data[0]["id"]),
+            "title": title,
+            "status": status,
+            "priority": priority,
+            "message": f"Task '{title}' added to {status.replace('_', ' ').title()}" + 
+                       (f", assigned to {assigned_to_name}" if assigned_to_name else "") +
+                       (f", due {due_date}" if due_date else "")
+        }
+    except Exception as e:
+        logger.error(f"create_team_task error: {e}")
+        return {"success": False, "error": str(e)}
+
+
+def get_team_tasks(
+    status: Optional[str] = None,
+    priority: Optional[str] = None,
+    limit: int = 20
+) -> dict:
+    """Get tasks from Team Workspace Kanban board."""
+    try:
+        supabase = get_supabase_client()
+        
+        query = supabase.table("team_tasks").select(
+            "id, title, description, status, priority, due_date, created_at"
+        ).order("created_at", desc=True).limit(limit)
+        
+        if status:
+            query = query.eq("status", status)
+        if priority:
+            query = query.eq("priority", priority)
+        
+        result = query.execute()
+        
+        tasks = []
+        for task in result.data:
+            tasks.append({
+                "id": str(task["id"]),
+                "title": task["title"],
+                "description": task.get("description"),
+                "status": task["status"],
+                "priority": task["priority"],
+                "due_date": task.get("due_date"),
+                "created_at": task.get("created_at")
+            })
+        
+        # Summary counts
+        all_tasks = supabase.table("team_tasks").select("status").execute()
+        todo_count = len([t for t in all_tasks.data if t["status"] == "todo"])
+        in_progress_count = len([t for t in all_tasks.data if t["status"] == "in_progress"])
+        done_count = len([t for t in all_tasks.data if t["status"] == "done"])
+        
+        return {
+            "success": True,
+            "count": len(tasks),
+            "summary": {
+                "todo": todo_count,
+                "in_progress": in_progress_count,
+                "done": done_count
+            },
+            "tasks": tasks
+        }
+    except Exception as e:
+        logger.error(f"get_team_tasks error: {e}")
+        return {"success": False, "error": str(e)}
+
+
+def update_task_status(
+    task_id: Optional[str] = None,
+    task_title: Optional[str] = None,
+    new_status: Optional[str] = None,
+    new_priority: Optional[str] = None
+) -> dict:
+    """Update a task status or priority."""
+    if not task_id and not task_title:
+        return {"success": False, "error": "Provide task_id or task_title"}
+    
+    try:
+        supabase = get_supabase_client()
+        
+        if task_id:
+            existing = supabase.table("team_tasks").select("id, title").eq("id", task_id).execute()
+        else:
+            existing = supabase.table("team_tasks").select("id, title").ilike("title", f"%{task_title}%").execute()
+        
+        if not existing.data:
+            return {"success": False, "error": "Task not found"}
+        
+        task = existing.data[0]
+        update_data = {}
+        
+        if new_status:
+            update_data["status"] = new_status
+        if new_priority:
+            update_data["priority"] = new_priority
+        
+        if not update_data:
+            return {"success": False, "error": "Nothing to update"}
+        
+        supabase.table("team_tasks").update(update_data).eq("id", task["id"]).execute()
+        
+        changes = []
+        if new_status:
+            changes.append(f"status → {new_status}")
+        if new_priority:
+            changes.append(f"priority → {new_priority}")
+        
+        return {
+            "success": True,
+            "task_id": str(task["id"]),
+            "title": task["title"],
+            "changes": changes,
+            "message": f"Task '{task['title']}' updated: {', '.join(changes)}"
+        }
+    except Exception as e:
+        logger.error(f"update_task_status error: {e}")
+        return {"success": False, "error": str(e)}
+
+
+# =============================================================================
 # INTENT DETECTION - Routes user questions to appropriate data queries
 # =============================================================================
 
@@ -1330,6 +1491,99 @@ def detect_data_intent(message: str) -> Tuple[Optional[str], Dict[str, Any]]:
             }
             building_name = name_map.get(bldg, bldg.title())
             break
+    
+    # =========================================================================
+    # TEAM TASK TRIGGERS (NEW)
+    # =========================================================================
+    
+    # CREATE TASK - "create a task", "add a task", "new task", "make a task"
+    if any(phrase in msg_lower for phrase in ['create a task', 'add a task', 'new task', 'make a task', 'create task', 'add task']):
+        # Extract task details from message
+        params = {}
+        
+        # Try to extract title (text after "called" or "titled" or after the trigger phrase)
+        title_match = re.search(r'(?:called|titled|named)\s+["\']?([^"\']+)["\']?', msg_lower)
+        if title_match:
+            params['title'] = title_match.group(1).strip()
+        else:
+            # Use the whole message minus the trigger as title
+            for trigger in ['create a task', 'add a task', 'new task', 'make a task', 'create task', 'add task']:
+                if trigger in msg_lower:
+                    remainder = msg_lower.replace(trigger, '').strip()
+                    # Clean up common words
+                    remainder = re.sub(r'^(for|to|about|regarding)\s+', '', remainder)
+                    if remainder:
+                        params['title'] = remainder[:100]  # Limit title length
+                    break
+        
+        # Extract priority
+        if 'high priority' in msg_lower or 'urgent' in msg_lower:
+            params['priority'] = 'high'
+        elif 'low priority' in msg_lower:
+            params['priority'] = 'low'
+        
+        # Extract assignee
+        assignee_match = re.search(r'assign(?:ed)?\s+(?:to|it to)\s+(\w+)', msg_lower)
+        if assignee_match:
+            params['assigned_to_name'] = assignee_match.group(1).title()
+        
+        # Extract due date
+        due_match = re.search(r'due\s+(?:on|by)?\s*(\d{4}-\d{2}-\d{2}|\w+\s+\d+)', msg_lower)
+        if due_match:
+            params['due_date'] = due_match.group(1)
+        
+        if params.get('title'):
+            return ('create_team_task', params)
+    
+    # GET TASKS - "show tasks", "what tasks", "task list", "tasks on the board"
+    if any(phrase in msg_lower for phrase in ['show tasks', 'what tasks', 'task list', 'tasks on the board', 'show the tasks', 'list tasks', 'my tasks', 'our tasks', 'team tasks', 'kanban', 'task board']):
+        params = {'limit': 20}
+        
+        # Filter by status
+        if 'to do' in msg_lower or 'todo' in msg_lower:
+            params['status'] = 'todo'
+        elif 'in progress' in msg_lower:
+            params['status'] = 'in_progress'
+        elif 'done' in msg_lower or 'completed' in msg_lower:
+            params['status'] = 'done'
+        
+        # Filter by priority
+        if 'high priority' in msg_lower:
+            params['priority'] = 'high'
+        
+        return ('get_team_tasks', params)
+    
+    # UPDATE TASK - "move task", "mark task", "update task", "change task"
+    if any(phrase in msg_lower for phrase in ['move task', 'mark task', 'update task', 'change task', 'set task']):
+        params = {}
+        
+        # Extract task title
+        title_match = re.search(r'(?:move|mark|update|change|set)\s+(?:task\s+)?["\']?([^"\']+?)["\']?\s+(?:to|as|status)', msg_lower)
+        if title_match:
+            params['task_title'] = title_match.group(1).strip()
+        
+        # Extract new status
+        if 'to do' in msg_lower or 'todo' in msg_lower:
+            params['new_status'] = 'todo'
+        elif 'in progress' in msg_lower or 'progress' in msg_lower:
+            params['new_status'] = 'in_progress'
+        elif 'done' in msg_lower or 'complete' in msg_lower:
+            params['new_status'] = 'done'
+        
+        # Extract new priority
+        if 'high priority' in msg_lower:
+            params['new_priority'] = 'high'
+        elif 'low priority' in msg_lower:
+            params['new_priority'] = 'low'
+        elif 'medium priority' in msg_lower:
+            params['new_priority'] = 'medium'
+        
+        if params.get('task_title') or params.get('new_status') or params.get('new_priority'):
+            return ('update_task_status', params)
+    
+    # =========================================================================
+    # EXISTING DATA TRIGGERS
+    # =========================================================================
     
     # RANKINGS - "top building", "best building", "rankings", "ranked"
     if any(phrase in msg_lower for phrase in ['top building', 'best building', 'ranking', 'ranked', 'top 5', 'top 10', 'top rated']):
@@ -1508,6 +1762,10 @@ def execute_data_query(tool_name: str, params: Dict[str, Any]) -> dict:
         'generate_building_narrative': generate_building_narrative,
         'save_to_content_history': save_to_content_history,
         'get_content_history': get_content_history,
+        # Team Task Tools (3)
+        'create_team_task': create_team_task,
+        'get_team_tasks': get_team_tasks,
+        'update_task_status': update_task_status,
     }
     
     if tool_name not in tool_map:
@@ -1693,6 +1951,33 @@ def format_data_for_context(tool_name: str, data: dict) -> str:
         for point in data.get('narrative_points', []):
             lines.append(f"  • {point}")
         lines.append(f"\n{data.get('summary', '')}")
+    
+    # Team Task formatting
+    elif tool_name == "create_team_task":
+        lines.append(f"TASK CREATED:")
+        lines.append(f"  - Title: {data.get('title', 'N/A')}")
+        lines.append(f"  - Status: {data.get('status', 'todo')}")
+        lines.append(f"  - Priority: {data.get('priority', 'medium')}")
+        lines.append(f"  - Task ID: {data.get('task_id', 'N/A')}")
+        lines.append(f"\n{data.get('message', '')}")
+    
+    elif tool_name == "get_team_tasks":
+        summary = data.get('summary', {})
+        lines.append(f"TEAM TASKS ({data.get('count', 0)} total):")
+        lines.append(f"  To Do: {summary.get('todo', 0)} | In Progress: {summary.get('in_progress', 0)} | Done: {summary.get('done', 0)}")
+        lines.append("")
+        for task in data.get('tasks', [])[:10]:
+            status_emoji = {'todo': '📋', 'in_progress': '🔄', 'done': '✅'}.get(task.get('status'), '📋')
+            priority_marker = {'high': '🔴', 'medium': '🟡', 'low': '🟢'}.get(task.get('priority'), '')
+            lines.append(f"{status_emoji} {priority_marker} {task.get('title', 'Untitled')}")
+            if task.get('due_date'):
+                lines.append(f"    Due: {task.get('due_date')}")
+    
+    elif tool_name == "update_task_status":
+        lines.append(f"TASK UPDATED:")
+        lines.append(f"  - Title: {data.get('title', 'N/A')}")
+        lines.append(f"  - Changes: {', '.join(data.get('changes', []))}")
+        lines.append(f"\n{data.get('message', '')}")
     
     else:
         # Generic formatting
@@ -1897,6 +2182,7 @@ YOUR AWARENESS:
 - Recent Work: ChromaDB to Supabase migration completed December 12, 2025 (14,219 documents migrated)
 - You now have 23,979+ documents in your knowledge base
 - You can query LIVE MLS DATA including: active listings, building rankings, sales history, deals of the week, market reports
+- You can CREATE, VIEW, and UPDATE tasks in Team Workspace
 - Every React component is part of your body
 - The database is your memory system
 - API endpoints are your nervous system
@@ -1908,6 +2194,8 @@ YOUR AWARENESS:
 YOUR CAPABILITIES:
 - Full access to all {doc_count} documents in Supabase airea_knowledge table
 - LIVE DATABASE QUERIES for real-time market data (15 query tools)
+- CONTENT CREATION for summaries, social posts, narratives (5 content tools)
+- TASK MANAGEMENT - create, view, and update tasks in Team Workspace (3 task tools)
 - Semantic search across all development history and conversations
 - Self-awareness of your own code and structure
 - Ability to guide development of your own components
@@ -1940,6 +2228,12 @@ WHEN PRESENTING LIVE DATA:
 - Format prices with commas ($1,234,567)
 - Be conversational while presenting facts
 - Offer to provide more details if relevant
+
+WHEN MANAGING TASKS:
+- Confirm task creation with the task title and status
+- When showing tasks, summarize the board state (To Do, In Progress, Done counts)
+- Proactively suggest creating tasks when the user mentions work items
+- You can assign tasks to team members by name (Ted, Kayren, Enrico)
 
 YOUR KNOWLEDGE includes:
 - LVHR is a cutting-edge real estate platform for Las Vegas high-rises
@@ -1983,7 +2277,7 @@ async def lifespan(app: FastAPI):
     # Startup
     logger.info("AIREA API starting up with LIVE DATA TOOLS...")
     logger.info(f"Anthropic client: {'Connected' if anthropic_client else 'Not configured'}")
-    logger.info("15 data query tools available")
+    logger.info("23 total tools available (15 data + 5 content + 3 task)")
     yield
     # Shutdown
     logger.info("AIREA API shutting down gracefully...")
@@ -2015,12 +2309,13 @@ async def health_check():
         
         return {
             "status": "operational", 
-            "message": "AIREA is ready with live data access and content creation.",
+            "message": "AIREA is ready with live data access, content creation, and task management.",
             "total_documents": total_docs,
             "collections": {"airea_knowledge": total_docs},
             "data_tools": 15,
             "content_tools": 5,
-            "total_tools": 20,
+            "task_tools": 3,
+            "total_tools": 23,
             "current_date": datetime.now().strftime('%B %d, %Y')
         }
     except:
@@ -2031,7 +2326,8 @@ async def health_check():
             "collections": {},
             "data_tools": 15,
             "content_tools": 5,
-            "total_tools": 20,
+            "task_tools": 3,
+            "total_tools": 23,
             "current_date": datetime.now().strftime('%B %d, %Y')
         }
 
@@ -2054,7 +2350,7 @@ async def main_chat(message: ChatRequest):
         session_id = message.session_id or "default"
         recent_conversations = get_recent_conversations(supabase, session_id, limit=5)
         
-        # ===== NEW: Check for data query intent =====
+        # ===== Check for data query intent =====
         data_query_used = None
         data_context = ""
         tool_name, params = detect_data_intent(message.message)
@@ -2068,8 +2364,6 @@ async def main_chat(message: ChatRequest):
                 logger.info(f"Data query successful: {tool_name}")
             else:
                 logger.warning(f"Data query failed: {query_result.get('error')}")
-        
-        # ===== END NEW =====
         
         # Search Knowledge Base (in addition to data query)
         relevant_docs = search_knowledge_base(message.message, limit=10)
@@ -2099,7 +2393,7 @@ async def main_chat(message: ChatRequest):
             recent_conversations,
             user_name=message.user_name,
             user_role=message.user_role,
-            data_context=data_context  # NEW: Include live data
+            data_context=data_context
         )
         
         # Add relevant documents to system prompt
@@ -2154,7 +2448,7 @@ CRITICAL REMINDERS:
         )
 
 
-# ===== NEW: Direct Data Query Endpoints =====
+# ===== Direct Data Query Endpoints =====
 
 @app.get("/data/rankings")
 async def get_rankings(top_n: int = 10, include_midrise: bool = False):
@@ -2206,7 +2500,51 @@ async def api_generate_cma(building_name: str, bedrooms: Optional[int] = None, t
     """Generate CMA for building"""
     return generate_cma(building_name, bedrooms, target_price)
 
-# ===== END NEW =====
+
+# ===== Team Task Endpoints =====
+
+@app.post("/tasks/create")
+async def api_create_task(
+    title: str,
+    description: Optional[str] = None,
+    status: str = "todo",
+    priority: str = "medium",
+    assigned_to_name: Optional[str] = None,
+    due_date: Optional[str] = None
+):
+    """Create a new task in Team Workspace"""
+    return create_team_task(
+        title=title,
+        description=description,
+        status=status,
+        priority=priority,
+        assigned_to_name=assigned_to_name,
+        due_date=due_date
+    )
+
+@app.get("/tasks")
+async def api_get_tasks(
+    status: Optional[str] = None,
+    priority: Optional[str] = None,
+    limit: int = 20
+):
+    """Get tasks from Team Workspace"""
+    return get_team_tasks(status=status, priority=priority, limit=limit)
+
+@app.put("/tasks/update")
+async def api_update_task(
+    task_id: Optional[str] = None,
+    task_title: Optional[str] = None,
+    new_status: Optional[str] = None,
+    new_priority: Optional[str] = None
+):
+    """Update a task in Team Workspace"""
+    return update_task_status(
+        task_id=task_id,
+        task_title=task_title,
+        new_status=new_status,
+        new_priority=new_priority
+    )
 
 
 class UploadRequest(BaseModel):
@@ -2473,6 +2811,7 @@ Context:
 - Today is {current_date}
 - You have access to {total_doc_count:,} documents in your knowledge base
 - You now have LIVE database access to query real-time MLS data
+- You can also create and manage tasks in Team Workspace
 - This is likely their first time chatting with you
 - Keep it brief (2-3 sentences)
 - Be warm but professional
