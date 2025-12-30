@@ -728,11 +728,20 @@ def query_sales_history(
     end_date: Optional[str] = None,
     limit: int = 50
 ) -> dict:
-    """Query historical sales data."""
+    """Query historical sales data from lvhr_master (source of truth)."""
     try:
         supabase = get_supabase_client()
         
-        query = supabase.table("sales").select("*")
+        # Query lvhr_master directly - it has ALL sales data
+        # S = Sold (first 365 days), H = Historical (day 366+)
+        query = supabase.table("lvhr_master").select(
+            '"ML#", "Address", "Tower Name", "Close Price", "SP/SqFt", '
+            '"Beds Total", "Baths Total", "Approx Liv Area", "Actual Close Date", '
+            '"Stat", "actual_close_date_parsed"'
+        )
+        
+        # Filter for sold statuses only
+        query = query.in_('"Stat"', ['S', 'H'])
         
         if building_name:
             query = query.eq('"Tower Name"', building_name)
@@ -744,13 +753,15 @@ def query_sales_history(
         if end_date:
             query = query.lte("actual_close_date_parsed", end_date)
         
-        # Use actual_close_date_parsed for proper date sorting (not string sort)
+        # Use actual_close_date_parsed for proper date sorting
         query = query.order("actual_close_date_parsed", desc=True).limit(limit)
         response = query.execute()
         
         return {
             "success": True,
             "count": len(response.data),
+            "source": "lvhr_master",
+            "status_codes": ["S", "H"],
             "sales": response.data
         }
         
