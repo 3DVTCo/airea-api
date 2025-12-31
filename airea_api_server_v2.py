@@ -2430,7 +2430,7 @@ CRITICAL REMINDERS:
             model="claude-sonnet-4-20250514", 
             system=system_prompt,
             messages=[{"role": "user", "content": message.message}],
-            max_tokens=2048
+            max_tokens=4096
         )
         airea_response = response.content[0].text
         logger.info(f"Response received: {airea_response[:100]}")
