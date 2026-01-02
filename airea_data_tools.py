@@ -621,27 +621,34 @@ def query_sales_history(
     end_date: Optional[str] = None,
     limit: int = 50
 ) -> dict:
-    """Query historical sales data."""
+    """Query historical sales data from lvhr_master (source of truth)."""
     try:
         supabase = get_supabase_client()
         
-        query = supabase.table("sales").select("*")
+        # Query lvhr_master directly - the source of truth
+        # S = Sold (first 365 days), H = Historical (day 366+)
+        query = supabase.table("lvhr_master").select("*")
+        
+        # Filter for sold statuses only
+        query = query.in_('"Stat"', ['S', 'H'])
         
         if building_name:
             query = query.eq('"Tower Name"', building_name)
         
         if start_date:
-            query = query.gte('"actual_close_date_parsed"', start_date)
+            query = query.gte("actual_close_date_parsed", start_date)
         
         if end_date:
-            query = query.lte('"actual_close_date_parsed"', end_date)
+            query = query.lte("actual_close_date_parsed", end_date)
         
-        query = query.order('"actual_close_date_parsed"', desc=True).limit(limit)
+        query = query.order("actual_close_date_parsed", desc=True).limit(limit)
         response = query.execute()
         
         return {
             "success": True,
             "count": len(response.data),
+            "source": "lvhr_master",
+            "status_codes": ["S", "H"],
             "sales": response.data
         }
         
@@ -904,20 +911,22 @@ def generate_market_report(
     try:
         supabase = get_supabase_client()
         
-        # Get sales data for both years
-        current_query = supabase.table("sales").select("*")
-        compare_query = supabase.table("sales").select("*")
+        # Get sales data for both years from lvhr_master (source of truth)
+        # S = Sold (first 365 days), H = Historical (day 366+)
+        current_query = supabase.table("lvhr_master").select("*").in_('"Stat"', ['S', 'H'])
+        compare_query = supabase.table("lvhr_master").select("*").in_('"Stat"', ['S', 'H'])
         
         if building_name:
             current_query = current_query.eq('"Tower Name"', building_name)
             compare_query = compare_query.eq('"Tower Name"', building_name)
         
         # Date filters based on report type
+        # Use actual_close_date_parsed (proper DATE column, no quotes needed)
         if report_type == "yearly":
-            current_query = current_query.gte('"actual_close_date_parsed"', f"{year}-01-01")
-            current_query = current_query.lte('"actual_close_date_parsed"', f"{year}-12-31")
-            compare_query = compare_query.gte('"actual_close_date_parsed"', f"{compare_to_year}-01-01")
-            compare_query = compare_query.lte('"actual_close_date_parsed"', f"{compare_to_year}-12-31")
+            current_query = current_query.gte("actual_close_date_parsed", f"{year}-01-01")
+            current_query = current_query.lte("actual_close_date_parsed", f"{year}-12-31")
+            compare_query = compare_query.gte("actual_close_date_parsed", f"{compare_to_year}-01-01")
+            compare_query = compare_query.lte("actual_close_date_parsed", f"{compare_to_year}-12-31")
         
         current_response = current_query.execute()
         compare_response = compare_query.execute()

@@ -580,9 +580,10 @@ def generate_market_report(
     try:
         supabase = get_supabase_client()
         
-        # Get sales data for both years
-        current_query = supabase.table("sales").select("*")
-        compare_query = supabase.table("sales").select("*")
+        # Get sales data for both years from lvhr_master (source of truth)
+        # S = Sold (first 365 days), H = Historical (day 366+)
+        current_query = supabase.table("lvhr_master").select("*").in_('"Stat"', ['S', 'H'])
+        compare_query = supabase.table("lvhr_master").select("*").in_('"Stat"', ['S', 'H'])
         
         if building_name:
             current_query = current_query.eq('"Tower Name"', building_name)
