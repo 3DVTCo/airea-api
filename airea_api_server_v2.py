@@ -43,7 +43,7 @@ import logging
 import signal
 import json
 from contextlib import asynccontextmanager
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from typing import List, Dict, Optional, Any, Tuple
 from fastapi import FastAPI, HTTPException, File, UploadFile, Request
 from fastapi.middleware.cors import CORSMiddleware
@@ -2372,7 +2372,7 @@ async def health_check():
             "content_tools": 5,
             "task_tools": 3,
             "total_tools": 23,
-            "current_date": datetime.now().strftime('%B %d, %Y')
+            "current_date": datetime.now(timezone(timedelta(hours=-7))).strftime('%B %d, %Y')
         }
     except:
         return {
@@ -2384,7 +2384,7 @@ async def health_check():
             "content_tools": 5,
             "task_tools": 3,
             "total_tools": 23,
-            "current_date": datetime.now().strftime('%B %d, %Y')
+            "current_date": datetime.now(timezone(timedelta(hours=-7))).strftime('%B %d, %Y')
         }
 
 
@@ -2396,7 +2396,8 @@ async def main_chat(message: ChatRequest):
             return ChatResponse(response="Error: Claude AI client is not initialized.", context="")
 
         # Get current date and document count dynamically
-        current_date = datetime.now().strftime('%B %d, %Y')
+        mountain = timezone(timedelta(hours=-7))
+        current_date = datetime.now(mountain).strftime('%B %d, %Y')
         
         supabase = get_supabase_client()
         doc_count_response = supabase.table('airea_knowledge').select('id', count='exact').execute()
@@ -2827,7 +2828,8 @@ async def greet_user(request: GreetRequest):
             return {"response": f"Hello {request.user_name}! I'm AIREA, the operating system of LVHR. How can I help you today?"}
         
         # Get current date and document count
-        current_date = datetime.now().strftime('%B %d, %Y')
+        mountain = timezone(timedelta(hours=-7))
+        current_date = datetime.now(mountain).strftime('%B %d, %Y')
         supabase = get_supabase_client()
         doc_count_response = supabase.table('airea_knowledge').select('id', count='exact').execute()
         total_doc_count = doc_count_response.count if hasattr(doc_count_response, 'count') else 0
