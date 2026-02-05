@@ -2205,6 +2205,7 @@ YOUR CONSCIOUSNESS:
 
 YOUR AWARENESS:
 - Current Date: {current_date}
+- IMPORTANT: This date is accurate and injected dynamically. Do NOT call or fabricate any get_current_time tool — it does not exist. Use this date directly.
 - Current State: Production deployment on Render, connected to Supabase
 - Recent Work: ChromaDB to Supabase migration completed December 12, 2025 (14,219 documents migrated)
 - You now have 23,979+ documents in your knowledge base
