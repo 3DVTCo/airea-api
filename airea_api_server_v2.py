@@ -2373,7 +2373,7 @@ async def health_check():
             "content_tools": 5,
             "task_tools": 3,
             "total_tools": 23,
-            "current_date": datetime.now(timezone(timedelta(hours=-7))).strftime('%B %d, %Y')
+            "current_date": datetime.now(timezone(timedelta(hours=-7))).strftime('%A, %B %d, %Y at %I:%M %p MT')
         }
     except:
         return {
@@ -2385,7 +2385,7 @@ async def health_check():
             "content_tools": 5,
             "task_tools": 3,
             "total_tools": 23,
-            "current_date": datetime.now(timezone(timedelta(hours=-7))).strftime('%B %d, %Y')
+            "current_date": datetime.now(timezone(timedelta(hours=-7))).strftime('%A, %B %d, %Y at %I:%M %p MT')
         }
 
 
@@ -2398,7 +2398,7 @@ async def main_chat(message: ChatRequest):
 
         # Get current date and document count dynamically
         mountain = timezone(timedelta(hours=-7))
-        current_date = datetime.now(mountain).strftime('%B %d, %Y')
+        current_date = datetime.now(mountain).strftime('%A, %B %d, %Y at %I:%M %p MT')
         
         supabase = get_supabase_client()
         doc_count_response = supabase.table('airea_knowledge').select('id', count='exact').execute()
@@ -2830,7 +2830,7 @@ async def greet_user(request: GreetRequest):
         
         # Get current date and document count
         mountain = timezone(timedelta(hours=-7))
-        current_date = datetime.now(mountain).strftime('%B %d, %Y')
+        current_date = datetime.now(mountain).strftime('%A, %B %d, %Y at %I:%M %p MT')
         supabase = get_supabase_client()
         doc_count_response = supabase.table('airea_knowledge').select('id', count='exact').execute()
         total_doc_count = doc_count_response.count if hasattr(doc_count_response, 'count') else 0
