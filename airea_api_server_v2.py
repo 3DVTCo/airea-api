@@ -205,7 +205,7 @@ def query_building_rankings(
         if building_name:
             query = query.eq('"Tower Name"', building_name)
         
-        query = query.order("score_v2", desc=True).limit(top_n)
+        query = query.order("score_v3", desc=True).limit(top_n)
         response = query.execute()
         
         results["highrise"] = {
@@ -219,7 +219,7 @@ def query_building_rankings(
             midrise_query = supabase.table("midrise_rankings").select("*")
             if building_name:
                 midrise_query = midrise_query.eq('"Tower Name"', building_name)
-            midrise_query = midrise_query.order("score_v2", desc=True).limit(top_n)
+            midrise_query = midrise_query.order("score_v3", desc=True).limit(top_n)
             midrise_response = midrise_query.execute()
             
             results["midrise"] = {
@@ -811,7 +811,7 @@ def get_building_stats(building_name: str) -> dict:
             "success": True,
             "building_name": building_name,
             "ranking": {
-                "score_v2": ranking_data.get("score_v2"),
+                "score_v3": ranking_data.get("score_v3"),
                 "sales_12m": ranking_data.get("sales_12m"),
                 "sales_60d": ranking_data.get("sales_60d"),
                 "avg_price": ranking_data.get("avg_price")
@@ -1158,7 +1158,7 @@ Current Stats:
 - Total Historical Sales: {stats['sold_history']['count']}
 
 Ranking Data:
-- Score: {stats['ranking'].get('score_v2', 'N/A')}
+- Score: {stats['ranking'].get('score_v3', 'N/A')}
 - Sales (12 months): {stats['ranking'].get('sales_12m', 'N/A')}
 """
 
@@ -1812,7 +1812,7 @@ def format_data_for_context(tool_name: str, data: dict) -> str:
         lines.append(f"BUILDING RANKINGS (Top {data['highrise']['count']} of {data['highrise']['total_buildings']} high-rises):")
         for i, r in enumerate(data['highrise']['rankings'], 1):
             name = r.get('Tower Name', 'Unknown')
-            score = r.get('score_v2', 0)
+            score = r.get('score_v3', 0)
             sales = r.get('sales_12m', 0)
             avg_price = safe_price(r.get('avg_price', 0))
             lines.append(f"{i}. {name} - Score: {score:.2f}, Sales (12mo): {sales}, Avg Price: ${avg_price:,.0f}")
@@ -1925,7 +1925,7 @@ def format_data_for_context(tool_name: str, data: dict) -> str:
         sold = data.get('sold_history', {})
         lines.append(f"BUILDING STATS: {data.get('building_name', 'Unknown')}")
         lines.append(f"\nRANKING:")
-        lines.append(f"  - Score: {ranking.get('score_v2', 'N/A')}")
+        lines.append(f"  - Score: {ranking.get('score_v3', 'N/A')}")
         lines.append(f"  - Sales (12mo): {ranking.get('sales_12m', 'N/A')}")
         lines.append(f"  - Sales (60d): {ranking.get('sales_60d', 'N/A')}")
         lines.append(f"\nACTIVE LISTINGS ({active.get('count', 0)}):")
