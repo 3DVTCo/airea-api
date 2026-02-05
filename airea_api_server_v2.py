@@ -208,6 +208,9 @@ def query_building_rankings(
         query = query.order("score_v3", desc=True).limit(top_n)
         response = query.execute()
         
+        # Strip score_v2 from results to prevent confusion
+        for r in response.data:
+            r.pop("score_v2", None)
         results["highrise"] = {
             "count": len(response.data),
             "total_buildings": HIGHRISE_COUNT,
@@ -357,7 +360,10 @@ def get_building_list(building_type: str = "all") -> dict:
         
         if building_type in ["all", "highrise"]:
             response = supabase.table("building_rankings").select('"Tower Name"').execute()
-            results["highrise"] = {
+            # Strip score_v2 from results to prevent confusion
+        for r in response.data:
+            r.pop("score_v2", None)
+        results["highrise"] = {
                 "count": len(response.data),
                 "buildings": [r.get("Tower Name") for r in response.data]
             }
