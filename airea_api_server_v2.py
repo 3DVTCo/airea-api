@@ -225,6 +225,9 @@ def query_building_rankings(
             midrise_query = midrise_query.order("score_v3", desc=True).limit(top_n)
             midrise_response = midrise_query.execute()
             
+            # Strip score_v2 from midrise results too
+            for r in midrise_response.data:
+                r.pop("score_v2", None)
             results["midrise"] = {
                 "count": len(midrise_response.data),
                 "total_buildings": MIDRISE_COUNT,
@@ -370,6 +373,9 @@ def get_building_list(building_type: str = "all") -> dict:
         
         if building_type in ["all", "midrise"]:
             response = supabase.table("midrise_rankings").select('"Tower Name"').execute()
+            # Strip score_v2 from midrise results too
+            for r in midrise_response.data:
+                r.pop("score_v2", None)
             results["midrise"] = {
                 "count": len(response.data),
                 "buildings": [r.get("Tower Name") for r in response.data]
