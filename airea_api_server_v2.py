@@ -2750,11 +2750,21 @@ async def upload_to_brain(request: UploadRequest):
                 "updated_at": datetime.now().isoformat()
             })
         
-        # Single batch insert - prevents timeout on large documents
-        result = supabase.table('airea_knowledge').insert(rows_to_insert).execute()
-        inserted_count = len(result.data) if result.data else 0
+        # Insert in small batches to avoid Supabase statement timeout
+        # 5 rows at a time with small pauses between batches
+        import time
+        BATCH_SIZE = 5
+        inserted_count = 0
         
-        logger.info(f"Batch uploaded {inserted_count} chunks for: {request.title}")
+        for i in range(0, len(rows_to_insert), BATCH_SIZE):
+            batch = rows_to_insert[i:i + BATCH_SIZE]
+            result = supabase.table('airea_knowledge').insert(batch).execute()
+            inserted_count += len(result.data) if result.data else 0
+            logger.info(f"Inserted batch {i//BATCH_SIZE + 1}: {len(batch)} rows")
+            if i + BATCH_SIZE < len(rows_to_insert):
+                time.sleep(0.3)  # 300ms pause between batches
+        
+        logger.info(f"Completed upload: {inserted_count} chunks for: {request.title}")
         
         return {
             "status": "success",
