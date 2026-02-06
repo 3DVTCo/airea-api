@@ -2778,6 +2778,7 @@ async def upload_to_brain(request: UploadRequest, background_tasks: BackgroundTa
             "category": category,
             "character_count": len(content),
             "chunk_count": len(chunks),
+            "chunks_inserted": len(chunks),
             "insights": insights
         }
         
