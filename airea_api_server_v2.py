@@ -372,13 +372,13 @@ def get_building_list(building_type: str = "all") -> dict:
             }
         
         if building_type in ["all", "midrise"]:
-            response = supabase.table("midrise_rankings").select('"Tower Name"').execute()
+            midrise_response = supabase.table("midrise_rankings").select('"Tower Name"').execute()
             # Strip score_v2 from midrise results too
             for r in midrise_response.data:
                 r.pop("score_v2", None)
             results["midrise"] = {
-                "count": len(response.data),
-                "buildings": [r.get("Tower Name") for r in response.data]
+                "count": len(midrise_response.data),
+                "buildings": [r.get("Tower Name") for r in midrise_response.data]
             }
         
         return {"success": True, **results}
@@ -2727,12 +2727,8 @@ async def upload_to_brain(request: UploadRequest):
         logger.info(f"Processing {len(content):,} chars for: {request.title}")
         logger.info(f"Category: {category}, Chunks: {len(chunks)}")
         
-        # Get current count for document numbering
-        count_response = supabase.table('airea_knowledge').select('id', count='exact').execute()
-        current_count = count_response.count if hasattr(count_response, 'count') else 0
-        
-        # Insert each chunk
-        inserted_count = 0
+        # Build all rows for batch insert (single database call instead of N calls)
+        rows_to_insert = []
         for i, chunk in enumerate(chunks):
             metadata = {
                 "title": request.title,
@@ -2745,24 +2741,20 @@ async def upload_to_brain(request: UploadRequest):
                 "source": "brain_dashboard",
                 "upload_date": datetime.now().isoformat()
             }
-            
-            result = supabase.table('airea_knowledge').insert({
+            rows_to_insert.append({
                 "content": chunk,
                 "metadata": metadata,
                 "collection_name": category,
                 "source": f"brain_upload_{request.title}",
                 "created_at": datetime.now().isoformat(),
                 "updated_at": datetime.now().isoformat()
-            }).execute()
-            
-            if result.data:
-                inserted_count += 1
+            })
         
-        # Get final count
-        final_count_response = supabase.table('airea_knowledge').select('id', count='exact').execute()
-        new_count = final_count_response.count if hasattr(final_count_response, 'count') else 0
+        # Single batch insert - prevents timeout on large documents
+        result = supabase.table('airea_knowledge').insert(rows_to_insert).execute()
+        inserted_count = len(result.data) if result.data else 0
         
-        logger.info(f"Uploaded {inserted_count} chunks as document #{current_count + 1}")
+        logger.info(f"Batch uploaded {inserted_count} chunks for: {request.title}")
         
         return {
             "status": "success",
@@ -2773,8 +2765,6 @@ async def upload_to_brain(request: UploadRequest):
             "character_count": len(content),
             "chunk_count": len(chunks),
             "chunks_inserted": inserted_count,
-            "document_number": current_count + 1,
-            "total_documents": new_count,
             "insights": insights
         }
         

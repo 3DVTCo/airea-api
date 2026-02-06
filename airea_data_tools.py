@@ -8,7 +8,7 @@ Provides Claude Desktop with live Supabase query capabilities.
 
 DATA QUERY (8):
 - query_active_listings: Get active listings by building or overall
-- query_building_rankings: Get building rankings with score_v2
+- query_building_rankings: Get building rankings with score_v3
 - query_market_cma: Get CMA data for market analysis
 - query_deal_of_week: Get current deal of the week data
 - search_airea_knowledge: Search AIREA's knowledge base
@@ -164,7 +164,7 @@ TOOLS = [
         name="query_building_rankings",
         description="""Query building rankings from building_rankings table.
         
-        Returns rankings sorted by score_v2 (higher = better).
+        Returns rankings sorted by score_v3 (higher = better).
         Includes: rank, building name, score, active listings, avg price, avg ppsf.""",
         inputSchema={
             "type": "object",
@@ -489,7 +489,7 @@ def query_building_rankings(
         if building_name:
             query = query.eq('"Tower Name"', building_name)
         
-        query = query.order("score_v2", desc=True).limit(top_n)
+        query = query.order("score_v3", desc=True).limit(top_n)
         response = query.execute()
         
         results["highrise"] = {
@@ -503,7 +503,7 @@ def query_building_rankings(
             midrise_query = supabase.table("midrise_rankings").select("*")
             if building_name:
                 midrise_query = midrise_query.eq('"Tower Name"', building_name)
-            midrise_query = midrise_query.order("score_v2", desc=True).limit(top_n)
+            midrise_query = midrise_query.order("score_v3", desc=True).limit(top_n)
             midrise_response = midrise_query.execute()
             
             results["midrise"] = {
@@ -562,13 +562,14 @@ def query_deal_of_week(
         if building_name:
             # Query building-specific deal
             query = supabase.table("deal_of_week_building").select("*")
-            query = query.eq("building_name", building_name)
+            query = query.eq('"Tower Name"', building_name)
         else:
-            # Query overall deal
+            # Query overall deal - returns all rows
             query = supabase.table("deal_of_week_overall").select("*")
         
+        # Limit to most recent if not including backups
         if not include_backup:
-            query = query.eq("is_primary", True)
+            query = query.limit(1)
         
         response = query.execute()
         
@@ -825,12 +826,12 @@ def explain_deal_selection(
         
         # Get deal data
         query = supabase.table("deal_of_week_building").select("*")
-        query = query.eq("building_name", building_name)
+        query = query.eq('"Tower Name"', building_name)
         
         if mls_number:
-            query = query.eq("mls_number", mls_number)
+            query = query.eq('"ML#"', mls_number)
         else:
-            query = query.eq("is_primary", True)
+            query = query.limit(1)
         
         response = query.execute()
         
