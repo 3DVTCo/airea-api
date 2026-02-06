@@ -2703,9 +2703,28 @@ async def preview_upload(request: UploadRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+from fastapi import BackgroundTasks
+
+def do_brain_upload(rows_to_insert: list, title: str):
+    """Background task to insert rows one at a time"""
+    try:
+        supabase = get_supabase_client()
+        inserted_count = 0
+        
+        for i, row in enumerate(rows_to_insert):
+            result = supabase.table('airea_knowledge').insert(row).execute()
+            if result.data:
+                inserted_count += 1
+            logger.info(f"Inserted chunk {i + 1}/{len(rows_to_insert)} for {title}")
+        
+        logger.info(f"Completed background upload: {inserted_count} chunks for: {title}")
+    except Exception as e:
+        logger.error(f"Background upload failed for {title}: {e}")
+
+
 @app.post("/upload_to_brain")
-async def upload_to_brain(request: UploadRequest):
-    """Upload content to AIREA's knowledge base (Supabase) - matches terminal ingest behavior"""
+async def upload_to_brain(request: UploadRequest, background_tasks: BackgroundTasks):
+    """Upload content to AIREA's knowledge base - returns immediately, processes in background"""
     try:
         content = request.content.strip()
         if not content:
@@ -2713,8 +2732,6 @@ async def upload_to_brain(request: UploadRequest):
         
         if len(content) < 50:
             raise HTTPException(status_code=400, detail="Content too short (minimum 50 characters)")
-        
-        supabase = get_supabase_client()
         
         # Categorize content (same logic as terminal ingest)
         category = request.collection or categorize_content(content, request.title)
@@ -2724,10 +2741,10 @@ async def upload_to_brain(request: UploadRequest):
         # Chunk large content
         chunks = chunk_content(content)
         
-        logger.info(f"Processing {len(content):,} chars for: {request.title}")
+        logger.info(f"Queueing {len(content):,} chars for: {request.title}")
         logger.info(f"Category: {category}, Chunks: {len(chunks)}")
         
-        # Build all rows for batch insert (single database call instead of N calls)
+        # Build all rows
         rows_to_insert = []
         for i, chunk in enumerate(chunks):
             metadata = {
@@ -2750,31 +2767,17 @@ async def upload_to_brain(request: UploadRequest):
                 "updated_at": datetime.now().isoformat()
             })
         
-        # Insert in small batches to avoid Supabase statement timeout
-        # 5 rows at a time with small pauses between batches
-        import time
-        BATCH_SIZE = 5
-        inserted_count = 0
-        
-        for i in range(0, len(rows_to_insert), BATCH_SIZE):
-            batch = rows_to_insert[i:i + BATCH_SIZE]
-            result = supabase.table('airea_knowledge').insert(batch).execute()
-            inserted_count += len(result.data) if result.data else 0
-            logger.info(f"Inserted batch {i//BATCH_SIZE + 1}: {len(batch)} rows")
-            if i + BATCH_SIZE < len(rows_to_insert):
-                time.sleep(0.3)  # 300ms pause between batches
-        
-        logger.info(f"Completed upload: {inserted_count} chunks for: {request.title}")
+        # Queue background task and return immediately
+        background_tasks.add_task(do_brain_upload, rows_to_insert, request.title)
         
         return {
-            "status": "success",
-            "message": "Content uploaded to AIREA's knowledge base",
+            "status": "processing",
+            "message": f"Upload queued - {len(chunks)} chunks will be inserted in background",
             "title": request.title,
             "date": date_str,
             "category": category,
             "character_count": len(content),
             "chunk_count": len(chunks),
-            "chunks_inserted": inserted_count,
             "insights": insights
         }
         
