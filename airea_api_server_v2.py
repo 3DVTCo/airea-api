@@ -2771,8 +2771,8 @@ async def upload_to_brain(request: UploadRequest, background_tasks: BackgroundTa
         background_tasks.add_task(do_brain_upload, rows_to_insert, request.title)
         
         return {
-            "status": "processing",
-            "message": f"Upload queued - {len(chunks)} chunks will be inserted in background",
+            "status": "success",
+            "message": f"Upload queued - {len(chunks)} chunks processing in background",
             "title": request.title,
             "date": date_str,
             "category": category,
