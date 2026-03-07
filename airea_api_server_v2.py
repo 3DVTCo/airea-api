@@ -2963,14 +2963,14 @@ async def photo_proxy(url: str):
         raise HTTPException(status_code=502, detail="Failed to authenticate with media server")
     
     try:
-        async with httpx.AsyncClient(timeout=15) as client:
+        async with httpx.AsyncClient(timeout=15, follow_redirects=True) as client:
             resp = await client.get(url, headers={"Authorization": f"Bearer {token}"})
         
         if resp.status_code == 401:
             # Token may have been invalidated — clear cache and retry once
             _trestle_token_cache["token"] = None
             token = get_trestle_token_cached()
-            async with httpx.AsyncClient(timeout=15) as client:
+            async with httpx.AsyncClient(timeout=15, follow_redirects=True) as client:
                 resp = await client.get(url, headers={"Authorization": f"Bearer {token}"})
         
         if resp.status_code != 200:
