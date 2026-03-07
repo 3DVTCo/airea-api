@@ -2901,6 +2901,98 @@ Generate ONLY the greeting, no preamble."""
         return {"response": f"Hello {request.user_name}! I'm AIREA, ready to help you with the LVHR platform."}
 
 
+# =============================================================================
+# TRESTLE PHOTO PROXY
+# Trestle media URLs (api.cotality.com/trestle/Media/...) require OAuth Bearer
+# token authentication. Browsers cannot load them directly via <img src>.
+# This endpoint fetches the image server-side with a fresh token and streams
+# it back, allowing normal <img> tags to display MLS photos.
+# =============================================================================
+
+import httpx
+from fastapi.responses import StreamingResponse
+
+# Cache the token so we don't re-auth on every request
+_trestle_token_cache: dict = {"token": None, "expires_at": None}
+
+def get_trestle_token_cached() -> str:
+    """Get cached Trestle OAuth token. Re-auths only when expired."""
+    import time
+    now = time.time()
+    cached = _trestle_token_cache
+    if cached["token"] and cached["expires_at"] and now < cached["expires_at"] - 60:
+        return cached["token"]
+    
+    # Re-authenticate
+    client_id = os.environ.get("TRESTLE_CLIENT_ID")
+    client_secret = os.environ.get("TRESTLE_CLIENT_SECRET")
+    if not client_id or not client_secret:
+        raise HTTPException(status_code=500, detail="Trestle credentials not configured")
+    
+    resp = httpx.post(
+        "https://api.cotality.com/trestle/oidc/connect/token",
+        data={"client_id": client_id, "client_secret": client_secret, "scope": "api", "grant_type": "client_credentials"},
+        timeout=10,
+    )
+    resp.raise_for_status()
+    data = resp.json()
+    cached["token"] = data["access_token"]
+    cached["expires_at"] = now + data.get("expires_in", 28800)  # default 8h
+    logger.info("Trestle token refreshed for photo proxy")
+    return cached["token"]
+
+
+@app.get("/photo-proxy")
+async def photo_proxy(url: str):
+    """
+    Proxy Trestle MLS photos to the browser.
+    
+    Usage: /photo-proxy?url=<encoded_trestle_media_url>
+    Returns: image bytes with correct Content-Type
+    
+    Security: Only proxies URLs from api.cotality.com/trestle/
+    """
+    # Security: only allow Trestle URLs
+    if not url.startswith("https://api.cotality.com/trestle/"):
+        raise HTTPException(status_code=400, detail="Only Trestle media URLs are supported")
+    
+    try:
+        token = get_trestle_token_cached()
+    except Exception as e:
+        logger.error(f"Photo proxy: token fetch failed: {e}")
+        raise HTTPException(status_code=502, detail="Failed to authenticate with media server")
+    
+    try:
+        async with httpx.AsyncClient(timeout=15) as client:
+            resp = await client.get(url, headers={"Authorization": f"Bearer {token}"})
+        
+        if resp.status_code == 401:
+            # Token may have been invalidated — clear cache and retry once
+            _trestle_token_cache["token"] = None
+            token = get_trestle_token_cached()
+            async with httpx.AsyncClient(timeout=15) as client:
+                resp = await client.get(url, headers={"Authorization": f"Bearer {token}"})
+        
+        if resp.status_code != 200:
+            raise HTTPException(status_code=resp.status_code, detail="Media server error")
+        
+        content_type = resp.headers.get("content-type", "image/jpeg")
+        
+        return StreamingResponse(
+            iter([resp.content]),
+            media_type=content_type,
+            headers={"Cache-Control": "public, max-age=86400"},  # CDN-cacheable for 24h
+        )
+    
+    except httpx.TimeoutException:
+        raise HTTPException(status_code=504, detail="Media server timeout")
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Photo proxy error for {url}: {e}")
+        raise HTTPException(status_code=502, detail="Failed to fetch media")
+
+
 if __name__ == "__main__":
     import uvicorn
     
