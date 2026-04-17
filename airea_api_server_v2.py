@@ -2170,7 +2170,11 @@ def fetch_las_vegas_weather() -> str:
             95: "Thunderstorm"
         }
         description = conditions.get(code, f"Code {code}")
-        return f"CURRENT LAS VEGAS WEATHER: {temp}°F, {description}, humidity {humidity}%, wind {wind} mph"
+        return (
+            f"LIVE LAS VEGAS WEATHER (fetched right now from Open-Meteo — this is real, current data):\n"
+            f"{temp}°F | {description} | Humidity {humidity}% | Wind {wind} mph\n"
+            f"When a user asks about the weather, answer directly from this data. Do NOT say you lack weather access."
+        )
     except Exception as e:
         logger.warning(f"fetch_las_vegas_weather failed: {e}")
         return ""
