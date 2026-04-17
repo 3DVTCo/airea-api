@@ -2775,7 +2775,7 @@ async def main_chat(message: ChatRequest):
                 logger.warning(f"Data query failed: {query_result.get('error')}")
         
         # Search Knowledge Base (in addition to data query)
-        relevant_docs = search_knowledge_base(message.message, limit=10)
+        relevant_docs = search_knowledge_base(message.message, limit=5)
         logger.info(f"Found {len(relevant_docs)} knowledge docs for query: {message.message}")
 
         
@@ -2795,9 +2795,10 @@ async def main_chat(message: ChatRequest):
             context_text = "\n\n---\n\n".join(formatted_docs)
             document_count = len(relevant_docs)
         
-        # Fetch platform context injected into every system prompt
-        f1_buildings = fetch_f1_buildings()
-        weather_context = fetch_las_vegas_weather()
+        # Fetch platform context — only when relevant to save tokens
+        msg_lower = message.message.lower()
+        f1_buildings = fetch_f1_buildings() if any(w in msg_lower for w in ["f1", "formula", "grand prix", "race", "circuit"]) else ""
+        weather_context = fetch_las_vegas_weather() if any(w in msg_lower for w in ["weather", "temperature", "hot", "cold", "climate", "degrees"]) else ""
 
         # Build System Prompt with dynamic values, conversation history, AND data context
         system_prompt = build_system_prompt(
@@ -2830,10 +2831,10 @@ CRITICAL REMINDERS:
         # Generate Response using Anthropic Client
         logger.info("Calling Anthropic API")
         response = anthropic_client.messages.create(
-            model="claude-sonnet-4-6", 
+            model="claude-sonnet-4-6",
             system=system_prompt,
             messages=[{"role": "user", "content": message.message}],
-            max_tokens=4096
+            max_tokens=1024
         )
         airea_response = response.content[0].text
         logger.info(f"Response received: {airea_response[:100]}")
