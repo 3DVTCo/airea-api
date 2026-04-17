@@ -2148,15 +2148,15 @@ def fetch_f1_buildings() -> str:
 def fetch_las_vegas_weather() -> str:
     """Fetch current Las Vegas weather from Open-Meteo (free, no API key)."""
     try:
-        import urllib.request, json as _json
         url = (
             "https://api.open-meteo.com/v1/forecast"
             "?latitude=36.1699&longitude=-115.1398"
             "&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m"
             "&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America%2FLos_Angeles"
         )
-        with urllib.request.urlopen(url, timeout=5) as resp:
-            data = _json.loads(resp.read())
+        resp = requests.get(url, timeout=5)
+        resp.raise_for_status()
+        data = resp.json()
         c = data.get("current", {})
         temp = c.get("temperature_2m", "?")
         humidity = c.get("relative_humidity_2m", "?")
@@ -2170,11 +2170,13 @@ def fetch_las_vegas_weather() -> str:
             95: "Thunderstorm"
         }
         description = conditions.get(code, f"Code {code}")
-        return (
-            f"LIVE LAS VEGAS WEATHER (fetched right now from Open-Meteo — this is real, current data):\n"
+        result = (
+            f"LIVE LAS VEGAS WEATHER (fetched right now — this is real, current data):\n"
             f"{temp}°F | {description} | Humidity {humidity}% | Wind {wind} mph\n"
             f"When a user asks about the weather, answer directly from this data. Do NOT say you lack weather access."
         )
+        logger.info(f"Weather fetched: {temp}°F {description}")
+        return result
     except Exception as e:
         logger.warning(f"fetch_las_vegas_weather failed: {e}")
         return ""
