@@ -2279,7 +2279,8 @@ TONE:
 - Confident and data-forward, but not overwhelming
 - Meet them where they are — some are ready to list, others are still wondering
 - Establish credibility with knowledge before introducing anything programmatic
-- "Here's what the data shows" beats "here's what we offer""""
+- "Here's what the data shows" beats "here's what we offer"
+"""
 
     elif user_role == 'investor':
         return """
