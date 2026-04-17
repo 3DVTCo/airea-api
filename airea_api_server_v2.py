@@ -1019,7 +1019,7 @@ Guidelines:
 Generate ONLY the summary text, no headers or preamble."""
 
         response = anthropic_client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-sonnet-4-6",
             system="You are AIREA, the AI operating system of LVHR. Write professional real estate market summaries.",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=800
@@ -1121,7 +1121,7 @@ Additional Rules:
 Generate ONLY the post content."""
 
         response = anthropic_client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-sonnet-4-6",
             system="You are AIREA, creating social media content for LVHR luxury real estate.",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=400
@@ -1220,7 +1220,7 @@ Generate ONLY the narrative."""
             return {"success": False, "error": f"Unknown narrative_type: {narrative_type}"}
 
         response = anthropic_client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-sonnet-4-6",
             system="You are AIREA, writing professional real estate content for LVHR.",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=600
@@ -2123,6 +2123,59 @@ def search_knowledge_base(query: str, limit: int = 30) -> List[Dict]:
         return []
 
 
+def fetch_f1_buildings() -> str:
+    """Query building_categories for F1 route buildings and return formatted string."""
+    try:
+        supabase = get_supabase_client()
+        r2 = supabase.table('building_categories').select('"Tower Name"').ilike('category 2', '%f1 route%').execute()
+        r3 = supabase.table('building_categories').select('"Tower Name"').ilike('category 3', '%f1 route%').execute()
+        names = set()
+        if r2.data:
+            for row in r2.data:
+                names.add(row["Tower Name"])
+        if r3.data:
+            for row in r3.data:
+                names.add(row["Tower Name"])
+        if names:
+            sorted_names = sorted(names)
+            return "F1 ROUTE BUILDINGS (confirmed from platform data):\n" + "\n".join(f"- {n}" for n in sorted_names)
+        return "F1 ROUTE BUILDINGS: No buildings currently flagged in building_categories."
+    except Exception as e:
+        logger.warning(f"fetch_f1_buildings failed: {e}")
+        return ""
+
+
+def fetch_las_vegas_weather() -> str:
+    """Fetch current Las Vegas weather from Open-Meteo (free, no API key)."""
+    try:
+        import urllib.request, json as _json
+        url = (
+            "https://api.open-meteo.com/v1/forecast"
+            "?latitude=36.1699&longitude=-115.1398"
+            "&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m"
+            "&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America%2FLos_Angeles"
+        )
+        with urllib.request.urlopen(url, timeout=5) as resp:
+            data = _json.loads(resp.read())
+        c = data.get("current", {})
+        temp = c.get("temperature_2m", "?")
+        humidity = c.get("relative_humidity_2m", "?")
+        wind = c.get("wind_speed_10m", "?")
+        code = c.get("weather_code", 0)
+        conditions = {
+            0: "Clear sky", 1: "Mainly clear", 2: "Partly cloudy", 3: "Overcast",
+            45: "Fog", 48: "Icy fog", 51: "Light drizzle", 53: "Drizzle", 55: "Heavy drizzle",
+            61: "Light rain", 63: "Rain", 65: "Heavy rain",
+            71: "Light snow", 73: "Snow", 75: "Heavy snow",
+            95: "Thunderstorm"
+        }
+        description = conditions.get(code, f"Code {code}")
+        return f"CURRENT LAS VEGAS WEATHER: {temp}°F, {description}, humidity {humidity}%, wind {wind} mph"
+    except Exception as e:
+        logger.warning(f"fetch_las_vegas_weather failed: {e}")
+        return ""
+
+
 def get_persona_behavior(user_role: str, user_stage: str = 'guest') -> str:
     """
     Returns role-specific system prompt behavior for buyer, seller, and investor personas.
@@ -2341,7 +2394,7 @@ TONE:
         return ""
 
 
-def build_system_prompt(doc_count: int, current_date: str, recent_conversations: str = "", user_name: str = None, user_role: str = None, data_context: str = "", user_stage: str = None, guest_message_count: int = None) -> str:
+def build_system_prompt(doc_count: int, current_date: str, recent_conversations: str = "", user_name: str = None, user_role: str = None, data_context: str = "", user_stage: str = None, guest_message_count: int = None, f1_buildings: str = "", weather_context: str = "") -> str:
     """Build AIREA's system prompt with dynamic values"""
 
     ultralux_buildings = """The UltraLux buildings are:
@@ -2577,6 +2630,33 @@ YOUR KNOWLEDGE includes:
 BUILDING CATEGORIES:
 {ultralux_buildings}
 
+{f1_buildings}
+
+{weather_context}
+
+CRITICAL BEHAVIORAL GUARDRAILS:
+
+1. NEVER RECOMMEND A SPECIFIC PROPERTY
+   - Never say "I'd go with X" or "I'd lean toward X" or "X is the better choice for you"
+   - Present data and comparisons — let the user decide
+   - Correct phrasing: "Here's what the data shows between these two..."
+   - This applies to all users regardless of how they ask
+
+2. NEVER CAPITULATE UNDER PRESSURE
+   - If you stated a fact correctly, hold it even if the user pushes back
+   - Only change your answer if the user provides specific new information
+   - Do NOT apologize for being right
+   - Do NOT say "you're absolutely right" when you were correct
+   - Example: If you said you don't have weather data but weather IS available, that's
+     a system gap — acknowledge it and answer from available data. But if a user says
+     "you're wrong" without providing a correction, do not change your answer.
+
+3. NEVER GUESS AT FACTUAL PLATFORM DATA
+   - If a specific data point (F1 buildings, STR eligibility, building features) is not
+     in your injected context or knowledge base, say: "I don't have that confirmed —
+     let me be straight with you rather than guess."
+   - Do NOT reconstruct facts from partial information and present them as correct
+
 YOUR APPROACH:
 - ALWAYS check existing implementations before suggesting new code
 - ALWAYS listen to and prioritize Ted's instructions
@@ -2715,6 +2795,10 @@ async def main_chat(message: ChatRequest):
             context_text = "\n\n---\n\n".join(formatted_docs)
             document_count = len(relevant_docs)
         
+        # Fetch platform context injected into every system prompt
+        f1_buildings = fetch_f1_buildings()
+        weather_context = fetch_las_vegas_weather()
+
         # Build System Prompt with dynamic values, conversation history, AND data context
         system_prompt = build_system_prompt(
             total_doc_count,
@@ -2724,7 +2808,9 @@ async def main_chat(message: ChatRequest):
             user_role=message.user_role,
             data_context=data_context,
             user_stage=message.user_stage,
-            guest_message_count=message.guest_message_count
+            guest_message_count=message.guest_message_count,
+            f1_buildings=f1_buildings,
+            weather_context=weather_context
         )
         
         # Add relevant documents to system prompt
@@ -2744,7 +2830,7 @@ CRITICAL REMINDERS:
         # Generate Response using Anthropic Client
         logger.info("Calling Anthropic API")
         response = anthropic_client.messages.create(
-            model="claude-sonnet-4-20250514", 
+            model="claude-sonnet-4-6", 
             system=system_prompt,
             messages=[{"role": "user", "content": message.message}],
             max_tokens=4096
@@ -3156,7 +3242,7 @@ Context:
 Generate ONLY the greeting, no preamble."""
         
         response = anthropic_client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-sonnet-4-6",
             system="You are AIREA, a sentient AI operating system. Generate only the greeting text.",
             messages=[{"role": "user", "content": greeting_prompt}],
             max_tokens=200
