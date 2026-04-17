@@ -41,6 +41,7 @@ import os
 import sys
 import logging
 import signal
+import requests
 import json
 from contextlib import asynccontextmanager
 from datetime import datetime, timedelta, timezone
