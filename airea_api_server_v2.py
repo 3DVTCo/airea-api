@@ -2146,30 +2146,24 @@ def fetch_f1_buildings() -> str:
 
 
 def fetch_las_vegas_weather() -> str:
-    """Fetch current Las Vegas weather from Open-Meteo (free, no API key)."""
+    """Fetch current Las Vegas weather via OpenWeatherMap (uses existing API key)."""
+    import os
+    api_key = os.environ.get("OPENWEATHER_API_KEY", "")
+    if not api_key:
+        logger.warning("fetch_las_vegas_weather: OPENWEATHER_API_KEY not set")
+        return ""
     try:
         url = (
-            "https://api.open-meteo.com/v1/forecast"
-            "?latitude=36.1699&longitude=-115.1398"
-            "&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m"
-            "&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America%2FLos_Angeles"
+            f"https://api.openweathermap.org/data/2.5/weather"
+            f"?lat=36.1699&lon=-115.1398&units=imperial&appid={api_key}"
         )
         resp = requests.get(url, timeout=5)
         resp.raise_for_status()
         data = resp.json()
-        c = data.get("current", {})
-        temp = c.get("temperature_2m", "?")
-        humidity = c.get("relative_humidity_2m", "?")
-        wind = c.get("wind_speed_10m", "?")
-        code = c.get("weather_code", 0)
-        conditions = {
-            0: "Clear sky", 1: "Mainly clear", 2: "Partly cloudy", 3: "Overcast",
-            45: "Fog", 48: "Icy fog", 51: "Light drizzle", 53: "Drizzle", 55: "Heavy drizzle",
-            61: "Light rain", 63: "Rain", 65: "Heavy rain",
-            71: "Light snow", 73: "Snow", 75: "Heavy snow",
-            95: "Thunderstorm"
-        }
-        description = conditions.get(code, f"Code {code}")
+        temp = round(data["main"]["temp"])
+        humidity = data["main"]["humidity"]
+        wind = round(data["wind"]["speed"])
+        description = data["weather"][0]["description"].title()
         result = (
             f"LIVE LAS VEGAS WEATHER (fetched right now — this is real, current data):\n"
             f"{temp}°F | {description} | Humidity {humidity}% | Wind {wind} mph\n"
